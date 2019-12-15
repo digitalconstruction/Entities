@@ -4,15 +4,15 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/digitalconstruction/> .
+@base <https://w3id.org/digitalconstruction/Entities#> .
 
-<https://w3id.org/digitalconstruction/> rdf:type owl:Ontology ;
-                                         owl:versionIRI <https://w3id.org/digitalconstruction/1.0.0> ;
-                                         owl:imports <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl> ;
-                                         <http://purl.org/dc/terms/creator> "Seppo Torma" ,
-                                                                            "Yuan Zheng" ;
-                                         rdfs:comment "This Entities ontology is a module of Digital Construction Ontology. The purpose of this module is to support data sharing of the object information that related to the construction project. This module describes the concepts (or ‘classes’) of basic objects in the construction process and their properties and hierarchy. The core concept  is the ‘Identifiable Entity’, which refers the top abstract concept of all the objects that has its own identifier and  classification that classified by some classification scheme." ;
-                                         owl:versionInfo "1.0.0" .
+<https://w3id.org/digitalconstruction/Entities#> rdf:type owl:Ontology ;
+                                                  owl:versionIRI <https://w3id.org/digitalconstruction/1.0.0> ;
+                                                  owl:imports <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl> ;
+                                                  <http://purl.org/dc/terms/creator> "Seppo Torma" ,
+                                                                                     "Yuan Zheng" ;
+                                                  rdfs:comment "This Entities ontology is a module of Digital Construction Ontology. The purpose of this module is to support data sharing of the object information that related to the construction project. This module describes the concepts (or ‘classes’) of basic objects in the construction process and their properties and hierarchy. The core concept  is the ‘Identifiable Entity’, which refers the top abstract concept of all the objects that has its own identifier and  classification that classified by some classification scheme." ;
+                                                  owl:versionInfo "1.0.0" .
 
 #################################################################
 #    Annotation properties
@@ -26,19 +26,19 @@
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/digitalconstruction/classifiedBy
+###  https://w3id.org/digitalconstruction/Entities#classifiedBy
 :classifiedBy rdf:type owl:ObjectProperty ;
               rdfs:domain :IdentifiableEntity ;
               rdfs:range :Classification .
 
 
-###  https://w3id.org/digitalconstruction/hasMember
+###  https://w3id.org/digitalconstruction/Entities#hasMember
 :hasMember rdf:type owl:ObjectProperty ;
            rdfs:domain :Group ;
            rdfs:range :IdentifiableEntity .
 
 
-###  https://w3id.org/digitalconstruction/identifiedBy
+###  https://w3id.org/digitalconstruction/Entities#identifiedBy
 :identifiedBy rdf:type owl:ObjectProperty ;
               rdfs:domain :IdentifiableEntity ;
               rdfs:range :Identifier .
@@ -48,29 +48,29 @@
 #    Data properties
 #################################################################
 
-###  https://w3id.org/digitalconstruction/allocatedBy
+###  https://w3id.org/digitalconstruction/Entities#allocatedBy
 :allocatedBy rdf:type owl:DatatypeProperty ;
              rdfs:domain :Identifier ;
              rdfs:range xsd:string .
 
 
-###  https://w3id.org/digitalconstruction/amount
+###  https://w3id.org/digitalconstruction/Entities#amount
 :amount rdf:type owl:DatatypeProperty ;
         rdfs:range owl:real .
 
 
-###  https://w3id.org/digitalconstruction/label
+###  https://w3id.org/digitalconstruction/Entities#label
 :label rdf:type owl:DatatypeProperty ;
        rdfs:domain :Identifier ;
        rdfs:range xsd:string .
 
 
-###  https://w3id.org/digitalconstruction/maxLoad
+###  https://w3id.org/digitalconstruction/Entities#maxLoad
 :maxLoad rdf:type owl:DatatypeProperty ;
          rdfs:range owl:real .
 
 
-###  https://w3id.org/digitalconstruction/system
+###  https://w3id.org/digitalconstruction/Entities#system
 :system rdf:type owl:DatatypeProperty ;
         rdfs:domain :Classification ;
         rdfs:range xsd:string .
@@ -89,85 +89,85 @@
                                   rdfs:subClassOf :Agent .
 
 
-###  http://xmlns.com/wordnet/1.6/Agent
-<http://xmlns.com/wordnet/1.6/Agent> rdf:type owl:Class ;
-                                     owl:equivalentClass :Agent .
+###  http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class ;
+                                  owl:equivalentClass :Agent .
 
 
-###  https://w3id.org/digitalconstruction/Activity
+###  https://w3id.org/digitalconstruction/Entities#Activity
 :Activity rdf:type owl:Class ;
           rdfs:subClassOf :IdentifiableEntity ;
           rdfs:comment "Activity refers to all the work process (or aggregations of works) that carried out in a construction project." .
 
 
-###  https://w3id.org/digitalconstruction/Agent
+###  https://w3id.org/digitalconstruction/Entities#Agent
 :Agent rdf:type owl:Class ;
        rdfs:subClassOf :IdentifiableEntity ;
        rdfs:comment "'Agent' refers to all the actors that are responsible of activities in construction." .
 
 
-###  https://w3id.org/digitalconstruction/BuildingObject
+###  https://w3id.org/digitalconstruction/Entities#BuildingObject
 :BuildingObject rdf:type owl:Class ;
                 rdfs:subClassOf :PhysicalObject ;
                 rdfs:comment "Constituent of a construction entity with a characteristic technical function, form or position." .
 
 
-###  https://w3id.org/digitalconstruction/Classification
+###  https://w3id.org/digitalconstruction/Entities#Classification
 :Classification rdf:type owl:Class ;
                 rdfs:comment "Classification refers to the division of objects into groups based on types that are defined and specified in construction classification scheme such as OmniClass, UniFormat and etc." .
 
 
-###  https://w3id.org/digitalconstruction/Equipment
+###  https://w3id.org/digitalconstruction/Entities#Equipment
 :Equipment rdf:type owl:Class ;
            rdfs:subClassOf :PhysicalObject ;
            rdfs:comment "Equipment refers to all the equipment and tool that are used for production activities. An equipment do not have a capability to operate activities by itself automatically." .
 
 
-###  https://w3id.org/digitalconstruction/Group
+###  https://w3id.org/digitalconstruction/Entities#Group
 :Group rdf:type owl:Class ;
        rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000027> ,
                        :IdentifiableEntity ;
        rdfs:comment "Group is the concept that refers to all kinds of grouping/collection of objects, such as work-package (group of works)." .
 
 
-###  https://w3id.org/digitalconstruction/IdentifiableEntity
+###  https://w3id.org/digitalconstruction/Entities#IdentifiableEntity
 :IdentifiableEntity rdf:type owl:Class ;
                     rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000001> ;
-                    rdfs:comment "'IdentifiableEntity' is a abstract concept that refers to all the central objects that are discussed in the construction project planning and management. Sub-classes of the domain object include the 'Activity','Group','Information Object','PhysicalObject',and 'Agent'. Identifiable entities are identified by their unique identifiers and can have their specific classification that is defined by certain classification scheme in the construction domain." .
+                    rdfs:comment "'IdentifiableEntity' is a abstract concept that refers to all the central objects that are discussed in the construction project planning and management. Subclasses of the Identifiable Entities include the 'Activity','Group','Information Object','PhysicalObject',and 'Agent'. Identifiable entities are identified by their unique identifiers and can have their specific classification that is defined by certain classification scheme in the construction domain." .
 
 
-###  https://w3id.org/digitalconstruction/Identifier
+###  https://w3id.org/digitalconstruction/Entities#Identifier
 :Identifier rdf:type owl:Class ;
             rdfs:comment "Identifier refers a globally unique reference of the identifiable entity instance." .
 
 
-###  https://w3id.org/digitalconstruction/InformationObject
+###  https://w3id.org/digitalconstruction/Entities#InformationObject
 :InformationObject rdf:type owl:Class ;
                    rdfs:subClassOf :IdentifiableEntity ;
                    rdfs:comment "An superclass of all abstract objects that are carrying information, such as a BIM model, drawing, specification, image, message, and so on." .
 
 
-###  https://w3id.org/digitalconstruction/Location
+###  https://w3id.org/digitalconstruction/Entities#Location
 :Location rdf:type owl:Class ;
           rdfs:subClassOf :PhysicalObject ;
           rdfs:comment "Location refer to particular places" .
 
 
-###  https://w3id.org/digitalconstruction/MaterialBatch
+###  https://w3id.org/digitalconstruction/Entities#MaterialBatch
 :MaterialBatch rdf:type owl:Class ;
                rdfs:subClassOf :PhysicalObject ;
                rdfs:comment "Material batch refers to the collection of homogeneous physical substance that participates in the construction project as the input of a process." .
 
 
-###  https://w3id.org/digitalconstruction/PhysicalObject
+###  https://w3id.org/digitalconstruction/Entities#PhysicalObject
 :PhysicalObject rdf:type owl:Class ;
                 rdfs:subClassOf :IdentifiableEntity ;
                 rdfs:comment "Refers to any object that has physical dimensions and a position." .
 
 
-###  https://w3id.org/digitalconstruction/Vehicle
+###  https://w3id.org/digitalconstruction/Entities#Vehicle
 :Vehicle rdf:type owl:Class ;
          rdfs:subClassOf :Equipment .
 
 
-###  Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
