@@ -93,8 +93,7 @@
 
 
 ###  http://www.w3.org/ns/prov#agent
-<http://www.w3.org/ns/prov#agent> rdf:type owl:Class ;
-                                  rdfs:subClassOf :Agent .
+<http://www.w3.org/ns/prov#agent> rdf:type owl:Class .
 
 
 ###  http://xmlns.com/foaf/0.1/Agent
@@ -110,7 +109,8 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#Agent
 :Agent rdf:type owl:Class ;
-       rdfs:subClassOf :IdentifiableEntity ;
+       rdfs:subClassOf <http://www.w3.org/ns/prov#agent> ,
+                       :IdentifiableEntity ;
        rdfs:comment "'Agent' refers to all the actors that are responsible of activities in construction." .
 
 
