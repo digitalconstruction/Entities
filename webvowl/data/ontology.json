@@ -37,178 +37,185 @@
     "individualCount" : 0
   },
   "class" : [ {
-    "id" : "3",
+    "id" : "0",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "1",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "4",
+    "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "26",
+    "id" : "8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
     "type" : "owl:Class"
   }, {
-    "id" : "14",
-    "type" : "owl:Class"
+    "id" : "18",
+    "type" : "rdfs:Datatype"
   }, {
-    "id" : "57",
-    "type" : "owl:Class"
-  }, {
-    "id" : "61",
+    "id" : "20",
     "type" : "owl:Class"
   }, {
     "id" : "58",
     "type" : "owl:Class"
   }, {
-    "id" : "20",
+    "id" : "63",
     "type" : "owl:Class"
   }, {
-    "id" : "75",
+    "id" : "59",
     "type" : "owl:Class"
   }, {
-    "id" : "64",
-    "type" : "owl:Class"
-  }, {
-    "id" : "67",
-    "type" : "owl:Class"
-  }, {
-    "id" : "76",
-    "type" : "owl:Class"
-  }, {
-    "id" : "73",
-    "type" : "owl:Class"
-  }, {
-    "id" : "7",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "23",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "24",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "87",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "88",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "71",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "8",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "74",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "2",
-    "type" : "owl:Class"
-  }, {
-    "id" : "62",
-    "type" : "owl:Class"
-  }, {
-    "id" : "39",
-    "type" : "owl:Class"
-  }, {
-    "id" : "44",
-    "type" : "owl:Class"
-  }, {
-    "id" : "93",
-    "type" : "owl:Class"
-  }, {
-    "id" : "99",
-    "type" : "owl:Class"
-  }, {
-    "id" : "100",
-    "type" : "owl:Class"
-  }, {
-    "id" : "47",
-    "type" : "owl:Class"
-  }, {
-    "id" : "102",
-    "type" : "owl:Class"
-  }, {
-    "id" : "35",
-    "type" : "owl:Class"
-  }, {
-    "id" : "32",
+    "id" : "29",
     "type" : "owl:Class"
   }, {
     "id" : "70",
     "type" : "owl:Class"
   }, {
-    "id" : "85",
-    "type" : "owl:Class"
-  }, {
-    "id" : "53",
-    "type" : "owl:Class"
-  }, {
-    "id" : "94",
-    "type" : "owl:Class"
-  }, {
-    "id" : "45",
-    "type" : "owl:Class"
-  }, {
-    "id" : "52",
-    "type" : "owl:Class"
-  }, {
-    "id" : "42",
-    "type" : "owl:Class"
-  }, {
-    "id" : "68",
+    "id" : "62",
     "type" : "owl:Class"
   }, {
     "id" : "66",
     "type" : "owl:Class"
   }, {
-    "id" : "12",
+    "id" : "71",
     "type" : "owl:Class"
   }, {
-    "id" : "49",
+    "id" : "74",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "27",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "69",
     "type" : "owl:Class"
   }, {
-    "id" : "55",
+    "id" : "24",
     "type" : "owl:Class"
   }, {
-    "id" : "10",
+    "id" : "60",
     "type" : "owl:Class"
   }, {
-    "id" : "5",
+    "id" : "36",
     "type" : "owl:Class"
   }, {
-    "id" : "114",
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
     "type" : "owl:Class"
   }, {
     "id" : "50",
     "type" : "owl:Class"
   }, {
-    "id" : "38",
+    "id" : "90",
     "type" : "owl:Class"
   }, {
-    "id" : "1",
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
     "type" : "owl:Class"
   }, {
     "id" : "21",
     "type" : "owl:Class"
   }, {
-    "id" : "63",
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
     "type" : "owl:Class"
   }, {
     "id" : "86",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "65",
+    "id" : "64",
     "type" : "owl:Class"
   }, {
-    "id" : "117",
+    "id" : "55",
     "type" : "owl:Class"
   }, {
-    "id" : "41",
+    "id" : "38",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "0",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
     "iri" : "http://xmlns.com/foaf/0.1/Agent",
     "baseIri" : "http://xmlns.com/foaf/0.1",
     "instances" : 0,
@@ -216,7 +223,7 @@
       "IRI-based" : "Agent"
     },
     "attributes" : [ "external", "equivalent" ],
-    "id" : "3"
+    "id" : "1"
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000182",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -258,8 +265,8 @@
       "en" : "history"
     },
     "attributes" : [ "external" ],
-    "id" : "4",
-    "superClasses" : [ "5" ]
+    "id" : "2",
+    "superClasses" : [ "3" ]
   }, {
     "iri" : "https://w3id.org/digitalconstruction/Entities#Activity",
     "baseIri" : "https://w3id.org/digitalconstruction/Entities",
@@ -270,8 +277,36 @@
     "comment" : {
       "undefined" : "Activity refers to all the work process (or aggregations of works) that carried out in a construction project."
     },
-    "id" : "9",
-    "superClasses" : [ "10" ]
+    "id" : "6",
+    "superClasses" : [ "7", "3" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#real",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "real"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "string"
+    }
   }, {
     "iri" : "https://w3id.org/digitalconstruction/Entities#Classification",
     "baseIri" : "https://w3id.org/digitalconstruction/Entities",
@@ -282,7 +317,14 @@
     "comment" : {
       "undefined" : "Classification refers to the division of objects into groups based on types that are defined and specified in construction classification scheme such as OmniClass, UniFormat and etc."
     },
-    "id" : "26"
+    "id" : "15"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#real",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "real"
+    }
   }, {
     "iri" : "https://w3id.org/digitalconstruction/Entities#Equipment",
     "baseIri" : "https://w3id.org/digitalconstruction/Entities",
@@ -290,12 +332,12 @@
     "label" : {
       "IRI-based" : "Equipment"
     },
-    "subClasses" : [ "32" ],
+    "subClasses" : [ "28" ],
     "comment" : {
       "undefined" : "Equipment refers to all the equipment and tool that are used for production activities. An equipment do not have a capability to operate activities by itself automatically."
     },
-    "id" : "14",
-    "superClasses" : [ "24" ]
+    "id" : "20",
+    "superClasses" : [ "27" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000002",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -316,7 +358,7 @@
       "IAO_0000601" : [ {
         "identifier" : "IAO_0000601",
         "language" : "en",
-        "value" : "if b is a material entity, then there is some temporal interval (referred to below as a one-dimensional temporal region) during which b exists. (axiom label in BFO2 Reference: [011-002])",
+        "value" : "if b is a continuant and if, for some t, cis continuant_part of b at t, then c is a continuant. (axiom label in BFO2 Reference: [009-002])",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000601",
@@ -326,7 +368,13 @@
       }, {
         "identifier" : "IAO_0000601",
         "language" : "en",
-        "value" : "if b is a continuant and if, for some t, cis continuant_part of b at t, then c is a continuant. (axiom label in BFO2 Reference: [009-002])",
+        "value" : "if b is a material entity, then there is some temporal interval (referred to below as a one-dimensional temporal region) during which b exists. (axiom label in BFO2 Reference: [011-002])",
+        "type" : "label"
+      } ],
+      "IAO_0000600" : [ {
+        "identifier" : "IAO_0000600",
+        "language" : "en",
+        "value" : "A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (axiom label in BFO2 Reference: [008-002])",
         "type" : "label"
       } ],
       "IAO_0000116" : [ {
@@ -340,12 +388,6 @@
         "value" : "Continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example, in an expansion involving bringing in some of Ceuster's other portions of reality, questions are raised as to whether universals are continuants",
         "type" : "label"
       } ],
-      "IAO_0000600" : [ {
-        "identifier" : "IAO_0000600",
-        "language" : "en",
-        "value" : "A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (axiom label in BFO2 Reference: [008-002])",
-        "type" : "label"
-      } ],
       "BFO_0000179" : [ {
         "identifier" : "BFO_0000179",
         "language" : "undefined",
@@ -353,11 +395,6 @@
         "type" : "label"
       } ],
       "IAO_0000602" : [ {
-        "identifier" : "IAO_0000602",
-        "language" : "undefined",
-        "value" : "(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] ",
-        "type" : "label"
-      }, {
         "identifier" : "IAO_0000602",
         "language" : "undefined",
         "value" : "(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] ",
@@ -370,10 +407,20 @@
       }, {
         "identifier" : "IAO_0000602",
         "language" : "undefined",
+        "value" : "(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] ",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000602",
+        "language" : "undefined",
         "value" : "(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] ",
         "type" : "label"
       } ],
       "IAO_0010000" : [ {
+        "identifier" : "IAO_0010000",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/126-001",
+        "type" : "iri"
+      }, {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
         "value" : "http://purl.obolibrary.org/obo/bfo/axiom/008-002",
@@ -381,7 +428,7 @@
       }, {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/0000007",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/009-002",
         "type" : "iri"
       }, {
         "identifier" : "IAO_0010000",
@@ -391,12 +438,7 @@
       }, {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/126-001",
-        "type" : "iri"
-      }, {
-        "identifier" : "IAO_0010000",
-        "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/009-002",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/0000007",
         "type" : "iri"
       } ]
     },
@@ -404,10 +446,10 @@
       "IRI-based" : "BFO_0000002",
       "en" : "continuant"
     },
-    "subClasses" : [ "62", "63", "64" ],
+    "subClasses" : [ "60", "61", "62" ],
     "attributes" : [ "external" ],
-    "id" : "57",
-    "superClasses" : [ "58" ]
+    "id" : "58",
+    "superClasses" : [ "59" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000003",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -438,11 +480,6 @@
       } ],
       "IAO_0000116" : [ {
         "identifier" : "IAO_0000116",
-        "language" : "en",
-        "value" : "Occurrent doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. An example would be the sum of a process and the process boundary of another process.",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000116",
         "language" : "undefined",
         "value" : "Simons uses different terminology for relations of occurrents to regions: Denote the spatio-temporal location of a given occurrent e by 'spn[e]' and call this region its span. We may say an occurrent is at its span, in any larger region, and covers any smaller region. Now suppose we have fixed a frame of reference so that we can speak not merely of spatio-temporal but also of spatial regions (places) and temporal regions (times). The spread of an occurrent, (relative to a frame of reference) is the space it exactly occupies, and its spell is likewise the time it exactly occupies. We write 'spr[e]' and `spl[e]' respectively for the spread and spell of e, omitting mention of the frame.",
         "type" : "label"
@@ -450,6 +487,11 @@
         "identifier" : "IAO_0000116",
         "language" : "en",
         "value" : "BFO 2 Reference: s-dependence obtains between every process and its participants in the sense that, as a matter of necessity, this process could not have existed unless these or those participants existed also. A process may have a succession of participants at different phases of its unfolding. Thus there may be different players on the field at different times during the course of a football game; but the process which is the entire game s-depends_on all of these players nonetheless. Some temporal parts of this process will s-depend_on on only some of the players.",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000116",
+        "language" : "en",
+        "value" : "Occurrent doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. An example would be the sum of a process and the process boundary of another process.",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000116",
@@ -472,20 +514,15 @@
       "IAO_0000602" : [ {
         "identifier" : "IAO_0000602",
         "language" : "undefined",
-        "value" : "(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] ",
+        "value" : "(forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001] ",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000602",
         "language" : "undefined",
-        "value" : "(forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001] ",
+        "value" : "(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] ",
         "type" : "label"
       } ],
       "IAO_0010000" : [ {
-        "identifier" : "IAO_0010000",
-        "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/077-002",
-        "type" : "iri"
-      }, {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
         "value" : "http://purl.obolibrary.org/obo/bfo/axiom/108-001",
@@ -493,12 +530,17 @@
       }, {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/0000006",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/077-002",
         "type" : "iri"
       }, {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
         "value" : "http://purl.obolibrary.org/obo/bfo/axiom/079-001",
+        "type" : "iri"
+      }, {
+        "identifier" : "IAO_0010000",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/0000006",
         "type" : "iri"
       }, {
         "identifier" : "IAO_0010000",
@@ -511,13 +553,13 @@
       "IRI-based" : "BFO_0000003",
       "en" : "occurrent"
     },
-    "subClasses" : [ "65", "66", "5", "67" ],
+    "subClasses" : [ "64", "65", "3", "66" ],
     "comment" : {
       "undefined" : "per discussion with Barry Smith"
     },
     "attributes" : [ "external" ],
-    "id" : "61",
-    "superClasses" : [ "58" ]
+    "id" : "63",
+    "superClasses" : [ "59" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000001",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -529,21 +571,10 @@
         "value" : "Entity",
         "type" : "label"
       } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo.owl",
-        "type" : "iri"
-      } ],
       "IAO_0000112" : [ {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "your body mass index",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "the Second World War",
+        "value" : "Julius Caesar",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
@@ -553,8 +584,19 @@
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "Julius Caesar",
+        "value" : "the Second World War",
         "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "your body mass index",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/bfo.owl",
+        "type" : "iri"
       } ],
       "IAO_0000116" : [ {
         "identifier" : "IAO_0000116",
@@ -579,21 +621,21 @@
         "value" : "entity",
         "type" : "label"
       } ],
-      "seeAlso" : [ {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf",
-        "type" : "iri"
-      } ],
       "IAO_0010000" : [ {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/0000004",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/001-001",
         "type" : "iri"
       }, {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/001-001",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/0000004",
+        "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf",
         "type" : "iri"
       } ]
     },
@@ -601,12 +643,12 @@
       "IRI-based" : "BFO_0000001",
       "en" : "entity"
     },
-    "subClasses" : [ "57", "61", "10" ],
+    "subClasses" : [ "58", "63", "7" ],
     "comment" : {
       "undefined" : "per discussion with Barry Smith"
     },
     "attributes" : [ "external" ],
-    "id" : "58"
+    "id" : "59"
   }, {
     "iri" : "https://w3id.org/digitalconstruction/Entities#Group",
     "baseIri" : "https://w3id.org/digitalconstruction/Entities",
@@ -617,8 +659,8 @@
     "comment" : {
       "undefined" : "Group is the concept that refers to all kinds of grouping/collection of objects, such as work-package (group of works)."
     },
-    "id" : "20",
-    "superClasses" : [ "10", "68" ]
+    "id" : "29",
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000006",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -642,21 +684,21 @@
         "value" : "All continuant parts of spatial regions are spatial regions. (axiom label in BFO2 Reference: [036-001])",
         "type" : "label"
       } ],
-      "IAO_0000116" : [ {
-        "identifier" : "IAO_0000116",
-        "language" : "en",
-        "value" : "BFO 2 Reference: Spatial regions do not participate in processes.",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000116",
-        "language" : "en",
-        "value" : "Spatial region doesn't have a closure axiom because the subclasses don't exhaust all possibilites. An example would be the union of a spatial point and a spatial line that doesn't overlap the point, or two spatial lines that intersect at a single point. In both cases the resultant spatial region is neither 0-dimensional, 1-dimensional, 2-dimensional, or 3-dimensional.",
-        "type" : "label"
-      } ],
       "IAO_0000600" : [ {
         "identifier" : "IAO_0000600",
         "language" : "en",
         "value" : "A spatial region is a continuant entity that is a continuant_part_of spaceR as defined relative to some frame R. (axiom label in BFO2 Reference: [035-001])",
+        "type" : "label"
+      } ],
+      "IAO_0000116" : [ {
+        "identifier" : "IAO_0000116",
+        "language" : "en",
+        "value" : "Spatial region doesn't have a closure axiom because the subclasses don't exhaust all possibilites. An example would be the union of a spatial point and a spatial line that doesn't overlap the point, or two spatial lines that intersect at a single point. In both cases the resultant spatial region is neither 0-dimensional, 1-dimensional, 2-dimensional, or 3-dimensional.",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000116",
+        "language" : "en",
+        "value" : "BFO 2 Reference: Spatial regions do not participate in processes.",
         "type" : "label"
       } ],
       "BFO_0000179" : [ {
@@ -679,7 +721,7 @@
       "IAO_0010000" : [ {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/036-001",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/0000002",
         "type" : "iri"
       }, {
         "identifier" : "IAO_0010000",
@@ -689,7 +731,7 @@
       }, {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/0000002",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/036-001",
         "type" : "iri"
       } ]
     },
@@ -697,13 +739,13 @@
       "IRI-based" : "BFO_0000006",
       "en" : "spatial region"
     },
-    "subClasses" : [ "53", "55", "52", "76" ],
+    "subClasses" : [ "50", "52", "49", "71" ],
     "comment" : {
       "undefined" : "per discussion with Barry Smith"
     },
     "attributes" : [ "external" ],
-    "id" : "75",
-    "superClasses" : [ "39" ]
+    "id" : "70",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000004",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -718,32 +760,17 @@
       "IAO_0000112" : [ {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "an atom",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "a spatial region",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "the interior of your mouth",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "a heart",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "the bottom right portion of a human torso",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
         "value" : "a molecule",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "an orchestra.",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "an atom",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
@@ -753,7 +780,17 @@
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "a leg",
+        "value" : "the bottom right portion of a human torso",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "a heart",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "the interior of your mouth",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
@@ -763,7 +800,12 @@
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "an orchestra.",
+        "value" : "a leg",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "a spatial region",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -781,12 +823,12 @@
       "IAO_0000601" : [ {
         "identifier" : "IAO_0000601",
         "language" : "en",
-        "value" : "For any independent continuant b and any time t there is some spatial region r such that b is located_in r at t. (axiom label in BFO2 Reference: [134-001])",
+        "value" : "For every independent continuant b and time t during the region of time spanned by its life, there are entities which s-depends_on b during t. (axiom label in BFO2 Reference: [018-002])",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000601",
         "language" : "en",
-        "value" : "For every independent continuant b and time t during the region of time spanned by its life, there are entities which s-depends_on b during t. (axiom label in BFO2 Reference: [018-002])",
+        "value" : "For any independent continuant b and any time t there is some spatial region r such that b is located_in r at t. (axiom label in BFO2 Reference: [134-001])",
         "type" : "label"
       } ],
       "BFO_0000179" : [ {
@@ -798,7 +840,7 @@
       "IAO_0000602" : [ {
         "identifier" : "IAO_0000602",
         "language" : "undefined",
-        "value" : "(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] ",
+        "value" : "(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] ",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000602",
@@ -808,18 +850,18 @@
       }, {
         "identifier" : "IAO_0000602",
         "language" : "undefined",
-        "value" : "(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] ",
+        "value" : "(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] ",
         "type" : "label"
       } ],
       "IAO_0010000" : [ {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/134-001",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/018-002",
         "type" : "iri"
       }, {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/018-002",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/134-001",
         "type" : "iri"
       }, {
         "identifier" : "IAO_0010000",
@@ -832,10 +874,10 @@
       "IRI-based" : "BFO_0000004",
       "en" : "independent continuant"
     },
-    "subClasses" : [ "39", "38" ],
+    "subClasses" : [ "36", "35" ],
     "attributes" : [ "external" ],
-    "id" : "64",
-    "superClasses" : [ "57" ]
+    "id" : "62",
+    "superClasses" : [ "58" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000008",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -856,24 +898,24 @@
       "IAO_0000601" : [ {
         "identifier" : "IAO_0000601",
         "language" : "en",
-        "value" : "All parts of temporal regions are temporal regions. (axiom label in BFO2 Reference: [101-001])",
+        "value" : "Every temporal region t is such that t occupies_temporal_region t. (axiom label in BFO2 Reference: [119-002])",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000601",
         "language" : "en",
-        "value" : "Every temporal region t is such that t occupies_temporal_region t. (axiom label in BFO2 Reference: [119-002])",
-        "type" : "label"
-      } ],
-      "IAO_0000600" : [ {
-        "identifier" : "IAO_0000600",
-        "language" : "en",
-        "value" : "A temporal region is an occurrent entity that is part of time as defined relative to some reference frame. (axiom label in BFO2 Reference: [100-001])",
+        "value" : "All parts of temporal regions are temporal regions. (axiom label in BFO2 Reference: [101-001])",
         "type" : "label"
       } ],
       "IAO_0000116" : [ {
         "identifier" : "IAO_0000116",
         "language" : "en",
         "value" : "Temporal region doesn't have a closure axiom because the subclasses don't exhaust all possibilites. An example would be the mereological sum of a temporal instant and a temporal interval that doesn't overlap the instant. In this case the resultant temporal region is neither 0-dimensional nor 1-dimensional",
+        "type" : "label"
+      } ],
+      "IAO_0000600" : [ {
+        "identifier" : "IAO_0000600",
+        "language" : "en",
+        "value" : "A temporal region is an occurrent entity that is part of time as defined relative to some reference frame. (axiom label in BFO2 Reference: [100-001])",
         "type" : "label"
       } ],
       "BFO_0000179" : [ {
@@ -901,7 +943,7 @@
       "IAO_0010000" : [ {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/101-001",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/0000003",
         "type" : "iri"
       }, {
         "identifier" : "IAO_0010000",
@@ -911,12 +953,12 @@
       }, {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/100-001",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/101-001",
         "type" : "iri"
       }, {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/0000003",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/100-001",
         "type" : "iri"
       } ]
     },
@@ -924,13 +966,13 @@
       "IRI-based" : "BFO_0000008",
       "en" : "temporal region"
     },
-    "subClasses" : [ "41", "42" ],
+    "subClasses" : [ "38", "39" ],
     "comment" : {
       "undefined" : "per discussion with Barry Smith"
     },
     "attributes" : [ "external" ],
-    "id" : "67",
-    "superClasses" : [ "61" ]
+    "id" : "66",
+    "superClasses" : [ "63" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000009",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -945,12 +987,12 @@
       "IAO_0000112" : [ {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "an infinitely thin plane in space.",
+        "value" : "the surface of a sphere-shaped part of space",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "the surface of a sphere-shaped part of space",
+        "value" : "an infinitely thin plane in space.",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -989,23 +1031,11 @@
       "en" : "two-dimensional spatial region"
     },
     "attributes" : [ "external" ],
-    "id" : "76",
-    "superClasses" : [ "75" ]
-  }, {
-    "instances" : 0,
-    "union" : [ "26", "70" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "73"
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "7",
-    "label" : {
-      "undefined" : "Thing"
-    }
+    "id" : "71",
+    "superClasses" : [ "70" ]
   }, {
     "iri" : "https://w3id.org/digitalconstruction/Entities#Agent",
-    "equivalent" : [ "3" ],
+    "equivalent" : [ "1" ],
     "baseIri" : "https://w3id.org/digitalconstruction/Entities",
     "instances" : 0,
     "label" : {
@@ -1015,8 +1045,8 @@
       "undefined" : "'Agent' refers to all the actors that are responsible of activities in construction."
     },
     "attributes" : [ "equivalent" ],
-    "id" : "23",
-    "superClasses" : [ "85", "10" ]
+    "id" : "74",
+    "superClasses" : [ "85", "7" ]
   }, {
     "iri" : "https://w3id.org/digitalconstruction/Entities#PhysicalObject",
     "equivalent" : [ "86" ],
@@ -1025,48 +1055,18 @@
     "label" : {
       "IRI-based" : "PhysicalObject"
     },
-    "subClasses" : [ "12", "1", "14", "2" ],
+    "subClasses" : [ "21", "23", "20", "24" ],
     "comment" : {
       "undefined" : "Refers to any object that has physical dimensions and a position."
     },
     "attributes" : [ "equivalent" ],
-    "id" : "24",
-    "superClasses" : [ "10" ]
+    "id" : "27",
+    "superClasses" : [ "7" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "87",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#real",
-    "baseIri" : "http://www.w3.org/2002/07/owl",
-    "id" : "88",
-    "label" : {
-      "IRI-based" : "real"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "71",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#real",
-    "baseIri" : "http://www.w3.org/2002/07/owl",
-    "id" : "8",
-    "label" : {
-      "IRI-based" : "real"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "74",
-    "label" : {
-      "IRI-based" : "string"
-    }
+    "instances" : 0,
+    "union" : [ "15", "16" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "69"
   }, {
     "iri" : "https://w3id.org/digitalconstruction/Entities#MaterialBatch",
     "baseIri" : "https://w3id.org/digitalconstruction/Entities",
@@ -1077,8 +1077,8 @@
     "comment" : {
       "undefined" : "Material batch refers to the collection of homogeneous physical substance that participates in the construction project as the input of a process."
     },
-    "id" : "2",
-    "superClasses" : [ "24" ]
+    "id" : "24",
+    "superClasses" : [ "27" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000020",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -1090,21 +1090,10 @@
         "value" : "SpecificallyDependentContinuant",
         "type" : "label"
       } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo.owl",
-        "type" : "iri"
-      } ],
       "IAO_0000112" : [ {
         "identifier" : "IAO_0000112",
         "language" : "en",
         "value" : "the pink color of a medium rare piece of grilled filet mignon at its center",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "the disposition of this fish to decay",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
@@ -1114,12 +1103,12 @@
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "the role of being a doctor",
+        "value" : "the disposition of this fish to decay",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "Reciprocal specifically dependent continuants: the function of this key to open this lock and the mutually dependent disposition of this lock: to be opened by this key",
+        "value" : "the mutual dependence of the role predator and the role prey as played by two organisms in a given interaction",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
@@ -1129,12 +1118,12 @@
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "of one-sided specifically dependent continuants: the mass of this tomato",
+        "value" : "the shape of this hole.",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "the shape of this hole.",
+        "value" : "the role of being a doctor",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
@@ -1144,13 +1133,24 @@
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "the function of this heart: to pump blood",
+        "value" : "Reciprocal specifically dependent continuants: the function of this key to open this lock and the mutually dependent disposition of this lock: to be opened by this key",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "the mutual dependence of the role predator and the role prey as played by two organisms in a given interaction",
+        "value" : "of one-sided specifically dependent continuants: the mass of this tomato",
         "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "the function of this heart: to pump blood",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/bfo.owl",
+        "type" : "iri"
       } ],
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
@@ -1192,13 +1192,13 @@
       "IRI-based" : "BFO_0000020",
       "en" : "specifically dependent continuant"
     },
-    "subClasses" : [ "49", "50" ],
+    "subClasses" : [ "46", "47" ],
     "comment" : {
       "undefined" : "per discussion with Barry Smith"
     },
     "attributes" : [ "external" ],
-    "id" : "62",
-    "superClasses" : [ "57" ]
+    "id" : "60",
+    "superClasses" : [ "58" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000141",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -1233,10 +1233,10 @@
       "IRI-based" : "BFO_0000141",
       "en" : "immaterial entity"
     },
-    "subClasses" : [ "93", "75", "94" ],
+    "subClasses" : [ "88", "70", "90" ],
     "attributes" : [ "external" ],
-    "id" : "39",
-    "superClasses" : [ "64" ]
+    "id" : "36",
+    "superClasses" : [ "62" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000142",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -1251,17 +1251,12 @@
       "IAO_0000112" : [ {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "the median sulcus of your tongue",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "all geopolitical boundaries",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
         "value" : "all lines of latitude and longitude",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "the median sulcus of your tongue",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
@@ -1272,6 +1267,11 @@
         "identifier" : "IAO_0000112",
         "language" : "en",
         "value" : "The Equator",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "all geopolitical boundaries",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -1310,8 +1310,8 @@
       "en" : "one-dimensional continuant fiat boundary"
     },
     "attributes" : [ "external" ],
-    "id" : "44",
-    "superClasses" : [ "93" ]
+    "id" : "41",
+    "superClasses" : [ "88" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000140",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -1344,17 +1344,17 @@
       "IAO_0000116" : [ {
         "identifier" : "IAO_0000116",
         "language" : "en",
-        "value" : "BFO 2 Reference: a continuant fiat boundary is a boundary of some material entity (for example: the plane separating the Northern and Southern hemispheres; the North Pole), or it is a boundary of some immaterial entity (for example of some portion of airspace). Three basic kinds of continuant fiat boundary can be distinguished (together with various combination kinds [29",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000116",
-        "language" : "en",
         "value" : "BFO 2 Reference: In BFO 1.1 the assumption was made that the external surface of a material entity such as a cell could be treated as if it were a boundary in the mathematical sense. The new document propounds the view that when we talk about external surfaces of material objects in this way then we are talking about something fiat. To be dealt with in a future version: fiat boundaries at different levels of granularity.More generally, the focus in discussion of boundaries in BFO 2.0 is now on fiat boundaries, which means: boundaries for which there is no assumption that they coincide with physical discontinuities. The ontology of boundaries becomes more closely allied with the ontology of regions.",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000116",
         "language" : "en",
         "value" : "Continuant fiat boundary doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. An example would be the mereological sum of two-dimensional continuant fiat boundary and a one dimensional continuant fiat boundary that doesn't overlap it. The situation is analogous to temporal and spatial regions.",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000116",
+        "language" : "en",
+        "value" : "BFO 2 Reference: a continuant fiat boundary is a boundary of some material entity (for example: the plane separating the Northern and Southern hemispheres; the North Pole), or it is a boundary of some immaterial entity (for example of some portion of airspace). Three basic kinds of continuant fiat boundary can be distinguished (together with various combination kinds [29",
         "type" : "label"
       } ],
       "BFO_0000179" : [ {
@@ -1372,12 +1372,12 @@
       "IAO_0010000" : [ {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/029-001",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/0000008",
         "type" : "iri"
       }, {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/0000008",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/029-001",
         "type" : "iri"
       } ]
     },
@@ -1385,10 +1385,70 @@
       "IRI-based" : "BFO_0000140",
       "en" : "continuant fiat boundary"
     },
-    "subClasses" : [ "44", "47", "45" ],
+    "subClasses" : [ "41", "44", "42" ],
     "attributes" : [ "external" ],
-    "id" : "93",
-    "superClasses" : [ "39" ]
+    "id" : "88",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000145",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "BFO_0000180" : [ {
+        "identifier" : "BFO_0000180",
+        "language" : "undefined",
+        "value" : "RelationalQuality",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/bfo.owl",
+        "type" : "iri"
+      } ],
+      "IAO_0000112" : [ {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "a marriage bond, an instance of love, an obligation between one person and another.",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "John’s role of husband to Mary is dependent on Mary’s role of wife to John, and both are dependent on the object aggregate comprising John and Mary as member parts joined together through the relational quality of being married.",
+        "type" : "label"
+      } ],
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "en",
+        "value" : "b is a relational quality = Def. for some independent continuants c, d and for some time t: b quality_of c at t & b quality_of d at t. (axiom label in BFO2 Reference: [057-001])",
+        "type" : "label"
+      } ],
+      "BFO_0000179" : [ {
+        "identifier" : "BFO_0000179",
+        "language" : "undefined",
+        "value" : "r-quality",
+        "type" : "label"
+      } ],
+      "IAO_0000602" : [ {
+        "identifier" : "IAO_0000602",
+        "language" : "undefined",
+        "value" : "(iff (RelationalQuality a) (exists (b c t) (and (IndependentContinuant b) (IndependentContinuant c) (qualityOfAt a b t) (qualityOfAt a c t)))) // axiom label in BFO2 CLIF: [057-001] ",
+        "type" : "label"
+      } ],
+      "IAO_0010000" : [ {
+        "identifier" : "IAO_0010000",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/057-001",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000145",
+      "en" : "relational quality"
+    },
+    "attributes" : [ "external" ],
+    "id" : "101",
+    "superClasses" : [ "47" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000024",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -1403,17 +1463,17 @@
       "IAO_0000112" : [ {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "the division of the planet into hemispheres",
+        "value" : "or with divisions drawn by cognitive subjects for practical reasons, such as the division of a cake (before slicing) into (what will become) slices (and thus member parts of an object aggregate). However, this does not mean that fiat object parts are dependent for their existence on divisions or delineations effected by cognitive subjects. If, for example, it is correct to conceive geological layers of the Earth as fiat object parts of the Earth, then even though these layers were first delineated in recent times, still existed long before such delineation and what holds of these layers (for example that the oldest layers are also the lowest layers) did not begin to hold because of our acts of delineation.Treatment of material entity in BFOExamples viewed by some as problematic cases for the trichotomy of fiat object part, object, and object aggregate include: a mussel on (and attached to) a rock, a slime mold, a pizza, a cloud, a galaxy, a railway train with engine and multiple carriages, a clonal stand of quaking aspen, a bacterial community (biofilm), a broken femur. Note that, as Aristotle already clearly recognized, such problematic cases – which lie at or near the penumbra of instances defined by the categories in question – need not invalidate these categories. The existence of grey objects does not prove that there are not objects which are black and objects which are white; the existence of mules does not prove that there are not objects which are donkeys and objects which are horses. It does, however, show that the examples in question need to be addressed carefully in order to show how they can be fitted into the proposed scheme, for example by recognizing additional subdivisions [29",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "the Western hemisphere of the Earth",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
         "value" : "the division of the brain into regions",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "the upper and lower lobes of the left lung",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
@@ -1428,12 +1488,12 @@
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "or with divisions drawn by cognitive subjects for practical reasons, such as the division of a cake (before slicing) into (what will become) slices (and thus member parts of an object aggregate). However, this does not mean that fiat object parts are dependent for their existence on divisions or delineations effected by cognitive subjects. If, for example, it is correct to conceive geological layers of the Earth as fiat object parts of the Earth, then even though these layers were first delineated in recent times, still existed long before such delineation and what holds of these layers (for example that the oldest layers are also the lowest layers) did not begin to hold because of our acts of delineation.Treatment of material entity in BFOExamples viewed by some as problematic cases for the trichotomy of fiat object part, object, and object aggregate include: a mussel on (and attached to) a rock, a slime mold, a pizza, a cloud, a galaxy, a railway train with engine and multiple carriages, a clonal stand of quaking aspen, a bacterial community (biofilm), a broken femur. Note that, as Aristotle already clearly recognized, such problematic cases – which lie at or near the penumbra of instances defined by the categories in question – need not invalidate these categories. The existence of grey objects does not prove that there are not objects which are black and objects which are white; the existence of mules does not prove that there are not objects which are donkeys and objects which are horses. It does, however, show that the examples in question need to be addressed carefully in order to show how they can be fitted into the proposed scheme, for example by recognizing additional subdivisions [29",
+        "value" : "the division of the planet into hemispheres",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "the Western hemisphere of the Earth",
+        "value" : "the upper and lower lobes of the left lung",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -1478,68 +1538,8 @@
       "en" : "fiat object part"
     },
     "attributes" : [ "external" ],
-    "id" : "99",
-    "superClasses" : [ "38" ]
-  }, {
-    "iri" : "http://purl.obolibrary.org/obo/BFO_0000145",
-    "baseIri" : "http://purl.obolibrary.org/obo",
-    "instances" : 0,
-    "annotations" : {
-      "BFO_0000180" : [ {
-        "identifier" : "BFO_0000180",
-        "language" : "undefined",
-        "value" : "RelationalQuality",
-        "type" : "label"
-      } ],
-      "IAO_0000112" : [ {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "a marriage bond, an instance of love, an obligation between one person and another.",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "John’s role of husband to Mary is dependent on Mary’s role of wife to John, and both are dependent on the object aggregate comprising John and Mary as member parts joined together through the relational quality of being married.",
-        "type" : "label"
-      } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo.owl",
-        "type" : "iri"
-      } ],
-      "IAO_0000115" : [ {
-        "identifier" : "IAO_0000115",
-        "language" : "en",
-        "value" : "b is a relational quality = Def. for some independent continuants c, d and for some time t: b quality_of c at t & b quality_of d at t. (axiom label in BFO2 Reference: [057-001])",
-        "type" : "label"
-      } ],
-      "BFO_0000179" : [ {
-        "identifier" : "BFO_0000179",
-        "language" : "undefined",
-        "value" : "r-quality",
-        "type" : "label"
-      } ],
-      "IAO_0000602" : [ {
-        "identifier" : "IAO_0000602",
-        "language" : "undefined",
-        "value" : "(iff (RelationalQuality a) (exists (b c t) (and (IndependentContinuant b) (IndependentContinuant c) (qualityOfAt a b t) (qualityOfAt a c t)))) // axiom label in BFO2 CLIF: [057-001] ",
-        "type" : "label"
-      } ],
-      "IAO_0010000" : [ {
-        "identifier" : "IAO_0010000",
-        "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/057-001",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "BFO_0000145",
-      "en" : "relational quality"
-    },
-    "attributes" : [ "external" ],
-    "id" : "100",
-    "superClasses" : [ "50" ]
+    "id" : "102",
+    "superClasses" : [ "35" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000146",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -1587,8 +1587,89 @@
       "en" : "two-dimensional continuant fiat boundary"
     },
     "attributes" : [ "external" ],
-    "id" : "47",
-    "superClasses" : [ "93" ]
+    "id" : "44",
+    "superClasses" : [ "88" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000144",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "BFO_0000180" : [ {
+        "identifier" : "BFO_0000180",
+        "language" : "undefined",
+        "value" : "ProcessProfile",
+        "type" : "label"
+      } ],
+      "IAO_0000112" : [ {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "On a somewhat higher level of complexity are what we shall call rate process profiles, which are the targets of selective abstraction focused not on determinate quality magnitudes plotted over time, but rather on certain ratios between these magnitudes and elapsed times. A speed process profile, for example, is represented by a graph plotting against time the ratio of distance covered per unit of time. Since rates may change, and since such changes, too, may have rates of change, we have to deal here with a hierarchy of process profile universals at successive levels",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "The simplest type of process profiles are what we shall call ‘quality process profiles’, which are the process profiles which serve as the foci of the sort of selective abstraction that is involved when measurements are made of changes in single qualities, as illustrated, for example, by process profiles of mass, temperature, aortic pressure, and so on.",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "One important sub-family of rate process profiles is illustrated by the beat or frequency profiles of cyclical processes, illustrated by the 60 beats per minute beating process of John’s heart, or the 120 beats per minute drumming process involved in one of John’s performances in a rock band, and so on. Each such process includes what we shall call a beat process profile instance as part, a subtype of rate process profile in which the salient ratio is not distance covered but rather number of beat cycles per unit of time. Each beat process profile instance instantiates the determinable universal beat process profile. But it also instantiates multiple more specialized universals at lower levels of generality, selected from   rate process profilebeat process profileregular beat process profile3 bpm beat process profile4 bpm beat process profileirregular beat process profileincreasing beat process profileand so on.In the case of a regular beat process profile, a rate can be assigned in the simplest possible fashion by dividing the number of cycles by the length of the temporal region occupied by the beating process profile as a whole. Irregular process profiles of this sort, for example as identified in the clinic, or in the readings on an aircraft instrument panel, are often of diagnostic significance.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/bfo.owl",
+        "type" : "iri"
+      } ],
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "en",
+        "value" : "b is a process_profile =Def. there is some process c such that b process_profile_of c (axiom label in BFO2 Reference: [093-002])",
+        "type" : "label"
+      } ],
+      "IAO_0000600" : [ {
+        "identifier" : "IAO_0000600",
+        "language" : "en",
+        "value" : "b process_profile_of c holds when b proper_occurrent_part_of c& there is some proper_occurrent_part d of c which has no parts in common with b & is mutually dependent on b& is such that b, c and d occupy the same temporal region (axiom label in BFO2 Reference: [094-005])",
+        "type" : "label"
+      } ],
+      "BFO_0000179" : [ {
+        "identifier" : "BFO_0000179",
+        "language" : "undefined",
+        "value" : "process-profile",
+        "type" : "label"
+      } ],
+      "IAO_0000602" : [ {
+        "identifier" : "IAO_0000602",
+        "language" : "undefined",
+        "value" : "(forall (x y) (if (processProfileOf x y) (and (properContinuantPartOf x y) (exists (z t) (and (properOccurrentPartOf z y) (TemporalRegion t) (occupiesSpatioTemporalRegion x t) (occupiesSpatioTemporalRegion y t) (occupiesSpatioTemporalRegion z t) (not (exists (w) (and (occurrentPartOf w x) (occurrentPartOf w z))))))))) // axiom label in BFO2 CLIF: [094-005] ",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000602",
+        "language" : "undefined",
+        "value" : "(iff (ProcessProfile a) (exists (b) (and (Process b) (processProfileOf a b)))) // axiom label in BFO2 CLIF: [093-002] ",
+        "type" : "label"
+      } ],
+      "IAO_0010000" : [ {
+        "identifier" : "IAO_0010000",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/093-002",
+        "type" : "iri"
+      }, {
+        "identifier" : "IAO_0010000",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/094-005",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000144",
+      "en" : "process profile"
+    },
+    "attributes" : [ "external" ],
+    "id" : "32",
+    "superClasses" : [ "3" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000023",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -1603,22 +1684,17 @@
       "IAO_0000112" : [ {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "the role of a stone in marking a property boundary",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "the role of a building in serving as a military target",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
         "value" : "the role of a boundary to demarcate two neighboring administrative territories",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "John’s role of husband to Mary is dependent on Mary’s role of wife to John, and both are dependent on the object aggregate comprising John and Mary as member parts joined together through the relational quality of being married.",
+        "value" : "the role of a stone in marking a property boundary",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "the priest role",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
@@ -1633,7 +1709,12 @@
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "the priest role",
+        "value" : "the role of a building in serving as a military target",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "John’s role of husband to Mary is dependent on Mary’s role of wife to John, and both are dependent on the object aggregate comprising John and Mary as member parts joined together through the relational quality of being married.",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -1678,89 +1759,8 @@
       "en" : "role"
     },
     "attributes" : [ "external" ],
-    "id" : "102",
-    "superClasses" : [ "49" ]
-  }, {
-    "iri" : "http://purl.obolibrary.org/obo/BFO_0000144",
-    "baseIri" : "http://purl.obolibrary.org/obo",
-    "instances" : 0,
-    "annotations" : {
-      "BFO_0000180" : [ {
-        "identifier" : "BFO_0000180",
-        "language" : "undefined",
-        "value" : "ProcessProfile",
-        "type" : "label"
-      } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo.owl",
-        "type" : "iri"
-      } ],
-      "IAO_0000112" : [ {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "One important sub-family of rate process profiles is illustrated by the beat or frequency profiles of cyclical processes, illustrated by the 60 beats per minute beating process of John’s heart, or the 120 beats per minute drumming process involved in one of John’s performances in a rock band, and so on. Each such process includes what we shall call a beat process profile instance as part, a subtype of rate process profile in which the salient ratio is not distance covered but rather number of beat cycles per unit of time. Each beat process profile instance instantiates the determinable universal beat process profile. But it also instantiates multiple more specialized universals at lower levels of generality, selected from   rate process profilebeat process profileregular beat process profile3 bpm beat process profile4 bpm beat process profileirregular beat process profileincreasing beat process profileand so on.In the case of a regular beat process profile, a rate can be assigned in the simplest possible fashion by dividing the number of cycles by the length of the temporal region occupied by the beating process profile as a whole. Irregular process profiles of this sort, for example as identified in the clinic, or in the readings on an aircraft instrument panel, are often of diagnostic significance.",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "On a somewhat higher level of complexity are what we shall call rate process profiles, which are the targets of selective abstraction focused not on determinate quality magnitudes plotted over time, but rather on certain ratios between these magnitudes and elapsed times. A speed process profile, for example, is represented by a graph plotting against time the ratio of distance covered per unit of time. Since rates may change, and since such changes, too, may have rates of change, we have to deal here with a hierarchy of process profile universals at successive levels",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "The simplest type of process profiles are what we shall call ‘quality process profiles’, which are the process profiles which serve as the foci of the sort of selective abstraction that is involved when measurements are made of changes in single qualities, as illustrated, for example, by process profiles of mass, temperature, aortic pressure, and so on.",
-        "type" : "label"
-      } ],
-      "IAO_0000115" : [ {
-        "identifier" : "IAO_0000115",
-        "language" : "en",
-        "value" : "b is a process_profile =Def. there is some process c such that b process_profile_of c (axiom label in BFO2 Reference: [093-002])",
-        "type" : "label"
-      } ],
-      "IAO_0000600" : [ {
-        "identifier" : "IAO_0000600",
-        "language" : "en",
-        "value" : "b process_profile_of c holds when b proper_occurrent_part_of c& there is some proper_occurrent_part d of c which has no parts in common with b & is mutually dependent on b& is such that b, c and d occupy the same temporal region (axiom label in BFO2 Reference: [094-005])",
-        "type" : "label"
-      } ],
-      "BFO_0000179" : [ {
-        "identifier" : "BFO_0000179",
-        "language" : "undefined",
-        "value" : "process-profile",
-        "type" : "label"
-      } ],
-      "IAO_0000602" : [ {
-        "identifier" : "IAO_0000602",
-        "language" : "undefined",
-        "value" : "(iff (ProcessProfile a) (exists (b) (and (Process b) (processProfileOf a b)))) // axiom label in BFO2 CLIF: [093-002] ",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000602",
-        "language" : "undefined",
-        "value" : "(forall (x y) (if (processProfileOf x y) (and (properContinuantPartOf x y) (exists (z t) (and (properOccurrentPartOf z y) (TemporalRegion t) (occupiesSpatioTemporalRegion x t) (occupiesSpatioTemporalRegion y t) (occupiesSpatioTemporalRegion z t) (not (exists (w) (and (occurrentPartOf w x) (occurrentPartOf w z))))))))) // axiom label in BFO2 CLIF: [094-005] ",
-        "type" : "label"
-      } ],
-      "IAO_0010000" : [ {
-        "identifier" : "IAO_0010000",
-        "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/093-002",
-        "type" : "iri"
-      }, {
-        "identifier" : "IAO_0010000",
-        "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/094-005",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "BFO_0000144",
-      "en" : "process profile"
-    },
-    "attributes" : [ "external" ],
-    "id" : "35",
-    "superClasses" : [ "5" ]
+    "id" : "80",
+    "superClasses" : [ "46" ]
   }, {
     "iri" : "https://w3id.org/digitalconstruction/Entities#Vehicle",
     "baseIri" : "https://w3id.org/digitalconstruction/Entities",
@@ -1771,8 +1771,8 @@
     "comment" : {
       "undefined" : "A machine used for transporting goods in construction process"
     },
-    "id" : "32",
-    "superClasses" : [ "14" ]
+    "id" : "28",
+    "superClasses" : [ "20" ]
   }, {
     "iri" : "https://w3id.org/digitalconstruction/Entities#Identifier",
     "baseIri" : "https://w3id.org/digitalconstruction/Entities",
@@ -1783,7 +1783,7 @@
     "comment" : {
       "undefined" : "Identifier refers a globally unique reference of the identifiable entity instance."
     },
-    "id" : "70"
+    "id" : "16"
   }, {
     "iri" : "http://www.w3.org/ns/prov#agent",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -1791,7 +1791,7 @@
     "label" : {
       "IRI-based" : "agent"
     },
-    "subClasses" : [ "23" ],
+    "subClasses" : [ "74" ],
     "attributes" : [ "external" ],
     "id" : "85"
   }, {
@@ -1805,6 +1805,12 @@
         "value" : "ThreeDimensionalSpatialRegion",
         "type" : "label"
       } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/bfo.owl",
+        "type" : "iri"
+      } ],
       "IAO_0000112" : [ {
         "identifier" : "IAO_0000112",
         "language" : "en",
@@ -1815,12 +1821,6 @@
         "language" : "en",
         "value" : "a cube-shaped region of space",
         "type" : "label"
-      } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo.owl",
-        "type" : "iri"
       } ],
       "IAO_0000600" : [ {
         "identifier" : "IAO_0000600",
@@ -1852,8 +1852,8 @@
       "en" : "three-dimensional spatial region"
     },
     "attributes" : [ "external" ],
-    "id" : "53",
-    "superClasses" : [ "75" ]
+    "id" : "50",
+    "superClasses" : [ "70" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000029",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -1868,17 +1868,37 @@
       "IAO_0000112" : [ {
         "identifier" : "IAO_0000112",
         "language" : "en",
+        "value" : "the interior of a kangaroo pouch",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "the interior of your bedroom",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "the cockpit of an aircraft",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
         "value" : "the lumen of your gut",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "an air traffic control region defined in the airspace above an airport",
+        "value" : "a hole in the interior of a portion of cheese",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "the interior of the trunk of your car",
+        "value" : "the Grand Canyon",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "an air traffic control region defined in the airspace above an airport",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
@@ -1893,7 +1913,7 @@
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "a rabbit hole",
+        "value" : "the interior of the trunk of your car",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
@@ -1903,22 +1923,7 @@
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "a hole in the interior of a portion of cheese",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "your left nostril (a fiat part – the opening – of your left nasal cavity)",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "the cockpit of an aircraft",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "the interior of your bedroom",
+        "value" : "Manhattan Canyon)",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
@@ -1928,17 +1933,12 @@
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "the Grand Canyon",
+        "value" : "a rabbit hole",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "the interior of a kangaroo pouch",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "Manhattan Canyon)",
+        "value" : "your left nostril (a fiat part – the opening – of your left nasal cavity)",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -1977,8 +1977,8 @@
       "en" : "site"
     },
     "attributes" : [ "external" ],
-    "id" : "94",
-    "superClasses" : [ "39" ]
+    "id" : "90",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000147",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -1993,12 +1993,12 @@
       "IAO_0000112" : [ {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "the geographic North Pole",
+        "value" : "the point of origin of some spatial coordinate system.",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "the point of origin of some spatial coordinate system.",
+        "value" : "the geographic North Pole",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
@@ -2062,8 +2062,8 @@
       "undefined" : "requested by Melanie Courtot"
     },
     "attributes" : [ "external" ],
-    "id" : "45",
-    "superClasses" : [ "93" ]
+    "id" : "42",
+    "superClasses" : [ "88" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000026",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -2075,17 +2075,17 @@
         "value" : "OneDimensionalSpatialRegion",
         "type" : "label"
       } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo.owl",
-        "type" : "iri"
-      } ],
       "IAO_0000112" : [ {
         "identifier" : "IAO_0000112",
         "language" : "en",
         "value" : "an edge of a cube-shaped portion of space.",
         "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/bfo.owl",
+        "type" : "iri"
       } ],
       "IAO_0000600" : [ {
         "identifier" : "IAO_0000600",
@@ -2117,8 +2117,8 @@
       "en" : "one-dimensional spatial region"
     },
     "attributes" : [ "external" ],
-    "id" : "52",
-    "superClasses" : [ "75" ]
+    "id" : "49",
+    "superClasses" : [ "70" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000148",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -2133,16 +2133,6 @@
       "IAO_0000112" : [ {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "a temporal region that is occupied by a process boundary",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "the moment of death.",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
         "value" : "the moment at which a finger is detached in an industrial accident",
         "type" : "label"
       }, {
@@ -2153,7 +2143,17 @@
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
+        "value" : "a temporal region that is occupied by a process boundary",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
         "value" : "right now",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "the moment of death.",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -2198,8 +2198,8 @@
       "en" : "zero-dimensional temporal region"
     },
     "attributes" : [ "external" ],
-    "id" : "42",
-    "superClasses" : [ "67" ]
+    "id" : "39",
+    "superClasses" : [ "66" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000027",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -2214,52 +2214,7 @@
       "IAO_0000112" : [ {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "an organization is an aggregate whose member parts have roles of specific types (for example in a jazz band, a chess club, a football team)",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "your collection of Meissen ceramic plates.",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "defined through physical attachment: the aggregate of atoms in a lump of granite",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "the aggregate of blood cells in your body",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "the aggregate of bearings in a constant velocity axle joint",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "defined by fiat: the aggregate of members of an organization",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "defined via attributive delimitations such as: the patients in this hospital",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "defined through physical containment: the aggregate of molecules of carbon dioxide in a sealed container",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
         "value" : "the restaurants in Palo Alto",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "a symphony orchestra",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
@@ -2269,12 +2224,57 @@
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "a swarm of bees is an aggregate of members who are linked together through natural bonds",
+        "value" : "a symphony orchestra",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "defined via attributive delimitations such as: the patients in this hospital",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "an organization is an aggregate whose member parts have roles of specific types (for example in a jazz band, a chess club, a football team)",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "defined through physical attachment: the aggregate of atoms in a lump of granite",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
         "value" : "the nitrogen atoms in the atmosphere",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "a swarm of bees is an aggregate of members who are linked together through natural bonds",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "defined through physical containment: the aggregate of molecules of carbon dioxide in a sealed container",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "the aggregate of blood cells in your body",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "your collection of Meissen ceramic plates.",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "defined by fiat: the aggregate of members of an organization",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "the aggregate of bearings in a constant velocity axle joint",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -2321,22 +2321,22 @@
       "IAO_0010000" : [ {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/0000301",
-        "type" : "iri"
-      }, {
-        "identifier" : "IAO_0010000",
-        "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/025-004",
-        "type" : "iri"
-      }, {
-        "identifier" : "IAO_0010000",
-        "language" : "undefined",
         "value" : "http://purl.obolibrary.org/obo/bfo/axiom/0000011",
         "type" : "iri"
       }, {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/0000301",
+        "type" : "iri"
+      }, {
+        "identifier" : "IAO_0010000",
+        "language" : "undefined",
         "value" : "http://purl.obolibrary.org/obo/bfo/axiom/0000300",
+        "type" : "iri"
+      }, {
+        "identifier" : "IAO_0010000",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/025-004",
         "type" : "iri"
       } ]
     },
@@ -2344,10 +2344,9 @@
       "IRI-based" : "BFO_0000027",
       "en" : "object aggregate"
     },
-    "subClasses" : [ "20" ],
     "attributes" : [ "external" ],
-    "id" : "68",
-    "superClasses" : [ "38" ]
+    "id" : "106",
+    "superClasses" : [ "35" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000011",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -2359,13 +2358,12 @@
         "value" : "SpatiotemporalRegion",
         "type" : "label"
       } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo.owl",
-        "type" : "iri"
-      } ],
       "IAO_0000112" : [ {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "the spatiotemporal region occupied by a human life",
+        "type" : "label"
+      }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
         "value" : "the spatiotemporal region occupied by the development of a cancer tumor",
@@ -2375,13 +2373,19 @@
         "language" : "en",
         "value" : "the spatiotemporal region occupied by a process of cellular meiosis.",
         "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "the spatiotemporal region occupied by a human life",
-        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/bfo.owl",
+        "type" : "iri"
       } ],
       "IAO_0000601" : [ {
+        "identifier" : "IAO_0000601",
+        "language" : "en",
+        "value" : "Every spatiotemporal region s is such that s occupies_spatiotemporal_region s. (axiom label in BFO2 Reference: [107-002])",
+        "type" : "label"
+      }, {
         "identifier" : "IAO_0000601",
         "language" : "en",
         "value" : "All parts of spatiotemporal regions are spatiotemporal regions. (axiom label in BFO2 Reference: [096-001])",
@@ -2395,11 +2399,6 @@
         "identifier" : "IAO_0000601",
         "language" : "en",
         "value" : "Each spatiotemporal region at any time t projects_onto some spatial region at t. (axiom label in BFO2 Reference: [099-001])",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000601",
-        "language" : "en",
-        "value" : "Every spatiotemporal region s is such that s occupies_spatiotemporal_region s. (axiom label in BFO2 Reference: [107-002])",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000601",
@@ -2422,17 +2421,17 @@
       "IAO_0000602" : [ {
         "identifier" : "IAO_0000602",
         "language" : "undefined",
+        "value" : "(forall (x t) (if (SpatioTemporalRegion x) (exists (y) (and (SpatialRegion y) (spatiallyProjectsOntoAt x y t))))) // axiom label in BFO2 CLIF: [099-001] ",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000602",
+        "language" : "undefined",
         "value" : "(forall (r) (if (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion r r))) // axiom label in BFO2 CLIF: [107-002] ",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000602",
         "language" : "undefined",
-        "value" : "(forall (x) (if (SpatioTemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [095-001] ",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000602",
-        "language" : "undefined",
-        "value" : "(forall (x t) (if (SpatioTemporalRegion x) (exists (y) (and (SpatialRegion y) (spatiallyProjectsOntoAt x y t))))) // axiom label in BFO2 CLIF: [099-001] ",
+        "value" : "(forall (x y) (if (and (SpatioTemporalRegion x) (occurrentPartOf y x)) (SpatioTemporalRegion y))) // axiom label in BFO2 CLIF: [096-001] ",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000602",
@@ -2442,13 +2441,13 @@
       }, {
         "identifier" : "IAO_0000602",
         "language" : "undefined",
-        "value" : "(forall (x y) (if (and (SpatioTemporalRegion x) (occurrentPartOf y x)) (SpatioTemporalRegion y))) // axiom label in BFO2 CLIF: [096-001] ",
+        "value" : "(forall (x) (if (SpatioTemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [095-001] ",
         "type" : "label"
       } ],
       "IAO_0010000" : [ {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/107-002",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/099-001",
         "type" : "iri"
       }, {
         "identifier" : "IAO_0010000",
@@ -2463,7 +2462,7 @@
       }, {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/099-001",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/107-002",
         "type" : "iri"
       }, {
         "identifier" : "IAO_0010000",
@@ -2477,8 +2476,8 @@
       "en" : "spatiotemporal region"
     },
     "attributes" : [ "external" ],
-    "id" : "66",
-    "superClasses" : [ "61" ]
+    "id" : "65",
+    "superClasses" : [ "63" ]
   }, {
     "iri" : "https://w3id.org/digitalconstruction/Entities#Location",
     "baseIri" : "https://w3id.org/digitalconstruction/Entities",
@@ -2489,8 +2488,8 @@
     "comment" : {
       "undefined" : "Location refer to particular places"
     },
-    "id" : "12",
-    "superClasses" : [ "24" ]
+    "id" : "21",
+    "superClasses" : [ "27" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000017",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -2505,6 +2504,11 @@
       "IAO_0000112" : [ {
         "identifier" : "IAO_0000112",
         "language" : "en",
+        "value" : "the disposition of this piece of metal to conduct electricity.",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
         "value" : "the role of being a doctor",
         "type" : "label"
       }, {
@@ -2515,17 +2519,12 @@
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "the role of this boundary to delineate where Utah and Colorado meet",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "the disposition of this piece of metal to conduct electricity.",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
         "value" : "the function of your reproductive organs",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "the role of this boundary to delineate where Utah and Colorado meet",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -2555,23 +2554,23 @@
       "IAO_0000602" : [ {
         "identifier" : "IAO_0000602",
         "language" : "undefined",
-        "value" : "(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] ",
+        "value" : "(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] ",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000602",
         "language" : "undefined",
-        "value" : "(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] ",
+        "value" : "(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] ",
         "type" : "label"
       } ],
       "IAO_0010000" : [ {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/058-002",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/060-002",
         "type" : "iri"
       }, {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/060-002",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/058-002",
         "type" : "iri"
       } ]
     },
@@ -2579,10 +2578,10 @@
       "IRI-based" : "BFO_0000017",
       "en" : "realizable entity"
     },
-    "subClasses" : [ "102", "114" ],
+    "subClasses" : [ "80", "56" ],
     "attributes" : [ "external" ],
-    "id" : "49",
-    "superClasses" : [ "62" ]
+    "id" : "46",
+    "superClasses" : [ "60" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000018",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -2630,8 +2629,8 @@
       "en" : "zero-dimensional spatial region"
     },
     "attributes" : [ "external" ],
-    "id" : "55",
-    "superClasses" : [ "75" ]
+    "id" : "52",
+    "superClasses" : [ "70" ]
   }, {
     "iri" : "https://w3id.org/digitalconstruction/Entities#IdentifiableEntity",
     "baseIri" : "https://w3id.org/digitalconstruction/Entities",
@@ -2639,12 +2638,12 @@
     "label" : {
       "IRI-based" : "IdentifiableEntity"
     },
-    "subClasses" : [ "24", "9", "23", "20", "21" ],
+    "subClasses" : [ "27", "6", "74", "29", "77" ],
     "comment" : {
       "undefined" : "'IdentifiableEntity' is a abstract concept that refers to all the central objects that are discussed in the construction project planning and management. Subclasses of the Identifiable Entities include the 'Activity','Group','Information Object','PhysicalObject',and 'Agent'. Identifiable entities are identified by their unique identifiers and can have their specific classification that is defined by certain classification scheme in the construction domain."
     },
-    "id" : "10",
-    "superClasses" : [ "58" ]
+    "id" : "7",
+    "superClasses" : [ "59" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000015",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -2669,6 +2668,11 @@
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
+        "value" : "the course of a disease",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
         "value" : "a process of cell-division, \\ a beating of the heart",
         "type" : "label"
       }, {
@@ -2685,11 +2689,6 @@
         "identifier" : "IAO_0000112",
         "language" : "en",
         "value" : "a process of meiosis",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "the course of a disease",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -2733,10 +2732,10 @@
       "IRI-based" : "BFO_0000015",
       "en" : "process"
     },
-    "subClasses" : [ "35", "4" ],
+    "subClasses" : [ "6", "32", "2" ],
     "attributes" : [ "external" ],
-    "id" : "5",
-    "superClasses" : [ "61" ]
+    "id" : "3",
+    "superClasses" : [ "63" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000016",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -2761,12 +2760,12 @@
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "an atom of element X has the disposition to decay to an atom of element Y",
+        "value" : "children are innately disposed to categorize objects in certain ways.",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "children are innately disposed to categorize objects in certain ways.",
+        "value" : "an atom of element X has the disposition to decay to an atom of element Y",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -2813,12 +2812,12 @@
       "IAO_0010000" : [ {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/063-002",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/062-002",
         "type" : "iri"
       }, {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/062-002",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/063-002",
         "type" : "iri"
       } ]
     },
@@ -2826,10 +2825,10 @@
       "IRI-based" : "BFO_0000016",
       "en" : "disposition"
     },
-    "subClasses" : [ "117" ],
+    "subClasses" : [ "55" ],
     "attributes" : [ "external" ],
-    "id" : "114",
-    "superClasses" : [ "49" ]
+    "id" : "56",
+    "superClasses" : [ "46" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000019",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -2844,6 +2843,11 @@
       "IAO_0000112" : [ {
         "identifier" : "IAO_0000112",
         "language" : "en",
+        "value" : "the mass of this piece of gold.",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
         "value" : "the color of a tomato",
         "type" : "label"
       }, {
@@ -2854,12 +2858,7 @@
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "the mass of this piece of gold.",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "the ambient temperature of this portion of air",
+        "value" : "the length of the circumference of your waist",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
@@ -2869,7 +2868,7 @@
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "the length of the circumference of your waist",
+        "value" : "the ambient temperature of this portion of air",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -2923,10 +2922,10 @@
       "IRI-based" : "BFO_0000019",
       "en" : "quality"
     },
-    "subClasses" : [ "100" ],
+    "subClasses" : [ "101" ],
     "attributes" : [ "external" ],
-    "id" : "50",
-    "superClasses" : [ "62" ]
+    "id" : "47",
+    "superClasses" : [ "60" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000040",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -2941,7 +2940,7 @@
       "IAO_0000112" : [ {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "a forest fire",
+        "value" : "an aggregate of human beings.",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
@@ -2951,22 +2950,27 @@
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "the undetached arm of a human being",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "a flame",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "a hurricane",
+        "value" : "an epidemic",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
         "value" : "a photon",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "a sea wave",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "the undetached arm of a human being",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "a hurricane",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
@@ -2986,17 +2990,12 @@
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "a sea wave",
+        "value" : "a flame",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "an epidemic",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "an aggregate of human beings.",
+        "value" : "a forest fire",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -3019,17 +3018,17 @@
       "IAO_0000116" : [ {
         "identifier" : "IAO_0000116",
         "language" : "en",
+        "value" : "BFO 2 Reference: Object, Fiat Object Part and Object Aggregate are not intended to be exhaustive of Material Entity. Users are invited to propose new subcategories of Material Entity.",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000116",
+        "language" : "en",
         "value" : "BFO 2 Reference: ‘Matter’ is intended to encompass both mass and energy (we will address the ontological treatment of portions of energy in a later version of BFO). A portion of matter is anything that includes elementary particles among its proper or improper parts: quarks and leptons, including electrons, as the smallest particles thus far discovered; baryons (including protons and neutrons) at a higher level of granularity; atoms and molecules at still higher levels, forming the cells, organs, organisms and other material entities studied by biologists, the portions of rock studied by geologists, the fossils studied by paleontologists, and so on.Material entities are three-dimensional entities (entities extended in three spatial dimensions), as contrasted with the processes in which they participate, which are four-dimensional entities (entities extended also along the dimension of time).According to the FMA, material entities may have immaterial entities as parts – including the entities identified below as sites; for example the interior (or ‘lumen’) of your small intestine is a part of your body. BFO 2.0 embodies a decision to follow the FMA here.",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000116",
         "language" : "en",
         "value" : "BFO 2 Reference: Material entities (continuants) can preserve their identity even while gaining and losing material parts. Continuants are contrasted with occurrents, which unfold themselves in successive temporal parts or phases [60",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000116",
-        "language" : "en",
-        "value" : "BFO 2 Reference: Object, Fiat Object Part and Object Aggregate are not intended to be exhaustive of Material Entity. Users are invited to propose new subcategories of Material Entity.",
         "type" : "label"
       } ],
       "IAO_0000600" : [ {
@@ -3047,17 +3046,17 @@
       "IAO_0000602" : [ {
         "identifier" : "IAO_0000602",
         "language" : "undefined",
+        "value" : "(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] ",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000602",
+        "language" : "undefined",
         "value" : "(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] ",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000602",
         "language" : "undefined",
         "value" : "(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] ",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000602",
-        "language" : "undefined",
-        "value" : "(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] ",
         "type" : "label"
       } ],
       "IAO_0010000" : [ {
@@ -3081,10 +3080,10 @@
       "IRI-based" : "BFO_0000040",
       "en" : "material entity"
     },
-    "subClasses" : [ "86", "99", "68" ],
+    "subClasses" : [ "86", "102", "106" ],
     "attributes" : [ "external" ],
-    "id" : "38",
-    "superClasses" : [ "64" ]
+    "id" : "35",
+    "superClasses" : [ "62" ]
   }, {
     "iri" : "https://w3id.org/digitalconstruction/Entities#BuildingObject",
     "baseIri" : "https://w3id.org/digitalconstruction/Entities",
@@ -3095,8 +3094,8 @@
     "comment" : {
       "undefined" : "Constituent of a construction entity with a characteristic technical function, form or position."
     },
-    "id" : "1",
-    "superClasses" : [ "24" ]
+    "id" : "23",
+    "superClasses" : [ "27" ]
   }, {
     "iri" : "https://w3id.org/digitalconstruction/Entities#InformationObject",
     "baseIri" : "https://w3id.org/digitalconstruction/Entities",
@@ -3107,8 +3106,8 @@
     "comment" : {
       "undefined" : "An superclass of all abstract objects that are carrying information, such as a BIM model, drawing, specification, image, message, and so on."
     },
-    "id" : "21",
-    "superClasses" : [ "10" ]
+    "id" : "77",
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000031",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -3123,17 +3122,17 @@
       "IAO_0000112" : [ {
         "identifier" : "IAO_0000112",
         "language" : "en",
+        "value" : "The entries in your database are patterns instantiated as quality instances in your hard drive. The database itself is an aggregate of such patterns. When you create the database you create a particular instance of the generically dependent continuant type database. Each entry in the database is an instance of the generically dependent continuant type IAO: information content entity.",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
         "value" : "the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule.",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
         "value" : "the pdf file on your laptop, the pdf file that is a copy thereof on my laptop",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "The entries in your database are patterns instantiated as quality instances in your hard drive. The database itself is an aggregate of such patterns. When you create the database you create a particular instance of the generically dependent continuant type database. Each entry in the database is an instance of the generically dependent continuant type IAO: information content entity.",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -3172,8 +3171,8 @@
       "en" : "generically dependent continuant"
     },
     "attributes" : [ "external" ],
-    "id" : "63",
-    "superClasses" : [ "57" ]
+    "id" : "61",
+    "superClasses" : [ "58" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000030",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -3185,26 +3184,20 @@
         "value" : "Object",
         "type" : "label"
       } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo.owl",
-        "type" : "iri"
-      } ],
       "IAO_0000112" : [ {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "cells and organisms",
+        "value" : "organelle",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "engineered artifacts",
+        "value" : "molecule",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "atom",
+        "value" : "solid portions of matter",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
@@ -3219,38 +3212,55 @@
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "organelle",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "planet",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
         "value" : "cell",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
-        "value" : "solid portions of matter",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "molecule",
+        "value" : "cells and organisms",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
         "value" : "star",
         "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "engineered artifacts",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "atom",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "planet",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/bfo.owl",
+        "type" : "iri"
+      } ],
+      "IAO_0000600" : [ {
+        "identifier" : "IAO_0000600",
+        "language" : "en",
+        "value" : "b is an object means: b is a material entity which manifests causal unity of one or other of the types CUn listed above & is of a type (a material universal) instances of which are maximal relative to this criterion of causal unity. (axiom label in BFO2 Reference: [024-001])",
+        "type" : "label"
       } ],
       "IAO_0000116" : [ {
         "identifier" : "IAO_0000116",
         "language" : "en",
-        "value" : "BFO 2 Reference: Each object is such that there are entities of which we can assert unproblematically that they lie in its interior, and other entities of which we can assert unproblematically that they lie in its exterior. This may not be so for entities lying at or near the boundary between the interior and exterior. This means that two objects – for example the two cells depicted in Figure 3 – may be such that there are material entities crossing their boundaries which belong determinately to neither cell. Something similar obtains in certain cases of conjoined twins (see below).",
+        "value" : "BFO 2 Reference: BFO rests on the presupposition that at multiple micro-, meso- and macroscopic scales reality exhibits certain stable, spatially separated or separable material units, combined or combinable into aggregates of various sorts (for example organisms into what are called ‘populations’). Such units play a central role in almost all domains of natural science from particle physics to cosmology. Many scientific laws govern the units in question, employing general terms (such as ‘molecule’ or ‘planet’) referring to the types and subtypes of units, and also to the types and subtypes of the processes through which such units develop and interact. The division of reality into such natural units is at the heart of biological science, as also is the fact that these units may form higher-level units (as cells form multicellular organisms) and that they may also form aggregates of units, for example as cells form portions of tissue and organs form families, herds, breeds, species, and so on. At the same time, the division of certain portions of reality into engineered units (manufactured artifacts) is the basis of modern industrial technology, which rests on the distributed mass production of engineered parts through division of labor and on their assembly into larger, compound units such as cars and laptops. The division of portions of reality into units is one starting point for the phenomenon of counting.",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000116",
+        "language" : "en",
+        "value" : "BFO 2 Reference: To say that b is causally unified means: b is a material entity which is such that its material parts are tied together in such a way that, in environments typical for entities of the type in question,if c, a continuant part of b that is in the interior of b at t, is larger than a certain threshold size (which will be determined differently from case to case, depending on factors such as porosity of external cover) and is moved in space to be at t at a location on the exterior of the spatial region that had been occupied by b at t, then either b’s other parts will be moved in coordinated fashion or b will be damaged (be affected, for example, by breakage or tearing) in the interval between t and t.causal changes in one part of b can have consequences for other parts of b without the mediation of any entity that lies on the exterior of b. Material entities with no proper material parts would satisfy these conditions trivially. Candidate examples of types of causal unity for material entities of more complex sorts are as follows (this is not intended to be an exhaustive list):CU1: Causal unity via physical coveringHere the parts in the interior of the unified entity are combined together causally through a common membrane or other physical covering\\. The latter points outwards toward and may serve a protective function in relation to what lies on the exterior of the entity [13, 47",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000116",
@@ -3260,23 +3270,12 @@
       }, {
         "identifier" : "IAO_0000116",
         "language" : "en",
-        "value" : "BFO 2 Reference: BFO rests on the presupposition that at multiple micro-, meso- and macroscopic scales reality exhibits certain stable, spatially separated or separable material units, combined or combinable into aggregates of various sorts (for example organisms into what are called ‘populations’). Such units play a central role in almost all domains of natural science from particle physics to cosmology. Many scientific laws govern the units in question, employing general terms (such as ‘molecule’ or ‘planet’) referring to the types and subtypes of units, and also to the types and subtypes of the processes through which such units develop and interact. The division of reality into such natural units is at the heart of biological science, as also is the fact that these units may form higher-level units (as cells form multicellular organisms) and that they may also form aggregates of units, for example as cells form portions of tissue and organs form families, herds, breeds, species, and so on. At the same time, the division of certain portions of reality into engineered units (manufactured artifacts) is the basis of modern industrial technology, which rests on the distributed mass production of engineered parts through division of labor and on their assembly into larger, compound units such as cars and laptops. The division of portions of reality into units is one starting point for the phenomenon of counting.",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000116",
-        "language" : "en",
         "value" : "BFO 2 Reference: an object is a maximal causally unified material entity",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000116",
         "language" : "en",
-        "value" : "BFO 2 Reference: To say that b is causally unified means: b is a material entity which is such that its material parts are tied together in such a way that, in environments typical for entities of the type in question,if c, a continuant part of b that is in the interior of b at t, is larger than a certain threshold size (which will be determined differently from case to case, depending on factors such as porosity of external cover) and is moved in space to be at t at a location on the exterior of the spatial region that had been occupied by b at t, then either b’s other parts will be moved in coordinated fashion or b will be damaged (be affected, for example, by breakage or tearing) in the interval between t and t.causal changes in one part of b can have consequences for other parts of b without the mediation of any entity that lies on the exterior of b. Material entities with no proper material parts would satisfy these conditions trivially. Candidate examples of types of causal unity for material entities of more complex sorts are as follows (this is not intended to be an exhaustive list):CU1: Causal unity via physical coveringHere the parts in the interior of the unified entity are combined together causally through a common membrane or other physical covering\\. The latter points outwards toward and may serve a protective function in relation to what lies on the exterior of the entity [13, 47",
-        "type" : "label"
-      } ],
-      "IAO_0000600" : [ {
-        "identifier" : "IAO_0000600",
-        "language" : "en",
-        "value" : "b is an object means: b is a material entity which manifests causal unity of one or other of the types CUn listed above & is of a type (a material universal) instances of which are maximal relative to this criterion of causal unity. (axiom label in BFO2 Reference: [024-001])",
+        "value" : "BFO 2 Reference: Each object is such that there are entities of which we can assert unproblematically that they lie in its interior, and other entities of which we can assert unproblematically that they lie in its exterior. This may not be so for entities lying at or near the boundary between the interior and exterior. This means that two objects – for example the two cells depicted in Figure 3 – may be such that there are material entities crossing their boundaries which belong determinately to neither cell. Something similar obtains in certain cases of conjoined twins (see below).",
         "type" : "label"
       } ],
       "BFO_0000179" : [ {
@@ -3298,7 +3297,7 @@
     },
     "attributes" : [ "external", "equivalent" ],
     "id" : "86",
-    "superClasses" : [ "38" ]
+    "superClasses" : [ "35" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000035",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -3343,23 +3342,23 @@
       "IAO_0000602" : [ {
         "identifier" : "IAO_0000602",
         "language" : "undefined",
-        "value" : "(forall (x) (if (ProcessBoundary x) (exists (y) (and (ZeroDimensionalTemporalRegion y) (occupiesTemporalRegion x y))))) // axiom label in BFO2 CLIF: [085-002] ",
+        "value" : "(iff (ProcessBoundary a) (exists (p) (and (Process p) (temporalPartOf a p) (not (exists (b) (properTemporalPartOf b a)))))) // axiom label in BFO2 CLIF: [084-001] ",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000602",
         "language" : "undefined",
-        "value" : "(iff (ProcessBoundary a) (exists (p) (and (Process p) (temporalPartOf a p) (not (exists (b) (properTemporalPartOf b a)))))) // axiom label in BFO2 CLIF: [084-001] ",
+        "value" : "(forall (x) (if (ProcessBoundary x) (exists (y) (and (ZeroDimensionalTemporalRegion y) (occupiesTemporalRegion x y))))) // axiom label in BFO2 CLIF: [085-002] ",
         "type" : "label"
       } ],
       "IAO_0010000" : [ {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/084-001",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/085-002",
         "type" : "iri"
       }, {
         "identifier" : "IAO_0010000",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/085-002",
+        "value" : "http://purl.obolibrary.org/obo/bfo/axiom/084-001",
         "type" : "iri"
       } ]
     },
@@ -3368,8 +3367,8 @@
       "en" : "process boundary"
     },
     "attributes" : [ "external" ],
-    "id" : "65",
-    "superClasses" : [ "61" ]
+    "id" : "64",
+    "superClasses" : [ "63" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000034",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -3390,17 +3389,17 @@
       "IAO_0000112" : [ {
         "identifier" : "IAO_0000112",
         "language" : "en",
+        "value" : "the function of amylase in saliva to break down starch into sugar",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
         "value" : "the function of a heart pacemaker to regulate the beating of a heart through electricity",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
         "language" : "en",
         "value" : "the function of a hammer to drive in nails",
-        "type" : "label"
-      }, {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "the function of amylase in saliva to break down starch into sugar",
         "type" : "label"
       } ],
       "IAO_0000600" : [ {
@@ -3439,8 +3438,8 @@
       "en" : "function"
     },
     "attributes" : [ "external" ],
-    "id" : "117",
-    "superClasses" : [ "114" ]
+    "id" : "55",
+    "superClasses" : [ "56" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/BFO_0000038",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -3452,17 +3451,17 @@
         "value" : "OneDimensionalTemporalRegion",
         "type" : "label"
       } ],
-      "IAO_0000112" : [ {
-        "identifier" : "IAO_0000112",
-        "language" : "en",
-        "value" : "the temporal region during which a process occurs.",
-        "type" : "label"
-      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
         "value" : "http://purl.obolibrary.org/obo/bfo.owl",
         "type" : "iri"
+      } ],
+      "IAO_0000112" : [ {
+        "identifier" : "IAO_0000112",
+        "language" : "en",
+        "value" : "the temporal region during which a process occurs.",
+        "type" : "label"
       } ],
       "IAO_0000116" : [ {
         "identifier" : "IAO_0000116",
@@ -3500,24 +3499,18 @@
       "en" : "one-dimensional temporal region"
     },
     "attributes" : [ "external" ],
-    "id" : "41",
-    "superClasses" : [ "67" ]
+    "id" : "38",
+    "superClasses" : [ "66" ]
   } ],
   "property" : [ {
-    "id" : "0",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "6",
+    "id" : "4",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "11",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "13",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "15",
+    "id" : "9",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "19",
     "type" : "owl:disjointWith"
@@ -3528,14 +3521,11 @@
     "id" : "25",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "27",
+    "id" : "26",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "28",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "29",
-    "type" : "owl:disjointWith"
+    "id" : "11",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "30",
     "type" : "owl:disjointWith"
@@ -3543,16 +3533,10 @@
     "id" : "31",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "17",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "33",
     "type" : "owl:disjointWith"
   }, {
     "id" : "34",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "36",
     "type" : "owl:disjointWith"
   }, {
     "id" : "37",
@@ -3564,7 +3548,7 @@
     "id" : "43",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "46",
+    "id" : "45",
     "type" : "owl:disjointWith"
   }, {
     "id" : "48",
@@ -3573,34 +3557,37 @@
     "id" : "51",
     "type" : "owl:disjointWith"
   }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "54",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "56",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "59",
+    "id" : "57",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "60",
-    "type" : "rdfs:SubClassOf"
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "69",
+    "id" : "68",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "72",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "77",
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "78",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "79",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "80",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "81",
@@ -3615,17 +3602,23 @@
     "id" : "84",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "89",
-    "type" : "owl:disjointWith"
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "90",
-    "type" : "owl:disjointWith"
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "91",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "92",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "95",
     "type" : "rdfs:SubClassOf"
@@ -3639,22 +3632,22 @@
     "id" : "98",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "101",
+    "id" : "99",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "18",
-    "type" : "owl:objectProperty"
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "103",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "104",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "105",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "106",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "107",
@@ -3670,18 +3663,24 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "111",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "112",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "113",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "114",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "115",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "116",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "117",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "118",
@@ -3699,7 +3698,7 @@
     "id" : "122",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "16",
+    "id" : "10",
     "type" : "owl:objectProperty"
   }, {
     "id" : "123",
@@ -3733,7 +3732,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "133",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "134",
     "type" : "rdfs:SubClassOf"
@@ -3746,540 +3745,460 @@
   }, {
     "id" : "137",
     "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "138",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "139",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "140",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "141",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "142",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "143",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "144",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "145",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "146",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "147",
-    "type" : "rdfs:SubClassOf"
   } ],
   "propertyAttribute" : [ {
-    "range" : "2",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "0"
-  }, {
     "iri" : "https://w3id.org/digitalconstruction/Entities#hasMaxLoad",
     "baseIri" : "https://w3id.org/digitalconstruction/Entities",
-    "range" : "8",
+    "range" : "5",
     "label" : {
       "IRI-based" : "hasMaxLoad"
     },
-    "domain" : "7",
+    "domain" : "0",
     "attributes" : [ "datatype" ],
-    "id" : "6"
-  }, {
-    "range" : "12",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "11"
-  }, {
-    "range" : "14",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "13"
+    "id" : "4"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "7",
+    "range" : "0",
     "label" : {
       "IRI-based" : "topObjectProperty"
     },
-    "domain" : "7",
-    "subproperty" : [ "16", "17", "18" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "15"
+    "domain" : "0",
+    "subproperty" : [ "10", "11", "12" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "9"
+  }, {
+    "range" : "16",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "14"
   }, {
     "range" : "21",
     "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "19"
   }, {
     "range" : "24",
     "domain" : "23",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "22"
   }, {
     "range" : "24",
     "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "25"
   }, {
     "range" : "24",
     "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "27"
-  }, {
-    "range" : "24",
-    "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "28"
-  }, {
-    "range" : "21",
-    "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "29"
-  }, {
-    "range" : "21",
-    "domain" : "23",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "30"
-  }, {
-    "range" : "20",
-    "domain" : "23",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "31"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
   }, {
     "iri" : "https://w3id.org/digitalconstruction/Entities#hasMember",
     "baseIri" : "https://w3id.org/digitalconstruction/Entities",
-    "range" : "10",
+    "range" : "7",
     "label" : {
       "IRI-based" : "hasMember"
     },
-    "superproperty" : [ "15" ],
-    "domain" : "20",
+    "superproperty" : [ "9" ],
+    "domain" : "29",
     "attributes" : [ "object" ],
-    "id" : "17"
-  }, {
-    "range" : "23",
-    "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "33"
-  }, {
-    "range" : "4",
-    "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "34"
+    "id" : "11"
   }, {
     "range" : "20",
-    "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "36"
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "range" : "2",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "range" : "21",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "range" : "36",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
   }, {
     "range" : "39",
     "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "37"
   }, {
     "range" : "42",
     "domain" : "41",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "40"
   }, {
-    "range" : "45",
-    "domain" : "44",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "44",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "43"
   }, {
     "range" : "47",
-    "domain" : "44",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "46"
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
   }, {
     "range" : "50",
     "domain" : "49",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "48"
   }, {
-    "range" : "53",
+    "range" : "50",
     "domain" : "52",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "51"
   }, {
-    "range" : "53",
+    "range" : "3",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "56",
     "domain" : "55",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "54"
   }, {
-    "range" : "58",
-    "domain" : "57",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "56"
-  }, {
-    "range" : "58",
-    "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "59"
-  }, {
-    "range" : "58",
-    "domain" : "61",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "60"
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
   }, {
     "iri" : "https://w3id.org/digitalconstruction/Entities#allocatedBy",
     "baseIri" : "https://w3id.org/digitalconstruction/Entities",
-    "range" : "71",
+    "range" : "13",
     "label" : {
       "IRI-based" : "allocatedBy"
     },
-    "domain" : "70",
+    "domain" : "16",
     "attributes" : [ "datatype" ],
-    "id" : "69"
+    "id" : "67"
   }, {
     "iri" : "https://w3id.org/digitalconstruction/Entities#hasLabel",
     "baseIri" : "https://w3id.org/digitalconstruction/Entities",
-    "range" : "74",
+    "range" : "17",
     "label" : {
       "IRI-based" : "hasLabel"
     },
-    "domain" : "73",
+    "domain" : "69",
     "attributes" : [ "datatype" ],
+    "id" : "68"
+  }, {
+    "range" : "7",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "72"
   }, {
-    "range" : "61",
-    "domain" : "66",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "77"
+    "range" : "7",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73"
   }, {
-    "range" : "61",
-    "domain" : "65",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "3",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "range" : "7",
+    "domain" : "77",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
+  }, {
+    "range" : "46",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "78"
   }, {
-    "range" : "61",
-    "domain" : "67",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "46",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "79"
   }, {
-    "range" : "61",
-    "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "80"
-  }, {
-    "range" : "57",
-    "domain" : "62",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "81"
   }, {
-    "range" : "14",
-    "domain" : "32",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "7",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "82"
   }, {
-    "range" : "57",
-    "domain" : "64",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "20",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "83"
   }, {
-    "range" : "57",
-    "domain" : "63",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "85",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "84"
   }, {
-    "range" : "2",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "88",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87"
+  }, {
+    "range" : "36",
+    "domain" : "90",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "89"
   }, {
-    "range" : "12",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "90"
-  }, {
-    "range" : "70",
-    "domain" : "26",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "36",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "91"
   }, {
-    "range" : "2",
-    "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "88",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "92"
   }, {
-    "range" : "93",
-    "domain" : "45",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "88",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "93"
+  }, {
+    "range" : "60",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "94"
+  }, {
+    "range" : "36",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "95"
   }, {
-    "range" : "93",
+    "range" : "60",
     "domain" : "47",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "96"
   }, {
-    "range" : "68",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "62",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "97"
   }, {
-    "range" : "85",
-    "domain" : "23",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "62",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "98"
   }, {
-    "range" : "93",
-    "domain" : "44",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "101"
+    "range" : "66",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "99"
+  }, {
+    "range" : "66",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "range" : "70",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "103"
   }, {
     "iri" : "https://w3id.org/digitalconstruction/Entities#classifiedBy",
     "baseIri" : "https://w3id.org/digitalconstruction/Entities",
-    "range" : "26",
+    "range" : "15",
     "label" : {
       "IRI-based" : "classifiedBy"
     },
-    "superproperty" : [ "15" ],
-    "domain" : "10",
+    "superproperty" : [ "9" ],
+    "domain" : "7",
     "attributes" : [ "object" ],
-    "id" : "18"
+    "id" : "12"
   }, {
-    "range" : "39",
-    "domain" : "94",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "103"
-  }, {
-    "range" : "39",
-    "domain" : "75",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "70",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "104"
   }, {
-    "range" : "62",
-    "domain" : "49",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "70",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "105"
   }, {
-    "range" : "24",
-    "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "106"
-  }, {
-    "range" : "39",
-    "domain" : "93",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "59",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "107"
   }, {
-    "range" : "62",
-    "domain" : "50",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "59",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "108"
   }, {
-    "range" : "24",
-    "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "70",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "109"
   }, {
-    "range" : "67",
-    "domain" : "42",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "59",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "110"
+  }, {
+    "range" : "63",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "range" : "63",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "112"
   }, {
     "iri" : "https://w3id.org/digitalconstruction/Entities#hasSystem",
     "baseIri" : "https://w3id.org/digitalconstruction/Entities",
-    "range" : "87",
+    "range" : "8",
     "label" : {
       "IRI-based" : "hasSystem"
     },
-    "domain" : "26",
+    "domain" : "15",
     "attributes" : [ "datatype" ],
-    "id" : "111"
-  }, {
-    "range" : "24",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "112"
-  }, {
-    "range" : "24",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
     "id" : "113"
   }, {
-    "range" : "64",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "63",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "114"
+  }, {
+    "range" : "63",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "115"
   }, {
-    "range" : "64",
-    "domain" : "39",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "58",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "116"
   }, {
-    "range" : "67",
-    "domain" : "41",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "58",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "range" : "58",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "118"
   }, {
-    "range" : "75",
-    "domain" : "55",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "35",
+    "domain" : "86",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "119"
   }, {
-    "range" : "75",
-    "domain" : "53",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "47",
+    "domain" : "101",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "120"
   }, {
-    "range" : "75",
-    "domain" : "76",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "35",
+    "domain" : "106",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "121"
   }, {
-    "range" : "75",
-    "domain" : "52",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "35",
+    "domain" : "102",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "122"
   }, {
     "iri" : "https://w3id.org/digitalconstruction/Entities#identifiedBy",
     "baseIri" : "https://w3id.org/digitalconstruction/Entities",
-    "range" : "70",
+    "range" : "16",
     "label" : {
       "IRI-based" : "identifiedBy"
     },
-    "superproperty" : [ "15" ],
-    "domain" : "10",
+    "superproperty" : [ "9" ],
+    "domain" : "7",
     "attributes" : [ "object" ],
-    "id" : "16"
+    "id" : "10"
   }, {
-    "range" : "62",
-    "domain" : "64",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "60",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "123"
   }, {
-    "range" : "93",
-    "domain" : "75",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "90",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "124"
   }, {
-    "range" : "94",
-    "domain" : "75",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "88",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "125"
   }, {
-    "range" : "5",
-    "domain" : "67",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "65",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "126"
   }, {
-    "range" : "66",
-    "domain" : "67",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "64",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "127"
   }, {
-    "range" : "65",
-    "domain" : "67",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "3",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "128"
   }, {
-    "range" : "53",
-    "domain" : "76",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "50",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "129"
   }, {
-    "range" : "102",
-    "domain" : "114",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "80",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "130"
   }, {
-    "range" : "61",
-    "domain" : "57",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "63",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "131"
   }, {
-    "range" : "63",
-    "domain" : "64",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "61",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "132"
-  }, {
-    "range" : "38",
-    "domain" : "99",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "133"
-  }, {
-    "range" : "38",
-    "domain" : "86",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "134"
-  }, {
-    "range" : "38",
-    "domain" : "68",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "135"
-  }, {
-    "range" : "5",
-    "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "136"
-  }, {
-    "range" : "5",
-    "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "137"
-  }, {
-    "range" : "50",
-    "domain" : "100",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "138"
-  }, {
-    "range" : "114",
-    "domain" : "117",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "139"
-  }, {
-    "range" : "10",
-    "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "140"
-  }, {
-    "range" : "10",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "141"
   }, {
     "iri" : "https://w3id.org/digitalconstruction/Entities#hasAmount",
     "baseIri" : "https://w3id.org/digitalconstruction/Entities",
-    "range" : "88",
+    "range" : "18",
     "label" : {
       "IRI-based" : "hasAmount"
     },
-    "domain" : "7",
+    "domain" : "0",
     "attributes" : [ "datatype" ],
-    "id" : "142"
+    "id" : "133"
   }, {
-    "range" : "10",
+    "range" : "27",
     "domain" : "23",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "143"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
   }, {
-    "range" : "49",
-    "domain" : "114",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "144"
+    "range" : "27",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "135"
   }, {
-    "range" : "49",
-    "domain" : "102",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "145"
-  }, {
-    "range" : "10",
-    "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "146"
-  }, {
-    "range" : "10",
+    "range" : "27",
     "domain" : "24",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "147"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "range" : "27",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
   } ]
 }

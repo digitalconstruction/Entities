@@ -3,22 +3,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
-    }, {
-      "@id" : "https://w3id.org/digitalconstruction/Entities#Agent"
-    }, {
-      "@id" : "https://w3id.org/digitalconstruction/Entities#Group"
-    }, {
-      "@id" : "https://w3id.org/digitalconstruction/Entities#InformationObject"
-    }, {
-      "@id" : "https://w3id.org/digitalconstruction/Entities#PhysicalObject"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
       "@id" : "https://w3id.org/digitalconstruction/Entities#BuildingObject"
     }, {
       "@id" : "https://w3id.org/digitalconstruction/Entities#Equipment"
@@ -72,6 +56,8 @@
     "@value" : "Activity refers to all the work process (or aggregations of works) that carried out in a construction project."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+  }, {
     "@id" : "https://w3id.org/digitalconstruction/Entities#IdentifiableEntity"
   } ]
 }, {
@@ -119,8 +105,6 @@
     "@value" : "Group is the concept that refers to all kinds of grouping/collection of objects, such as work-package (group of works)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/BFO_0000027"
-  }, {
     "@id" : "https://w3id.org/digitalconstruction/Entities#IdentifiableEntity"
   } ]
 }, {

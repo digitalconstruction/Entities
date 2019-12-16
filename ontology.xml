@@ -193,6 +193,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#Activity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#IdentifiableEntity"/>
         <rdfs:comment>Activity refers to all the work process (or aggregations of works) that carried out in a construction project.</rdfs:comment>
     </owl:Class>
@@ -244,7 +245,6 @@
 
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#Group">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#IdentifiableEntity"/>
         <rdfs:comment>Group is the concept that refers to all kinds of grouping/collection of objects, such as work-package (group of works).</rdfs:comment>
     </owl:Class>
@@ -329,16 +329,6 @@
      -->
 
 
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/Entities#Activity"/>
-            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/Entities#Agent"/>
-            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/Entities#Group"/>
-            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/Entities#InformationObject"/>
-            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/Entities#PhysicalObject"/>
-        </owl:members>
-    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
