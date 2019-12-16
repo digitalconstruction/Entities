@@ -1,0 +1,209 @@
+<https://w3id.org/digitalconstruction/Entities#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/digitalconstruction/Entities#> <http://www.w3.org/2002/07/owl#imports> <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl> .
+<https://w3id.org/digitalconstruction/Entities#> <http://purl.org/dc/terms/creator> "Seppo Torma" .
+<https://w3id.org/digitalconstruction/Entities#> <http://purl.org/dc/terms/creator> "Yuan Zheng" .
+<https://w3id.org/digitalconstruction/Entities#> <http://www.w3.org/2000/01/rdf-schema#comment> "This Entities ontology is a module of Digital Construction Ontology. The purpose of this module is to support data sharing of the object information that related to the construction project. This module describes the concepts (or ‘classes’) of basic objects in the construction process and their properties and hierarchy. The core concept  is the ‘Identifiable Entity’, which refers the top abstract concept of all the objects that has its own identifier and  classification that classified by some classification scheme." .
+<https://w3id.org/digitalconstruction/Entities#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/digitalconstruction/Entities#classifiedBy
+<https://w3id.org/digitalconstruction/Entities#classifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#classifiedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#classifiedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#IdentifiableEntity> .
+<https://w3id.org/digitalconstruction/Entities#classifiedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Classification> .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasMember
+<https://w3id.org/digitalconstruction/Entities#hasMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasMember> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasMember> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Group> .
+<https://w3id.org/digitalconstruction/Entities#hasMember> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#IdentifiableEntity> .
+# 
+# https://w3id.org/digitalconstruction/Entities#identifiedBy
+<https://w3id.org/digitalconstruction/Entities#identifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#identifiedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#identifiedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#IdentifiableEntity> .
+<https://w3id.org/digitalconstruction/Entities#identifiedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Identifier> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/digitalconstruction/Entities#allocatedBy
+<https://w3id.org/digitalconstruction/Entities#allocatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#allocatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Identifier> .
+<https://w3id.org/digitalconstruction/Entities#allocatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasAmount
+<https://w3id.org/digitalconstruction/Entities#hasAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasAmount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#real> .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasLabel
+<https://w3id.org/digitalconstruction/Entities#hasLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasLabel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Classification> .
+<https://w3id.org/digitalconstruction/Entities#hasLabel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Identifier> .
+<https://w3id.org/digitalconstruction/Entities#hasLabel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasMaxLoad
+<https://w3id.org/digitalconstruction/Entities#hasMaxLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasMaxLoad> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#real> .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasSystem
+<https://w3id.org/digitalconstruction/Entities#hasSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Classification> .
+<https://w3id.org/digitalconstruction/Entities#hasSystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.obolibrary.org/obo/BFO_0000030
+<http://purl.obolibrary.org/obo/BFO_0000030> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/digitalconstruction/Entities#PhysicalObject> .
+# 
+# http://www.w3.org/ns/prov#agent
+<http://www.w3.org/ns/prov#agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/digitalconstruction/Entities#Agent> .
+# 
+# https://w3id.org/digitalconstruction/Entities#Activity
+<https://w3id.org/digitalconstruction/Entities#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#IdentifiableEntity> .
+<https://w3id.org/digitalconstruction/Entities#Activity> <http://www.w3.org/2000/01/rdf-schema#comment> "Activity refers to all the work process (or aggregations of works) that carried out in a construction project." .
+# 
+# https://w3id.org/digitalconstruction/Entities#Agent
+<https://w3id.org/digitalconstruction/Entities#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#agent> .
+<https://w3id.org/digitalconstruction/Entities#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#IdentifiableEntity> .
+<https://w3id.org/digitalconstruction/Entities#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "'Agent' refers to all the actors that are responsible of activities in construction." .
+# 
+# https://w3id.org/digitalconstruction/Entities#BuildingObject
+<https://w3id.org/digitalconstruction/Entities#BuildingObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#BuildingObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#PhysicalObject> .
+<https://w3id.org/digitalconstruction/Entities#BuildingObject> <http://www.w3.org/2000/01/rdf-schema#comment> "Constituent of a construction entity with a characteristic technical function, form or position." .
+# 
+# https://w3id.org/digitalconstruction/Entities#Classification
+<https://w3id.org/digitalconstruction/Entities#Classification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Classification> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/digitalconstruction/Entities#Identifier> .
+<https://w3id.org/digitalconstruction/Entities#Classification> <http://www.w3.org/2000/01/rdf-schema#comment> "Classification refers to the division of objects into groups based on types that are defined and specified in construction classification scheme such as OmniClass, UniFormat and etc." .
+# 
+# https://w3id.org/digitalconstruction/Entities#Equipment
+<https://w3id.org/digitalconstruction/Entities#Equipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Equipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#PhysicalObject> .
+<https://w3id.org/digitalconstruction/Entities#Equipment> <http://www.w3.org/2000/01/rdf-schema#comment> "Equipment refers to all the equipment and tool that are used for production activities. An equipment do not have a capability to operate activities by itself automatically." .
+# 
+# https://w3id.org/digitalconstruction/Entities#Group
+<https://w3id.org/digitalconstruction/Entities#Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000027> .
+<https://w3id.org/digitalconstruction/Entities#Group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#IdentifiableEntity> .
+<https://w3id.org/digitalconstruction/Entities#Group> <http://www.w3.org/2000/01/rdf-schema#comment> "Group is the concept that refers to all kinds of grouping/collection of objects, such as work-package (group of works)." .
+# 
+# https://w3id.org/digitalconstruction/Entities#IdentifiableEntity
+<https://w3id.org/digitalconstruction/Entities#IdentifiableEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#IdentifiableEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<https://w3id.org/digitalconstruction/Entities#IdentifiableEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "'IdentifiableEntity' is a abstract concept that refers to all the central objects that are discussed in the construction project planning and management. Subclasses of the Identifiable Entities include the 'Activity','Group','Information Object','PhysicalObject',and 'Agent'. Identifiable entities are identified by their unique identifiers and can have their specific classification that is defined by certain classification scheme in the construction domain." .
+# 
+# https://w3id.org/digitalconstruction/Entities#Identifier
+<https://w3id.org/digitalconstruction/Entities#Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier refers a globally unique reference of the identifiable entity instance." .
+# 
+# https://w3id.org/digitalconstruction/Entities#InformationObject
+<https://w3id.org/digitalconstruction/Entities#InformationObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#InformationObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#IdentifiableEntity> .
+<https://w3id.org/digitalconstruction/Entities#InformationObject> <http://www.w3.org/2000/01/rdf-schema#comment> "An superclass of all abstract objects that are carrying information, such as a BIM model, drawing, specification, image, message, and so on." .
+# 
+# https://w3id.org/digitalconstruction/Entities#Location
+<https://w3id.org/digitalconstruction/Entities#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#PhysicalObject> .
+<https://w3id.org/digitalconstruction/Entities#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "Location refer to particular places" .
+# 
+# https://w3id.org/digitalconstruction/Entities#MaterialBatch
+<https://w3id.org/digitalconstruction/Entities#MaterialBatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#MaterialBatch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#PhysicalObject> .
+<https://w3id.org/digitalconstruction/Entities#MaterialBatch> <http://www.w3.org/2000/01/rdf-schema#comment> "Material batch refers to the collection of homogeneous physical substance that participates in the construction project as the input of a process." .
+# 
+# https://w3id.org/digitalconstruction/Entities#PhysicalObject
+<https://w3id.org/digitalconstruction/Entities#PhysicalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#IdentifiableEntity> .
+<https://w3id.org/digitalconstruction/Entities#PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to any object that has physical dimensions and a position." .
+# 
+# https://w3id.org/digitalconstruction/Entities#Vehicle
+<https://w3id.org/digitalconstruction/Entities#Vehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Vehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Equipment> .
+<https://w3id.org/digitalconstruction/Entities#Vehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "A machine used for transporting goods in construction process" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid1 <http://www.w3.org/2002/07/owl#members> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/digitalconstruction/Entities#Activity> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/digitalconstruction/Entities#Agent> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/digitalconstruction/Entities#Group> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/digitalconstruction/Entities#InformationObject> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/digitalconstruction/Entities#PhysicalObject> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid7 <http://www.w3.org/2002/07/owl#members> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/digitalconstruction/Entities#BuildingObject> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/digitalconstruction/Entities#Equipment> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/digitalconstruction/Entities#Location> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/digitalconstruction/Entities#MaterialBatch> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/
