@@ -1,0 +1,263 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
+    }, {
+      "@id" : "https://w3id.org/digitalconstruction/Entities#Agent"
+    }, {
+      "@id" : "https://w3id.org/digitalconstruction/Entities#Group"
+    }, {
+      "@id" : "https://w3id.org/digitalconstruction/Entities#InformationObject"
+    }, {
+      "@id" : "https://w3id.org/digitalconstruction/Entities#PhysicalObject"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/digitalconstruction/Entities#BuildingObject"
+    }, {
+      "@id" : "https://w3id.org/digitalconstruction/Entities#Equipment"
+    }, {
+      "@id" : "https://w3id.org/digitalconstruction/Entities#Location"
+    }, {
+      "@id" : "https://w3id.org/digitalconstruction/Entities#MaterialBatch"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/BFO_0000030",
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#PhysicalObject"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Agent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Seppo Torma"
+  }, {
+    "@value" : "Yuan Zheng"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This Entities ontology is a module of Digital Construction Ontology. The purpose of this module is to support data sharing of the object information that related to the construction project. This module describes the concepts (or ‘classes’) of basic objects in the construction process and their properties and hierarchy. The core concept  is the ‘Identifiable Entity’, which refers the top abstract concept of all the objects that has its own identifier and  classification that classified by some classification scheme."
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0.0"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#Activity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Activity refers to all the work process (or aggregations of works) that carried out in a construction project."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#IdentifiableEntity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "'Agent' refers to all the actors that are responsible of activities in construction."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#agent"
+  }, {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#IdentifiableEntity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#BuildingObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Constituent of a construction entity with a characteristic technical function, form or position."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#PhysicalObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#Classification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Classification refers to the division of objects into groups based on types that are defined and specified in construction classification scheme such as OmniClass, UniFormat and etc."
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Identifier"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#Equipment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Equipment refers to all the equipment and tool that are used for production activities. An equipment do not have a capability to operate activities by itself automatically."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#PhysicalObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#Group",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Group is the concept that refers to all kinds of grouping/collection of objects, such as work-package (group of works)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000027"
+  }, {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#IdentifiableEntity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#IdentifiableEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "'IdentifiableEntity' is a abstract concept that refers to all the central objects that are discussed in the construction project planning and management. Subclasses of the Identifiable Entities include the 'Activity','Group','Information Object','PhysicalObject',and 'Agent'. Identifiable entities are identified by their unique identifiers and can have their specific classification that is defined by certain classification scheme in the construction domain."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000001"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#Identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Identifier refers a globally unique reference of the identifiable entity instance."
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#InformationObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An superclass of all abstract objects that are carrying information, such as a BIM model, drawing, specification, image, message, and so on."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#IdentifiableEntity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Location refer to particular places"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#PhysicalObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#MaterialBatch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Material batch refers to the collection of homogeneous physical substance that participates in the construction project as the input of a process."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#PhysicalObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#PhysicalObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Refers to any object that has physical dimensions and a position."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#IdentifiableEntity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#Vehicle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A machine used for transporting goods in construction process"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Equipment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#allocatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#classifiedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#IdentifiableEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Classification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#hasAmount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#real"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#hasLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Classification"
+  }, {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#hasMaxLoad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#real"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#hasMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#IdentifiableEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#hasSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Classification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#identifiedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#IdentifiableEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+} ]
