@@ -189,6 +189,8 @@
 # https://w3id.org/digitalconstruction/Entities#ActivityRelatedState
 <https://w3id.org/digitalconstruction/Entities#ActivityRelatedState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#ActivityRelatedState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Variables#ApplicabilityState> .
+<https://w3id.org/digitalconstruction/Entities#ActivityRelatedState> <http://www.w3.org/2000/01/rdf-schema#comment> "A state with respect to an activity" .
+<https://w3id.org/digitalconstruction/Entities#ActivityRelatedState> <http://www.w3.org/2000/01/rdf-schema#label> "ActivityRelatedState" .
 # 
 # https://w3id.org/digitalconstruction/Entities#Agent
 <https://w3id.org/digitalconstruction/Entities#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -200,14 +202,20 @@
 # https://w3id.org/digitalconstruction/Entities#AllOver
 <https://w3id.org/digitalconstruction/Entities#AllOver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#AllOver> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#ActivityRelatedState> .
+<https://w3id.org/digitalconstruction/Entities#AllOver> <http://www.w3.org/2000/01/rdf-schema#comment> "The state during the execution of an activity." .
+<https://w3id.org/digitalconstruction/Entities#AllOver> <http://www.w3.org/2000/01/rdf-schema#label> "AllOver" .
 # 
 # https://w3id.org/digitalconstruction/Entities#AtEnd
 <https://w3id.org/digitalconstruction/Entities#AtEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#AtEnd> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#ActivityRelatedState> .
+<https://w3id.org/digitalconstruction/Entities#AtEnd> <http://www.w3.org/2000/01/rdf-schema#comment> "A state at the end of an activity. For example, the effects of an activity can be assumed to hold at the end of the activity." .
+<https://w3id.org/digitalconstruction/Entities#AtEnd> <http://www.w3.org/2000/01/rdf-schema#label> "AtEnd" .
 # 
 # https://w3id.org/digitalconstruction/Entities#AtStart
 <https://w3id.org/digitalconstruction/Entities#AtStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#AtStart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#ActivityRelatedState> .
+<https://w3id.org/digitalconstruction/Entities#AtStart> <http://www.w3.org/2000/01/rdf-schema#comment> "A state at the start of an activity. For example, the preconditions of an activity should hold at the start of the activity." .
+<https://w3id.org/digitalconstruction/Entities#AtStart> <http://www.w3.org/2000/01/rdf-schema#label> "AtStart" .
 # 
 # https://w3id.org/digitalconstruction/Entities#BuildingObject
 <https://w3id.org/digitalconstruction/Entities#BuildingObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

@@ -91,6 +91,12 @@
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityRelatedState",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A state with respect to an activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ActivityRelatedState"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Variables#ApplicabilityState"
   } ]
@@ -111,18 +117,36 @@
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#AllOver",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The state during the execution of an activity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AllOver"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#AtEnd",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A state at the end of an activity. For example, the effects of an activity can be assumed to hold at the end of the activity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AtEnd"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#AtStart",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A state at the start of an activity. For example, the preconditions of an activity should hold at the start of the activity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AtStart"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"
   } ]

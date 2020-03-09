@@ -358,6 +358,8 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#ActivityRelatedState">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Variables#ApplicabilityState"/>
+        <rdfs:comment>A state with respect to an activity</rdfs:comment>
+        <rdfs:label>ActivityRelatedState</rdfs:label>
     </owl:Class>
     
 
@@ -379,6 +381,8 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#AllOver">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"/>
+        <rdfs:comment>The state during the execution of an activity.</rdfs:comment>
+        <rdfs:label>AllOver</rdfs:label>
     </owl:Class>
     
 
@@ -388,6 +392,8 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#AtEnd">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"/>
+        <rdfs:comment>A state at the end of an activity. For example, the effects of an activity can be assumed to hold at the end of the activity.</rdfs:comment>
+        <rdfs:label>AtEnd</rdfs:label>
     </owl:Class>
     
 
@@ -397,6 +403,8 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#AtStart">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"/>
+        <rdfs:comment>A state at the start of an activity. For example, the preconditions of an activity should hold at the start of the activity.</rdfs:comment>
+        <rdfs:label>AtStart</rdfs:label>
     </owl:Class>
     
 
