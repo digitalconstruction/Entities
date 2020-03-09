@@ -207,7 +207,9 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#ActivityRelatedState
 :ActivityRelatedState rdf:type owl:Class ;
-                      rdfs:subClassOf <https://w3id.org/digitalconstruction/Variables#ApplicabilityState> .
+                      rdfs:subClassOf <https://w3id.org/digitalconstruction/Variables#ApplicabilityState> ;
+                      rdfs:comment "A state with respect to an activity" ;
+                      rdfs:label "ActivityRelatedState" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#Agent
@@ -220,17 +222,23 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#AllOver
 :AllOver rdf:type owl:Class ;
-         rdfs:subClassOf :ActivityRelatedState .
+         rdfs:subClassOf :ActivityRelatedState ;
+         rdfs:comment "The state during the execution of an activity." ;
+         rdfs:label "AllOver" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#AtEnd
 :AtEnd rdf:type owl:Class ;
-       rdfs:subClassOf :ActivityRelatedState .
+       rdfs:subClassOf :ActivityRelatedState ;
+       rdfs:comment "A state at the end of an activity. For example, the effects of an activity can be assumed to hold at the end of the activity." ;
+       rdfs:label "AtEnd" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#AtStart
 :AtStart rdf:type owl:Class ;
-         rdfs:subClassOf :ActivityRelatedState .
+         rdfs:subClassOf :ActivityRelatedState ;
+         rdfs:comment "A state at the start of an activity. For example, the preconditions of an activity should hold at the start of the activity." ;
+         rdfs:label "AtStart" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#BuildingObject
