@@ -1,11 +1,17 @@
 <https://w3id.org/digitalconstruction/Entities#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/digitalconstruction/Entities#> <http://www.w3.org/2002/07/owl#imports> <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl> .
-<https://w3id.org/digitalconstruction/Entities#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/digitalconstruction/Contexts> .
 <https://w3id.org/digitalconstruction/Entities#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/digitalconstruction/Variables> .
+<https://w3id.org/digitalconstruction/Entities#> <http://purl.org/dc/elements/1.1/date> "2020-03-09" .
+<https://w3id.org/digitalconstruction/Entities#> <http://purl.org/dc/elements/1.1/title> "Digital construction - Entities" .
+<https://w3id.org/digitalconstruction/Entities#> <http://purl.org/dc/terms/created> "2020-01-12" .
 <https://w3id.org/digitalconstruction/Entities#> <http://purl.org/dc/terms/creator> "Seppo Törmä" .
 <https://w3id.org/digitalconstruction/Entities#> <http://purl.org/dc/terms/creator> "Yuan Zheng" .
+<https://w3id.org/digitalconstruction/Entities#> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/digitalconstruction/Entities#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "dice" .
+<https://w3id.org/digitalconstruction/Entities#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/Entities" .
 <https://w3id.org/digitalconstruction/Entities#> <http://www.w3.org/2000/01/rdf-schema#comment> "Entities ontology is the central module of the Digital Construction Ontology suite. It defines the essential top-level objects that can be referred to in construction and renovation projects by people or systems. The core concept is the ‘Identifiable Entity’, which refers the top abstract concept of all the objects that can have multiple different identifiers and can be classified according to different class classification schemes." .
-<https://w3id.org/digitalconstruction/Entities#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+<https://w3id.org/digitalconstruction/Entities#> <http://www.w3.org/2000/01/rdf-schema#label> "Digital construction - Entities" .
+<https://w3id.org/digitalconstruction/Entities#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/digitalconstruction> .
 # 
 # 
 # #################################################################
@@ -18,8 +24,32 @@
 # http://purl.org/dc/elements/1.1/creator
 <http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/creator
 <http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -112,17 +142,6 @@
 <https://w3id.org/digitalconstruction/Entities#memberOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#IdentifiableEntity> .
 <https://w3id.org/digitalconstruction/Entities#memberOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Group> .
 # 
-# https://w3id.org/digitalconstruction/Entities#representationOf
-<https://w3id.org/digitalconstruction/Entities#representationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/digitalconstruction/Entities#representationOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#representedIn> .
-<https://w3id.org/digitalconstruction/Entities#representationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Contexts#Context> .
-<https://w3id.org/digitalconstruction/Entities#representationOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
-# 
-# https://w3id.org/digitalconstruction/Entities#representedIn
-<https://w3id.org/digitalconstruction/Entities#representedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/digitalconstruction/Entities#representedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
-<https://w3id.org/digitalconstruction/Entities#representedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Contexts#Context> .
-# 
 # 
 # 
 # #################################################################
@@ -176,9 +195,6 @@
 <http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/digitalconstruction/Entities#Agent> .
 # 
-# https://w3id.org/digitalconstruction/Contexts#Context
-<https://w3id.org/digitalconstruction/Contexts#Context> <http://www.w3.org/2000/01/rdf-schema#label> "Context" .
-# 
 # https://w3id.org/digitalconstruction/Entities#Activity
 <https://w3id.org/digitalconstruction/Entities#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000015> .
@@ -189,8 +205,6 @@
 # https://w3id.org/digitalconstruction/Entities#ActivityRelatedState
 <https://w3id.org/digitalconstruction/Entities#ActivityRelatedState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#ActivityRelatedState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Variables#ApplicabilityState> .
-<https://w3id.org/digitalconstruction/Entities#ActivityRelatedState> <http://www.w3.org/2000/01/rdf-schema#comment> "A state with respect to an activity" .
-<https://w3id.org/digitalconstruction/Entities#ActivityRelatedState> <http://www.w3.org/2000/01/rdf-schema#label> "ActivityRelatedState" .
 # 
 # https://w3id.org/digitalconstruction/Entities#Agent
 <https://w3id.org/digitalconstruction/Entities#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -202,20 +216,14 @@
 # https://w3id.org/digitalconstruction/Entities#AllOver
 <https://w3id.org/digitalconstruction/Entities#AllOver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#AllOver> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#ActivityRelatedState> .
-<https://w3id.org/digitalconstruction/Entities#AllOver> <http://www.w3.org/2000/01/rdf-schema#comment> "The state during the execution of an activity." .
-<https://w3id.org/digitalconstruction/Entities#AllOver> <http://www.w3.org/2000/01/rdf-schema#label> "AllOver" .
 # 
 # https://w3id.org/digitalconstruction/Entities#AtEnd
 <https://w3id.org/digitalconstruction/Entities#AtEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#AtEnd> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#ActivityRelatedState> .
-<https://w3id.org/digitalconstruction/Entities#AtEnd> <http://www.w3.org/2000/01/rdf-schema#comment> "A state at the end of an activity. For example, the effects of an activity can be assumed to hold at the end of the activity." .
-<https://w3id.org/digitalconstruction/Entities#AtEnd> <http://www.w3.org/2000/01/rdf-schema#label> "AtEnd" .
 # 
 # https://w3id.org/digitalconstruction/Entities#AtStart
 <https://w3id.org/digitalconstruction/Entities#AtStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#AtStart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#ActivityRelatedState> .
-<https://w3id.org/digitalconstruction/Entities#AtStart> <http://www.w3.org/2000/01/rdf-schema#comment> "A state at the start of an activity. For example, the preconditions of an activity should hold at the start of the activity." .
-<https://w3id.org/digitalconstruction/Entities#AtStart> <http://www.w3.org/2000/01/rdf-schema#label> "AtStart" .
 # 
 # https://w3id.org/digitalconstruction/Entities#BuildingObject
 <https://w3id.org/digitalconstruction/Entities#BuildingObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -285,23 +293,8 @@
 # https://w3id.org/digitalconstruction/Entities#Vehicle
 <https://w3id.org/digitalconstruction/Entities#Vehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#Vehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Equipment> .
-<https://w3id.org/digitalconstruction/Entities#Vehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "An equipment used for moving or transporting other Entities" .
+<https://w3id.org/digitalconstruction/Entities#Vehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "A machine used for transporting goods in construction process" .
 <https://w3id.org/digitalconstruction/Entities#Vehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Vehicle" .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Annotations
-# #
-# #################################################################
-# 
-# 
-<https://w3id.org/digitalconstruction/Contexts#ContextFramework> <http://www.w3.org/2000/01/rdf-schema#label> "ContextFramework" .
-# 
-<https://w3id.org/digitalconstruction/Contexts#UnitAssignment> <http://www.w3.org/2000/01/rdf-schema#label> "UnitAssignment" .
-# 
-<https://w3id.org/digitalconstruction/Contexts#UnitFramework> <http://www.w3.org/2000/01/rdf-schema#label> "UnitFramework" .
 # 
 # 
 # 

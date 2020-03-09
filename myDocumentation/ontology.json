@@ -22,7 +22,31 @@
   "@id" : "http://purl.org/dc/elements/1.1/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#agent",
@@ -34,45 +58,44 @@
     "@id" : "https://w3id.org/digitalconstruction/Entities#Agent"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Contexts#Context",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Context"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Contexts#ContextFramework",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ContextFramework"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Contexts#UnitAssignment",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "UnitAssignment"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Contexts#UnitFramework",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "UnitFramework"
-  } ]
-}, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@value" : "2020-03-09"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "Digital construction - Entities"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2020-01-12"
+  } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@value" : "Seppo Törmä"
   }, {
     "@value" : "Yuan Zheng"
   } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "dice"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/digitalconstruction/Entities"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Entities ontology is the central module of the Digital Construction Ontology suite. It defines the essential top-level objects that can be referred to in construction and renovation projects by people or systems. The core concept is the ‘Identifiable Entity’, which refers the top abstract concept of all the objects that can have multiple different identifiers and can be classified according to different class classification schemes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Digital construction - Entities"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://w3id.org/digitalconstruction"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"
   }, {
-    "@id" : "https://w3id.org/digitalconstruction/Contexts"
-  }, {
     "@id" : "https://w3id.org/digitalconstruction/Variables"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "1.0.0"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#Activity",
@@ -91,12 +114,6 @@
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityRelatedState",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A state with respect to an activity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ActivityRelatedState"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Variables#ApplicabilityState"
   } ]
@@ -117,36 +134,18 @@
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#AllOver",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The state during the execution of an activity."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "AllOver"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#AtEnd",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A state at the end of an activity. For example, the effects of an activity can be assumed to hold at the end of the activity."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "AtEnd"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#AtStart",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A state at the start of an activity. For example, the preconditions of an activity should hold at the start of the activity."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "AtStart"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"
   } ]
@@ -283,7 +282,7 @@
   "@id" : "https://w3id.org/digitalconstruction/Entities#Vehicle",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "An equipment used for moving or transporting other Entities"
+    "@value" : "A machine used for transporting goods in construction process"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Vehicle"
@@ -493,26 +492,5 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#Group"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Entities#representationOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Contexts#Context"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#representedIn"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Entities#representedIn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Contexts#Context"
   } ]
 } ]

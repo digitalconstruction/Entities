@@ -8,12 +8,18 @@
 
 <https://w3id.org/digitalconstruction/Entities#> rdf:type owl:Ontology ;
                                                   owl:imports <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl> ,
-                                                              <https://w3id.org/digitalconstruction/Contexts> ,
                                                               <https://w3id.org/digitalconstruction/Variables> ;
+                                                  <http://purl.org/dc/elements/1.1/date> "2020-03-09" ;
+                                                  <http://purl.org/dc/elements/1.1/title> "Digital construction - Entities" ;
+                                                  <http://purl.org/dc/terms/created> "2020-01-12" ;
                                                   <http://purl.org/dc/terms/creator> "Seppo Törmä" ,
                                                                                      "Yuan Zheng" ;
+                                                  <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                                  <http://purl.org/vocab/vann/preferredNamespacePrefix> "dice" ;
+                                                  <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/Entities" ;
                                                   rdfs:comment "Entities ontology is the central module of the Digital Construction Ontology suite. It defines the essential top-level objects that can be referred to in construction and renovation projects by people or systems. The core concept is the ‘Identifiable Entity’, which refers the top abstract concept of all the objects that can have multiple different identifiers and can be classified according to different class classification schemes." ;
-                                                  owl:versionInfo "1.0.0" .
+                                                  rdfs:label "Digital construction - Entities" ;
+                                                  rdfs:seeAlso <https://w3id.org/digitalconstruction> .
 
 #################################################################
 #    Annotation properties
@@ -23,8 +29,40 @@
 <http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/creator
 <http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -127,19 +165,6 @@
           rdfs:range :Group .
 
 
-###  https://w3id.org/digitalconstruction/Entities#representationOf
-:representationOf rdf:type owl:ObjectProperty ;
-                  owl:inverseOf :representedIn ;
-                  rdfs:domain <https://w3id.org/digitalconstruction/Contexts#Context> ;
-                  rdfs:range :InformationContentEntity .
-
-
-###  https://w3id.org/digitalconstruction/Entities#representedIn
-:representedIn rdf:type owl:ObjectProperty ;
-               rdfs:domain :InformationContentEntity ;
-               rdfs:range <https://w3id.org/digitalconstruction/Contexts#Context> .
-
-
 #################################################################
 #    Data properties
 #################################################################
@@ -191,10 +216,6 @@
                                   owl:equivalentClass :Agent .
 
 
-###  https://w3id.org/digitalconstruction/Contexts#Context
-<https://w3id.org/digitalconstruction/Contexts#Context> rdfs:label "Context" .
-
-
 ###  https://w3id.org/digitalconstruction/Entities#Activity
 :Activity rdf:type owl:Class ;
           rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
@@ -205,9 +226,7 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#ActivityRelatedState
 :ActivityRelatedState rdf:type owl:Class ;
-                      rdfs:subClassOf <https://w3id.org/digitalconstruction/Variables#ApplicabilityState> ;
-                      rdfs:comment "A state with respect to an activity" ;
-                      rdfs:label "ActivityRelatedState" .
+                      rdfs:subClassOf <https://w3id.org/digitalconstruction/Variables#ApplicabilityState> .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#Agent
@@ -220,23 +239,17 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#AllOver
 :AllOver rdf:type owl:Class ;
-         rdfs:subClassOf :ActivityRelatedState ;
-         rdfs:comment "The state during the execution of an activity." ;
-         rdfs:label "AllOver" .
+         rdfs:subClassOf :ActivityRelatedState .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#AtEnd
 :AtEnd rdf:type owl:Class ;
-       rdfs:subClassOf :ActivityRelatedState ;
-       rdfs:comment "A state at the end of an activity. For example, the effects of an activity can be assumed to hold at the end of the activity." ;
-       rdfs:label "AtEnd" .
+       rdfs:subClassOf :ActivityRelatedState .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#AtStart
 :AtStart rdf:type owl:Class ;
-         rdfs:subClassOf :ActivityRelatedState ;
-         rdfs:comment "A state at the start of an activity. For example, the preconditions of an activity should hold at the start of the activity." ;
-         rdfs:label "AtStart" .
+         rdfs:subClassOf :ActivityRelatedState .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#BuildingObject
@@ -317,21 +330,8 @@
 ###  https://w3id.org/digitalconstruction/Entities#Vehicle
 :Vehicle rdf:type owl:Class ;
          rdfs:subClassOf :Equipment ;
-         rdfs:comment "An equipment used for moving or transporting other Entities" ;
+         rdfs:comment "A machine used for transporting goods in construction process" ;
          rdfs:label "Vehicle" .
-
-
-#################################################################
-#    Annotations
-#################################################################
-
-<https://w3id.org/digitalconstruction/Contexts#ContextFramework> rdfs:label "ContextFramework" .
-
-
-<https://w3id.org/digitalconstruction/Contexts#UnitAssignment> rdfs:label "UnitAssignment" .
-
-
-<https://w3id.org/digitalconstruction/Contexts#UnitFramework> rdfs:label "UnitFramework" .
 
 
 #################################################################

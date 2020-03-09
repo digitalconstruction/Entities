@@ -13,12 +13,18 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/digitalconstruction/Entities#">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
-        <owl:imports rdf:resource="https://w3id.org/digitalconstruction/Contexts"/>
         <owl:imports rdf:resource="https://w3id.org/digitalconstruction/Variables"/>
+        <dc:date>2020-03-09</dc:date>
+        <dc:title>Digital construction - Entities</dc:title>
+        <terms:created>2020-01-12</terms:created>
         <terms:creator>Seppo Törmä</terms:creator>
         <terms:creator>Yuan Zheng</terms:creator>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <vann:preferredNamespacePrefix>dice</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/digitalconstruction/Entities</vann:preferredNamespaceUri>
         <rdfs:comment>Entities ontology is the central module of the Digital Construction Ontology suite. It defines the essential top-level objects that can be referred to in construction and renovation projects by people or systems. The core concept is the ‘Identifiable Entity’, which refers the top abstract concept of all the objects that can have multiple different identifiers and can be classified according to different class classification schemes.</rdfs:comment>
-        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <rdfs:label>Digital construction - Entities</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/digitalconstruction"/>
     </owl:Ontology>
     
 
@@ -42,10 +48,66 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
     <!-- http://purl.org/dc/terms/creator -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
 
 
@@ -213,27 +275,6 @@
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Entities#representationOf -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#representationOf">
-        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Entities#representedIn"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Contexts#Context"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/digitalconstruction/Entities#representedIn -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#representedIn">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Contexts#Context"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -332,15 +373,6 @@
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Contexts#Context -->
-
-
-    <rdf:Description rdf:about="https://w3id.org/digitalconstruction/Contexts#Context">
-        <rdfs:label>Context</rdfs:label>
-    </rdf:Description>
-    
-
-
     <!-- https://w3id.org/digitalconstruction/Entities#Activity -->
 
 
@@ -358,8 +390,6 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#ActivityRelatedState">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Variables#ApplicabilityState"/>
-        <rdfs:comment>A state with respect to an activity</rdfs:comment>
-        <rdfs:label>ActivityRelatedState</rdfs:label>
     </owl:Class>
     
 
@@ -381,8 +411,6 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#AllOver">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"/>
-        <rdfs:comment>The state during the execution of an activity.</rdfs:comment>
-        <rdfs:label>AllOver</rdfs:label>
     </owl:Class>
     
 
@@ -392,8 +420,6 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#AtEnd">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"/>
-        <rdfs:comment>A state at the end of an activity. For example, the effects of an activity can be assumed to hold at the end of the activity.</rdfs:comment>
-        <rdfs:label>AtEnd</rdfs:label>
     </owl:Class>
     
 
@@ -403,8 +429,6 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#AtStart">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"/>
-        <rdfs:comment>A state at the start of an activity. For example, the preconditions of an activity should hold at the start of the activity.</rdfs:comment>
-        <rdfs:label>AtStart</rdfs:label>
     </owl:Class>
     
 
@@ -529,30 +553,9 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#Vehicle">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#Equipment"/>
-        <rdfs:comment>An equipment used for moving or transporting other Entities</rdfs:comment>
+        <rdfs:comment>A machine used for transporting goods in construction process</rdfs:comment>
         <rdfs:label>Vehicle</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    <rdf:Description rdf:about="https://w3id.org/digitalconstruction/Contexts#ContextFramework">
-        <rdfs:label>ContextFramework</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/digitalconstruction/Contexts#UnitAssignment">
-        <rdfs:label>UnitAssignment</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/digitalconstruction/Contexts#UnitFramework">
-        <rdfs:label>UnitFramework</rdfs:label>
-    </rdf:Description>
     
 
 
