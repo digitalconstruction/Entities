@@ -64,7 +64,7 @@
     "@value" : "2020-03-09"
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
-    "@value" : "Digital construction - Entities"
+    "@value" : "Digital Construction - Entities"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@value" : "2020-01-12"
@@ -87,7 +87,7 @@
     "@value" : "Entities ontology is the central module of the Digital Construction Ontology suite. It defines the essential top-level objects that can be referred to in construction and renovation projects by people or systems. The core concept is the ‘Identifiable Entity’, which refers the top abstract concept of all the objects that can have multiple different identifiers and can be classified according to different class classification schemes."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Digital construction - Entities"
+    "@value" : "Digital Construction - Entities"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "https://w3id.org/digitalconstruction"

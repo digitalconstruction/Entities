@@ -10,7 +10,7 @@
                                                   owl:imports <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl> ,
                                                               <https://w3id.org/digitalconstruction/Variables> ;
                                                   <http://purl.org/dc/elements/1.1/date> "2020-03-09" ;
-                                                  <http://purl.org/dc/elements/1.1/title> "Digital construction - Entities" ;
+                                                  <http://purl.org/dc/elements/1.1/title> "Digital Construction - Entities" ;
                                                   <http://purl.org/dc/terms/created> "2020-01-12" ;
                                                   <http://purl.org/dc/terms/creator> "Seppo Törmä" ,
                                                                                      "Yuan Zheng" ;
@@ -18,7 +18,7 @@
                                                   <http://purl.org/vocab/vann/preferredNamespacePrefix> "dice" ;
                                                   <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/Entities" ;
                                                   rdfs:comment "Entities ontology is the central module of the Digital Construction Ontology suite. It defines the essential top-level objects that can be referred to in construction and renovation projects by people or systems. The core concept is the ‘Identifiable Entity’, which refers the top abstract concept of all the objects that can have multiple different identifiers and can be classified according to different class classification schemes." ;
-                                                  rdfs:label "Digital construction - Entities" ;
+                                                  rdfs:label "Digital Construction - Entities" ;
                                                   rdfs:seeAlso <https://w3id.org/digitalconstruction> .
 
 #################################################################
