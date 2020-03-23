@@ -758,12 +758,6 @@
                 rdfs:label "Classification" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#CompanyRole
-:CompanyRole rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
-             rdfs:label "CompanyRole" .
-
-
 ###  https://w3id.org/digitalconstruction/Entities#Equipment
 :Equipment rdf:type owl:Class ;
            rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
@@ -837,12 +831,6 @@
                      rdfs:subClassOf :SpatialOrientation ;
                      rdfs:comment "Orientation in two dimensions given by the orientation angle from true north" ;
                      rdfs:label "OneAngleOrientation" .
-
-
-###  https://w3id.org/digitalconstruction/Entities#PersonRole
-:PersonRole rdf:type owl:Class ;
-            rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
-            rdfs:label "PersonRole" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#ProcurementPackage

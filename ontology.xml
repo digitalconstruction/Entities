@@ -1224,16 +1224,6 @@
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Entities#CompanyRole -->
-
-
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#CompanyRole">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:label>CompanyRole</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/digitalconstruction/Entities#Equipment -->
 
 
@@ -1349,16 +1339,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#SpatialOrientation"/>
         <rdfs:comment>Orientation in two dimensions given by the orientation angle from true north</rdfs:comment>
         <rdfs:label>OneAngleOrientation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/digitalconstruction/Entities#PersonRole -->
-
-
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#PersonRole">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:label>PersonRole</rdfs:label>
     </owl:Class>
     
 

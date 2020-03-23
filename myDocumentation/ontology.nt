@@ -666,11 +666,6 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#Classification> <http://www.w3.org/2000/01/rdf-schema#comment> "Classification enables the specification where an Identifiable Entity   belongs in a given classification scheme (such as OmniClass, UniFormat, CoClass, Talo2000, etc.)" .
 <https://w3id.org/digitalconstruction/Entities#Classification> <http://www.w3.org/2000/01/rdf-schema#label> "Classification" .
 # 
-# https://w3id.org/digitalconstruction/Entities#CompanyRole
-<https://w3id.org/digitalconstruction/Entities#CompanyRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Entities#CompanyRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000023> .
-<https://w3id.org/digitalconstruction/Entities#CompanyRole> <http://www.w3.org/2000/01/rdf-schema#label> "CompanyRole" .
-# 
 # https://w3id.org/digitalconstruction/Entities#Equipment
 <https://w3id.org/digitalconstruction/Entities#Equipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#Equipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000030> .
@@ -734,11 +729,6 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#OneAngleOrientation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#SpatialOrientation> .
 <https://w3id.org/digitalconstruction/Entities#OneAngleOrientation> <http://www.w3.org/2000/01/rdf-schema#comment> "Orientation in two dimensions given by the orientation angle from true north" .
 <https://w3id.org/digitalconstruction/Entities#OneAngleOrientation> <http://www.w3.org/2000/01/rdf-schema#label> "OneAngleOrientation" .
-# 
-# https://w3id.org/digitalconstruction/Entities#PersonRole
-<https://w3id.org/digitalconstruction/Entities#PersonRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Entities#PersonRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000023> .
-<https://w3id.org/digitalconstruction/Entities#PersonRole> <http://www.w3.org/2000/01/rdf-schema#label> "PersonRole" .
 # 
 # https://w3id.org/digitalconstruction/Entities#ProcurementPackage
 <https://w3id.org/digitalconstruction/Entities#ProcurementPackage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
