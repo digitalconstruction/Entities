@@ -976,6 +976,7 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#ActivityRelatedState">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Variables#ApplicabilityState"/>
+        <rdfs:label>ActivityRelatedState</rdfs:label>
     </owl:Class>
     
 
@@ -997,6 +998,7 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#AllOver">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"/>
+        <rdfs:label>AllOver</rdfs:label>
     </owl:Class>
     
 
@@ -1006,6 +1008,7 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#AtEnd">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"/>
+        <rdfs:label>AtEnd</rdfs:label>
     </owl:Class>
     
 
@@ -1015,6 +1018,7 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#AtStart">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"/>
+        <rdfs:label>AtStart</rdfs:label>
     </owl:Class>
     
 

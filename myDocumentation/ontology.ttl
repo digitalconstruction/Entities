@@ -600,7 +600,8 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#ActivityRelatedState
 :ActivityRelatedState rdf:type owl:Class ;
-                      rdfs:subClassOf <https://w3id.org/digitalconstruction/Variables#ApplicabilityState> .
+                      rdfs:subClassOf <https://w3id.org/digitalconstruction/Variables#ApplicabilityState> ;
+                      rdfs:label "ActivityRelatedState" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#Agent
@@ -613,17 +614,20 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#AllOver
 :AllOver rdf:type owl:Class ;
-         rdfs:subClassOf :ActivityRelatedState .
+         rdfs:subClassOf :ActivityRelatedState ;
+         rdfs:label "AllOver" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#AtEnd
 :AtEnd rdf:type owl:Class ;
-       rdfs:subClassOf :ActivityRelatedState .
+       rdfs:subClassOf :ActivityRelatedState ;
+       rdfs:label "AtEnd" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#AtStart
 :AtStart rdf:type owl:Class ;
-         rdfs:subClassOf :ActivityRelatedState .
+         rdfs:subClassOf :ActivityRelatedState ;
+         rdfs:label "AtStart" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#BuildingObject

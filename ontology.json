@@ -208,6 +208,9 @@
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityRelatedState",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ActivityRelatedState"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Variables#ApplicabilityState"
   } ]
@@ -228,18 +231,27 @@
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#AllOver",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AllOver"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#AtEnd",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AtEnd"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#AtStart",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AtStart"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"
   } ]

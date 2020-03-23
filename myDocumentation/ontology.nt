@@ -533,6 +533,7 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # https://w3id.org/digitalconstruction/Entities#ActivityRelatedState
 <https://w3id.org/digitalconstruction/Entities#ActivityRelatedState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#ActivityRelatedState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Variables#ApplicabilityState> .
+<https://w3id.org/digitalconstruction/Entities#ActivityRelatedState> <http://www.w3.org/2000/01/rdf-schema#label> "ActivityRelatedState" .
 # 
 # https://w3id.org/digitalconstruction/Entities#Agent
 <https://w3id.org/digitalconstruction/Entities#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -544,14 +545,17 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # https://w3id.org/digitalconstruction/Entities#AllOver
 <https://w3id.org/digitalconstruction/Entities#AllOver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#AllOver> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#ActivityRelatedState> .
+<https://w3id.org/digitalconstruction/Entities#AllOver> <http://www.w3.org/2000/01/rdf-schema#label> "AllOver" .
 # 
 # https://w3id.org/digitalconstruction/Entities#AtEnd
 <https://w3id.org/digitalconstruction/Entities#AtEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#AtEnd> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#ActivityRelatedState> .
+<https://w3id.org/digitalconstruction/Entities#AtEnd> <http://www.w3.org/2000/01/rdf-schema#label> "AtEnd" .
 # 
 # https://w3id.org/digitalconstruction/Entities#AtStart
 <https://w3id.org/digitalconstruction/Entities#AtStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#AtStart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#ActivityRelatedState> .
+<https://w3id.org/digitalconstruction/Entities#AtStart> <http://www.w3.org/2000/01/rdf-schema#label> "AtStart" .
 # 
 # https://w3id.org/digitalconstruction/Entities#BuildingObject
 <https://w3id.org/digitalconstruction/Entities#BuildingObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
