@@ -157,7 +157,7 @@
     "@id" : "https://w3id.org/digitalconstruction/Entities#Agent"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Entities#",
+  "@id" : "https://w3id.org/digitalconstruction/Entities",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/date" : [ {
     "@value" : "2020-03-20"
@@ -183,7 +183,7 @@
     "@value" : "https://w3id.org/digitalconstruction/Entities"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Entities ontology is the central module of the Digital Construction Ontology suite. It defines the essential top-level objects that can be referred to in construction and renovation projects by people or systems. The core concept is the ‘Identifiable Entity’, which refers the top abstract concept of all the objects that can have multiple different identifiers and can be classified according to different class classification schemes."
+    "@value" : "Digital Construction Entities Ontology defines the essential entities that can be referred to in construction and renovation projects by people or systems."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Digital Construction Entities"

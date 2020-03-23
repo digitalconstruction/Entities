@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="https://w3id.org/digitalconstruction/Entities#">
+    <owl:Ontology rdf:about="https://w3id.org/digitalconstruction/Entities">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl"/>
         <owl:imports rdf:resource="https://w3id.org/digitalconstruction/Variables"/>
         <dc:date>2020-03-20</dc:date>
@@ -20,7 +20,7 @@
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <vann:preferredNamespacePrefix>dice</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/digitalconstruction/Entities</vann:preferredNamespaceUri>
-        <rdfs:comment>Entities ontology is the central module of the Digital Construction Ontology suite. It defines the essential top-level objects that can be referred to in construction and renovation projects by people or systems. The core concept is the ‘Identifiable Entity’, which refers the top abstract concept of all the objects that can have multiple different identifiers and can be classified according to different class classification schemes.</rdfs:comment>
+        <rdfs:comment>Digital Construction Entities Ontology defines the essential entities that can be referred to in construction and renovation projects by people or systems.</rdfs:comment>
         <rdfs:label>Digital Construction Entities</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/digitalconstruction"/>
     </owl:Ontology>

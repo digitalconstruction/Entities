@@ -1,17 +1,17 @@
-<https://w3id.org/digitalconstruction/Entities#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/digitalconstruction/Entities#> <http://www.w3.org/2002/07/owl#imports> <http://purl.obolibrary.org/obo/bfo/2020/bfo.owl> .
-<https://w3id.org/digitalconstruction/Entities#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/digitalconstruction/Variables> .
-<https://w3id.org/digitalconstruction/Entities#> <http://purl.org/dc/elements/1.1/date> "2020-03-20" .
-<https://w3id.org/digitalconstruction/Entities#> <http://purl.org/dc/elements/1.1/title> "Digital Construction Entities" .
-<https://w3id.org/digitalconstruction/Entities#> <http://purl.org/dc/terms/created> "2020-01-12" .
-<https://w3id.org/digitalconstruction/Entities#> <http://purl.org/dc/terms/creator> "Seppo Törmä" .
-<https://w3id.org/digitalconstruction/Entities#> <http://purl.org/dc/terms/creator> "Yuan Zheng" .
-<https://w3id.org/digitalconstruction/Entities#> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/digitalconstruction/Entities#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "dice" .
-<https://w3id.org/digitalconstruction/Entities#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/Entities" .
-<https://w3id.org/digitalconstruction/Entities#> <http://www.w3.org/2000/01/rdf-schema#comment> "Entities ontology is the central module of the Digital Construction Ontology suite. It defines the essential top-level objects that can be referred to in construction and renovation projects by people or systems. The core concept is the ‘Identifiable Entity’, which refers the top abstract concept of all the objects that can have multiple different identifiers and can be classified according to different class classification schemes." .
-<https://w3id.org/digitalconstruction/Entities#> <http://www.w3.org/2000/01/rdf-schema#label> "Digital Construction Entities" .
-<https://w3id.org/digitalconstruction/Entities#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/digitalconstruction> .
+<https://w3id.org/digitalconstruction/Entities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/digitalconstruction/Entities> <http://www.w3.org/2002/07/owl#imports> <http://purl.obolibrary.org/obo/bfo/2020/bfo.owl> .
+<https://w3id.org/digitalconstruction/Entities> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/digitalconstruction/Variables> .
+<https://w3id.org/digitalconstruction/Entities> <http://purl.org/dc/elements/1.1/date> "2020-03-20" .
+<https://w3id.org/digitalconstruction/Entities> <http://purl.org/dc/elements/1.1/title> "Digital Construction Entities" .
+<https://w3id.org/digitalconstruction/Entities> <http://purl.org/dc/terms/created> "2020-01-12" .
+<https://w3id.org/digitalconstruction/Entities> <http://purl.org/dc/terms/creator> "Seppo Törmä" .
+<https://w3id.org/digitalconstruction/Entities> <http://purl.org/dc/terms/creator> "Yuan Zheng" .
+<https://w3id.org/digitalconstruction/Entities> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/digitalconstruction/Entities> <http://purl.org/vocab/vann/preferredNamespacePrefix> "dice" .
+<https://w3id.org/digitalconstruction/Entities> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/Entities" .
+<https://w3id.org/digitalconstruction/Entities> <http://www.w3.org/2000/01/rdf-schema#comment> "Digital Construction Entities Ontology defines the essential entities that can be referred to in construction and renovation projects by people or systems." .
+<https://w3id.org/digitalconstruction/Entities> <http://www.w3.org/2000/01/rdf-schema#label> "Digital Construction Entities" .
+<https://w3id.org/digitalconstruction/Entities> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/digitalconstruction> .
 # 
 # 
 # #################################################################
