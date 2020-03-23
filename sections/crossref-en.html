@@ -1,5 +1,5 @@
-<h2 id="crossreference" class="list">Cross reference for Digital Construction - Entities classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by Digital Construction - Entities.
+<h2 id="crossreference" class="list">Cross reference for Digital Construction Entities classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Digital Construction Entities.
 <div id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
@@ -45,12 +45,32 @@ This section provides details for each class and property defined by Digital Con
             title="https://w3id.org/digitalconstruction/Entities#BuildingObject">BuildingObject</a>
       </li>
       <li>
+         <a href="#CartesianBoundingBox"
+            title="https://w3id.org/digitalconstruction/Entities#CartesianBoundingBox">CartesianBoundingBox</a>
+      </li>
+      <li>
+         <a href="#CartesianPosition"
+            title="https://w3id.org/digitalconstruction/Entities#CartesianPosition">CartesianPosition</a>
+      </li>
+      <li>
+         <a href="#CartesianVolume"
+            title="https://w3id.org/digitalconstruction/Entities#CartesianVolume">CartesianVolume</a>
+      </li>
+      <li>
          <a href="#Classification"
             title="https://w3id.org/digitalconstruction/Entities#Classification">Classification</a>
       </li>
       <li>
          <a href="#Equipment"
             title="https://w3id.org/digitalconstruction/Entities#Equipment">Equipment</a>
+      </li>
+      <li>
+         <a href="#GeographicBoundingBox"
+            title="https://w3id.org/digitalconstruction/Entities#GeographicBoundingBox">GeographicBoundingBox</a>
+      </li>
+      <li>
+         <a href="#GeographicPosition"
+            title="https://w3id.org/digitalconstruction/Entities#GeographicPosition">GeographicPosition</a>
       </li>
       <li>
          <a href="#Group"
@@ -60,10 +80,6 @@ This section provides details for each class and property defined by Digital Con
          <a href="#http://purl.obolibrary.org/obo/IAO_0000030" title="http://purl.obolibrary.org/obo/IAO_0000030">
             <span>i a o 0000030</span>
          </a>
-      </li>
-      <li>
-         <a href="#IdentifiableEntity"
-            title="https://w3id.org/digitalconstruction/Entities#IdentifiableEntity">IdentifiableEntity</a>
       </li>
       <li>
          <a href="#Identifier"
@@ -82,8 +98,46 @@ This section provides details for each class and property defined by Digital Con
             title="https://w3id.org/digitalconstruction/Entities#MaterialBatch">MaterialBatch</a>
       </li>
       <li>
-         <a href="#SpaceOccupyingEntity"
-            title="https://w3id.org/digitalconstruction/Entities#SpaceOccupyingEntity">SpaceOccupyingEntity</a>
+         <a href="#OneAngleOrientation"
+            title="https://w3id.org/digitalconstruction/Entities#OneAngleOrientation">OneAngleOrientation</a>
+      </li>
+      <li>
+         <a href="#SpatialQuality"
+            title="https://w3id.org/digitalconstruction/Entities#SpatialQuality">
+            <span>spatial quality</span>
+         </a>
+      </li>
+      <li>
+         <a href="#SpatialExtent"
+            title="https://w3id.org/digitalconstruction/Entities#SpatialExtent">SpatialExtent</a>
+      </li>
+      <li>
+         <a href="#SpatialOrientation"
+            title="https://w3id.org/digitalconstruction/Entities#SpatialOrientation">SpatialOrientation</a>
+      </li>
+      <li>
+         <a href="#SpatialPosition"
+            title="https://w3id.org/digitalconstruction/Entities#SpatialPosition">SpatialPosition</a>
+      </li>
+      <li>
+         <a href="#ThreeAngleOrientation"
+            title="https://w3id.org/digitalconstruction/Entities#ThreeAngleOrientation">ThreeAngleOrientation</a>
+      </li>
+      <li>
+         <a href="#TimeInstant"
+            title="https://w3id.org/digitalconstruction/Entities#TimeInstant">
+            <span>time instant</span>
+         </a>
+      </li>
+      <li>
+         <a href="#TimeInterval"
+            title="https://w3id.org/digitalconstruction/Entities#TimeInterval">
+            <span>time interval</span>
+         </a>
+      </li>
+      <li>
+         <a href="#TwoAngleOrientation"
+            title="https://w3id.org/digitalconstruction/Entities#TwoAngleOrientation">TwoAngleOrientation</a>
       </li>
       <li>
          <a href="#Vehicle"
@@ -98,33 +152,40 @@ This section provides details for each class and property defined by Digital Con
       <p>
          <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#Activity</p>
       <div class="comment">
-         <span class="markdown">Any work process (from projects to tasks) carried out in a construction project.</span>
+         <span class="markdown">Def: A process that is intentionally performed by an agent.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#IdentifiableEntity"
-               title="https://w3id.org/digitalconstruction/Entities#IdentifiableEntity">IdentifiableEntity</a>
-            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000015">b f o 0000015</span>
+            <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000015">b f o 0000015</span>
+            <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#hasState"
-               title="https://w3id.org/digitalconstruction/Entities#hasState">has state</a>
+            <a href="#hasAgent"
+               title="https://w3id.org/digitalconstruction/Entities#hasAgent">has agent</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasSubActivity"
                title="https://w3id.org/digitalconstruction/Entities#hasSubActivity">has sub activity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasState"
+               title="https://w3id.org/digitalconstruction/Entities#hasState">hasState</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isSubActivityOf"
-               title="https://w3id.org/digitalconstruction/Entities#isSubActivityOf">is sub activity of</a>
+               title="https://w3id.org/digitalconstruction/Entities#isSubActivityOf">isSubActivityOf</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#occupiesTimeInterval"
+               title="https://w3id.org/digitalconstruction/Entities#occupiesTimeInterval">occupiesTimeInterval</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasActivity"
-               title="https://w3id.org/digitalconstruction/Entities#hasActivity">has activity</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasSubActivity"
+            <a href="#hasSubActivity"
                title="https://w3id.org/digitalconstruction/Entities#hasSubActivity">has sub activity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasActivity"
+               title="https://w3id.org/digitalconstruction/Entities#hasActivity">hasActivity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isAgentIn"
+               title="https://w3id.org/digitalconstruction/Entities#isAgentIn">isAgentIn</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isOccupiedByActivity"
+               title="https://w3id.org/digitalconstruction/Entities#isOccupiedByActivity">isOccupiedByActivity</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isSubActivityOf"
-               title="https://w3id.org/digitalconstruction/Entities#isSubActivityOf">is sub activity of</a>
+               title="https://w3id.org/digitalconstruction/Entities#isSubActivityOf">isSubActivityOf</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -155,13 +216,13 @@ This section provides details for each class and property defined by Digital Con
          <dt>is in domain of</dt>
          <dd>
             <a href="#hasActivity"
-               title="https://w3id.org/digitalconstruction/Entities#hasActivity">has activity</a>
+               title="https://w3id.org/digitalconstruction/Entities#hasActivity">hasActivity</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#hasState"
-               title="https://w3id.org/digitalconstruction/Entities#hasState">has state</a>
+               title="https://w3id.org/digitalconstruction/Entities#hasState">hasState</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -195,21 +256,24 @@ This section provides details for each class and property defined by Digital Con
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#IdentifiableEntity"
-               title="https://w3id.org/digitalconstruction/Entities#IdentifiableEntity">IdentifiableEntity</a>
-            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://www.w3.org/ns/prov#agent">agent</span>
+            <span class="dotted" title="http://www.w3.org/ns/prov#agent">agent</span>
+            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000040">b f o 0000040</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#hasAsset"
-               title="https://w3id.org/digitalconstruction/Entities#hasAsset">has asset</a>
+               title="https://w3id.org/digitalconstruction/Entities#hasAsset">hasAsset</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isAgentIn"
+               title="https://w3id.org/digitalconstruction/Entities#isAgentIn">isAgentIn</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasOwner"
-               title="https://w3id.org/digitalconstruction/Entities#hasOwner">has owner</a>
+            <a href="#hasAgent"
+               title="https://w3id.org/digitalconstruction/Entities#hasAgent">has agent</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasOwner"
+               title="https://w3id.org/digitalconstruction/Entities#hasOwner">hasOwner</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -275,9 +339,8 @@ This section provides details for each class and property defined by Digital Con
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#SpaceOccupyingEntity"
-               title="https://w3id.org/digitalconstruction/Entities#SpaceOccupyingEntity">SpaceOccupyingEntity</a>
-            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000030">b f o 0000030</span>
+            <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000030">b f o 0000030</span>
+            <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
@@ -288,6 +351,103 @@ This section provides details for each class and property defined by Digital Con
             <sup class="type-c" title="class">c</sup>, <a href="#MaterialBatch"
                title="https://w3id.org/digitalconstruction/Entities#MaterialBatch">MaterialBatch</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="CartesianBoundingBox">
+      <h3>CartesianBoundingBox<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#CartesianBoundingBox</p>
+      <div class="comment">
+         <span class="markdown">Minimum bounding box of an entity given by a minimum cartesian position and maximum cartesian position</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#SpatialExtent"
+               title="https://w3id.org/digitalconstruction/Entities#SpatialExtent">SpatialExtent</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasMaximumCartesianPosition"
+               title="https://w3id.org/digitalconstruction/Entities#hasMaximumCartesianPosition">hasMaximumCartesianPosition</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasMinimumCartesianPosition"
+               title="https://w3id.org/digitalconstruction/Entities#hasMinimumCartesianPosition">hasMinumumCartesianPosition</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="CartesianPosition">
+      <h3>CartesianPosition<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#CartesianPosition</p>
+      <div class="comment">
+         <span class="markdown">Cartesian position expressed as x, y, and z coordinates with respect to a spatial origin and spatial orientation</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#SpatialPosition"
+               title="https://w3id.org/digitalconstruction/Entities#SpatialPosition">SpatialPosition</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasSpatialOrientation"
+               title="https://w3id.org/digitalconstruction/Entities#hasSpatialOrientation">hasSpatialOrientation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSpatialOrigin"
+               title="https://w3id.org/digitalconstruction/Entities#hasSpatialOrigin">hasSpatialOrigin</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasX"
+               title="https://w3id.org/digitalconstruction/Entities#hasX">hasX</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasY"
+               title="https://w3id.org/digitalconstruction/Entities#hasY">hasY</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasZ"
+               title="https://w3id.org/digitalconstruction/Entities#hasZ">hasZ</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasMaximumCartesianPosition"
+               title="https://w3id.org/digitalconstruction/Entities#hasMaximumCartesianPosition">hasMaximumCartesianPosition</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasMinimumCartesianPosition"
+               title="https://w3id.org/digitalconstruction/Entities#hasMinimumCartesianPosition">hasMinumumCartesianPosition</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="CartesianVolume">
+      <h3>CartesianVolume<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#CartesianVolume</p>
+      <div class="comment">
+         <span class="markdown">Cartesian volume given by the lengths to x, y, and z directions</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#SpatialExtent"
+               title="https://w3id.org/digitalconstruction/Entities#SpatialExtent">SpatialExtent</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasXLength"
+               title="https://w3id.org/digitalconstruction/Entities#hasXLength">hasXLength</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasYLength"
+               title="https://w3id.org/digitalconstruction/Entities#hasYLength">hasYLength</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasZLength"
+               title="https://w3id.org/digitalconstruction/Entities#hasZLength">hasZLength</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
    </div>
@@ -302,20 +462,26 @@ This section provides details for each class and property defined by Digital Con
          <span class="markdown">Classification enables the specification where an Identifiable Entity   belongs in a given classification scheme (such as OmniClass, UniFormat, CoClass, Talo2000, etc.)</span>
       </div>
       <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#InformationContentEntity"
+               title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">InformationContentEntity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#classifies"
                title="https://w3id.org/digitalconstruction/Entities#classifies">classifies</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasLabel"
-               title="https://w3id.org/digitalconstruction/Entities#hasLabel">has label</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSystem"
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSystem"
                title="https://w3id.org/digitalconstruction/Entities#hasSystem">has system</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasLabel"
+               title="https://w3id.org/digitalconstruction/Entities#hasLabel">hasLabel</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#classifiedBy"
-               title="https://w3id.org/digitalconstruction/Entities#classifiedBy">classified by</a>
+               title="https://w3id.org/digitalconstruction/Entities#classifiedBy">classifiedBy</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -339,9 +505,8 @@ This section provides details for each class and property defined by Digital Con
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#SpaceOccupyingEntity"
-               title="https://w3id.org/digitalconstruction/Entities#SpaceOccupyingEntity">SpaceOccupyingEntity</a>
-            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000030">b f o 0000030</span>
+            <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000030">b f o 0000030</span>
+            <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
          <dd>
@@ -361,6 +526,72 @@ This section provides details for each class and property defined by Digital Con
          </dd>
       </dl>
    </div>
+   <div class="entity" id="GeographicBoundingBox">
+      <h3>GeographicBoundingBox<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#GeographicBoundingBox</p>
+      <div class="comment">
+         <span class="markdown">Minimum bounding box of a geographical area determined by its minimum geographical position and maximum geographical position</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#SpatialExtent"
+               title="https://w3id.org/digitalconstruction/Entities#SpatialExtent">SpatialExtent</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasMaximumGeographicalPosition"
+               title="https://w3id.org/digitalconstruction/Entities#hasMaximumGeographicalPosition">hasMaximumGeographicalPosition</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasMinimumGeographicalPosition"
+               title="https://w3id.org/digitalconstruction/Entities#hasMinimumGeographicalPosition">hasMinimumGeographicalPosition</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="GeographicPosition">
+      <h3>GeographicPosition<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#GeographicPosition</p>
+      <div class="comment">
+         <span class="markdown">Geographic position expressed in longitude, latitude and altitude with respect to a geographic coordinate system.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#SpatialPosition"
+               title="https://w3id.org/digitalconstruction/Entities#SpatialPosition">SpatialPosition</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasAltitude"
+               title="https://w3id.org/digitalconstruction/Entities#hasAltitude">hasAltitude</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasGeographicCoordinateSystem"
+               title="https://w3id.org/digitalconstruction/Entities#hasGeographicCoordinateSystem">hasGeographicCoordinateSystem</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasLatitude"
+               title="https://w3id.org/digitalconstruction/Entities#hasLatitude">hasLatitude</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasLongitude"
+               title="https://w3id.org/digitalconstruction/Entities#hasLongitude">hasLongitude</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasMaximumGeographicalPosition"
+               title="https://w3id.org/digitalconstruction/Entities#hasMaximumGeographicalPosition">hasMaximumGeographicalPosition</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasMinimumGeographicalPosition"
+               title="https://w3id.org/digitalconstruction/Entities#hasMinimumGeographicalPosition">hasMinimumGeographicalPosition</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="Group">
       <h3>Group<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -374,20 +605,19 @@ This section provides details for each class and property defined by Digital Con
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#IdentifiableEntity"
-               title="https://w3id.org/digitalconstruction/Entities#IdentifiableEntity">IdentifiableEntity</a>
+            <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000001">b f o 0000001</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#hasMember"
-               title="https://w3id.org/digitalconstruction/Entities#hasMember">has member</a>
+               title="https://w3id.org/digitalconstruction/Entities#hasMember">hasMember</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#memberOf"
-               title="https://w3id.org/digitalconstruction/Entities#memberOf">member of</a>
+               title="https://w3id.org/digitalconstruction/Entities#memberOf">memberOf</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -408,69 +638,6 @@ This section provides details for each class and property defined by Digital Con
          </dd>
       </dl>
    </div>
-   <div class="entity" id="IdentifiableEntity">
-      <h3>IdentifiableEntity<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#IdentifiableEntity</p>
-      <div class="comment">
-         <span class="markdown">'IdentifiableEntity' is a abstract concept that refers to all the central objects that are discussed in the construction project planning and management. Subclasses of the Identifiable Entities include the 'Activity','Group','Information Object','PhysicalObject',and 'Agent'. Identifiable entities are identified by their unique identifiers and can have their specific classification that is defined by certain classification scheme in the construction domain.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000001">b f o 0000001</span>
-         </dd>
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#Activity"
-               title="https://w3id.org/digitalconstruction/Entities#Activity">Activity</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Agent"
-               title="https://w3id.org/digitalconstruction/Entities#Agent">Agent</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Group"
-               title="https://w3id.org/digitalconstruction/Entities#Group">Group</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#InformationContentEntity"
-               title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">InformationContentEntity</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#SpaceOccupyingEntity"
-               title="https://w3id.org/digitalconstruction/Entities#SpaceOccupyingEntity">SpaceOccupyingEntity</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#classifiedBy"
-               title="https://w3id.org/digitalconstruction/Entities#classifiedBy">classified by</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasOwner"
-               title="https://w3id.org/digitalconstruction/Entities#hasOwner">has owner</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasPart"
-               title="https://w3id.org/digitalconstruction/Entities#hasPart">has part</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#identifiedBy"
-               title="https://w3id.org/digitalconstruction/Entities#identifiedBy">identified by</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isPartOf"
-               title="https://w3id.org/digitalconstruction/Entities#isPartOf">is part of</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#memberOf"
-               title="https://w3id.org/digitalconstruction/Entities#memberOf">member of</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#classifies"
-               title="https://w3id.org/digitalconstruction/Entities#classifies">classifies</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasAsset"
-               title="https://w3id.org/digitalconstruction/Entities#hasAsset">has asset</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasMember"
-               title="https://w3id.org/digitalconstruction/Entities#hasMember">has member</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasPart"
-               title="https://w3id.org/digitalconstruction/Entities#hasPart">has part</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#identifies"
-               title="https://w3id.org/digitalconstruction/Entities#identifies">identifies</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isPartOf"
-               title="https://w3id.org/digitalconstruction/Entities#isPartOf">is part of</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="Identifier">
       <h3>Identifier<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -482,12 +649,18 @@ This section provides details for each class and property defined by Digital Con
          <span class="markdown">Identifier allows the specification of a (global or local) identifier, based on the given identification system (GUID, URI, room number in a building, etc.)</span>
       </div>
       <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#InformationContentEntity"
+               title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">InformationContentEntity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#allocatedBy"
-               title="https://w3id.org/digitalconstruction/Entities#allocatedBy">allocated by</a>
+               title="https://w3id.org/digitalconstruction/Entities#allocatedBy">allocatedBy</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasLabel"
-               title="https://w3id.org/digitalconstruction/Entities#hasLabel">has label</a>
+               title="https://w3id.org/digitalconstruction/Entities#hasLabel">hasLabel</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#identifies"
                title="https://w3id.org/digitalconstruction/Entities#identifies">identifies</a>
             <sup class="type-op" title="object property">op</sup>
@@ -495,7 +668,7 @@ This section provides details for each class and property defined by Digital Con
          <dt>is in range of</dt>
          <dd>
             <a href="#identifiedBy"
-               title="https://w3id.org/digitalconstruction/Entities#identifiedBy">identified by</a>
+               title="https://w3id.org/digitalconstruction/Entities#identifiedBy">identifiedBy</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -519,9 +692,16 @@ This section provides details for each class and property defined by Digital Con
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#IdentifiableEntity"
-               title="https://w3id.org/digitalconstruction/Entities#IdentifiableEntity">IdentifiableEntity</a>
-            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000031">b f o 0000031</span>
+            <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000031">b f o 0000031</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Classification"
+               title="https://w3id.org/digitalconstruction/Entities#Classification">Classification</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Identifier"
+               title="https://w3id.org/digitalconstruction/Entities#Identifier">Identifier</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -538,9 +718,24 @@ This section provides details for each class and property defined by Digital Con
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#SpaceOccupyingEntity"
-               title="https://w3id.org/digitalconstruction/Entities#SpaceOccupyingEntity">SpaceOccupyingEntity</a>
-            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000029">b f o 0000029</span>
+            <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000029">b f o 0000029</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasSubLocation"
+               title="https://w3id.org/digitalconstruction/Entities#hasSubLocation">hasSubLocation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isSubLocationOf"
+               title="https://w3id.org/digitalconstruction/Entities#isSubLocationOf">isSubLocationOf</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasSubLocation"
+               title="https://w3id.org/digitalconstruction/Entities#hasSubLocation">hasSubLocation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isSubLocationOf"
+               title="https://w3id.org/digitalconstruction/Entities#isSubLocationOf">isSubLocationOf</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
@@ -567,9 +762,8 @@ This section provides details for each class and property defined by Digital Con
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#SpaceOccupyingEntity"
-               title="https://w3id.org/digitalconstruction/Entities#SpaceOccupyingEntity">SpaceOccupyingEntity</a>
-            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000040">b f o 0000040</span>
+            <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000040">b f o 0000040</span>
+            <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
@@ -583,34 +777,286 @@ This section provides details for each class and property defined by Digital Con
          </dd>
       </dl>
    </div>
-   <div class="entity" id="SpaceOccupyingEntity">
-      <h3>SpaceOccupyingEntity<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="OneAngleOrientation">
+      <h3>OneAngleOrientation<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#SpaceOccupyingEntity</p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#OneAngleOrientation</p>
       <div class="comment">
-         <span class="markdown">Refers to any object that has physical dimensions and a position.</span>
+         <span class="markdown">Orientation in two dimensions given by the orientation angle from true north</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#IdentifiableEntity"
-               title="https://w3id.org/digitalconstruction/Entities#IdentifiableEntity">IdentifiableEntity</a>
-            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000004">b f o 0000004</span>
+            <a href="#SpatialOrientation"
+               title="https://w3id.org/digitalconstruction/Entities#SpatialOrientation">SpatialOrientation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasNorthAngle"
+               title="https://w3id.org/digitalconstruction/Entities#hasNorthAngle">hasNorthAngle</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SpatialQuality">
+      <h3>spatial quality<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#SpatialQuality</p>
+      <div class="comment">
+         <span class="markdown">A quality that concerns the spatial aspects of an entity</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000019">b f o 0000019</span>
+            <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#BuildingObject"
-               title="https://w3id.org/digitalconstruction/Entities#BuildingObject">BuildingObject</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Equipment"
-               title="https://w3id.org/digitalconstruction/Entities#Equipment">Equipment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Location"
-               title="https://w3id.org/digitalconstruction/Entities#Location">Location</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#MaterialBatch"
-               title="https://w3id.org/digitalconstruction/Entities#MaterialBatch">MaterialBatch</a>
+            <a href="#SpatialExtent"
+               title="https://w3id.org/digitalconstruction/Entities#SpatialExtent">SpatialExtent</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SpatialOrientation"
+               title="https://w3id.org/digitalconstruction/Entities#SpatialOrientation">SpatialOrientation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SpatialPosition"
+               title="https://w3id.org/digitalconstruction/Entities#SpatialPosition">SpatialPosition</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SpatialExtent">
+      <h3>SpatialExtent<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#SpatialExtent</p>
+      <div class="comment">
+         <span class="markdown">The dimensions of a spatial region</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#SpatialQuality"
+               title="https://w3id.org/digitalconstruction/Entities#SpatialQuality">spatial quality</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#CartesianBoundingBox"
+               title="https://w3id.org/digitalconstruction/Entities#CartesianBoundingBox">CartesianBoundingBox</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#CartesianVolume"
+               title="https://w3id.org/digitalconstruction/Entities#CartesianVolume">CartesianVolume</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#GeographicBoundingBox"
+               title="https://w3id.org/digitalconstruction/Entities#GeographicBoundingBox">GeographicBoundingBox</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasSpatialExtent"
+               title="https://w3id.org/digitalconstruction/Entities#hasSpatialExtent">hasSpatialExtent</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SpatialOrientation">
+      <h3>SpatialOrientation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#SpatialOrientation</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#SpatialQuality"
+               title="https://w3id.org/digitalconstruction/Entities#SpatialQuality">spatial quality</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#OneAngleOrientation"
+               title="https://w3id.org/digitalconstruction/Entities#OneAngleOrientation">OneAngleOrientation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ThreeAngleOrientation"
+               title="https://w3id.org/digitalconstruction/Entities#ThreeAngleOrientation">ThreeAngleOrientation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TwoAngleOrientation"
+               title="https://w3id.org/digitalconstruction/Entities#TwoAngleOrientation">TwoAngleOrientation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasSpatialOrientation"
+               title="https://w3id.org/digitalconstruction/Entities#hasSpatialOrientation">hasSpatialOrientation</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SpatialPosition">
+      <h3>SpatialPosition<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#SpatialPosition</p>
+      <div class="comment">
+         <span class="markdown">A position in a space</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#SpatialQuality"
+               title="https://w3id.org/digitalconstruction/Entities#SpatialQuality">spatial quality</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#CartesianPosition"
+               title="https://w3id.org/digitalconstruction/Entities#CartesianPosition">CartesianPosition</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#GeographicPosition"
+               title="https://w3id.org/digitalconstruction/Entities#GeographicPosition">GeographicPosition</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasSpatialOrigin"
+               title="https://w3id.org/digitalconstruction/Entities#hasSpatialOrigin">hasSpatialOrigin</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSpatialPosition"
+               title="https://w3id.org/digitalconstruction/Entities#hasSpatialPosition">hasSpatialPosition</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ThreeAngleOrientation">
+      <h3>ThreeAngleOrientation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#ThreeAngleOrientation</p>
+      <div class="comment">
+         <span class="markdown">Orientation given by three angles: angle about x-axis (alpha), angle about y-axis(beta) and angle about z-axis (gamma)</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#SpatialOrientation"
+               title="https://w3id.org/digitalconstruction/Entities#SpatialOrientation">SpatialOrientation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasXAngle"
+               title="https://w3id.org/digitalconstruction/Entities#hasXAngle">hasXAngle</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasYAngle"
+               title="https://w3id.org/digitalconstruction/Entities#hasYAngle">hasYAngle</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasZAngle"
+               title="https://w3id.org/digitalconstruction/Entities#hasZAngle">hasZAngle</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TimeInstant">
+      <h3>time instant<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#TimeInstant</p>
+      <div class="comment">
+         <span class="markdown">TimeInstant</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000203">b f o 0000203</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isEndOf"
+               title="https://w3id.org/digitalconstruction/Entities#isEndOf">isEndOf</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isStartOf"
+               title="https://w3id.org/digitalconstruction/Entities#isStartOf">isStartOf</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasEnd"
+               title="https://w3id.org/digitalconstruction/Entities#hasEnd">hasEnd</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasStart"
+               title="https://w3id.org/digitalconstruction/Entities#hasStart">hasStart</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TimeInterval">
+      <h3>time interval<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#TimeInterval</p>
+      <div class="comment">
+         <span class="markdown">TimeInterval</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000202">b f o 0000202</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasEnd"
+               title="https://w3id.org/digitalconstruction/Entities#hasEnd">hasEnd</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasStart"
+               title="https://w3id.org/digitalconstruction/Entities#hasStart">hasStart</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isOccupiedByActivity"
+               title="https://w3id.org/digitalconstruction/Entities#isOccupiedByActivity">isOccupiedByActivity</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isEndOf"
+               title="https://w3id.org/digitalconstruction/Entities#isEndOf">isEndOf</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isStartOf"
+               title="https://w3id.org/digitalconstruction/Entities#isStartOf">isStartOf</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#occupiesTimeInterval"
+               title="https://w3id.org/digitalconstruction/Entities#occupiesTimeInterval">occupiesTimeInterval</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TwoAngleOrientation">
+      <h3>TwoAngleOrientation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#TwoAngleOrientation</p>
+      <div class="comment">
+         <span class="markdown">Orientation of a plane in two dimensions given by its angle about true north (the strike) and the angle of its slope (the dip)</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#SpatialOrientation"
+               title="https://w3id.org/digitalconstruction/Entities#SpatialOrientation">SpatialOrientation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasDipAngle"
+               title="https://w3id.org/digitalconstruction/Entities#hasDipAngle">hasDipAngle</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasStrikeAngle"
+               title="https://w3id.org/digitalconstruction/Entities#hasStrikeAngle">hasStrikeAngle</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
    </div>
@@ -637,51 +1083,25 @@ This section provides details for each class and property defined by Digital Con
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
+         <a href="#after"
+            title="https://w3id.org/digitalconstruction/Entities#after">after</a>
+      </li>
+      <li>
+         <a href="#before"
+            title="https://w3id.org/digitalconstruction/Entities#before">before</a>
+      </li>
+      <li>
          <a href="#classifiedBy"
-            title="https://w3id.org/digitalconstruction/Entities#classifiedBy">
-            <span>classified by</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Entities#classifiedBy">classifiedBy</a>
       </li>
       <li>
          <a href="#classifies"
-            title="https://w3id.org/digitalconstruction/Entities#classifies">
-            <span>classifies</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Entities#classifies">classifies</a>
       </li>
       <li>
-         <a href="#hasActivity"
-            title="https://w3id.org/digitalconstruction/Entities#hasActivity">
-            <span>has activity</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasAsset"
-            title="https://w3id.org/digitalconstruction/Entities#hasAsset">
-            <span>has asset</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasMember"
-            title="https://w3id.org/digitalconstruction/Entities#hasMember">
-            <span>has member</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasOwner"
-            title="https://w3id.org/digitalconstruction/Entities#hasOwner">
-            <span>has owner</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasPart"
-            title="https://w3id.org/digitalconstruction/Entities#hasPart">
-            <span>has part</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasState"
-            title="https://w3id.org/digitalconstruction/Entities#hasState">
-            <span>has state</span>
+         <a href="#hasAgent"
+            title="https://w3id.org/digitalconstruction/Entities#hasAgent">
+            <span>has agent</span>
          </a>
       </li>
       <li>
@@ -691,38 +1111,168 @@ This section provides details for each class and property defined by Digital Con
          </a>
       </li>
       <li>
+         <a href="#hasActivity"
+            title="https://w3id.org/digitalconstruction/Entities#hasActivity">hasActivity</a>
+      </li>
+      <li>
+         <a href="#hasAsset"
+            title="https://w3id.org/digitalconstruction/Entities#hasAsset">hasAsset</a>
+      </li>
+      <li>
+         <a href="#hasEnd"
+            title="https://w3id.org/digitalconstruction/Entities#hasEnd">hasEnd</a>
+      </li>
+      <li>
+         <a href="#hasMaximumCartesianPosition"
+            title="https://w3id.org/digitalconstruction/Entities#hasMaximumCartesianPosition">hasMaximumCartesianPosition</a>
+      </li>
+      <li>
+         <a href="#hasMaximumGeographicalPosition"
+            title="https://w3id.org/digitalconstruction/Entities#hasMaximumGeographicalPosition">hasMaximumGeographicalPosition</a>
+      </li>
+      <li>
+         <a href="#hasMember"
+            title="https://w3id.org/digitalconstruction/Entities#hasMember">hasMember</a>
+      </li>
+      <li>
+         <a href="#hasMinimumGeographicalPosition"
+            title="https://w3id.org/digitalconstruction/Entities#hasMinimumGeographicalPosition">hasMinimumGeographicalPosition</a>
+      </li>
+      <li>
+         <a href="#hasMinimumCartesianPosition"
+            title="https://w3id.org/digitalconstruction/Entities#hasMinimumCartesianPosition">hasMinumumCartesianPosition</a>
+      </li>
+      <li>
+         <a href="#hasOwner"
+            title="https://w3id.org/digitalconstruction/Entities#hasOwner">hasOwner</a>
+      </li>
+      <li>
+         <a href="#hasSpatialExtent"
+            title="https://w3id.org/digitalconstruction/Entities#hasSpatialExtent">hasSpatialExtent</a>
+      </li>
+      <li>
+         <a href="#hasSpatialOrientation"
+            title="https://w3id.org/digitalconstruction/Entities#hasSpatialOrientation">hasSpatialOrientation</a>
+      </li>
+      <li>
+         <a href="#hasSpatialOrigin"
+            title="https://w3id.org/digitalconstruction/Entities#hasSpatialOrigin">hasSpatialOrigin</a>
+      </li>
+      <li>
+         <a href="#hasSpatialPosition"
+            title="https://w3id.org/digitalconstruction/Entities#hasSpatialPosition">hasSpatialPosition</a>
+      </li>
+      <li>
+         <a href="#hasStart"
+            title="https://w3id.org/digitalconstruction/Entities#hasStart">hasStart</a>
+      </li>
+      <li>
+         <a href="#hasState"
+            title="https://w3id.org/digitalconstruction/Entities#hasState">hasState</a>
+      </li>
+      <li>
+         <a href="#hasSubLocation"
+            title="https://w3id.org/digitalconstruction/Entities#hasSubLocation">hasSubLocation</a>
+      </li>
+      <li>
          <a href="#identifiedBy"
-            title="https://w3id.org/digitalconstruction/Entities#identifiedBy">
-            <span>identified by</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Entities#identifiedBy">identifiedBy</a>
       </li>
       <li>
          <a href="#identifies"
-            title="https://w3id.org/digitalconstruction/Entities#identifies">
-            <span>identifies</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Entities#identifies">identifies</a>
       </li>
       <li>
-         <a href="#isPartOf"
-            title="https://w3id.org/digitalconstruction/Entities#isPartOf">
-            <span>is part of</span>
-         </a>
+         <a href="#isAgentIn"
+            title="https://w3id.org/digitalconstruction/Entities#isAgentIn">isAgentIn</a>
+      </li>
+      <li>
+         <a href="#isEndOf"
+            title="https://w3id.org/digitalconstruction/Entities#isEndOf">isEndOf</a>
+      </li>
+      <li>
+         <a href="#isOccupiedByActivity"
+            title="https://w3id.org/digitalconstruction/Entities#isOccupiedByActivity">isOccupiedByActivity</a>
+      </li>
+      <li>
+         <a href="#isStartOf"
+            title="https://w3id.org/digitalconstruction/Entities#isStartOf">isStartOf</a>
       </li>
       <li>
          <a href="#isSubActivityOf"
-            title="https://w3id.org/digitalconstruction/Entities#isSubActivityOf">
-            <span>is sub activity of</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Entities#isSubActivityOf">isSubActivityOf</a>
+      </li>
+      <li>
+         <a href="#isSubLocationOf"
+            title="https://w3id.org/digitalconstruction/Entities#isSubLocationOf">isSubLocationOf</a>
       </li>
       <li>
          <a href="#memberOf"
-            title="https://w3id.org/digitalconstruction/Entities#memberOf">
-            <span>member of</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Entities#memberOf">memberOf</a>
+      </li>
+      <li>
+         <a href="#occupiesTimeInterval"
+            title="https://w3id.org/digitalconstruction/Entities#occupiesTimeInterval">occupiesTimeInterval</a>
       </li>
    </ul>
+   <div class="entity" id="after">
+      <h3>after<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#after</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000003">b f o 0000003</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000003">b f o 0000003</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#before"
+                  title="https://w3id.org/digitalconstruction/Entities#before">before</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="before">
+      <h3>before<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#before</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000003">b f o 0000003</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000003">b f o 0000003</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#after"
+                  title="https://w3id.org/digitalconstruction/Entities#after">after</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="classifiedBy">
-      <h3>classified by<sup class="type-op" title="object property">op</sup>
+      <h3>classifiedBy<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -736,8 +1286,7 @@ This section provides details for each class and property defined by Digital Con
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#IdentifiableEntity"
-                  title="https://w3id.org/digitalconstruction/Entities#IdentifiableEntity">IdentifiableEntity</a>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000001">b f o 0000001</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -772,21 +1321,90 @@ This section provides details for each class and property defined by Digital Con
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#IdentifiableEntity"
-                  title="https://w3id.org/digitalconstruction/Entities#IdentifiableEntity">IdentifiableEntity</a>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000001">b f o 0000001</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#classifiedBy"
-                  title="https://w3id.org/digitalconstruction/Entities#classifiedBy">classified by</a>
+                  title="https://w3id.org/digitalconstruction/Entities#classifiedBy">classifiedBy</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasAgent">
+      <h3>has agent<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasAgent</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000057">b f o 0000057</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Activity"
+                  title="https://w3id.org/digitalconstruction/Entities#Activity">Activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Agent"
+                  title="https://w3id.org/digitalconstruction/Entities#Agent">Agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isAgentIn"
+                  title="https://w3id.org/digitalconstruction/Entities#isAgentIn">isAgentIn</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSubActivity">
+      <h3>has sub activity<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasSubActivity</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000118">b f o 0000118</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Activity"
+                  title="https://w3id.org/digitalconstruction/Entities#Activity">Activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Activity"
+                  title="https://w3id.org/digitalconstruction/Entities#Activity">Activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isSubActivityOf"
+                  title="https://w3id.org/digitalconstruction/Entities#isSubActivityOf">isSubActivityOf</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="hasActivity">
-      <h3>has activity<sup class="type-op" title="object property">op</sup>
+      <h3>hasActivity<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -809,14 +1427,14 @@ This section provides details for each class and property defined by Digital Con
             <dt>is inverse of</dt>
             <dd>
                <a href="#hasState"
-                  title="https://w3id.org/digitalconstruction/Entities#hasState">has state</a>
+                  title="https://w3id.org/digitalconstruction/Entities#hasState">hasState</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="hasAsset">
-      <h3>has asset<sup class="type-op" title="object property">op</sup>
+      <h3>hasAsset<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -832,21 +1450,110 @@ This section provides details for each class and property defined by Digital Con
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#IdentifiableEntity"
-                  title="https://w3id.org/digitalconstruction/Entities#IdentifiableEntity">IdentifiableEntity</a>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000029">b f o 0000029</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000040">b f o 0000040</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#InformationContentEntity"
+                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">InformationContentEntity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#hasOwner"
-                  title="https://w3id.org/digitalconstruction/Entities#hasOwner">has owner</a>
+                  title="https://w3id.org/digitalconstruction/Entities#hasOwner">hasOwner</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
+   <div class="entity" id="hasEnd">
+      <h3>hasEnd<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasEnd</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000224">b f o 0000224</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TimeInterval"
+                  title="https://w3id.org/digitalconstruction/Entities#TimeInterval">time interval</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#TimeInstant"
+                  title="https://w3id.org/digitalconstruction/Entities#TimeInstant">time instant</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isEndOf"
+                  title="https://w3id.org/digitalconstruction/Entities#isEndOf">isEndOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasMaximumCartesianPosition">
+      <h3>hasMaximumCartesianPosition<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasMaximumCartesianPosition</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CartesianBoundingBox"
+                  title="https://w3id.org/digitalconstruction/Entities#CartesianBoundingBox">CartesianBoundingBox</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#CartesianPosition"
+                  title="https://w3id.org/digitalconstruction/Entities#CartesianPosition">CartesianPosition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasMaximumGeographicalPosition">
+      <h3>hasMaximumGeographicalPosition<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasMaximumGeographicalPosition</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#GeographicBoundingBox"
+                  title="https://w3id.org/digitalconstruction/Entities#GeographicBoundingBox">GeographicBoundingBox</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#GeographicPosition"
+                  title="https://w3id.org/digitalconstruction/Entities#GeographicPosition">GeographicPosition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="hasMember">
-      <h3>has member<sup class="type-op" title="object property">op</sup>
+      <h3>hasMember<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -866,21 +1573,68 @@ This section provides details for each class and property defined by Digital Con
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#IdentifiableEntity"
-                  title="https://w3id.org/digitalconstruction/Entities#IdentifiableEntity">IdentifiableEntity</a>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000001">b f o 0000001</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#memberOf"
-                  title="https://w3id.org/digitalconstruction/Entities#memberOf">member of</a>
+                  title="https://w3id.org/digitalconstruction/Entities#memberOf">memberOf</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
+   <div class="entity" id="hasMinimumGeographicalPosition">
+      <h3>hasMinimumGeographicalPosition<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasMinimumGeographicalPosition</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#GeographicBoundingBox"
+                  title="https://w3id.org/digitalconstruction/Entities#GeographicBoundingBox">GeographicBoundingBox</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#GeographicPosition"
+                  title="https://w3id.org/digitalconstruction/Entities#GeographicPosition">GeographicPosition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasMinimumCartesianPosition">
+      <h3>hasMinumumCartesianPosition<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasMinimumCartesianPosition</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CartesianBoundingBox"
+                  title="https://w3id.org/digitalconstruction/Entities#CartesianBoundingBox">CartesianBoundingBox</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#CartesianPosition"
+                  title="https://w3id.org/digitalconstruction/Entities#CartesianPosition">CartesianPosition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="hasOwner">
-      <h3>has owner<sup class="type-op" title="object property">op</sup>
+      <h3>hasOwner<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -890,8 +1644,14 @@ This section provides details for each class and property defined by Digital Con
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#IdentifiableEntity"
-                  title="https://w3id.org/digitalconstruction/Entities#IdentifiableEntity">IdentifiableEntity</a>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000029">b f o 0000029</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000040">b f o 0000040</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#InformationContentEntity"
+                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">InformationContentEntity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -903,50 +1663,153 @@ This section provides details for each class and property defined by Digital Con
             <dt>is inverse of</dt>
             <dd>
                <a href="#hasAsset"
-                  title="https://w3id.org/digitalconstruction/Entities#hasAsset">has asset</a>
+                  title="https://w3id.org/digitalconstruction/Entities#hasAsset">hasAsset</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasPart">
-      <h3>has part<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="hasSpatialExtent">
+      <h3>hasSpatialExtent<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasPart</p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasSpatialExtent</p>
       <div class="description">
          <dl>
-            <dt>has sub-properties</dt>
+            <dt>has super-properties</dt>
             <dd>
-               <a href="#hasSubActivity"
-                  title="https://w3id.org/digitalconstruction/Entities#hasSubActivity">has sub activity</a>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000196">b f o 0000196</span>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#IdentifiableEntity"
-                  title="https://w3id.org/digitalconstruction/Entities#IdentifiableEntity">IdentifiableEntity</a>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000006">b f o 0000006</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#IdentifiableEntity"
-                  title="https://w3id.org/digitalconstruction/Entities#IdentifiableEntity">IdentifiableEntity</a>
+               <a href="#SpatialExtent"
+                  title="https://w3id.org/digitalconstruction/Entities#SpatialExtent">SpatialExtent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSpatialOrientation">
+      <h3>hasSpatialOrientation<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasSpatialOrientation</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CartesianPosition"
+                  title="https://w3id.org/digitalconstruction/Entities#CartesianPosition">CartesianPosition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#SpatialOrientation"
+                  title="https://w3id.org/digitalconstruction/Entities#SpatialOrientation">SpatialOrientation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSpatialOrigin">
+      <h3>hasSpatialOrigin<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasSpatialOrigin</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CartesianPosition"
+                  title="https://w3id.org/digitalconstruction/Entities#CartesianPosition">CartesianPosition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#SpatialPosition"
+                  title="https://w3id.org/digitalconstruction/Entities#SpatialPosition">SpatialPosition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSpatialPosition">
+      <h3>hasSpatialPosition<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasSpatialPosition</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000196">b f o 0000196</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000006">b f o 0000006</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#SpatialPosition"
+                  title="https://w3id.org/digitalconstruction/Entities#SpatialPosition">SpatialPosition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasStart">
+      <h3>hasStart<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasStart</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000222">b f o 0000222</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TimeInterval"
+                  title="https://w3id.org/digitalconstruction/Entities#TimeInterval">time interval</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#TimeInstant"
+                  title="https://w3id.org/digitalconstruction/Entities#TimeInstant">time instant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#isPartOf"
-                  title="https://w3id.org/digitalconstruction/Entities#isPartOf">is part of</a>
+               <a href="#isStartOf"
+                  title="https://w3id.org/digitalconstruction/Entities#isStartOf">isStartOf</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="hasState">
-      <h3>has state<sup class="type-op" title="object property">op</sup>
+      <h3>hasState<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -969,50 +1832,49 @@ This section provides details for each class and property defined by Digital Con
             <dt>is inverse of</dt>
             <dd>
                <a href="#hasActivity"
-                  title="https://w3id.org/digitalconstruction/Entities#hasActivity">has activity</a>
+                  title="https://w3id.org/digitalconstruction/Entities#hasActivity">hasActivity</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasSubActivity">
-      <h3>has sub activity<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="hasSubLocation">
+      <h3>hasSubLocation<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasSubActivity</p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasSubLocation</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#hasPart"
-                  title="https://w3id.org/digitalconstruction/Entities#hasPart">has part</a>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000170">b f o 0000170</span>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Activity"
-                  title="https://w3id.org/digitalconstruction/Entities#Activity">Activity</a>
+               <a href="#Location"
+                  title="https://w3id.org/digitalconstruction/Entities#Location">Location</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Activity"
-                  title="https://w3id.org/digitalconstruction/Entities#Activity">Activity</a>
+               <a href="#Location"
+                  title="https://w3id.org/digitalconstruction/Entities#Location">Location</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#isSubActivityOf"
-                  title="https://w3id.org/digitalconstruction/Entities#isSubActivityOf">is sub activity of</a>
+               <a href="#isSubLocationOf"
+                  title="https://w3id.org/digitalconstruction/Entities#isSubLocationOf">isSubLocationOf</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="identifiedBy">
-      <h3>identified by<sup class="type-op" title="object property">op</sup>
+      <h3>identifiedBy<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -1026,8 +1888,7 @@ This section provides details for each class and property defined by Digital Con
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#IdentifiableEntity"
-                  title="https://w3id.org/digitalconstruction/Entities#IdentifiableEntity">IdentifiableEntity</a>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000001">b f o 0000001</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1062,57 +1923,155 @@ This section provides details for each class and property defined by Digital Con
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#IdentifiableEntity"
-                  title="https://w3id.org/digitalconstruction/Entities#IdentifiableEntity">IdentifiableEntity</a>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000001">b f o 0000001</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#identifiedBy"
-                  title="https://w3id.org/digitalconstruction/Entities#identifiedBy">identified by</a>
+                  title="https://w3id.org/digitalconstruction/Entities#identifiedBy">identifiedBy</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="isPartOf">
-      <h3>is part of<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="isAgentIn">
+      <h3>isAgentIn<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#isPartOf</p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#isAgentIn</p>
       <div class="description">
          <dl>
-            <dt>has sub-properties</dt>
+            <dt>has super-properties</dt>
             <dd>
-               <a href="#isSubActivityOf"
-                  title="https://w3id.org/digitalconstruction/Entities#isSubActivityOf">is sub activity of</a>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000056">b f o 0000056</span>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#IdentifiableEntity"
-                  title="https://w3id.org/digitalconstruction/Entities#IdentifiableEntity">IdentifiableEntity</a>
+               <a href="#Agent"
+                  title="https://w3id.org/digitalconstruction/Entities#Agent">Agent</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#IdentifiableEntity"
-                  title="https://w3id.org/digitalconstruction/Entities#IdentifiableEntity">IdentifiableEntity</a>
+               <a href="#Activity"
+                  title="https://w3id.org/digitalconstruction/Entities#Activity">Activity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#hasPart"
-                  title="https://w3id.org/digitalconstruction/Entities#hasPart">has part</a>
+               <a href="#hasAgent"
+                  title="https://w3id.org/digitalconstruction/Entities#hasAgent">has agent</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isEndOf">
+      <h3>isEndOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#isEndOf</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000223">b f o 0000223</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TimeInstant"
+                  title="https://w3id.org/digitalconstruction/Entities#TimeInstant">time instant</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#TimeInterval"
+                  title="https://w3id.org/digitalconstruction/Entities#TimeInterval">time interval</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasEnd"
+                  title="https://w3id.org/digitalconstruction/Entities#hasEnd">hasEnd</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isOccupiedByActivity">
+      <h3>isOccupiedByActivity<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#isOccupiedByActivity</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TimeInterval"
+                  title="https://w3id.org/digitalconstruction/Entities#TimeInterval">time interval</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Activity"
+                  title="https://w3id.org/digitalconstruction/Entities#Activity">Activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#occupiesTimeInterval"
+                  title="https://w3id.org/digitalconstruction/Entities#occupiesTimeInterval">occupiesTimeInterval</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isStartOf">
+      <h3>isStartOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#isStartOf</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000221">b f o 0000221</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TimeInstant"
+                  title="https://w3id.org/digitalconstruction/Entities#TimeInstant">time instant</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#TimeInterval"
+                  title="https://w3id.org/digitalconstruction/Entities#TimeInterval">time interval</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasStart"
+                  title="https://w3id.org/digitalconstruction/Entities#hasStart">hasStart</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="isSubActivityOf">
-      <h3>is sub activity of<sup class="type-op" title="object property">op</sup>
+      <h3>isSubActivityOf<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -1122,8 +2081,7 @@ This section provides details for each class and property defined by Digital Con
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#isPartOf"
-                  title="https://w3id.org/digitalconstruction/Entities#isPartOf">is part of</a>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000138">b f o 0000138</span>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -1147,8 +2105,43 @@ This section provides details for each class and property defined by Digital Con
          </dl>
       </div>
    </div>
+   <div class="entity" id="isSubLocationOf">
+      <h3>isSubLocationOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#isSubLocationOf</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000082">b f o 0000082</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Location"
+                  title="https://w3id.org/digitalconstruction/Entities#Location">Location</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Location"
+                  title="https://w3id.org/digitalconstruction/Entities#Location">Location</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasSubLocation"
+                  title="https://w3id.org/digitalconstruction/Entities#hasSubLocation">hasSubLocation</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="memberOf">
-      <h3>member of<sup class="type-op" title="object property">op</sup>
+      <h3>memberOf<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -1158,8 +2151,7 @@ This section provides details for each class and property defined by Digital Con
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#IdentifiableEntity"
-                  title="https://w3id.org/digitalconstruction/Entities#IdentifiableEntity">IdentifiableEntity</a>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000001">b f o 0000001</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1171,7 +2163,42 @@ This section provides details for each class and property defined by Digital Con
             <dt>is inverse of</dt>
             <dd>
                <a href="#hasMember"
-                  title="https://w3id.org/digitalconstruction/Entities#hasMember">has member</a>
+                  title="https://w3id.org/digitalconstruction/Entities#hasMember">hasMember</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="occupiesTimeInterval">
+      <h3>occupiesTimeInterval<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#occupiesTimeInterval</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000199">b f o 0000199</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Activity"
+                  title="https://w3id.org/digitalconstruction/Entities#Activity">Activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#TimeInterval"
+                  title="https://w3id.org/digitalconstruction/Entities#TimeInterval">time interval</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isOccupiedByActivity"
+                  title="https://w3id.org/digitalconstruction/Entities#isOccupiedByActivity">isOccupiedByActivity</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -1182,21 +2209,7 @@ This section provides details for each class and property defined by Digital Con
    <ul class="hlist">
       <li>
          <a href="#allocatedBy"
-            title="https://w3id.org/digitalconstruction/Entities#allocatedBy">
-            <span>allocated by</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasAmount"
-            title="https://w3id.org/digitalconstruction/Entities#hasAmount">
-            <span>has amount</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasLabel"
-            title="https://w3id.org/digitalconstruction/Entities#hasLabel">
-            <span>has label</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Entities#allocatedBy">allocatedBy</a>
       </li>
       <li>
          <a href="#hasMaxLoad"
@@ -1210,9 +2223,81 @@ This section provides details for each class and property defined by Digital Con
             <span>has system</span>
          </a>
       </li>
+      <li>
+         <a href="#hasAltitude"
+            title="https://w3id.org/digitalconstruction/Entities#hasAltitude">hasAltitude</a>
+      </li>
+      <li>
+         <a href="#hasAmount"
+            title="https://w3id.org/digitalconstruction/Entities#hasAmount">hasAmount</a>
+      </li>
+      <li>
+         <a href="#hasDipAngle"
+            title="https://w3id.org/digitalconstruction/Entities#hasDipAngle">hasDipAngle</a>
+      </li>
+      <li>
+         <a href="#hasGeographicCoordinateSystem"
+            title="https://w3id.org/digitalconstruction/Entities#hasGeographicCoordinateSystem">hasGeographicCoordinateSystem</a>
+      </li>
+      <li>
+         <a href="#hasLabel"
+            title="https://w3id.org/digitalconstruction/Entities#hasLabel">hasLabel</a>
+      </li>
+      <li>
+         <a href="#hasLatitude"
+            title="https://w3id.org/digitalconstruction/Entities#hasLatitude">hasLatitude</a>
+      </li>
+      <li>
+         <a href="#hasLongitude"
+            title="https://w3id.org/digitalconstruction/Entities#hasLongitude">hasLongitude</a>
+      </li>
+      <li>
+         <a href="#hasNorthAngle"
+            title="https://w3id.org/digitalconstruction/Entities#hasNorthAngle">hasNorthAngle</a>
+      </li>
+      <li>
+         <a href="#hasStrikeAngle"
+            title="https://w3id.org/digitalconstruction/Entities#hasStrikeAngle">hasStrikeAngle</a>
+      </li>
+      <li>
+         <a href="#hasX"
+            title="https://w3id.org/digitalconstruction/Entities#hasX">hasX</a>
+      </li>
+      <li>
+         <a href="#hasXAngle"
+            title="https://w3id.org/digitalconstruction/Entities#hasXAngle">hasXAngle</a>
+      </li>
+      <li>
+         <a href="#hasXLength"
+            title="https://w3id.org/digitalconstruction/Entities#hasXLength">hasXLength</a>
+      </li>
+      <li>
+         <a href="#hasY"
+            title="https://w3id.org/digitalconstruction/Entities#hasY">hasY</a>
+      </li>
+      <li>
+         <a href="#hasYAngle"
+            title="https://w3id.org/digitalconstruction/Entities#hasYAngle">hasYAngle</a>
+      </li>
+      <li>
+         <a href="#hasYLength"
+            title="https://w3id.org/digitalconstruction/Entities#hasYLength">hasYLength</a>
+      </li>
+      <li>
+         <a href="#hasZ"
+            title="https://w3id.org/digitalconstruction/Entities#hasZ">hasZ</a>
+      </li>
+      <li>
+         <a href="#hasZAngle"
+            title="https://w3id.org/digitalconstruction/Entities#hasZAngle">hasZAngle</a>
+      </li>
+      <li>
+         <a href="#hasZLength"
+            title="https://w3id.org/digitalconstruction/Entities#hasZLength">hasZLength</a>
+      </li>
    </ul>
    <div class="entity" id="allocatedBy">
-      <h3>allocated by<sup class="type-dp" title="data property">dp</sup>
+      <h3>allocatedBy<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -1221,49 +2306,6 @@ This section provides details for each class and property defined by Digital Con
       <div class="description">
          <dl>
             <dt>has domain</dt>
-            <dd>
-               <a href="#Identifier"
-                  title="https://w3id.org/digitalconstruction/Entities#Identifier">Identifier</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasAmount">
-      <h3>has amount<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasAmount</p>
-      <div class="description">
-         <dl>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#real">real</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasLabel">
-      <h3>has label<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasLabel</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Classification"
-                  title="https://w3id.org/digitalconstruction/Entities#Classification">Classification</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dd>
                <a href="#Identifier"
                   title="https://w3id.org/digitalconstruction/Entities#Identifier">Identifier</a>
@@ -1310,6 +2352,401 @@ This section provides details for each class and property defined by Digital Con
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasAltitude">
+      <h3>hasAltitude<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasAltitude</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#GeographicPosition"
+                  title="https://w3id.org/digitalconstruction/Entities#GeographicPosition">GeographicPosition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasAmount">
+      <h3>hasAmount<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasAmount</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#real">real</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDipAngle">
+      <h3>hasDipAngle<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasDipAngle</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TwoAngleOrientation"
+                  title="https://w3id.org/digitalconstruction/Entities#TwoAngleOrientation">TwoAngleOrientation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasGeographicCoordinateSystem">
+      <h3>hasGeographicCoordinateSystem<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasGeographicCoordinateSystem</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#GeographicPosition"
+                  title="https://w3id.org/digitalconstruction/Entities#GeographicPosition">GeographicPosition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasLabel">
+      <h3>hasLabel<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasLabel</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Classification"
+                  title="https://w3id.org/digitalconstruction/Entities#Classification">Classification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="#Identifier"
+                  title="https://w3id.org/digitalconstruction/Entities#Identifier">Identifier</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasLatitude">
+      <h3>hasLatitude<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasLatitude</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#GeographicPosition"
+                  title="https://w3id.org/digitalconstruction/Entities#GeographicPosition">GeographicPosition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasLongitude">
+      <h3>hasLongitude<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasLongitude</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#GeographicPosition"
+                  title="https://w3id.org/digitalconstruction/Entities#GeographicPosition">GeographicPosition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasNorthAngle">
+      <h3>hasNorthAngle<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasNorthAngle</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#OneAngleOrientation"
+                  title="https://w3id.org/digitalconstruction/Entities#OneAngleOrientation">OneAngleOrientation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasStrikeAngle">
+      <h3>hasStrikeAngle<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasStrikeAngle</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TwoAngleOrientation"
+                  title="https://w3id.org/digitalconstruction/Entities#TwoAngleOrientation">TwoAngleOrientation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasX">
+      <h3>hasX<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasX</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CartesianPosition"
+                  title="https://w3id.org/digitalconstruction/Entities#CartesianPosition">CartesianPosition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasXAngle">
+      <h3>hasXAngle<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasXAngle</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ThreeAngleOrientation"
+                  title="https://w3id.org/digitalconstruction/Entities#ThreeAngleOrientation">ThreeAngleOrientation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasXLength">
+      <h3>hasXLength<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasXLength</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CartesianVolume"
+                  title="https://w3id.org/digitalconstruction/Entities#CartesianVolume">CartesianVolume</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasY">
+      <h3>hasY<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasY</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CartesianPosition"
+                  title="https://w3id.org/digitalconstruction/Entities#CartesianPosition">CartesianPosition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasYAngle">
+      <h3>hasYAngle<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasYAngle</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ThreeAngleOrientation"
+                  title="https://w3id.org/digitalconstruction/Entities#ThreeAngleOrientation">ThreeAngleOrientation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasYLength">
+      <h3>hasYLength<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasYLength</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CartesianVolume"
+                  title="https://w3id.org/digitalconstruction/Entities#CartesianVolume">CartesianVolume</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasZ">
+      <h3>hasZ<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasZ</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CartesianPosition"
+                  title="https://w3id.org/digitalconstruction/Entities#CartesianPosition">CartesianPosition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasZAngle">
+      <h3>hasZAngle<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasZAngle</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ThreeAngleOrientation"
+                  title="https://w3id.org/digitalconstruction/Entities#ThreeAngleOrientation">ThreeAngleOrientation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasZLength">
+      <h3>hasZLength<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasZLength</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CartesianVolume"
+                  title="https://w3id.org/digitalconstruction/Entities#CartesianVolume">CartesianVolume</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
             </dd>
          </dl>
       </div>
