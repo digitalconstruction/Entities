@@ -81,6 +81,9 @@
 # http://purl.obolibrary.org/obo/BFO_0000196
 <http://purl.obolibrary.org/obo/BFO_0000196> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
+# http://purl.obolibrary.org/obo/BFO_0000197
+<http://purl.obolibrary.org/obo/BFO_0000197> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
 # http://purl.obolibrary.org/obo/BFO_0000199
 <http://purl.obolibrary.org/obo/BFO_0000199> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
@@ -156,6 +159,20 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/di
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/digitalconstruction/Entities#hasAsset> <http://www.w3.org/2000/01/rdf-schema#label> "hasAsset" .
 # 
+# https://w3id.org/digitalconstruction/Entities#hasCapability
+<https://w3id.org/digitalconstruction/Entities#hasCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasCapability> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000196> .
+<https://w3id.org/digitalconstruction/Entities#hasCapability> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isCapabilityOf> .
+<https://w3id.org/digitalconstruction/Entities#hasCapability> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Agent> .
+<https://w3id.org/digitalconstruction/Entities#hasCapability> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Capability> .
+<https://w3id.org/digitalconstruction/Entities#hasCapability> <http://www.w3.org/2000/01/rdf-schema#label> "hasCapability" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasDuration
+<https://w3id.org/digitalconstruction/Entities#hasDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasDuration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/Entities#hasDuration> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#TemporalExtent> .
+<https://w3id.org/digitalconstruction/Entities#hasDuration> <http://www.w3.org/2000/01/rdf-schema#label> "hasDuration" .
+# 
 # https://w3id.org/digitalconstruction/Entities#hasEnd
 <https://w3id.org/digitalconstruction/Entities#hasEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/digitalconstruction/Entities#hasEnd> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000224> .
@@ -163,6 +180,14 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#hasEnd> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#TimeInterval> .
 <https://w3id.org/digitalconstruction/Entities#hasEnd> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#TimeInstant> .
 <https://w3id.org/digitalconstruction/Entities#hasEnd> <http://www.w3.org/2000/01/rdf-schema#label> "hasEnd" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasIntention
+<https://w3id.org/digitalconstruction/Entities#hasIntention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasIntention> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000196> .
+<https://w3id.org/digitalconstruction/Entities#hasIntention> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isIntentionOf> .
+<https://w3id.org/digitalconstruction/Entities#hasIntention> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Agent> .
+<https://w3id.org/digitalconstruction/Entities#hasIntention> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Intention> .
+<https://w3id.org/digitalconstruction/Entities#hasIntention> <http://www.w3.org/2000/01/rdf-schema#label> "hasIntention" .
 # 
 # https://w3id.org/digitalconstruction/Entities#hasMaximumCartesianPosition
 <https://w3id.org/digitalconstruction/Entities#hasMaximumCartesianPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -212,6 +237,15 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/di
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/digitalconstruction/Entities#hasOwner> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Agent> .
 <https://w3id.org/digitalconstruction/Entities#hasOwner> <http://www.w3.org/2000/01/rdf-schema#label> "hasOwner" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasRole
+<https://w3id.org/digitalconstruction/Entities#hasRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasRole> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000196> .
+<https://w3id.org/digitalconstruction/Entities#hasRole> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isRoleOf> .
+<https://w3id.org/digitalconstruction/Entities#hasRole> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Agent> .
+<https://w3id.org/digitalconstruction/Entities#hasRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000023> .
+<http://purl.obolibrary.org/obo/BFO_0000023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#hasRole> <http://www.w3.org/2000/01/rdf-schema#label> "hasRole" .
 # 
 # https://w3id.org/digitalconstruction/Entities#hasSpatialExtent
 <https://w3id.org/digitalconstruction/Entities#hasSpatialExtent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -296,6 +330,13 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#isAgentIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Activity> .
 <https://w3id.org/digitalconstruction/Entities#isAgentIn> <http://www.w3.org/2000/01/rdf-schema#label> "isAgentIn" .
 # 
+# https://w3id.org/digitalconstruction/Entities#isCapabilityOf
+<https://w3id.org/digitalconstruction/Entities#isCapabilityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isCapabilityOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000197> .
+<https://w3id.org/digitalconstruction/Entities#isCapabilityOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Capability> .
+<https://w3id.org/digitalconstruction/Entities#isCapabilityOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Agent> .
+<https://w3id.org/digitalconstruction/Entities#isCapabilityOf> <http://www.w3.org/2000/01/rdf-schema#label> "isCapabilityOf" .
+# 
 # https://w3id.org/digitalconstruction/Entities#isEndOf
 <https://w3id.org/digitalconstruction/Entities#isEndOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/digitalconstruction/Entities#isEndOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000223> .
@@ -303,12 +344,26 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#isEndOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#TimeInterval> .
 <https://w3id.org/digitalconstruction/Entities#isEndOf> <http://www.w3.org/2000/01/rdf-schema#label> "isEndOf" .
 # 
+# https://w3id.org/digitalconstruction/Entities#isIntentionOf
+<https://w3id.org/digitalconstruction/Entities#isIntentionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isIntentionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000197> .
+<https://w3id.org/digitalconstruction/Entities#isIntentionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Intention> .
+<https://w3id.org/digitalconstruction/Entities#isIntentionOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Agent> .
+<https://w3id.org/digitalconstruction/Entities#isIntentionOf> <http://www.w3.org/2000/01/rdf-schema#label> "isIntentionOf" .
+# 
 # https://w3id.org/digitalconstruction/Entities#isOccupiedByActivity
 <https://w3id.org/digitalconstruction/Entities#isOccupiedByActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/digitalconstruction/Entities#isOccupiedByActivity> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#occupiesTimeInterval> .
 <https://w3id.org/digitalconstruction/Entities#isOccupiedByActivity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#TimeInterval> .
 <https://w3id.org/digitalconstruction/Entities#isOccupiedByActivity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Activity> .
 <https://w3id.org/digitalconstruction/Entities#isOccupiedByActivity> <http://www.w3.org/2000/01/rdf-schema#label> "isOccupiedByActivity" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isRoleOf
+<https://w3id.org/digitalconstruction/Entities#isRoleOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000197> .
+<https://w3id.org/digitalconstruction/Entities#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000023> .
+<https://w3id.org/digitalconstruction/Entities#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Agent> .
+<https://w3id.org/digitalconstruction/Entities#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#label> "isRoleOf" .
 # 
 # https://w3id.org/digitalconstruction/Entities#isStartOf
 <https://w3id.org/digitalconstruction/Entities#isStartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -501,8 +556,16 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # http://purl.obolibrary.org/obo/BFO_0000015
 <http://purl.obolibrary.org/obo/BFO_0000015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# http://purl.obolibrary.org/obo/BFO_0000016
+<http://purl.obolibrary.org/obo/BFO_0000016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://purl.obolibrary.org/obo/BFO_0000019
 <http://purl.obolibrary.org/obo/BFO_0000019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000023
+# 
+# http://purl.obolibrary.org/obo/BFO_0000027
+<http://purl.obolibrary.org/obo/BFO_0000027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://purl.obolibrary.org/obo/BFO_0000029
 <http://purl.obolibrary.org/obo/BFO_0000029> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -573,6 +636,11 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#BuildingObject> <http://www.w3.org/2000/01/rdf-schema#comment> "Constituent of a construction entity with a characteristic technical function, form or position." .
 <https://w3id.org/digitalconstruction/Entities#BuildingObject> <http://www.w3.org/2000/01/rdf-schema#label> "BuildingObject" .
 # 
+# https://w3id.org/digitalconstruction/Entities#Capability
+<https://w3id.org/digitalconstruction/Entities#Capability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Capability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000016> .
+<https://w3id.org/digitalconstruction/Entities#Capability> <http://www.w3.org/2000/01/rdf-schema#label> "Capability" .
+# 
 # https://w3id.org/digitalconstruction/Entities#CartesianBoundingBox
 <https://w3id.org/digitalconstruction/Entities#CartesianBoundingBox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#CartesianBoundingBox> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#SpatialExtent> .
@@ -598,10 +666,15 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#Classification> <http://www.w3.org/2000/01/rdf-schema#comment> "Classification enables the specification where an Identifiable Entity   belongs in a given classification scheme (such as OmniClass, UniFormat, CoClass, Talo2000, etc.)" .
 <https://w3id.org/digitalconstruction/Entities#Classification> <http://www.w3.org/2000/01/rdf-schema#label> "Classification" .
 # 
+# https://w3id.org/digitalconstruction/Entities#CompanyRole
+<https://w3id.org/digitalconstruction/Entities#CompanyRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#CompanyRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000023> .
+<https://w3id.org/digitalconstruction/Entities#CompanyRole> <http://www.w3.org/2000/01/rdf-schema#label> "CompanyRole" .
+# 
 # https://w3id.org/digitalconstruction/Entities#Equipment
 <https://w3id.org/digitalconstruction/Entities#Equipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#Equipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000030> .
-<https://w3id.org/digitalconstruction/Entities#Equipment> <http://www.w3.org/2000/01/rdf-schema#comment> "Equipment refers to all the equipment and tool that are used for production activities. An equipment do not have a capability to operate activities by itself automatically." .
+<https://w3id.org/digitalconstruction/Entities#Equipment> <http://www.w3.org/2000/01/rdf-schema#comment> "Machinery and tools used in construction activities. Equipment do not have a capability to operate activities by itself automatically." .
 <https://w3id.org/digitalconstruction/Entities#Equipment> <http://www.w3.org/2000/01/rdf-schema#label> "Equipment" .
 # 
 # https://w3id.org/digitalconstruction/Entities#GeographicBoundingBox
@@ -615,6 +688,11 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#GeographicPosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#SpatialPosition> .
 <https://w3id.org/digitalconstruction/Entities#GeographicPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "Geographic position expressed in longitude, latitude and altitude with respect to a geographic coordinate system." .
 <https://w3id.org/digitalconstruction/Entities#GeographicPosition> <http://www.w3.org/2000/01/rdf-schema#label> "GeographicPosition" .
+# 
+# https://w3id.org/digitalconstruction/Entities#Goal
+<https://w3id.org/digitalconstruction/Entities#Goal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Goal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Intention> .
+<https://w3id.org/digitalconstruction/Entities#Goal> <http://www.w3.org/2000/01/rdf-schema#label> "Goal" .
 # 
 # https://w3id.org/digitalconstruction/Entities#Group
 <https://w3id.org/digitalconstruction/Entities#Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -634,6 +712,11 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifiable information content. Examples are a BIM model, a drawing, a specification, an image, a message, and an issue. Separate from physical information carriers." .
 <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> <http://www.w3.org/2000/01/rdf-schema#label> "InformationContentEntity" .
 # 
+# https://w3id.org/digitalconstruction/Entities#Intention
+<https://w3id.org/digitalconstruction/Entities#Intention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Intention> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000016> .
+<https://w3id.org/digitalconstruction/Entities#Intention> <http://www.w3.org/2000/01/rdf-schema#label> "Intention" .
+# 
 # https://w3id.org/digitalconstruction/Entities#Location
 <https://w3id.org/digitalconstruction/Entities#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000029> .
@@ -651,6 +734,23 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#OneAngleOrientation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#SpatialOrientation> .
 <https://w3id.org/digitalconstruction/Entities#OneAngleOrientation> <http://www.w3.org/2000/01/rdf-schema#comment> "Orientation in two dimensions given by the orientation angle from true north" .
 <https://w3id.org/digitalconstruction/Entities#OneAngleOrientation> <http://www.w3.org/2000/01/rdf-schema#label> "OneAngleOrientation" .
+# 
+# https://w3id.org/digitalconstruction/Entities#PersonRole
+<https://w3id.org/digitalconstruction/Entities#PersonRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#PersonRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000023> .
+<https://w3id.org/digitalconstruction/Entities#PersonRole> <http://www.w3.org/2000/01/rdf-schema#label> "PersonRole" .
+# 
+# https://w3id.org/digitalconstruction/Entities#ProcurementPackage
+<https://w3id.org/digitalconstruction/Entities#ProcurementPackage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#ProcurementPackage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000027> .
+<https://w3id.org/digitalconstruction/Entities#ProcurementPackage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Group> .
+<https://w3id.org/digitalconstruction/Entities#ProcurementPackage> <http://www.w3.org/2000/01/rdf-schema#label> "ProcurementPackage" .
+# 
+# https://w3id.org/digitalconstruction/Entities#Shipment
+<https://w3id.org/digitalconstruction/Entities#Shipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Shipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000027> .
+<https://w3id.org/digitalconstruction/Entities#Shipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Group> .
+<https://w3id.org/digitalconstruction/Entities#Shipment> <http://www.w3.org/2000/01/rdf-schema#label> "Shipment" .
 # 
 # https://w3id.org/digitalconstruction/Entities#SpatialExtent
 <https://w3id.org/digitalconstruction/Entities#SpatialExtent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -673,6 +773,16 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#SpatialQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#SpatialQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
 <https://w3id.org/digitalconstruction/Entities#SpatialQuality> <http://www.w3.org/2000/01/rdf-schema#comment> "A quality that concerns the spatial aspects of an entity" .
+# 
+# https://w3id.org/digitalconstruction/Entities#TemporalExtent
+<https://w3id.org/digitalconstruction/Entities#TemporalExtent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#TemporalExtent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#TemporalQuality> .
+<https://w3id.org/digitalconstruction/Entities#TemporalExtent> <http://www.w3.org/2000/01/rdf-schema#label> "TemporalExtent" .
+# 
+# https://w3id.org/digitalconstruction/Entities#TemporalQuality
+<https://w3id.org/digitalconstruction/Entities#TemporalQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#TemporalQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<https://w3id.org/digitalconstruction/Entities#TemporalQuality> <http://www.w3.org/2000/01/rdf-schema#label> "TemporalQuality" .
 # 
 # https://w3id.org/digitalconstruction/Entities#ThreeAngleOrientation
 <https://w3id.org/digitalconstruction/Entities#ThreeAngleOrientation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -699,8 +809,14 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # https://w3id.org/digitalconstruction/Entities#Vehicle
 <https://w3id.org/digitalconstruction/Entities#Vehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#Vehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Equipment> .
-<https://w3id.org/digitalconstruction/Entities#Vehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "A machine used for transporting goods in construction process" .
+<https://w3id.org/digitalconstruction/Entities#Vehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "An equipment for transporting shipments" .
 <https://w3id.org/digitalconstruction/Entities#Vehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Vehicle" .
+# 
+# https://w3id.org/digitalconstruction/Entities#Workspace
+<https://w3id.org/digitalconstruction/Entities#Workspace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Workspace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Location> .
+<https://w3id.org/digitalconstruction/Entities#Workspace> <http://www.w3.org/2000/01/rdf-schema#comment> "A site of work. There can be multiple different kinds of workspaces needed by an activity: labor crew space, equipment space, hazard space, and so on." .
+<https://w3id.org/digitalconstruction/Entities#Workspace> <http://www.w3.org/2000/01/rdf-schema#label> "Workspace" .
 # 
 # https://w3id.org/digitalconstruction/Variables#Comparison
 <https://w3id.org/digitalconstruction/Variables#Comparison> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
