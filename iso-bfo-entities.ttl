@@ -276,6 +276,13 @@
             rdfs:label "identifies" .
 
 
+###  https://w3id.org/digitalconstruction/Entities#isAbout
+:isAbout rdf:type owl:ObjectProperty ;
+         rdfs:domain :InformationContentEntity ;
+         rdfs:range <http://purl.obolibrary.org/obo/BFO_0000001> ;
+         rdfs:label "isAbout" .
+
+
 ###  https://w3id.org/digitalconstruction/Entities#isAgentIn
 :isAgentIn rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000056> ;
@@ -337,6 +344,10 @@
                       rdfs:domain :Activity ;
                       rdfs:range :TimeInterval ;
                       rdfs:label "occupiesTimeInterval" .
+
+
+###  https://w3id.org/digitalconstruction/Variables#isVariableOf
+<https://w3id.org/digitalconstruction/Variables#isVariableOf> rdfs:subPropertyOf :isAbout .
 
 
 #################################################################
@@ -521,7 +532,8 @@
 
 ###  http://purl.obolibrary.org/obo/IAO_0000030
 <http://purl.obolibrary.org/obo/IAO_0000030> rdf:type owl:Class ;
-                                             owl:equivalentClass :InformationContentEntity .
+                                             owl:equivalentClass :InformationContentEntity ;
+                                             rdfs:label "iao:InformationContentEntity" .
 
 
 ###  http://www.w3.org/ns/prov#agent

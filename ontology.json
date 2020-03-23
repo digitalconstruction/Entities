@@ -111,6 +111,9 @@
 }, {
   "@id" : "http://purl.obolibrary.org/obo/IAO_0000030",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "iao:InformationContentEntity"
+  } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
   } ]
@@ -1110,6 +1113,18 @@
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000001"
   } ]
 }, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#isAbout",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isAbout"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000001"
+  } ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#isAgentIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1250,5 +1265,10 @@
   "@id" : "https://w3id.org/digitalconstruction/Variables#VariableDomain",
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Variables#isVariableOf",
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#isAbout"
   } ]
 } ]
