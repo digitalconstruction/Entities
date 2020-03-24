@@ -25,6 +25,10 @@ This section provides details for each class and property defined by Digital Con
             title="https://w3id.org/digitalconstruction/Entities#AllOver">AllOver</a>
       </li>
       <li>
+         <a href="#Crane"
+            title="https://w3id.org/digitalconstruction/Entities#Crane">An equipment for moving objects. The crane remains stationary during the movement and usually there is a difference in altitude in the origin and target location of the object movement.</a>
+      </li>
+      <li>
          <a href="#AtEnd"
             title="https://w3id.org/digitalconstruction/Entities#AtEnd">AtEnd</a>
       </li>
@@ -330,6 +334,22 @@ This section provides details for each class and property defined by Digital Con
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Crane">
+      <h3>An equipment for moving objects. The crane remains stationary during the movement and usually there is a difference in altitude in the origin and target location of the object movement.<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#Crane</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Equipment"
+               title="https://w3id.org/digitalconstruction/Entities#Equipment">Equipment</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="AtEnd">
       <h3>AtEnd<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -573,7 +593,9 @@ This section provides details for each class and property defined by Digital Con
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#Vehicle"
+            <a href="#Crane"
+               title="https://w3id.org/digitalconstruction/Entities#Crane">An equipment for moving objects. The crane remains stationary during the movement and usually there is a difference in altitude in the origin and target location of the object movement.</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Vehicle"
                title="https://w3id.org/digitalconstruction/Entities#Vehicle">Vehicle</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
@@ -1277,7 +1299,7 @@ This section provides details for each class and property defined by Digital Con
       <p>
          <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#Vehicle</p>
       <div class="comment">
-         <span class="markdown">An equipment for transporting shipments</span>
+         <span class="markdown">An equipment for transporting shipments. The vehice also moves from origin to the target of the transportation activity. Examples are trucks or forklifts.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>

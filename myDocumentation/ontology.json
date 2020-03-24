@@ -204,7 +204,7 @@
     "@id" : "https://w3id.org/digitalconstruction"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/bfo/2020/bfo.owl"
+    "@id" : "http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl"
   }, {
     "@id" : "https://w3id.org/digitalconstruction/Variables"
   } ]
@@ -341,6 +341,17 @@
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#Identifier"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#Crane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "An equipment for moving objects. The crane remains stationary during the movement and usually there is a difference in altitude in the origin and target location of the object movement."
+  }, {
+    "@value" : "Crane"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Equipment"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#Equipment",
@@ -596,7 +607,7 @@
   "@id" : "https://w3id.org/digitalconstruction/Entities#Vehicle",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "An equipment for transporting shipments"
+    "@value" : "An equipment for transporting shipments. The vehice also moves from origin to the target of the transportation activity. Examples are trucks or forklifts."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Vehicle"

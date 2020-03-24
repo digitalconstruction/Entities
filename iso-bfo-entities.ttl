@@ -9,7 +9,7 @@
 @base <https://w3id.org/digitalconstruction/Entities> .
 
 <https://w3id.org/digitalconstruction/Entities> rdf:type owl:Ontology ;
-                                                 owl:imports <http://purl.obolibrary.org/obo/bfo/2020/bfo.owl> ,
+                                                 owl:imports <http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl> ,
                                                              dic:Variables ;
                                                  <http://purl.org/dc/elements/1.1/date> "2020-03-20" ;
                                                  <http://purl.org/dc/elements/1.1/title> "Digital Construction Entities" ;
@@ -684,6 +684,13 @@
                 rdfs:label "Classification" .
 
 
+###  https://w3id.org/digitalconstruction/Entities#Crane
+:Crane rdf:type owl:Class ;
+       rdfs:subClassOf :Equipment ;
+       rdfs:label "An equipment for moving objects. The crane remains stationary during the movement and usually there is a difference in altitude in the origin and target location of the object movement." ,
+                  "Crane" .
+
+
 ###  https://w3id.org/digitalconstruction/Entities#Equipment
 :Equipment rdf:type owl:Class ;
            rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
@@ -840,7 +847,7 @@
 ###  https://w3id.org/digitalconstruction/Entities#Vehicle
 :Vehicle rdf:type owl:Class ;
          rdfs:subClassOf :Equipment ;
-         rdfs:comment "An equipment for transporting shipments" ;
+         rdfs:comment "An equipment for transporting shipments. The vehice also moves from origin to the target of the transportation activity. Examples are trucks or forklifts." ;
          rdfs:label "Vehicle" .
 
 
