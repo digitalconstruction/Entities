@@ -786,14 +786,22 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#ThreeAngleOrientation> <http://www.w3.org/2000/01/rdf-schema#comment> "Orientation given by three angles: angle about x-axis (alpha), angle about y-axis(beta) and angle about z-axis (gamma)" .
 <https://w3id.org/digitalconstruction/Entities#ThreeAngleOrientation> <http://www.w3.org/2000/01/rdf-schema#label> "ThreeAngleOrientation" .
 # 
+# https://w3id.org/digitalconstruction/Entities#TimeDuration
+<https://w3id.org/digitalconstruction/Entities#TimeDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#TimeDuration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#TemporalExtent> .
+<https://w3id.org/digitalconstruction/Entities#TimeDuration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3.org/2006/time#Duration> .
+<https://w3id.org/digitalconstruction/Entities#TimeDuration> <http://www.w3.org/2000/01/rdf-schema#label> "TimeDuration" .
+# 
 # https://w3id.org/digitalconstruction/Entities#TimeInstant
 <https://w3id.org/digitalconstruction/Entities#TimeInstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#TimeInstant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000203> .
+<https://w3id.org/digitalconstruction/Entities#TimeInstant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3.org/2006/time#Instant> .
 <https://w3id.org/digitalconstruction/Entities#TimeInstant> <http://www.w3.org/2000/01/rdf-schema#comment> "TimeInstant" .
 # 
 # https://w3id.org/digitalconstruction/Entities#TimeInterval
 <https://w3id.org/digitalconstruction/Entities#TimeInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000202> .
+<https://w3id.org/digitalconstruction/Entities#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3.org/2006/time#Interval> .
 <https://w3id.org/digitalconstruction/Entities#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#comment> "TimeInterval" .
 # 
 # https://w3id.org/digitalconstruction/Entities#TwoAngleOrientation
@@ -828,6 +836,15 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # https://w3id.org/digitalconstruction/Variables#VariableDomain
 <https://w3id.org/digitalconstruction/Variables#VariableDomain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+# 
+# https://www.w3.org/2006/time#Duration
+<https://www.w3.org/2006/time#Duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://www.w3.org/2006/time#Instant
+<https://www.w3.org/2006/time#Instant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://www.w3.org/2006/time#Interval
+<https://www.w3.org/2006/time#Interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # 
 # 

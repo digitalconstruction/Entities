@@ -1449,11 +1449,23 @@
     
 
 
+    <!-- https://w3id.org/digitalconstruction/Entities#TimeDuration -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#TimeDuration">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#TemporalExtent"/>
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/2006/time#Duration"/>
+        <rdfs:label>TimeDuration</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Entities#TimeInstant -->
 
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#TimeInstant">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000203"/>
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/2006/time#Instant"/>
         <rdfs:comment>TimeInstant</rdfs:comment>
     </owl:Class>
     
@@ -1464,6 +1476,7 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#TimeInterval">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000202"/>
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/2006/time#Interval"/>
         <rdfs:comment>TimeInterval</rdfs:comment>
     </owl:Class>
     
@@ -1544,6 +1557,27 @@
     <rdf:Description rdf:about="https://w3id.org/digitalconstruction/Variables#VariableDomain">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
     </rdf:Description>
+    
+
+
+    <!-- https://www.w3.org/2006/time#Duration -->
+
+
+    <owl:Class rdf:about="https://www.w3.org/2006/time#Duration"/>
+    
+
+
+    <!-- https://www.w3.org/2006/time#Instant -->
+
+
+    <owl:Class rdf:about="https://www.w3.org/2006/time#Instant"/>
+    
+
+
+    <!-- https://www.w3.org/2006/time#Interval -->
+
+
+    <owl:Class rdf:about="https://www.w3.org/2006/time#Interval"/>
     
 
 

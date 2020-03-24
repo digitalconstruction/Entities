@@ -808,7 +808,7 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#TemporalExtent
 :TemporalExtent rdf:type owl:Class ;
-                rdfs:subClassOf :TemporalQuality ;
+                rdfs:subClassOf :TemporalQuality  ;
                 rdfs:label "TemporalExtent" .
 
 
@@ -825,15 +825,24 @@
                        rdfs:label "ThreeAngleOrientation" .
 
 
+###  https://w3id.org/digitalconstruction/Entities#TimeDuration
+:TimeDuration rdf:type owl:Class ;
+    rdfs:label "TimeDuration" ;
+    rdfs:subClassOf :TemporalExtent,
+        <https://www.w3.org/2006/time#Duration> . 
+
+
 ###  https://w3id.org/digitalconstruction/Entities#TimeInstant
 :TimeInstant rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000203> ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000203> ,
+                             <https://www.w3.org/2006/time#Instant> ;
              rdfs:comment "TimeInstant" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#TimeInterval
 :TimeInterval rdf:type owl:Class ;
-              rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ;
+              rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ,
+                              <https://www.w3.org/2006/time#Interval> ;
               rdfs:comment "TimeInterval" .
 
 
@@ -876,6 +885,18 @@
 
 ###  https://w3id.org/digitalconstruction/Variables#VariableDomain
 <https://w3id.org/digitalconstruction/Variables#VariableDomain> rdfs:subClassOf :InformationContentEntity .
+
+
+###  https://www.w3.org/2006/time#Duration
+<https://www.w3.org/2006/time#Duration> rdf:type owl:Class .
+
+
+###  https://www.w3.org/2006/time#Instant
+<https://www.w3.org/2006/time#Instant> rdf:type owl:Class .
+
+
+###  https://www.w3.org/2006/time#Interval
+<https://www.w3.org/2006/time#Interval> rdf:type owl:Class .
 
 
 #################################################################

@@ -574,6 +574,17 @@
     "@id" : "https://w3id.org/digitalconstruction/Entities#SpatialOrientation"
   } ]
 }, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#TimeDuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TimeDuration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#TemporalExtent"
+  }, {
+    "@id" : "https://www.w3.org/2006/time#Duration"
+  } ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#TimeInstant",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -581,6 +592,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000203"
+  }, {
+    "@id" : "https://www.w3.org/2006/time#Instant"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#TimeInterval",
@@ -590,6 +603,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000202"
+  }, {
+    "@id" : "https://www.w3.org/2006/time#Interval"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#TwoAngleOrientation",
@@ -1484,4 +1499,13 @@
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#isAbout"
   } ]
+}, {
+  "@id" : "https://www.w3.org/2006/time#Duration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.w3.org/2006/time#Instant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.w3.org/2006/time#Interval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 } ]
