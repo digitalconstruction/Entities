@@ -769,7 +769,7 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#InformationContentEntity
 :InformationContentEntity rdf:type owl:Class ;
-                          rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000031> ;
+                          rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000031>, <http://www.w3.org/ns/prov#Entity> ;
                           rdfs:comment "Identifiable information content. Examples are a BIM model, a drawing, a specification, an image, a message, and an issue. Separate from physical information carriers." ;
                           rdfs:label "InformationContentEntity" .
 
