@@ -115,15 +115,16 @@
 # 
 # https://w3id.org/digitalconstruction/Entities#classifiedBy
 <https://w3id.org/digitalconstruction/Entities#classifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/digitalconstruction/Entities#classifiedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#classifiedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/Entities#labeledBy> .
 <https://w3id.org/digitalconstruction/Entities#classifiedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#classifies> .
 <https://w3id.org/digitalconstruction/Entities#classifiedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000001> .
-<https://w3id.org/digitalconstruction/Entities#classifiedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Classification> .
+<https://w3id.org/digitalconstruction/Entities#classifiedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Category> .
 <https://w3id.org/digitalconstruction/Entities#classifiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "classifiedBy" .
 # 
 # https://w3id.org/digitalconstruction/Entities#classifies
 <https://w3id.org/digitalconstruction/Entities#classifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/digitalconstruction/Entities#classifies> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Classification> .
+<https://w3id.org/digitalconstruction/Entities#classifies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/Entities#labels> .
+<https://w3id.org/digitalconstruction/Entities#classifies> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Category> .
 <https://w3id.org/digitalconstruction/Entities#classifies> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000001> .
 <https://w3id.org/digitalconstruction/Entities#classifies> <http://www.w3.org/2000/01/rdf-schema#label> "classifies" .
 # 
@@ -140,6 +141,7 @@
 <https://w3id.org/digitalconstruction/Entities#hasAgent> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isAgentIn> .
 <https://w3id.org/digitalconstruction/Entities#hasAgent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Activity> .
 <https://w3id.org/digitalconstruction/Entities#hasAgent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Agent> .
+<https://w3id.org/digitalconstruction/Entities#hasAgent> <http://www.w3.org/2000/01/rdf-schema#label> "hasAgent" .
 # 
 # https://w3id.org/digitalconstruction/Entities#hasAsset
 <https://w3id.org/digitalconstruction/Entities#hasAsset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -294,6 +296,7 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#hasSubActivity> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isSubActivityOf> .
 <https://w3id.org/digitalconstruction/Entities#hasSubActivity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Activity> .
 <https://w3id.org/digitalconstruction/Entities#hasSubActivity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/Entities#hasSubActivity> <http://www.w3.org/2000/01/rdf-schema#label> "hasSubActivity" .
 # 
 # https://w3id.org/digitalconstruction/Entities#hasSubLocation
 <https://w3id.org/digitalconstruction/Entities#hasSubLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -305,7 +308,7 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # https://w3id.org/digitalconstruction/Entities#identifiedBy
 <https://w3id.org/digitalconstruction/Entities#identifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/digitalconstruction/Entities#identifiedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#identifiedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/Entities#labeledBy> .
 <https://w3id.org/digitalconstruction/Entities#identifiedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#identifies> .
 <https://w3id.org/digitalconstruction/Entities#identifiedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000001> .
 <https://w3id.org/digitalconstruction/Entities#identifiedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Identifier> .
@@ -313,6 +316,7 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # https://w3id.org/digitalconstruction/Entities#identifies
 <https://w3id.org/digitalconstruction/Entities#identifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#identifies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/Entities#labels> .
 <https://w3id.org/digitalconstruction/Entities#identifies> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Identifier> .
 <https://w3id.org/digitalconstruction/Entities#identifies> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000001> .
 <https://w3id.org/digitalconstruction/Entities#identifies> <http://www.w3.org/2000/01/rdf-schema#label> "identifies" .
@@ -386,6 +390,25 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#isSubLocationOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Location> .
 <https://w3id.org/digitalconstruction/Entities#isSubLocationOf> <http://www.w3.org/2000/01/rdf-schema#label> "isSubLocationOf" .
 # 
+# https://w3id.org/digitalconstruction/Entities#isUniqueWithin
+<https://w3id.org/digitalconstruction/Entities#isUniqueWithin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isUniqueWithin> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Labeling> .
+<https://w3id.org/digitalconstruction/Entities#isUniqueWithin> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Category> .
+<https://w3id.org/digitalconstruction/Entities#isUniqueWithin> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the category within which the label is unique" .
+<https://w3id.org/digitalconstruction/Entities#isUniqueWithin> <http://www.w3.org/2000/01/rdf-schema#label> "isUniqueWithin" .
+# 
+# https://w3id.org/digitalconstruction/Entities#labeledBy
+<https://w3id.org/digitalconstruction/Entities#labeledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#labeledBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#labels> .
+<https://w3id.org/digitalconstruction/Entities#labeledBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<https://w3id.org/digitalconstruction/Entities#labeledBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Labeling> .
+<https://w3id.org/digitalconstruction/Entities#labeledBy> <http://www.w3.org/2000/01/rdf-schema#label> "labeledBy" .
+# 
+# https://w3id.org/digitalconstruction/Entities#labels
+<https://w3id.org/digitalconstruction/Entities#labels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#labels> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Labeling> .
+<https://w3id.org/digitalconstruction/Entities#labels> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000001> .
+# 
 # https://w3id.org/digitalconstruction/Entities#memberOf
 <https://w3id.org/digitalconstruction/Entities#memberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/digitalconstruction/Entities#memberOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000001> .
@@ -411,12 +434,6 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # #################################################################
 # 
 # 
-# https://w3id.org/digitalconstruction/Entities#allocatedBy
-<https://w3id.org/digitalconstruction/Entities#allocatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/digitalconstruction/Entities#allocatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Identifier> .
-<https://w3id.org/digitalconstruction/Entities#allocatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/digitalconstruction/Entities#allocatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "allocatedBy" .
-# 
 # https://w3id.org/digitalconstruction/Entities#hasAltitude
 <https://w3id.org/digitalconstruction/Entities#hasAltitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/digitalconstruction/Entities#hasAltitude> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#GeographicPosition> .
@@ -425,6 +442,7 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # https://w3id.org/digitalconstruction/Entities#hasAmount
 <https://w3id.org/digitalconstruction/Entities#hasAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasAmount> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#MaterialBatch> .
 <https://w3id.org/digitalconstruction/Entities#hasAmount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#real> .
 <https://w3id.org/digitalconstruction/Entities#hasAmount> <http://www.w3.org/2000/01/rdf-schema#label> "hasAmount" .
 # 
@@ -442,8 +460,7 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # https://w3id.org/digitalconstruction/Entities#hasLabel
 <https://w3id.org/digitalconstruction/Entities#hasLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/digitalconstruction/Entities#hasLabel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Classification> .
-<https://w3id.org/digitalconstruction/Entities#hasLabel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Identifier> .
+<https://w3id.org/digitalconstruction/Entities#hasLabel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Labeling> .
 <https://w3id.org/digitalconstruction/Entities#hasLabel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/digitalconstruction/Entities#hasLabel> <http://www.w3.org/2000/01/rdf-schema#label> "hasLabel" .
 # 
@@ -461,7 +478,9 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # https://w3id.org/digitalconstruction/Entities#hasMaxLoad
 <https://w3id.org/digitalconstruction/Entities#hasMaxLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasMaxLoad> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Vehicle> .
 <https://w3id.org/digitalconstruction/Entities#hasMaxLoad> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#real> .
+<https://w3id.org/digitalconstruction/Entities#hasMaxLoad> <http://www.w3.org/2000/01/rdf-schema#label> "hasMaxLoad" .
 # 
 # https://w3id.org/digitalconstruction/Entities#hasNorthAngle
 <https://w3id.org/digitalconstruction/Entities#hasNorthAngle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -474,11 +493,6 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#hasStrikeAngle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#TwoAngleOrientation> .
 <https://w3id.org/digitalconstruction/Entities#hasStrikeAngle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <https://w3id.org/digitalconstruction/Entities#hasStrikeAngle> <http://www.w3.org/2000/01/rdf-schema#label> "hasStrikeAngle" .
-# 
-# https://w3id.org/digitalconstruction/Entities#hasSystem
-<https://w3id.org/digitalconstruction/Entities#hasSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/digitalconstruction/Entities#hasSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Classification> .
-<https://w3id.org/digitalconstruction/Entities#hasSystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 # 
 # https://w3id.org/digitalconstruction/Entities#hasX
 <https://w3id.org/digitalconstruction/Entities#hasX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -597,6 +611,22 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/digitalconstruction/Entities#Agent> .
 # 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#BuildingObject> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpatialElement
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpatialElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpatialElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Location> .
+# 
+# https://w3id.org/bot#Element
+<https://w3id.org/bot#Element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bot#Element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#BuildingObject> .
+# 
+# https://w3id.org/bot#Zone
+<https://w3id.org/bot#Zone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bot#Zone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Location> .
+# 
 # https://w3id.org/digitalconstruction/Entities#Activity
 <https://w3id.org/digitalconstruction/Entities#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000015> .
@@ -659,17 +689,17 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#CartesianVolume> <http://www.w3.org/2000/01/rdf-schema#comment> "Cartesian volume given by the lengths to x, y, and z directions" .
 <https://w3id.org/digitalconstruction/Entities#CartesianVolume> <http://www.w3.org/2000/01/rdf-schema#label> "CartesianVolume" .
 # 
-# https://w3id.org/digitalconstruction/Entities#Classification
-<https://w3id.org/digitalconstruction/Entities#Classification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Entities#Classification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
-<https://w3id.org/digitalconstruction/Entities#Classification> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/digitalconstruction/Entities#Identifier> .
-<https://w3id.org/digitalconstruction/Entities#Classification> <http://www.w3.org/2000/01/rdf-schema#comment> "Classification enables the specification where an Identifiable Entity   belongs in a given classification scheme (such as OmniClass, UniFormat, CoClass, Talo2000, etc.)" .
-<https://w3id.org/digitalconstruction/Entities#Classification> <http://www.w3.org/2000/01/rdf-schema#label> "Classification" .
+# https://w3id.org/digitalconstruction/Entities#Category
+<https://w3id.org/digitalconstruction/Entities#Category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Category> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Labeling> .
+<https://w3id.org/digitalconstruction/Entities#Category> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/digitalconstruction/Entities#Identifier> .
+<https://w3id.org/digitalconstruction/Entities#Category> <http://www.w3.org/2000/01/rdf-schema#comment> "Category is a labeling of an entity the associates it with some defined class of things. For example, an object can be associated with a particular class in a classification system such as OmniClass, UniFormat, CoClass, or Talo2000. Category allows also to associate an entity with a category of entities represented in an external system or belonging to a particular project." .
+<https://w3id.org/digitalconstruction/Entities#Category> <http://www.w3.org/2000/01/rdf-schema#label> "Category" .
 # 
 # https://w3id.org/digitalconstruction/Entities#Crane
 <https://w3id.org/digitalconstruction/Entities#Crane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#Crane> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Equipment> .
-<https://w3id.org/digitalconstruction/Entities#Crane> <http://www.w3.org/2000/01/rdf-schema#label> "An equipment for moving objects. The crane remains stationary during the movement and usually there is a difference in altitude in the origin and target location of the object movement." .
+<https://w3id.org/digitalconstruction/Entities#Crane> <http://www.w3.org/2000/01/rdf-schema#comment> "An equipment for moving objects. The crane remains stationary during the movement and usually there is a difference in altitude in the origin and target location of the object movement." .
 <https://w3id.org/digitalconstruction/Entities#Crane> <http://www.w3.org/2000/01/rdf-schema#label> "Crane" .
 # 
 # https://w3id.org/digitalconstruction/Entities#Equipment
@@ -698,12 +728,12 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # https://w3id.org/digitalconstruction/Entities#Group
 <https://w3id.org/digitalconstruction/Entities#Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#Group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000001> .
-<https://w3id.org/digitalconstruction/Entities#Group> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of indentifiable entities. Examples are a procurement package, a shipment, a workgroup, or the walls of a space." .
+<https://w3id.org/digitalconstruction/Entities#Group> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of entities. Examples are a procurement package, a shipment, a workgroup, or the walls of a space." .
 <https://w3id.org/digitalconstruction/Entities#Group> <http://www.w3.org/2000/01/rdf-schema#label> "Group" .
 # 
 # https://w3id.org/digitalconstruction/Entities#Identifier
 <https://w3id.org/digitalconstruction/Entities#Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Entities#Identifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+<https://w3id.org/digitalconstruction/Entities#Identifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Labeling> .
 <https://w3id.org/digitalconstruction/Entities#Identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier allows the specification of a (global or local) identifier, based on the given identification system (GUID, URI, room number in a building, etc.)" .
 <https://w3id.org/digitalconstruction/Entities#Identifier> <http://www.w3.org/2000/01/rdf-schema#label> "Identifier" .
 # 
@@ -718,10 +748,16 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#Intention> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000016> .
 <https://w3id.org/digitalconstruction/Entities#Intention> <http://www.w3.org/2000/01/rdf-schema#label> "Intention" .
 # 
+# https://w3id.org/digitalconstruction/Entities#Labeling
+<https://w3id.org/digitalconstruction/Entities#Labeling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Labeling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+<https://w3id.org/digitalconstruction/Entities#Labeling> <http://www.w3.org/2000/01/rdf-schema#comment> "Labeling is a generic mechanism to associate entities with any number of labels that are unique within a given category. The purpose is to enable the representation of connections to existing systems, databases or classification schemes." .
+<https://w3id.org/digitalconstruction/Entities#Labeling> <http://www.w3.org/2000/01/rdf-schema#label> "Labeling" .
+# 
 # https://w3id.org/digitalconstruction/Entities#Location
 <https://w3id.org/digitalconstruction/Entities#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000029> .
-<https://w3id.org/digitalconstruction/Entities#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "Location refer to particular places" .
+<https://w3id.org/digitalconstruction/Entities#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "A (logical) place where material entities can be located or activities can occur. Locations can form a hierarchy, for example, in a location breakdown structure consisting of a site, buildings, floors, zones, spaces, and workspaces" .
 <https://w3id.org/digitalconstruction/Entities#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location" .
 # 
 # https://w3id.org/digitalconstruction/Entities#MaterialBatch

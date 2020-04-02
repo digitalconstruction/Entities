@@ -239,10 +239,10 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#classifiedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Entities#labeledBy"/>
         <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Entities#classifies"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Classification"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Category"/>
         <rdfs:label>classifiedBy</rdfs:label>
     </owl:ObjectProperty>
     
@@ -252,7 +252,8 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#classifies">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Classification"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Entities#labels"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Category"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label>classifies</rdfs:label>
     </owl:ObjectProperty>
@@ -279,6 +280,7 @@
         <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Entities#isAgentIn"/>
         <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
         <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
+        <rdfs:label>hasAgent</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -520,6 +522,7 @@
         <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Entities#isSubActivityOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
         <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
+        <rdfs:label>hasSubActivity</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -541,7 +544,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#identifiedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Entities#labeledBy"/>
         <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Entities#identifies"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Identifier"/>
@@ -554,6 +557,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#identifies">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Entities#labels"/>
         <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Identifier"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label>identifies</rdfs:label>
@@ -680,6 +684,40 @@
     
 
 
+    <!-- https://w3id.org/digitalconstruction/Entities#isUniqueWithin -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#isUniqueWithin">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Labeling"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Category"/>
+        <rdfs:comment>Defines the category within which the label is unique</rdfs:comment>
+        <rdfs:label>isUniqueWithin</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Entities#labeledBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#labeledBy">
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Entities#labels"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Labeling"/>
+        <rdfs:label>labeledBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Entities#labels -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#labels">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Labeling"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Entities#memberOf -->
 
 
@@ -724,17 +762,6 @@
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Entities#allocatedBy -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/Entities#allocatedBy">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Identifier"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>allocatedBy</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://w3id.org/digitalconstruction/Entities#hasAltitude -->
 
 
@@ -750,6 +777,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasAmount">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#MaterialBatch"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
         <rdfs:label>hasAmount</rdfs:label>
     </owl:DatatypeProperty>
@@ -782,8 +810,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasLabel">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Classification"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Identifier"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Labeling"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>hasLabel</rdfs:label>
     </owl:DatatypeProperty>
@@ -816,7 +843,9 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasMaxLoad">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Vehicle"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:label>hasMaxLoad</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -839,16 +868,6 @@
         <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#TwoAngleOrientation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:label>hasStrikeAngle</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/digitalconstruction/Entities#hasSystem -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasSystem">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Classification"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -1095,6 +1114,42 @@
     
 
 
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#BuildingObject"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpatialElement -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpatialElement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bot#Element -->
+
+
+    <owl:Class rdf:about="https://w3id.org/bot#Element">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#BuildingObject"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bot#Zone -->
+
+
+    <owl:Class rdf:about="https://w3id.org/bot#Zone">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#Location"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Entities#Activity -->
 
 
@@ -1212,14 +1267,14 @@
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Entities#Classification -->
+    <!-- https://w3id.org/digitalconstruction/Entities#Category -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#Classification">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#Category">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#Labeling"/>
         <owl:disjointWith rdf:resource="https://w3id.org/digitalconstruction/Entities#Identifier"/>
-        <rdfs:comment>Classification enables the specification where an Identifiable Entity   belongs in a given classification scheme (such as OmniClass, UniFormat, CoClass, Talo2000, etc.)</rdfs:comment>
-        <rdfs:label>Classification</rdfs:label>
+        <rdfs:comment>Category is a labeling of an entity the associates it with some defined class of things. For example, an object can be associated with a particular class in a classification system such as OmniClass, UniFormat, CoClass, or Talo2000. Category allows also to associate an entity with a category of entities represented in an external system or belonging to a particular project.</rdfs:comment>
+        <rdfs:label>Category</rdfs:label>
     </owl:Class>
     
 
@@ -1229,7 +1284,7 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#Crane">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#Equipment"/>
-        <rdfs:label>An equipment for moving objects. The crane remains stationary during the movement and usually there is a difference in altitude in the origin and target location of the object movement.</rdfs:label>
+        <rdfs:comment>An equipment for moving objects. The crane remains stationary during the movement and usually there is a difference in altitude in the origin and target location of the object movement.</rdfs:comment>
         <rdfs:label>Crane</rdfs:label>
     </owl:Class>
     
@@ -1283,7 +1338,7 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#Group">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:comment>A set of indentifiable entities. Examples are a procurement package, a shipment, a workgroup, or the walls of a space.</rdfs:comment>
+        <rdfs:comment>A set of entities. Examples are a procurement package, a shipment, a workgroup, or the walls of a space.</rdfs:comment>
         <rdfs:label>Group</rdfs:label>
     </owl:Class>
     
@@ -1293,7 +1348,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#Identifier">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#Labeling"/>
         <rdfs:comment>Identifier allows the specification of a (global or local) identifier, based on the given identification system (GUID, URI, room number in a building, etc.)</rdfs:comment>
         <rdfs:label>Identifier</rdfs:label>
     </owl:Class>
@@ -1321,12 +1376,23 @@
     
 
 
+    <!-- https://w3id.org/digitalconstruction/Entities#Labeling -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#Labeling">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+        <rdfs:comment>Labeling is a generic mechanism to associate entities with any number of labels that are unique within a given category. The purpose is to enable the representation of connections to existing systems, databases or classification schemes.</rdfs:comment>
+        <rdfs:label>Labeling</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Entities#Location -->
 
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#Location">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
-        <rdfs:comment>Location refer to particular places</rdfs:comment>
+        <rdfs:comment>A (logical) place where material entities can be located or activities can occur. Locations can form a hierarchy, for example, in a location breakdown structure consisting of a site, buildings, floors, zones, spaces, and workspaces</rdfs:comment>
         <rdfs:label>Location</rdfs:label>
     </owl:Class>
     

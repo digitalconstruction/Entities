@@ -169,6 +169,30 @@
     "@id" : "https://w3id.org/digitalconstruction/Entities#Agent"
   } ]
 }, {
+  "@id" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#BuildingObject"
+  } ]
+}, {
+  "@id" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpatialElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Location"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bot#Element",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#BuildingObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bot#Zone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Location"
+  } ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/Entities",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/date" : [ {
@@ -328,16 +352,16 @@
     "@id" : "https://w3id.org/digitalconstruction/Entities#SpatialExtent"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Entities#Classification",
+  "@id" : "https://w3id.org/digitalconstruction/Entities#Category",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Classification enables the specification where an Identifiable Entity   belongs in a given classification scheme (such as OmniClass, UniFormat, CoClass, Talo2000, etc.)"
+    "@value" : "Category is a labeling of an entity the associates it with some defined class of things. For example, an object can be associated with a particular class in a classification system such as OmniClass, UniFormat, CoClass, or Talo2000. Category allows also to associate an entity with a category of entities represented in an external system or belonging to a particular project."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Classification"
+    "@value" : "Category"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Labeling"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#Identifier"
@@ -345,9 +369,10 @@
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#Crane",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An equipment for moving objects. The crane remains stationary during the movement and usually there is a difference in altitude in the origin and target location of the object movement."
-  }, {
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Crane"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -402,7 +427,7 @@
   "@id" : "https://w3id.org/digitalconstruction/Entities#Group",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A set of indentifiable entities. Examples are a procurement package, a shipment, a workgroup, or the walls of a space."
+    "@value" : "A set of entities. Examples are a procurement package, a shipment, a workgroup, or the walls of a space."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Group"
@@ -420,7 +445,7 @@
     "@value" : "Identifier"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Labeling"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity",
@@ -444,10 +469,22 @@
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000016"
   } ]
 }, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#Labeling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Labeling is a generic mechanism to associate entities with any number of labels that are unique within a given category. The purpose is to enable the representation of connections to existing systems, databases or classification schemes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Labeling"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+  } ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#Location",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Location refer to particular places"
+    "@value" : "A (logical) place where material entities can be located or activities can occur. Locations can form a hierarchy, for example, in a location breakdown structure consisting of a site, buildings, floors, zones, spaces, and workspaces"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Location"
@@ -658,18 +695,6 @@
     "@id" : "https://w3id.org/digitalconstruction/Entities#before"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Entities#allocatedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Identifier"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "allocatedBy"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#before",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -691,10 +716,10 @@
     "@value" : "classifiedBy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Classification"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Category"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#labeledBy"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#classifies"
@@ -703,13 +728,16 @@
   "@id" : "https://w3id.org/digitalconstruction/Entities#classifies",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Classification"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Category"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "classifies"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000001"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#labels"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#hasActivity",
@@ -731,6 +759,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasAgent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#Agent"
@@ -756,6 +787,9 @@
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#hasAmount",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#MaterialBatch"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasAmount"
   } ],
@@ -871,9 +905,7 @@
   "@id" : "https://w3id.org/digitalconstruction/Entities#hasLabel",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Classification"
-  }, {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Identifier"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Labeling"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasLabel"
@@ -908,6 +940,12 @@
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#hasMaxLoad",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Vehicle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasMaxLoad"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#real"
   } ]
@@ -1121,6 +1159,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasSubActivity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
   } ],
@@ -1147,15 +1188,6 @@
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#isSubLocationOf"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Entities#hasSystem",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Classification"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#hasX",
@@ -1278,7 +1310,7 @@
     "@id" : "https://w3id.org/digitalconstruction/Entities#Identifier"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#labeledBy"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#identifies"
@@ -1294,6 +1326,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000001"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#labels"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#isAbout",
@@ -1441,6 +1476,45 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000082"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#isUniqueWithin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Defines the category within which the label is unique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Labeling"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isUniqueWithin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Category"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#labeledBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000001"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "labeledBy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Labeling"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#labels"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#labels",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Labeling"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000001"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#memberOf",

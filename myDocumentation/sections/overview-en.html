@@ -25,10 +25,6 @@ This ontology has the following classes and properties.</span>
          title="https://w3id.org/digitalconstruction/Entities#AllOver">AllOver</a>
    </li>
    <li>
-      <a href="#Crane"
-         title="https://w3id.org/digitalconstruction/Entities#Crane">An equipment for moving objects. The crane remains stationary during the movement and usually there is a difference in altitude in the origin and target location of the object movement.</a>
-   </li>
-   <li>
       <a href="#AtEnd"
          title="https://w3id.org/digitalconstruction/Entities#AtEnd">AtEnd</a>
    </li>
@@ -57,8 +53,17 @@ This ontology has the following classes and properties.</span>
          title="https://w3id.org/digitalconstruction/Entities#CartesianVolume">CartesianVolume</a>
    </li>
    <li>
-      <a href="#Classification"
-         title="https://w3id.org/digitalconstruction/Entities#Classification">Classification</a>
+      <a href="#Category"
+         title="https://w3id.org/digitalconstruction/Entities#Category">Category</a>
+   </li>
+   <li>
+      <a href="#Crane"
+         title="https://w3id.org/digitalconstruction/Entities#Crane">Crane</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/bot#Element" title="https://w3id.org/bot#Element">
+         <span>element</span>
+      </a>
    </li>
    <li>
       <a href="#Equipment"
@@ -88,12 +93,28 @@ This ontology has the following classes and properties.</span>
          title="https://w3id.org/digitalconstruction/Entities#Identifier">Identifier</a>
    </li>
    <li>
+      <a href="#https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement"
+         title="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement">
+         <span>ifc element</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpatialElement"
+         title="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpatialElement">
+         <span>ifc spatial element</span>
+      </a>
+   </li>
+   <li>
       <a href="#InformationContentEntity"
          title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">InformationContentEntity</a>
    </li>
    <li>
       <a href="#Intention"
          title="https://w3id.org/digitalconstruction/Entities#Intention">Intention</a>
+   </li>
+   <li>
+      <a href="#Labeling"
+         title="https://w3id.org/digitalconstruction/Entities#Labeling">Labeling</a>
    </li>
    <li>
       <a href="#Location"
@@ -173,6 +194,11 @@ This ontology has the following classes and properties.</span>
       <a href="#Workspace"
          title="https://w3id.org/digitalconstruction/Entities#Workspace">Workspace</a>
    </li>
+   <li>
+      <a href="#https://w3id.org/bot#Zone" title="https://w3id.org/bot#Zone">
+         <span>zone</span>
+      </a>
+   </li>
 </ul><h4>Object Properties</h4><ul class="hlist">
    <li>
       <a href="#after"
@@ -191,20 +217,12 @@ This ontology has the following classes and properties.</span>
          title="https://w3id.org/digitalconstruction/Entities#classifies">classifies</a>
    </li>
    <li>
-      <a href="#hasAgent"
-         title="https://w3id.org/digitalconstruction/Entities#hasAgent">
-         <span>has agent</span>
-      </a>
-   </li>
-   <li>
-      <a href="#hasSubActivity"
-         title="https://w3id.org/digitalconstruction/Entities#hasSubActivity">
-         <span>has sub activity</span>
-      </a>
-   </li>
-   <li>
       <a href="#hasActivity"
          title="https://w3id.org/digitalconstruction/Entities#hasActivity">hasActivity</a>
+   </li>
+   <li>
+      <a href="#hasAgent"
+         title="https://w3id.org/digitalconstruction/Entities#hasAgent">hasAgent</a>
    </li>
    <li>
       <a href="#hasAsset"
@@ -279,6 +297,10 @@ This ontology has the following classes and properties.</span>
          title="https://w3id.org/digitalconstruction/Entities#hasState">hasState</a>
    </li>
    <li>
+      <a href="#hasSubActivity"
+         title="https://w3id.org/digitalconstruction/Entities#hasSubActivity">hasSubActivity</a>
+   </li>
+   <li>
       <a href="#hasSubLocation"
          title="https://w3id.org/digitalconstruction/Entities#hasSubLocation">hasSubLocation</a>
    </li>
@@ -331,6 +353,20 @@ This ontology has the following classes and properties.</span>
          title="https://w3id.org/digitalconstruction/Entities#isSubLocationOf">isSubLocationOf</a>
    </li>
    <li>
+      <a href="#isUniqueWithin"
+         title="https://w3id.org/digitalconstruction/Entities#isUniqueWithin">isUniqueWithin</a>
+   </li>
+   <li>
+      <a href="#labeledBy"
+         title="https://w3id.org/digitalconstruction/Entities#labeledBy">labeledBy</a>
+   </li>
+   <li>
+      <a href="#labels"
+         title="https://w3id.org/digitalconstruction/Entities#labels">
+         <span>labels</span>
+      </a>
+   </li>
+   <li>
       <a href="#memberOf"
          title="https://w3id.org/digitalconstruction/Entities#memberOf">memberOf</a>
    </li>
@@ -339,22 +375,6 @@ This ontology has the following classes and properties.</span>
          title="https://w3id.org/digitalconstruction/Entities#occupiesTimeInterval">occupiesTimeInterval</a>
    </li>
 </ul><h4>Data Properties</h4><ul class="hlist">
-   <li>
-      <a href="#allocatedBy"
-         title="https://w3id.org/digitalconstruction/Entities#allocatedBy">allocatedBy</a>
-   </li>
-   <li>
-      <a href="#hasMaxLoad"
-         title="https://w3id.org/digitalconstruction/Entities#hasMaxLoad">
-         <span>has max load</span>
-      </a>
-   </li>
-   <li>
-      <a href="#hasSystem"
-         title="https://w3id.org/digitalconstruction/Entities#hasSystem">
-         <span>has system</span>
-      </a>
-   </li>
    <li>
       <a href="#hasAltitude"
          title="https://w3id.org/digitalconstruction/Entities#hasAltitude">hasAltitude</a>
@@ -382,6 +402,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#hasLongitude"
          title="https://w3id.org/digitalconstruction/Entities#hasLongitude">hasLongitude</a>
+   </li>
+   <li>
+      <a href="#hasMaxLoad"
+         title="https://w3id.org/digitalconstruction/Entities#hasMaxLoad">hasMaxLoad</a>
    </li>
    <li>
       <a href="#hasNorthAngle"

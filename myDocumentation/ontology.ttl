@@ -138,16 +138,17 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#classifiedBy
 :classifiedBy rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:subPropertyOf :labeledBy ;
               owl:inverseOf :classifies ;
               rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000001> ;
-              rdfs:range :Classification ;
+              rdfs:range :Category ;
               rdfs:label "classifiedBy" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#classifies
 :classifies rdf:type owl:ObjectProperty ;
-            rdfs:domain :Classification ;
+            rdfs:subPropertyOf :labels ;
+            rdfs:domain :Category ;
             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000001> ;
             rdfs:label "classifies" .
 
@@ -165,7 +166,8 @@
           rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000057> ;
           owl:inverseOf :isAgentIn ;
           rdfs:domain :Activity ;
-          rdfs:range :Agent .
+          rdfs:range :Agent ;
+          rdfs:label "hasAgent" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#hasAsset
@@ -324,7 +326,8 @@
                 rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000118> ;
                 owl:inverseOf :isSubActivityOf ;
                 rdfs:domain :Activity ;
-                rdfs:range :Activity .
+                rdfs:range :Activity ;
+                rdfs:label "hasSubActivity" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#hasSubLocation
@@ -338,7 +341,7 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#identifiedBy
 :identifiedBy rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:subPropertyOf :labeledBy ;
               owl:inverseOf :identifies ;
               rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000001> ;
               rdfs:range :Identifier ;
@@ -347,6 +350,7 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#identifies
 :identifies rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :labels ;
             rdfs:domain :Identifier ;
             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000001> ;
             rdfs:label "identifies" .
@@ -431,6 +435,28 @@
                  rdfs:label "isSubLocationOf" .
 
 
+###  https://w3id.org/digitalconstruction/Entities#isUniqueWithin
+:isUniqueWithin rdf:type owl:ObjectProperty ;
+                rdfs:domain :Labeling ;
+                rdfs:range :Category ;
+                rdfs:comment "Defines the category within which the label is unique" ;
+                rdfs:label "isUniqueWithin" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#labeledBy
+:labeledBy rdf:type owl:ObjectProperty ;
+           owl:inverseOf :labels ;
+           rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000001> ;
+           rdfs:range :Labeling ;
+           rdfs:label "labeledBy" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#labels
+:labels rdf:type owl:ObjectProperty ;
+        rdfs:domain :Labeling ;
+        rdfs:range <http://purl.obolibrary.org/obo/BFO_0000001> .
+
+
 ###  https://w3id.org/digitalconstruction/Entities#memberOf
 :memberOf rdf:type owl:ObjectProperty ;
           rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000001> ;
@@ -454,13 +480,6 @@
 #    Data properties
 #################################################################
 
-###  https://w3id.org/digitalconstruction/Entities#allocatedBy
-:allocatedBy rdf:type owl:DatatypeProperty ;
-             rdfs:domain :Identifier ;
-             rdfs:range xsd:string ;
-             rdfs:label "allocatedBy" .
-
-
 ###  https://w3id.org/digitalconstruction/Entities#hasAltitude
 :hasAltitude rdf:type owl:DatatypeProperty ;
              rdfs:domain :GeographicPosition ;
@@ -470,6 +489,7 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#hasAmount
 :hasAmount rdf:type owl:DatatypeProperty ;
+           rdfs:domain :MaterialBatch ;
            rdfs:range owl:real ;
            rdfs:label "hasAmount" .
 
@@ -490,8 +510,7 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#hasLabel
 :hasLabel rdf:type owl:DatatypeProperty ;
-          rdfs:domain :Classification ,
-                      :Identifier ;
+          rdfs:domain :Labeling ;
           rdfs:range xsd:string ;
           rdfs:label "hasLabel" .
 
@@ -512,7 +531,9 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#hasMaxLoad
 :hasMaxLoad rdf:type owl:DatatypeProperty ;
-            rdfs:range owl:real .
+            rdfs:domain :Vehicle ;
+            rdfs:range owl:real ;
+            rdfs:label "hasMaxLoad" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#hasNorthAngle
@@ -527,12 +548,6 @@
                 rdfs:domain :TwoAngleOrientation ;
                 rdfs:range xsd:double ;
                 rdfs:label "hasStrikeAngle" .
-
-
-###  https://w3id.org/digitalconstruction/Entities#hasSystem
-:hasSystem rdf:type owl:DatatypeProperty ;
-           rdfs:domain :Classification ;
-           rdfs:range xsd:string .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#hasX
@@ -677,6 +692,26 @@
                                   owl:equivalentClass :Agent .
 
 
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf :BuildingObject .
+
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpatialElement
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpatialElement> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf :Location .
+
+
+###  https://w3id.org/bot#Element
+<https://w3id.org/bot#Element> rdf:type owl:Class ;
+                               rdfs:subClassOf :BuildingObject .
+
+
+###  https://w3id.org/bot#Zone
+<https://w3id.org/bot#Zone> rdf:type owl:Class ;
+                            rdfs:subClassOf :Location .
+
+
 ###  https://w3id.org/digitalconstruction/Entities#Activity
 :Activity rdf:type owl:Class ;
           rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
@@ -750,19 +785,19 @@
                  rdfs:label "CartesianVolume" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#Classification
-:Classification rdf:type owl:Class ;
-                rdfs:subClassOf :InformationContentEntity ;
-                owl:disjointWith :Identifier ;
-                rdfs:comment "Classification enables the specification where an Identifiable Entity   belongs in a given classification scheme (such as OmniClass, UniFormat, CoClass, Talo2000, etc.)" ;
-                rdfs:label "Classification" .
+###  https://w3id.org/digitalconstruction/Entities#Category
+:Category rdf:type owl:Class ;
+          rdfs:subClassOf :Labeling ;
+          owl:disjointWith :Identifier ;
+          rdfs:comment "Category is a labeling of an entity the associates it with some defined class of things. For example, an object can be associated with a particular class in a classification system such as OmniClass, UniFormat, CoClass, or Talo2000. Category allows also to associate an entity with a category of entities represented in an external system or belonging to a particular project." ;
+          rdfs:label "Category" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#Crane
 :Crane rdf:type owl:Class ;
        rdfs:subClassOf :Equipment ;
-       rdfs:label "An equipment for moving objects. The crane remains stationary during the movement and usually there is a difference in altitude in the origin and target location of the object movement." ,
-                  "Crane" .
+       rdfs:comment "An equipment for moving objects. The crane remains stationary during the movement and usually there is a difference in altitude in the origin and target location of the object movement." ;
+       rdfs:label "Crane" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#Equipment
@@ -795,13 +830,13 @@
 ###  https://w3id.org/digitalconstruction/Entities#Group
 :Group rdf:type owl:Class ;
        rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000001> ;
-       rdfs:comment "A set of indentifiable entities. Examples are a procurement package, a shipment, a workgroup, or the walls of a space." ;
+       rdfs:comment "A set of entities. Examples are a procurement package, a shipment, a workgroup, or the walls of a space." ;
        rdfs:label "Group" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#Identifier
 :Identifier rdf:type owl:Class ;
-            rdfs:subClassOf :InformationContentEntity ;
+            rdfs:subClassOf :Labeling ;
             rdfs:comment "Identifier allows the specification of a (global or local) identifier, based on the given identification system (GUID, URI, room number in a building, etc.)" ;
             rdfs:label "Identifier" .
 
@@ -819,10 +854,17 @@
            rdfs:label "Intention" .
 
 
+###  https://w3id.org/digitalconstruction/Entities#Labeling
+:Labeling rdf:type owl:Class ;
+          rdfs:subClassOf :InformationContentEntity ;
+          rdfs:comment "Labeling is a generic mechanism to associate entities with any number of labels that are unique within a given category. The purpose is to enable the representation of connections to existing systems, databases or classification schemes." ;
+          rdfs:label "Labeling" .
+
+
 ###  https://w3id.org/digitalconstruction/Entities#Location
 :Location rdf:type owl:Class ;
           rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000029> ;
-          rdfs:comment "Location refer to particular places" ;
+          rdfs:comment "A (logical) place where material entities can be located or activities can occur. Locations can form a hierarchy, for example, in a location breakdown structure consisting of a site, buildings, floors, zones, spaces, and workspaces" ;
           rdfs:label "Location" .
 
 
