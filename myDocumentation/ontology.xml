@@ -374,6 +374,17 @@
     
 
 
+    <!-- https://w3id.org/digitalconstruction/Entities#hasEntitiesFrom -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasEntitiesFrom">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#EntityScope"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label>hasEntitiesFrom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Entities#hasIntention -->
 
 
@@ -1384,6 +1395,17 @@
     
 
 
+    <!-- https://w3id.org/digitalconstruction/Entities#EntityScope -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#EntityScope">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#Category"/>
+        <rdfs:comment>Category that contains all entities in a scope of a given entity. For example, all entities in a system, or within a scope of a plan.</rdfs:comment>
+        <rdfs:label>EntityScope</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Entities#Equipment -->
 
 
@@ -1575,6 +1597,7 @@
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#SpatialQuality">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:comment>A quality that concerns the spatial aspects of an entity</rdfs:comment>
+        <rdfs:label>SpatialQuality</rdfs:label>
     </owl:Class>
     
 
@@ -1627,7 +1650,7 @@
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#TimeInstant">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000203"/>
         <rdfs:subClassOf rdf:resource="https://www.w3.org/2006/time#Instant"/>
-        <rdfs:comment>TimeInstant</rdfs:comment>
+        <rdfs:label>TimeInstant</rdfs:label>
     </owl:Class>
     
 
@@ -1638,7 +1661,7 @@
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#TimeInterval">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000202"/>
         <rdfs:subClassOf rdf:resource="https://www.w3.org/2006/time#Interval"/>
-        <rdfs:comment>TimeInterval</rdfs:comment>
+        <rdfs:label>TimeInterval</rdfs:label>
     </owl:Class>
     
 

@@ -66,6 +66,10 @@ This section provides details for each class and property defined by Digital Con
          </a>
       </li>
       <li>
+         <a href="#EntityScope"
+            title="https://w3id.org/digitalconstruction/Entities#EntityScope">EntityScope</a>
+      </li>
+      <li>
          <a href="#Equipment"
             title="https://w3id.org/digitalconstruction/Entities#Equipment">Equipment</a>
       </li>
@@ -137,12 +141,6 @@ This section provides details for each class and property defined by Digital Con
             title="https://w3id.org/digitalconstruction/Entities#Shipment">Shipment</a>
       </li>
       <li>
-         <a href="#SpatialQuality"
-            title="https://w3id.org/digitalconstruction/Entities#SpatialQuality">
-            <span>spatial quality</span>
-         </a>
-      </li>
-      <li>
          <a href="#SpatialExtent"
             title="https://w3id.org/digitalconstruction/Entities#SpatialExtent">SpatialExtent</a>
       </li>
@@ -153,6 +151,10 @@ This section provides details for each class and property defined by Digital Con
       <li>
          <a href="#SpatialPosition"
             title="https://w3id.org/digitalconstruction/Entities#SpatialPosition">SpatialPosition</a>
+      </li>
+      <li>
+         <a href="#SpatialQuality"
+            title="https://w3id.org/digitalconstruction/Entities#SpatialQuality">SpatialQuality</a>
       </li>
       <li>
          <a href="#TemporalExtent"
@@ -167,20 +169,16 @@ This section provides details for each class and property defined by Digital Con
             title="https://w3id.org/digitalconstruction/Entities#ThreeAngleOrientation">ThreeAngleOrientation</a>
       </li>
       <li>
+         <a href="#TimeDuration"
+            title="https://w3id.org/digitalconstruction/Entities#TimeDuration">TimeDuration</a>
+      </li>
+      <li>
          <a href="#TimeInstant"
-            title="https://w3id.org/digitalconstruction/Entities#TimeInstant">
-            <span>time instant</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Entities#TimeInstant">TimeInstant</a>
       </li>
       <li>
          <a href="#TimeInterval"
-            title="https://w3id.org/digitalconstruction/Entities#TimeInterval">
-            <span>time interval</span>
-         </a>
-      </li>
-      <li>
-         <a href="#TimeDuration"
-            title="https://w3id.org/digitalconstruction/Entities#TimeDuration">TimeDuration</a>
+            title="https://w3id.org/digitalconstruction/Entities#TimeInterval">TimeInterval</a>
       </li>
       <li>
          <a href="#TwoAngleOrientation"
@@ -571,6 +569,12 @@ This section provides details for each class and property defined by Digital Con
                title="https://w3id.org/digitalconstruction/Entities#Labeling">Labeling</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#EntityScope"
+               title="https://w3id.org/digitalconstruction/Entities#EntityScope">EntityScope</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#classifies"
@@ -625,6 +629,31 @@ This section provides details for each class and property defined by Digital Con
             <a href="#BuildingObject"
                title="https://w3id.org/digitalconstruction/Entities#BuildingObject">BuildingObject</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="EntityScope">
+      <h3>EntityScope<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#EntityScope</p>
+      <div class="comment">
+         <span class="markdown">Category that contains all entities in a scope of a given entity. For example, all entities in a system, or within a scope of a plan.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Category"
+               title="https://w3id.org/digitalconstruction/Entities#Category">Category</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasEntitiesFrom"
+               title="https://w3id.org/digitalconstruction/Entities#hasEntitiesFrom">hasEntitiesFrom</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -1122,34 +1151,6 @@ This section provides details for each class and property defined by Digital Con
          </dd>
       </dl>
    </div>
-   <div class="entity" id="SpatialQuality">
-      <h3>spatial quality<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#SpatialQuality</p>
-      <div class="comment">
-         <span class="markdown">A quality that concerns the spatial aspects of an entity</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000019">b f o 0000019</span>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#SpatialExtent"
-               title="https://w3id.org/digitalconstruction/Entities#SpatialExtent">SpatialExtent</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#SpatialOrientation"
-               title="https://w3id.org/digitalconstruction/Entities#SpatialOrientation">SpatialOrientation</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#SpatialPosition"
-               title="https://w3id.org/digitalconstruction/Entities#SpatialPosition">SpatialPosition</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="SpatialExtent">
       <h3>SpatialExtent<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1164,7 +1165,7 @@ This section provides details for each class and property defined by Digital Con
          <dt>has super-classes</dt>
          <dd>
             <a href="#SpatialQuality"
-               title="https://w3id.org/digitalconstruction/Entities#SpatialQuality">spatial quality</a>
+               title="https://w3id.org/digitalconstruction/Entities#SpatialQuality">SpatialQuality</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -1196,7 +1197,7 @@ This section provides details for each class and property defined by Digital Con
          <dt>has super-classes</dt>
          <dd>
             <a href="#SpatialQuality"
-               title="https://w3id.org/digitalconstruction/Entities#SpatialQuality">spatial quality</a>
+               title="https://w3id.org/digitalconstruction/Entities#SpatialQuality">SpatialQuality</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -1231,7 +1232,7 @@ This section provides details for each class and property defined by Digital Con
          <dt>has super-classes</dt>
          <dd>
             <a href="#SpatialQuality"
-               title="https://w3id.org/digitalconstruction/Entities#SpatialQuality">spatial quality</a>
+               title="https://w3id.org/digitalconstruction/Entities#SpatialQuality">SpatialQuality</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -1249,6 +1250,34 @@ This section provides details for each class and property defined by Digital Con
             <sup class="type-op" title="object property">op</sup>, <a href="#hasSpatialPosition"
                title="https://w3id.org/digitalconstruction/Entities#hasSpatialPosition">hasSpatialPosition</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SpatialQuality">
+      <h3>SpatialQuality<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#SpatialQuality</p>
+      <div class="comment">
+         <span class="markdown">A quality that concerns the spatial aspects of an entity</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000019">b f o 0000019</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#SpatialExtent"
+               title="https://w3id.org/digitalconstruction/Entities#SpatialExtent">SpatialExtent</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SpatialOrientation"
+               title="https://w3id.org/digitalconstruction/Entities#SpatialOrientation">SpatialOrientation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SpatialPosition"
+               title="https://w3id.org/digitalconstruction/Entities#SpatialPosition">SpatialPosition</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -1330,16 +1359,30 @@ This section provides details for each class and property defined by Digital Con
          </dd>
       </dl>
    </div>
+   <div class="entity" id="TimeDuration">
+      <h3>TimeDuration<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#TimeDuration</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#TemporalExtent"
+               title="https://w3id.org/digitalconstruction/Entities#TemporalExtent">TemporalExtent</a>
+            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="https://www.w3.org/2006/time#Duration">duration</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="TimeInstant">
-      <h3>time instant<sup class="type-c" title="class">c</sup>
+      <h3>TimeInstant<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#TimeInstant</p>
-      <div class="comment">
-         <span class="markdown">TimeInstant</span>
-      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1366,15 +1409,12 @@ This section provides details for each class and property defined by Digital Con
       </dl>
    </div>
    <div class="entity" id="TimeInterval">
-      <h3>time interval<sup class="type-c" title="class">c</sup>
+      <h3>TimeInterval<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#TimeInterval</p>
-      <div class="comment">
-         <span class="markdown">TimeInterval</span>
-      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1403,23 +1443,6 @@ This section provides details for each class and property defined by Digital Con
             <sup class="type-op" title="object property">op</sup>, <a href="#occupiesTimeInterval"
                title="https://w3id.org/digitalconstruction/Entities#occupiesTimeInterval">occupiesTimeInterval</a>
             <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="TimeDuration">
-      <h3>TimeDuration<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#TimeDuration</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#TemporalExtent"
-               title="https://w3id.org/digitalconstruction/Entities#TemporalExtent">TemporalExtent</a>
-            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="https://www.w3.org/2006/time#Duration">duration</span>
-            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -1566,6 +1589,10 @@ This section provides details for each class and property defined by Digital Con
       <li>
          <a href="#hasEnd"
             title="https://w3id.org/digitalconstruction/Entities#hasEnd">hasEnd</a>
+      </li>
+      <li>
+         <a href="#hasEntitiesFrom"
+            title="https://w3id.org/digitalconstruction/Entities#hasEntitiesFrom">hasEntitiesFrom</a>
       </li>
       <li>
          <a href="#hasIntention"
@@ -2086,7 +2113,7 @@ This section provides details for each class and property defined by Digital Con
             <dt>has domain</dt>
             <dd>
                <a href="#TimeInterval"
-                  title="https://w3id.org/digitalconstruction/Entities#TimeInterval">time interval</a>
+                  title="https://w3id.org/digitalconstruction/Entities#TimeInterval">TimeInterval</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2115,13 +2142,13 @@ This section provides details for each class and property defined by Digital Con
             <dt>has domain</dt>
             <dd>
                <a href="#TimeInterval"
-                  title="https://w3id.org/digitalconstruction/Entities#TimeInterval">time interval</a>
+                  title="https://w3id.org/digitalconstruction/Entities#TimeInterval">TimeInterval</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#TimeInstant"
-                  title="https://w3id.org/digitalconstruction/Entities#TimeInstant">time instant</a>
+                  title="https://w3id.org/digitalconstruction/Entities#TimeInstant">TimeInstant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -2129,6 +2156,29 @@ This section provides details for each class and property defined by Digital Con
                <a href="#isEndOf"
                   title="https://w3id.org/digitalconstruction/Entities#isEndOf">isEndOf</a>
                <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasEntitiesFrom">
+      <h3>hasEntitiesFrom<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasEntitiesFrom</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#EntityScope"
+                  title="https://w3id.org/digitalconstruction/Entities#EntityScope">EntityScope</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000001">b f o 0000001</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -2533,13 +2583,13 @@ This section provides details for each class and property defined by Digital Con
             <dt>has domain</dt>
             <dd>
                <a href="#TimeInterval"
-                  title="https://w3id.org/digitalconstruction/Entities#TimeInterval">time interval</a>
+                  title="https://w3id.org/digitalconstruction/Entities#TimeInterval">TimeInterval</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#TimeInstant"
-                  title="https://w3id.org/digitalconstruction/Entities#TimeInstant">time instant</a>
+                  title="https://w3id.org/digitalconstruction/Entities#TimeInstant">TimeInstant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -2849,13 +2899,13 @@ This section provides details for each class and property defined by Digital Con
             <dt>has domain</dt>
             <dd>
                <a href="#TimeInstant"
-                  title="https://w3id.org/digitalconstruction/Entities#TimeInstant">time instant</a>
+                  title="https://w3id.org/digitalconstruction/Entities#TimeInstant">TimeInstant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#TimeInterval"
-                  title="https://w3id.org/digitalconstruction/Entities#TimeInterval">time interval</a>
+                  title="https://w3id.org/digitalconstruction/Entities#TimeInterval">TimeInterval</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -2968,7 +3018,7 @@ This section provides details for each class and property defined by Digital Con
             <dt>has domain</dt>
             <dd>
                <a href="#TimeInterval"
-                  title="https://w3id.org/digitalconstruction/Entities#TimeInterval">time interval</a>
+                  title="https://w3id.org/digitalconstruction/Entities#TimeInterval">TimeInterval</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -3037,13 +3087,13 @@ This section provides details for each class and property defined by Digital Con
             <dt>has domain</dt>
             <dd>
                <a href="#TimeInstant"
-                  title="https://w3id.org/digitalconstruction/Entities#TimeInstant">time instant</a>
+                  title="https://w3id.org/digitalconstruction/Entities#TimeInstant">TimeInstant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#TimeInterval"
-                  title="https://w3id.org/digitalconstruction/Entities#TimeInterval">time interval</a>
+                  title="https://w3id.org/digitalconstruction/Entities#TimeInterval">TimeInterval</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -3255,7 +3305,7 @@ This section provides details for each class and property defined by Digital Con
             <dt>has range</dt>
             <dd>
                <a href="#TimeInterval"
-                  title="https://w3id.org/digitalconstruction/Entities#TimeInterval">time interval</a>
+                  title="https://w3id.org/digitalconstruction/Entities#TimeInterval">TimeInterval</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>

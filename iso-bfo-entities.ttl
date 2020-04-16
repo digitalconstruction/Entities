@@ -210,6 +210,13 @@
         rdfs:label "hasEnd" .
 
 
+###  https://w3id.org/digitalconstruction/Entities#hasEntitiesFrom
+:hasEntitiesFrom rdf:type owl:ObjectProperty ;
+                 rdfs:domain :EntityScope ;
+                 rdfs:range <http://purl.obolibrary.org/obo/BFO_0000001> ;
+                 rdfs:label "hasEntitiesFrom" .
+
+
 ###  https://w3id.org/digitalconstruction/Entities#hasIntention
 :hasIntention rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000196> ;
@@ -281,6 +288,14 @@
          rdfs:domain :Agent ;
          rdfs:range <http://purl.obolibrary.org/obo/BFO_0000023> ;
          rdfs:label "hasRole" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasScope
+:hasScope rdf:type owl:ObjectProperty ;
+          rdfs:domain :Labeling ;
+          rdfs:range :Category ;
+          rdfs:comment "Defines the broader category that is the scope of the label" ;
+          rdfs:label "hasScope" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#hasSpatialExtent
@@ -462,14 +477,6 @@
                  rdfs:domain :Location ;
                  rdfs:range :Location ;
                  rdfs:label "isSubLocationOf" .
-
-
-###  https://w3id.org/digitalconstruction/Entities#hasScope
-:hasScope rdf:type owl:ObjectProperty ;
-    rdfs:domain :Labeling ;
-    rdfs:range :Category ;
-    rdfs:comment "Defines the broader category that is the scope of the label" ;
-    rdfs:label "hasScope" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#labeledBy
@@ -806,6 +813,13 @@
        rdfs:label "Crane" .
 
 
+###  https://w3id.org/digitalconstruction/Entities#EntityScope
+:EntityScope rdf:type owl:Class ;
+             rdfs:subClassOf :Category ;
+             rdfs:comment "Category that contains all entities in a scope of a given entity. For example, all entities in a system, or within a scope of a plan." ;
+             rdfs:label "EntityScope" .
+
+
 ###  https://w3id.org/digitalconstruction/Entities#Equipment
 :Equipment rdf:type owl:Class ;
            rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
@@ -926,7 +940,8 @@
 ###  https://w3id.org/digitalconstruction/Entities#SpatialQuality
 :SpatialQuality rdf:type owl:Class ;
                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> ;
-                rdfs:comment "A quality that concerns the spatial aspects of an entity" .
+                rdfs:comment "A quality that concerns the spatial aspects of an entity" ;
+                rdfs:label "SpatialQuality" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#TemporalExtent
@@ -959,14 +974,14 @@
 :TimeInstant rdf:type owl:Class ;
              rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000203> ,
                              <https://www.w3.org/2006/time#Instant> ;
-             rdfs:comment "TimeInstant" .
+             rdfs:label "TimeInstant" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#TimeInterval
 :TimeInterval rdf:type owl:Class ;
               rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ,
                               <https://www.w3.org/2006/time#Interval> ;
-              rdfs:comment "TimeInterval" .
+              rdfs:label "TimeInterval" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#TwoAngleOrientation

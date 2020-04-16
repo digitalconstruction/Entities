@@ -200,6 +200,12 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#hasEnd> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#TimeInstant> .
 <https://w3id.org/digitalconstruction/Entities#hasEnd> <http://www.w3.org/2000/01/rdf-schema#label> "hasEnd" .
 # 
+# https://w3id.org/digitalconstruction/Entities#hasEntitiesFrom
+<https://w3id.org/digitalconstruction/Entities#hasEntitiesFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasEntitiesFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#EntityScope> .
+<https://w3id.org/digitalconstruction/Entities#hasEntitiesFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<https://w3id.org/digitalconstruction/Entities#hasEntitiesFrom> <http://www.w3.org/2000/01/rdf-schema#label> "hasEntitiesFrom" .
+# 
 # https://w3id.org/digitalconstruction/Entities#hasIntention
 <https://w3id.org/digitalconstruction/Entities#hasIntention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/digitalconstruction/Entities#hasIntention> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000196> .
@@ -748,6 +754,12 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#Crane> <http://www.w3.org/2000/01/rdf-schema#comment> "An equipment for moving objects. The crane remains stationary during the movement and usually there is a difference in altitude in the origin and target location of the object movement." .
 <https://w3id.org/digitalconstruction/Entities#Crane> <http://www.w3.org/2000/01/rdf-schema#label> "Crane" .
 # 
+# https://w3id.org/digitalconstruction/Entities#EntityScope
+<https://w3id.org/digitalconstruction/Entities#EntityScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#EntityScope> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Category> .
+<https://w3id.org/digitalconstruction/Entities#EntityScope> <http://www.w3.org/2000/01/rdf-schema#comment> "Category that contains all entities in a scope of a given entity. For example, all entities in a system, or within a scope of a plan." .
+<https://w3id.org/digitalconstruction/Entities#EntityScope> <http://www.w3.org/2000/01/rdf-schema#label> "EntityScope" .
+# 
 # https://w3id.org/digitalconstruction/Entities#Equipment
 <https://w3id.org/digitalconstruction/Entities#Equipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#Equipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000030> .
@@ -852,6 +864,7 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#SpatialQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#SpatialQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
 <https://w3id.org/digitalconstruction/Entities#SpatialQuality> <http://www.w3.org/2000/01/rdf-schema#comment> "A quality that concerns the spatial aspects of an entity" .
+<https://w3id.org/digitalconstruction/Entities#SpatialQuality> <http://www.w3.org/2000/01/rdf-schema#label> "SpatialQuality" .
 # 
 # https://w3id.org/digitalconstruction/Entities#TemporalExtent
 <https://w3id.org/digitalconstruction/Entities#TemporalExtent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -879,13 +892,13 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#TimeInstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#TimeInstant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000203> .
 <https://w3id.org/digitalconstruction/Entities#TimeInstant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3.org/2006/time#Instant> .
-<https://w3id.org/digitalconstruction/Entities#TimeInstant> <http://www.w3.org/2000/01/rdf-schema#comment> "TimeInstant" .
+<https://w3id.org/digitalconstruction/Entities#TimeInstant> <http://www.w3.org/2000/01/rdf-schema#label> "TimeInstant" .
 # 
 # https://w3id.org/digitalconstruction/Entities#TimeInterval
 <https://w3id.org/digitalconstruction/Entities#TimeInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000202> .
 <https://w3id.org/digitalconstruction/Entities#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3.org/2006/time#Interval> .
-<https://w3id.org/digitalconstruction/Entities#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#comment> "TimeInterval" .
+<https://w3id.org/digitalconstruction/Entities#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#label> "TimeInterval" .
 # 
 # https://w3id.org/digitalconstruction/Entities#TwoAngleOrientation
 <https://w3id.org/digitalconstruction/Entities#TwoAngleOrientation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
