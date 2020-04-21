@@ -923,8 +923,16 @@ This section provides details for each class and property defined by Digital Con
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#isAbout"
+            <a href="#contentRepresentedIn"
+               title="https://w3id.org/digitalconstruction/Entities#contentRepresentedIn">contentRepresentedIn</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isAbout"
                title="https://w3id.org/digitalconstruction/Entities#isAbout">isAbout</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#representsContentOf"
+               title="https://w3id.org/digitalconstruction/Entities#representsContentOf">representsContentOf</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -1301,12 +1309,6 @@ This section provides details for each class and property defined by Digital Con
                title="https://w3id.org/digitalconstruction/Entities#TimeDuration">TimeDuration</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasDuration"
-               title="https://w3id.org/digitalconstruction/Entities#hasDuration">hasDuration</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
       </dl>
    </div>
    <div class="entity" id="TemporalQuality">
@@ -1373,6 +1375,12 @@ This section provides details for each class and property defined by Digital Con
                title="https://w3id.org/digitalconstruction/Entities#TemporalExtent">TemporalExtent</a>
             <sup class="type-c" title="class">c</sup>, <span class="dotted" title="https://www.w3.org/2006/time#Duration">duration</span>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasDuration"
+               title="https://w3id.org/digitalconstruction/Entities#hasDuration">hasDuration</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -1541,6 +1549,16 @@ This section provides details for each class and property defined by Digital Con
             title="https://w3id.org/digitalconstruction/Entities#after">after</a>
       </li>
       <li>
+         <a href="#http://purl.obolibrary.org/obo/BFO_0000056" title="http://purl.obolibrary.org/obo/BFO_0000056">
+            <span>b f o 0000056</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.obolibrary.org/obo/BFO_0000057" title="http://purl.obolibrary.org/obo/BFO_0000057">
+            <span>b f o 0000057</span>
+         </a>
+      </li>
+      <li>
          <a href="#before"
             title="https://w3id.org/digitalconstruction/Entities#before">before</a>
       </li>
@@ -1561,6 +1579,10 @@ This section provides details for each class and property defined by Digital Con
       <li>
          <a href="#classifies"
             title="https://w3id.org/digitalconstruction/Entities#classifies">classifies</a>
+      </li>
+      <li>
+         <a href="#contentRepresentedIn"
+            title="https://w3id.org/digitalconstruction/Entities#contentRepresentedIn">contentRepresentedIn</a>
       </li>
       <li>
          <a href="#hasActivity"
@@ -1625,6 +1647,10 @@ This section provides details for each class and property defined by Digital Con
       <li>
          <a href="#hasOwner"
             title="https://w3id.org/digitalconstruction/Entities#hasOwner">hasOwner</a>
+      </li>
+      <li>
+         <a href="#hasParticipant"
+            title="https://w3id.org/digitalconstruction/Entities#hasParticipant">hasParticipant</a>
       </li>
       <li>
          <a href="#hasRole"
@@ -1695,6 +1721,10 @@ This section provides details for each class and property defined by Digital Con
             title="https://w3id.org/digitalconstruction/Entities#isEndOf">isEndOf</a>
       </li>
       <li>
+         <a href="#isEnvironmentOf"
+            title="https://w3id.org/digitalconstruction/Entities#isEnvironmentOf">isEnvironmentOf</a>
+      </li>
+      <li>
          <a href="#isIntentionOf"
             title="https://w3id.org/digitalconstruction/Entities#isIntentionOf">isIntentionOf</a>
       </li>
@@ -1713,6 +1743,10 @@ This section provides details for each class and property defined by Digital Con
       <li>
          <a href="#isOccupiedByActivity"
             title="https://w3id.org/digitalconstruction/Entities#isOccupiedByActivity">isOccupiedByActivity</a>
+      </li>
+      <li>
+         <a href="#isParticipantIn"
+            title="https://w3id.org/digitalconstruction/Entities#isParticipantIn">isParticipantIn</a>
       </li>
       <li>
          <a href="#isRoleOf"
@@ -1748,6 +1782,14 @@ This section provides details for each class and property defined by Digital Con
          <a href="#occupiesTimeInterval"
             title="https://w3id.org/digitalconstruction/Entities#occupiesTimeInterval">occupiesTimeInterval</a>
       </li>
+      <li>
+         <a href="#occursIn"
+            title="https://w3id.org/digitalconstruction/Entities#occursIn">occursIn</a>
+      </li>
+      <li>
+         <a href="#representsContentOf"
+            title="https://w3id.org/digitalconstruction/Entities#representsContentOf">representsContentOf</a>
+      </li>
    </ul>
    <div class="entity" id="after">
       <h3>after<sup class="type-op" title="object property">op</sup>
@@ -1772,6 +1814,54 @@ This section provides details for each class and property defined by Digital Con
             <dd>
                <a href="#before"
                   title="https://w3id.org/digitalconstruction/Entities#before">before</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.obolibrary.org/obo/BFO_0000056">
+      <h3>b f o 0000056<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.obolibrary.org/obo/BFO_0000056</p>
+      <div class="description">
+         <dl>
+            <dt>has equivalent properties</dt>
+            <dd>
+               <a href="#isParticipantIn"
+                  title="https://w3id.org/digitalconstruction/Entities#isParticipantIn">isParticipantIn</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#isAgentIn"
+                  title="https://w3id.org/digitalconstruction/Entities#isAgentIn">isAgentIn</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.obolibrary.org/obo/BFO_0000057">
+      <h3>b f o 0000057<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.obolibrary.org/obo/BFO_0000057</p>
+      <div class="description">
+         <dl>
+            <dt>has equivalent properties</dt>
+            <dd>
+               <a href="#hasParticipant"
+                  title="https://w3id.org/digitalconstruction/Entities#hasParticipant">hasParticipant</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#hasAgent"
+                  title="https://w3id.org/digitalconstruction/Entities#hasAgent">hasAgent</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -1947,6 +2037,38 @@ This section provides details for each class and property defined by Digital Con
          </dl>
       </div>
    </div>
+   <div class="entity" id="contentRepresentedIn">
+      <h3>contentRepresentedIn<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#contentRepresentedIn</p>
+      <div class="comment">
+         <span class="markdown">The context in which the content of the information content entity is represented</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InformationContentEntity"
+                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">InformationContentEntity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Contexts#Context">context</span>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#representsContentOf"
+                  title="https://w3id.org/digitalconstruction/Entities#representsContentOf">representsContentOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="hasActivity">
       <h3>hasActivity<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1988,7 +2110,7 @@ This section provides details for each class and property defined by Digital Con
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000057">b f o 0000057</span>
+               <a href="#http://purl.obolibrary.org/obo/BFO_0000057" title="http://purl.obolibrary.org/obo/BFO_0000057">b f o 0000057</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -2118,8 +2240,8 @@ This section provides details for each class and property defined by Digital Con
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#TemporalExtent"
-                  title="https://w3id.org/digitalconstruction/Entities#TemporalExtent">TemporalExtent</a>
+               <a href="#TimeDuration"
+                  title="https://w3id.org/digitalconstruction/Entities#TimeDuration">TimeDuration</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2396,6 +2518,29 @@ This section provides details for each class and property defined by Digital Con
             <dd>
                <a href="#hasAsset"
                   title="https://w3id.org/digitalconstruction/Entities#hasAsset">hasAsset</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasParticipant">
+      <h3>hasParticipant<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasParticipant</p>
+      <div class="description">
+         <dl>
+            <dt>has equivalent properties</dt>
+            <dd>
+               <a href="#http://purl.obolibrary.org/obo/BFO_0000057" title="http://purl.obolibrary.org/obo/BFO_0000057">b f o 0000057</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isParticipantIn"
+                  title="https://w3id.org/digitalconstruction/Entities#isParticipantIn">isParticipantIn</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -2805,7 +2950,7 @@ This section provides details for each class and property defined by Digital Con
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000056">b f o 0000056</span>
+               <a href="#http://purl.obolibrary.org/obo/BFO_0000056" title="http://purl.obolibrary.org/obo/BFO_0000056">b f o 0000056</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -2912,6 +3057,24 @@ This section provides details for each class and property defined by Digital Con
             <dd>
                <a href="#hasEnd"
                   title="https://w3id.org/digitalconstruction/Entities#hasEnd">hasEnd</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isEnvironmentOf">
+      <h3>isEnvironmentOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#isEnvironmentOf</p>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#occursIn"
+                  title="https://w3id.org/digitalconstruction/Entities#occursIn">occursIn</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -3031,6 +3194,29 @@ This section provides details for each class and property defined by Digital Con
             <dd>
                <a href="#occupiesTimeInterval"
                   title="https://w3id.org/digitalconstruction/Entities#occupiesTimeInterval">occupiesTimeInterval</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isParticipantIn">
+      <h3>isParticipantIn<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#isParticipantIn</p>
+      <div class="description">
+         <dl>
+            <dt>has equivalent properties</dt>
+            <dd>
+               <a href="#http://purl.obolibrary.org/obo/BFO_0000056" title="http://purl.obolibrary.org/obo/BFO_0000056">b f o 0000056</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasParticipant"
+                  title="https://w3id.org/digitalconstruction/Entities#hasParticipant">hasParticipant</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -3312,6 +3498,56 @@ This section provides details for each class and property defined by Digital Con
             <dd>
                <a href="#isOccupiedByActivity"
                   title="https://w3id.org/digitalconstruction/Entities#isOccupiedByActivity">isOccupiedByActivity</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="occursIn">
+      <h3>occursIn<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#occursIn</p>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isEnvironmentOf"
+                  title="https://w3id.org/digitalconstruction/Entities#isEnvironmentOf">isEnvironmentOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="representsContentOf">
+      <h3>representsContentOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#representsContentOf</p>
+      <div class="comment">
+         <span class="markdown">The information content entity that is the source of the data represented in this context</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Contexts#Context">context</span>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#InformationContentEntity"
+                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">InformationContentEntity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#contentRepresentedIn"
+                  title="https://w3id.org/digitalconstruction/Entities#contentRepresentedIn">contentRepresentedIn</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>

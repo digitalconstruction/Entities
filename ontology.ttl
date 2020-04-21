@@ -8,6 +8,7 @@
 
 <https://w3id.org/digitalconstruction/Entities> rdf:type owl:Ontology ;
                                                  owl:imports <http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl> ,
+                                                             <https://w3id.org/digitalconstruction/Contexts> ,
                                                              <https://w3id.org/digitalconstruction/Variables> ;
                                                  <http://purl.org/dc/elements/1.1/date> "2020-03-20" ;
                                                  <http://purl.org/dc/elements/1.1/title> "Digital Construction Entities" ;
@@ -70,11 +71,13 @@
 #################################################################
 
 ###  http://purl.obolibrary.org/obo/BFO_0000056
-<http://purl.obolibrary.org/obo/BFO_0000056> rdf:type owl:ObjectProperty .
+<http://purl.obolibrary.org/obo/BFO_0000056> rdf:type owl:ObjectProperty ;
+                                             owl:equivalentProperty :isParticipantIn .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000057
-<http://purl.obolibrary.org/obo/BFO_0000057> rdf:type owl:ObjectProperty .
+<http://purl.obolibrary.org/obo/BFO_0000057> rdf:type owl:ObjectProperty ;
+                                             owl:equivalentProperty :hasParticipant .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000082
@@ -167,6 +170,15 @@
             rdfs:label "classifies" .
 
 
+###  https://w3id.org/digitalconstruction/Entities#contentRepresentedIn
+:contentRepresentedIn rdf:type owl:ObjectProperty ;
+                      owl:inverseOf :representsContentOf ;
+                      rdfs:domain :InformationContentEntity ;
+                      rdfs:range <https://w3id.org/digitalconstruction/Contexts#Context> ;
+                      rdfs:comment "The context in which the content of the information content entity is represented" ;
+                      rdfs:label "contentRepresentedIn" .
+
+
 ###  https://w3id.org/digitalconstruction/Entities#hasActivity
 :hasActivity rdf:type owl:ObjectProperty ;
              owl:inverseOf :hasState ;
@@ -215,7 +227,7 @@
 ###  https://w3id.org/digitalconstruction/Entities#hasDuration
 :hasDuration rdf:type owl:ObjectProperty ;
              rdfs:domain :TimeInterval ;
-             rdfs:range :TemporalExtent ;
+             rdfs:range :TimeDuration ;
              rdfs:label "hasDuration" .
 
 
@@ -297,6 +309,12 @@
                       ] ;
           rdfs:range :Agent ;
           rdfs:label "hasOwner" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasParticipant
+:hasParticipant rdf:type owl:ObjectProperty ;
+                owl:inverseOf :isParticipantIn ;
+                rdfs:label "hasParticipant" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#hasRole
@@ -433,6 +451,12 @@
          rdfs:label "isEndOf" .
 
 
+###  https://w3id.org/digitalconstruction/Entities#isEnvironmentOf
+:isEnvironmentOf rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :occursIn ;
+                 rdfs:label "isEnvironmentOf" .
+
+
 ###  https://w3id.org/digitalconstruction/Entities#isIntentionOf
 :isIntentionOf rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000197> ;
@@ -463,6 +487,11 @@
                       rdfs:domain :TimeInterval ;
                       rdfs:range :Activity ;
                       rdfs:label "isOccupiedByActivity" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isParticipantIn
+:isParticipantIn rdf:type owl:ObjectProperty ;
+                 rdfs:label "isParticipantIn" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#isRoleOf
@@ -524,6 +553,19 @@
                       rdfs:domain :Activity ;
                       rdfs:range :TimeInterval ;
                       rdfs:label "occupiesTimeInterval" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#occursIn
+:occursIn rdf:type owl:ObjectProperty ;
+          rdfs:label "occursIn" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#representsContentOf
+:representsContentOf rdf:type owl:ObjectProperty ;
+                     rdfs:domain <https://w3id.org/digitalconstruction/Contexts#Context> ;
+                     rdfs:range :InformationContentEntity ;
+                     rdfs:comment "The information content entity that is the source of the data represented in this context" ;
+                     rdfs:label "representsContentOf" .
 
 
 ###  https://w3id.org/digitalconstruction/Variables#isVariableOf

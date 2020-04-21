@@ -11,6 +11,7 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/digitalconstruction/Entities">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/digitalconstruction/Contexts"/>
         <owl:imports rdf:resource="https://w3id.org/digitalconstruction/Variables"/>
         <dc:date>2020-03-20</dc:date>
         <dc:title>Digital Construction Entities</dc:title>
@@ -124,14 +125,18 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000056 -->
 
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000056"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000056">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/digitalconstruction/Entities#isParticipantIn"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000057 -->
 
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000057"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000057">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/digitalconstruction/Entities#hasParticipant"/>
+    </owl:ObjectProperty>
     
 
 
@@ -282,6 +287,19 @@
     
 
 
+    <!-- https://w3id.org/digitalconstruction/Entities#contentRepresentedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#contentRepresentedIn">
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Entities#representsContentOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Contexts#Context"/>
+        <rdfs:comment>The context in which the content of the information content entity is represented</rdfs:comment>
+        <rdfs:label>contentRepresentedIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Entities#hasActivity -->
 
 
@@ -355,7 +373,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasDuration">
         <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#TimeInterval"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#TemporalExtent"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#TimeDuration"/>
         <rdfs:label>hasDuration</rdfs:label>
     </owl:ObjectProperty>
     
@@ -480,6 +498,16 @@
         </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
         <rdfs:label>hasOwner</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Entities#hasParticipant -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasParticipant">
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Entities#isParticipantIn"/>
+        <rdfs:label>hasParticipant</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -686,6 +714,16 @@
     
 
 
+    <!-- https://w3id.org/digitalconstruction/Entities#isEnvironmentOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#isEnvironmentOf">
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Entities#occursIn"/>
+        <rdfs:label>isEnvironmentOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Entities#isIntentionOf -->
 
 
@@ -734,6 +772,15 @@
         <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#TimeInterval"/>
         <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
         <rdfs:label>isOccupiedByActivity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Entities#isParticipantIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#isParticipantIn">
+        <rdfs:label>isParticipantIn</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -827,6 +874,27 @@
         <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
         <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#TimeInterval"/>
         <rdfs:label>occupiesTimeInterval</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Entities#occursIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#occursIn">
+        <rdfs:label>occursIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Entities#representsContentOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#representsContentOf">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Contexts#Context"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+        <rdfs:comment>The information content entity that is the source of the data represented in this context</rdfs:comment>
+        <rdfs:label>representsContentOf</rdfs:label>
     </owl:ObjectProperty>
     
 
