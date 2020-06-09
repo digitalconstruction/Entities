@@ -122,24 +122,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000056 -->
-
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000056">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/digitalconstruction/Entities#isParticipantIn"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000057 -->
-
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000057">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/digitalconstruction/Entities#hasParticipant"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000082 -->
 
 
@@ -305,7 +287,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasActivity">
         <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Entities#hasState"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#ActivityContext"/>
         <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
         <rdfs:label>hasActivity</rdfs:label>
     </owl:ObjectProperty>
@@ -316,7 +298,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasAgent">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Entities#hasParticipant"/>
         <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Entities#isAgentIn"/>
         <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
         <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
@@ -403,6 +385,32 @@
     
 
 
+    <!-- https://w3id.org/digitalconstruction/Entities#hasEquipment -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasEquipment">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Entities#hasParticipant"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Entities#isEquipmentIn"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Equipment"/>
+        <rdfs:label>hasEquipment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Entities#hasInformation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasInformation">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Entities#hasParticipant"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Entities#isInformationIn"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+        <rdfs:label>hasInformation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Entities#hasIntention -->
 
 
@@ -412,6 +420,19 @@
         <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
         <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Intention"/>
         <rdfs:label>hasIntention</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Entities#hasMaterial -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasMaterial">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Entities#hasParticipant"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Entities#isMaterialIn"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#MaterialBatch"/>
+        <rdfs:label>hasMaterial</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -541,7 +562,6 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasSpatialExtent">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
         <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#SpatialExtent"/>
         <rdfs:label>hasSpatialExtent</rdfs:label>
@@ -575,7 +595,6 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasSpatialPosition">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
         <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#SpatialPosition"/>
         <rdfs:label>hasSpatialPosition</rdfs:label>
@@ -601,7 +620,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasState">
         <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#ActivityContext"/>
         <rdfs:label>hasState</rdfs:label>
     </owl:ObjectProperty>
     
@@ -673,7 +692,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#isAgentIn">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Entities#isParticipantIn"/>
         <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
         <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
         <rdfs:label>isAgentIn</rdfs:label>
@@ -724,6 +743,30 @@
     
 
 
+    <!-- https://w3id.org/digitalconstruction/Entities#isEquipmentIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#isEquipmentIn">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Entities#isParticipantIn"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Equipment"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
+        <rdfs:label>isEquipmentIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Entities#isInformationIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#isInformationIn">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Entities#isParticipantIn"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
+        <rdfs:label>isInformationIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Entities#isIntentionOf -->
 
 
@@ -751,6 +794,18 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#isLocationOf">
         <rdfs:label>isLocationOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Entities#isMaterialIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#isMaterialIn">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Entities#isParticipantIn"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#MaterialBatch"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
+        <rdfs:label>isMaterialIn</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1334,12 +1389,12 @@
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Entities#ActivityRelatedState -->
+    <!-- https://w3id.org/digitalconstruction/Entities#ActivityContext -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#ActivityRelatedState">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Variables#ApplicabilityState"/>
-        <rdfs:label>ActivityRelatedState</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#ActivityContext">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Contexts#Context"/>
+        <rdfs:label>ActivityContext</rdfs:label>
     </owl:Class>
     
 
@@ -1360,7 +1415,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#AllOver">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#ActivityContext"/>
         <rdfs:label>AllOver</rdfs:label>
     </owl:Class>
     
@@ -1370,7 +1425,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#AtEnd">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#ActivityContext"/>
         <rdfs:label>AtEnd</rdfs:label>
     </owl:Class>
     
@@ -1380,7 +1435,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#AtStart">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#ActivityContext"/>
         <rdfs:label>AtStart</rdfs:label>
     </owl:Class>
     

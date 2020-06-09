@@ -178,14 +178,14 @@
 ###  https://w3id.org/digitalconstruction/Entities#hasActivity
 :hasActivity rdf:type owl:ObjectProperty ;
              owl:inverseOf :hasState ;
-             rdfs:domain :ActivityRelatedState ;
+             rdfs:domain :ActivityContext ;
              rdfs:range :Activity ;
              rdfs:label "hasActivity" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#hasAgent
 :hasAgent rdf:type owl:ObjectProperty ;
-          rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000057> ;
+          rdfs:subPropertyOf :hasParticipant ;
           owl:inverseOf :isAgentIn ;
           rdfs:domain :Activity ;
           rdfs:range :Agent ;
@@ -243,6 +243,24 @@
                  rdfs:label "hasEntitiesFrom" .
 
 
+###  https://w3id.org/digitalconstruction/Entities#hasEquipment
+:hasEquipment rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasParticipant ;
+              owl:inverseOf :isEquipmentIn ;
+              rdfs:domain :Activity ;
+              rdfs:range :Equipment ;
+              rdfs:label "hasEquipment" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasInformation
+:hasInformation rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :hasParticipant ;
+                owl:inverseOf :isInformationIn ;
+                rdfs:domain :Activity ;
+                rdfs:range :InformationContentEntity ;
+                rdfs:label "hasInformation" .
+
+
 ###  https://w3id.org/digitalconstruction/Entities#hasIntention
 :hasIntention rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000196> ;
@@ -250,6 +268,15 @@
               rdfs:domain :Agent ;
               rdfs:range :Intention ;
               rdfs:label "hasIntention" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasMaterial
+:hasMaterial rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasParticipant ;
+             owl:inverseOf :isMaterialIn ;
+             rdfs:domain :Activity ;
+             rdfs:range :MaterialBatch ;
+             rdfs:label "hasMaterial" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#hasMaximumCartesianPosition
@@ -332,7 +359,6 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#hasSpatialExtent
 :hasSpatialExtent rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000196> ;
                   rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000006> ;
                   rdfs:range :SpatialExtent ;
                   rdfs:label "hasSpatialExtent" .
@@ -354,7 +380,6 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#hasSpatialPosition
 :hasSpatialPosition rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000196> ;
                     rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000006> ;
                     rdfs:range :SpatialPosition ;
                     rdfs:label "hasSpatialPosition" .
@@ -372,7 +397,7 @@
 ###  https://w3id.org/digitalconstruction/Entities#hasState
 :hasState rdf:type owl:ObjectProperty ;
           rdfs:domain :Activity ;
-          rdfs:range :ActivityRelatedState ;
+          rdfs:range :ActivityContext ;
           rdfs:label "hasState" .
 
 
@@ -420,7 +445,7 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#isAgentIn
 :isAgentIn rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000056> ;
+           rdfs:subPropertyOf :isParticipantIn ;
            rdfs:domain :Agent ;
            rdfs:range :Activity ;
            rdfs:label "isAgentIn" .
@@ -453,6 +478,22 @@
                  rdfs:label "isEnvironmentOf" .
 
 
+###  https://w3id.org/digitalconstruction/Entities#isEquipmentIn
+:isEquipmentIn rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :isParticipantIn ;
+               rdfs:domain :Equipment ;
+               rdfs:range :Activity ;
+               rdfs:label "isEquipmentIn" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isInformationIn
+:isInformationIn rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :isParticipantIn ;
+                 rdfs:domain :InformationContentEntity ;
+                 rdfs:range :Activity ;
+                 rdfs:label "isInformationIn" .
+
+
 ###  https://w3id.org/digitalconstruction/Entities#isIntentionOf
 :isIntentionOf rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000197> ;
@@ -470,6 +511,14 @@
 ###  https://w3id.org/digitalconstruction/Entities#isLocationOf
 :isLocationOf rdf:type owl:ObjectProperty ;
               rdfs:label "isLocationOf" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isMaterialIn
+:isMaterialIn rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :isParticipantIn ;
+              rdfs:domain :MaterialBatch ;
+              rdfs:range :Activity ;
+              rdfs:label "isMaterialIn" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#isMemberPartOf
@@ -788,10 +837,10 @@
           rdfs:label "Activity" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#ActivityRelatedState
-:ActivityRelatedState rdf:type owl:Class ;
-                      rdfs:subClassOf <https://w3id.org/digitalconstruction/Variables#ApplicabilityState> ;
-                      rdfs:label "ActivityRelatedState" .
+###  https://w3id.org/digitalconstruction/Entities#ActivityContext
+:ActivityContext rdf:type owl:Class ;
+                 rdfs:subClassOf <https://w3id.org/digitalconstruction/Contexts#Context> ;
+                 rdfs:label "ActivityContext" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#Agent
@@ -804,19 +853,19 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#AllOver
 :AllOver rdf:type owl:Class ;
-         rdfs:subClassOf :ActivityRelatedState ;
+         rdfs:subClassOf :ActivityContext ;
          rdfs:label "AllOver" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#AtEnd
 :AtEnd rdf:type owl:Class ;
-       rdfs:subClassOf :ActivityRelatedState ;
+       rdfs:subClassOf :ActivityContext ;
        rdfs:label "AtEnd" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#AtStart
 :AtStart rdf:type owl:Class ;
-         rdfs:subClassOf :ActivityRelatedState ;
+         rdfs:subClassOf :ActivityContext ;
          rdfs:label "AtStart" .
 
 

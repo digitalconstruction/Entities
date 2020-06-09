@@ -76,18 +76,6 @@
   "@id" : "http://purl.obolibrary.org/obo/BFO_0000040",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://purl.obolibrary.org/obo/BFO_0000056",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#isParticipantIn"
-  } ]
-}, {
-  "@id" : "http://purl.obolibrary.org/obo/BFO_0000057",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#hasParticipant"
-  } ]
-}, {
   "@id" : "http://purl.obolibrary.org/obo/BFO_0000082",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
@@ -261,13 +249,13 @@
     "@id" : "http://www.w3.org/ns/prov#Activity"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityRelatedState",
+  "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityContext",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ActivityRelatedState"
+    "@value" : "ActivityContext"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Variables#ApplicabilityState"
+    "@id" : "https://w3id.org/digitalconstruction/Contexts#Context"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#Agent",
@@ -290,7 +278,7 @@
     "@value" : "AllOver"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityContext"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#AtEnd",
@@ -299,7 +287,7 @@
     "@value" : "AtEnd"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityContext"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#AtStart",
@@ -308,7 +296,7 @@
     "@value" : "AtStart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityContext"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#BuildingObject",
@@ -818,7 +806,7 @@
   "@id" : "https://w3id.org/digitalconstruction/Entities#hasActivity",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityContext"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasActivity"
@@ -842,7 +830,7 @@
     "@id" : "https://w3id.org/digitalconstruction/Entities#Agent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/BFO_0000057"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#hasParticipant"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#isAgentIn"
@@ -968,6 +956,24 @@
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000001"
   } ]
 }, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#hasEquipment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasEquipment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Equipment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#hasParticipant"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#isEquipmentIn"
+  } ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#hasGeographicCoordinateSystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -978,6 +984,24 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#hasInformation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasInformation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#hasParticipant"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#isInformationIn"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#hasIntention",
@@ -1032,6 +1056,24 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#hasMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasMaterial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#MaterialBatch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#hasParticipant"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#isMaterialIn"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#hasMaxLoad",
@@ -1197,9 +1239,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#SpatialExtent"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/BFO_0000196"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#hasSpatialOrientation",
@@ -1236,9 +1275,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#SpatialPosition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/BFO_0000196"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#hasStart",
@@ -1268,7 +1304,7 @@
     "@value" : "hasState"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityRelatedState"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityContext"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#hasStrikeAngle",
@@ -1484,7 +1520,7 @@
     "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/BFO_0000056"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#isParticipantIn"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#isCapabilityOf",
@@ -1532,6 +1568,36 @@
     "@id" : "https://w3id.org/digitalconstruction/Entities#occursIn"
   } ]
 }, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#isEquipmentIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Equipment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isEquipmentIn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#isParticipantIn"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#isInformationIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isInformationIn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#isParticipantIn"
+  } ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#isIntentionOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1560,6 +1626,21 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "isLocationOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#isMaterialIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#MaterialBatch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isMaterialIn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#isParticipantIn"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#isMemberPartOf",
