@@ -264,6 +264,9 @@ This section provides details for each class and property defined by Digital Con
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#ActivityContext</p>
+      <div class="comment">
+         <span class="markdown">A Context relative to an Activity, representing the situation, for example, at the start, at execution time, or at the end of an activity</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1691,6 +1694,10 @@ This section provides details for each class and property defined by Digital Con
             title="https://w3id.org/digitalconstruction/Entities#hasParticipant">hasParticipant</a>
       </li>
       <li>
+         <a href="#hasQuality"
+            title="https://w3id.org/digitalconstruction/Entities#hasQuality">hasQuality</a>
+      </li>
+      <li>
          <a href="#hasRole"
             title="https://w3id.org/digitalconstruction/Entities#hasRole">hasRole</a>
       </li>
@@ -1799,6 +1806,10 @@ This section provides details for each class and property defined by Digital Con
             title="https://w3id.org/digitalconstruction/Entities#isParticipantIn">isParticipantIn</a>
       </li>
       <li>
+         <a href="#isQualityOf"
+            title="https://w3id.org/digitalconstruction/Entities#isQualityOf">isQualityOf</a>
+      </li>
+      <li>
          <a href="#isRoleOf"
             title="https://w3id.org/digitalconstruction/Entities#isRoleOf">isRoleOf</a>
       </li>
@@ -1835,6 +1846,14 @@ This section provides details for each class and property defined by Digital Con
       <li>
          <a href="#occursIn"
             title="https://w3id.org/digitalconstruction/Entities#occursIn">occursIn</a>
+      </li>
+      <li>
+         <a href="#qualityQuantityKind"
+            title="https://w3id.org/digitalconstruction/Entities#qualityQuantityKind">qualityQuantityKind</a>
+      </li>
+      <li>
+         <a href="#qualityUnit"
+            title="https://w3id.org/digitalconstruction/Entities#qualityUnit">qualityUnit</a>
       </li>
       <li>
          <a href="#representsContentOf"
@@ -2664,6 +2683,34 @@ This section provides details for each class and property defined by Digital Con
          </dl>
       </div>
    </div>
+   <div class="entity" id="hasQuality">
+      <h3>hasQuality<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasQuality</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000196">b f o 0000196</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000019">b f o 0000019</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isQualityOf"
+                  title="https://w3id.org/digitalconstruction/Entities#isQualityOf">isQualityOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="hasRole">
       <h3>hasRole<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -3446,6 +3493,34 @@ This section provides details for each class and property defined by Digital Con
          </dl>
       </div>
    </div>
+   <div class="entity" id="isQualityOf">
+      <h3>isQualityOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#isQualityOf</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000197">b f o 0000197</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000019">b f o 0000019</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasQuality"
+                  title="https://w3id.org/digitalconstruction/Entities#hasQuality">hasQuality</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="isRoleOf">
       <h3>isRoleOf<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -3745,6 +3820,50 @@ This section provides details for each class and property defined by Digital Con
          </dl>
       </div>
    </div>
+   <div class="entity" id="qualityQuantityKind">
+      <h3>qualityQuantityKind<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#qualityQuantityKind</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000019">b f o 0000019</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://qudt.org/schema/qudt/QuantityKind">quantity kind</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="qualityUnit">
+      <h3>qualityUnit<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#qualityUnit</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000019">b f o 0000019</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://qudt.org/schema/qudt/Unit">unit</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="representsContentOf">
       <h3>representsContentOf<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -3855,6 +3974,10 @@ This section provides details for each class and property defined by Digital Con
       <li>
          <a href="#hasZLength"
             title="https://w3id.org/digitalconstruction/Entities#hasZLength">hasZLength</a>
+      </li>
+      <li>
+         <a href="#qualityValue"
+            title="https://w3id.org/digitalconstruction/Entities#qualityValue">qualityValue</a>
       </li>
    </ul>
    <div class="entity" id="hasAltitude">
@@ -4271,6 +4394,27 @@ This section provides details for each class and property defined by Digital Con
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="qualityValue">
+      <h3>qualityValue<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#qualityValue</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000019">b f o 0000019</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>

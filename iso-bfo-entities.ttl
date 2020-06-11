@@ -340,6 +340,14 @@
                 rdfs:label "hasParticipant" .
 
 
+###  https://w3id.org/digitalconstruction/Entities#hasQuality
+:hasQuality rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000196> ;
+            owl:inverseOf :isQualityOf ;
+            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000019> ;
+            rdfs:label "hasQuality" .
+
+
 ###  https://w3id.org/digitalconstruction/Entities#hasRole
 :hasRole rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000196> ;
@@ -539,6 +547,13 @@
                  rdfs:label "isParticipantIn" .
 
 
+###  https://w3id.org/digitalconstruction/Entities#isQualityOf
+:isQualityOf rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000197> ;
+             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000019> ;
+             rdfs:label "isQualityOf" .
+
+
 ###  https://w3id.org/digitalconstruction/Entities#isRoleOf
 :isRoleOf rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000197> ;
@@ -603,6 +618,20 @@
 ###  https://w3id.org/digitalconstruction/Entities#occursIn
 :occursIn rdf:type owl:ObjectProperty ;
           rdfs:label "occursIn" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#qualityQuantityKind
+:qualityQuantityKind rdf:type owl:ObjectProperty ;
+                     rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000019> ;
+                     rdfs:range <http://qudt.org/schema/qudt/QuantityKind> ;
+                     rdfs:label "qualityQuantityKind" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#qualityUnit
+:qualityUnit rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000019> ;
+             rdfs:range <http://qudt.org/schema/qudt/Unit> ;
+             rdfs:label "qualityUnit" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#representsContentOf
@@ -754,6 +783,13 @@
             rdfs:label "hasZLength" .
 
 
+###  https://w3id.org/digitalconstruction/Entities#qualityValue
+:qualityValue rdf:type owl:DatatypeProperty ;
+              rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000019> ;
+              rdfs:range rdfs:Literal ;
+              rdfs:label "qualityValue" .
+
+
 #################################################################
 #    Classes
 #################################################################
@@ -790,6 +826,14 @@
 <http://purl.obolibrary.org/obo/IAO_0000030> rdf:type owl:Class ;
                                              owl:equivalentClass :InformationContentEntity ;
                                              rdfs:label "iao:InformationContentEntity" .
+
+
+###  http://qudt.org/schema/qudt/QuantityKind
+<http://qudt.org/schema/qudt/QuantityKind> rdf:type owl:Class .
+
+
+###  http://qudt.org/schema/qudt/Unit
+<http://qudt.org/schema/qudt/Unit> rdf:type owl:Class .
 
 
 ###  http://www.w3.org/ns/prov#Activity
@@ -840,6 +884,7 @@
 ###  https://w3id.org/digitalconstruction/Entities#ActivityContext
 :ActivityContext rdf:type owl:Class ;
                  rdfs:subClassOf <https://w3id.org/digitalconstruction/Contexts#Context> ;
+                 rdfs:comment "A Context relative to an Activity, representing the situation, for example, at the start, at execution time, or at the end of an activity" ;
                  rdfs:label "ActivityContext" .
 
 

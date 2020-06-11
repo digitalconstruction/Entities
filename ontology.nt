@@ -300,6 +300,14 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#hasParticipant> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isParticipantIn> .
 <https://w3id.org/digitalconstruction/Entities#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#label> "hasParticipant" .
 # 
+# https://w3id.org/digitalconstruction/Entities#hasQuality
+<https://w3id.org/digitalconstruction/Entities#hasQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasQuality> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000196> .
+<https://w3id.org/digitalconstruction/Entities#hasQuality> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isQualityOf> .
+<https://w3id.org/digitalconstruction/Entities#hasQuality> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<http://purl.obolibrary.org/obo/BFO_0000019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#hasQuality> <http://www.w3.org/2000/01/rdf-schema#label> "hasQuality" .
+# 
 # https://w3id.org/digitalconstruction/Entities#hasRole
 <https://w3id.org/digitalconstruction/Entities#hasRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/digitalconstruction/Entities#hasRole> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000196> .
@@ -474,6 +482,12 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#isParticipantIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/digitalconstruction/Entities#isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#label> "isParticipantIn" .
 # 
+# https://w3id.org/digitalconstruction/Entities#isQualityOf
+<https://w3id.org/digitalconstruction/Entities#isQualityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isQualityOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000197> .
+<https://w3id.org/digitalconstruction/Entities#isQualityOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<https://w3id.org/digitalconstruction/Entities#isQualityOf> <http://www.w3.org/2000/01/rdf-schema#label> "isQualityOf" .
+# 
 # https://w3id.org/digitalconstruction/Entities#isRoleOf
 <https://w3id.org/digitalconstruction/Entities#isRoleOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/digitalconstruction/Entities#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000197> .
@@ -530,6 +544,18 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # https://w3id.org/digitalconstruction/Entities#occursIn
 <https://w3id.org/digitalconstruction/Entities#occursIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/digitalconstruction/Entities#occursIn> <http://www.w3.org/2000/01/rdf-schema#label> "occursIn" .
+# 
+# https://w3id.org/digitalconstruction/Entities#qualityQuantityKind
+<https://w3id.org/digitalconstruction/Entities#qualityQuantityKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#qualityQuantityKind> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<https://w3id.org/digitalconstruction/Entities#qualityQuantityKind> <http://www.w3.org/2000/01/rdf-schema#range> <http://qudt.org/schema/qudt/QuantityKind> .
+<https://w3id.org/digitalconstruction/Entities#qualityQuantityKind> <http://www.w3.org/2000/01/rdf-schema#label> "qualityQuantityKind" .
+# 
+# https://w3id.org/digitalconstruction/Entities#qualityUnit
+<https://w3id.org/digitalconstruction/Entities#qualityUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#qualityUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<https://w3id.org/digitalconstruction/Entities#qualityUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://qudt.org/schema/qudt/Unit> .
+<https://w3id.org/digitalconstruction/Entities#qualityUnit> <http://www.w3.org/2000/01/rdf-schema#label> "qualityUnit" .
 # 
 # https://w3id.org/digitalconstruction/Entities#representsContentOf
 <https://w3id.org/digitalconstruction/Entities#representsContentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -664,6 +690,12 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#hasZLength> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <https://w3id.org/digitalconstruction/Entities#hasZLength> <http://www.w3.org/2000/01/rdf-schema#label> "hasZLength" .
 # 
+# https://w3id.org/digitalconstruction/Entities#qualityValue
+<https://w3id.org/digitalconstruction/Entities#qualityValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#qualityValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<https://w3id.org/digitalconstruction/Entities#qualityValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/digitalconstruction/Entities#qualityValue> <http://www.w3.org/2000/01/rdf-schema#label> "qualityValue" .
+# 
 # 
 # 
 # #################################################################
@@ -690,7 +722,6 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <http://purl.obolibrary.org/obo/BFO_0000016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://purl.obolibrary.org/obo/BFO_0000019
-<http://purl.obolibrary.org/obo/BFO_0000019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://purl.obolibrary.org/obo/BFO_0000023
 # 
@@ -719,6 +750,12 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <http://purl.obolibrary.org/obo/IAO_0000030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.obolibrary.org/obo/IAO_0000030> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
 <http://purl.obolibrary.org/obo/IAO_0000030> <http://www.w3.org/2000/01/rdf-schema#label> "iao:InformationContentEntity" .
+# 
+# http://qudt.org/schema/qudt/QuantityKind
+<http://qudt.org/schema/qudt/QuantityKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://qudt.org/schema/qudt/Unit
+<http://qudt.org/schema/qudt/Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/ns/prov#Activity
 <http://www.w3.org/ns/prov#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -759,6 +796,7 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # https://w3id.org/digitalconstruction/Entities#ActivityContext
 <https://w3id.org/digitalconstruction/Entities#ActivityContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#ActivityContext> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Contexts#Context> .
+<https://w3id.org/digitalconstruction/Entities#ActivityContext> <http://www.w3.org/2000/01/rdf-schema#comment> "A Context relative to an Activity, representing the situation, for example, at the start, at execution time, or at the end of an activity" .
 <https://w3id.org/digitalconstruction/Entities#ActivityContext> <http://www.w3.org/2000/01/rdf-schema#label> "ActivityContext" .
 # 
 # https://w3id.org/digitalconstruction/Entities#Agent
