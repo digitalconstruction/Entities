@@ -270,7 +270,7 @@
   "@id" : "https://w3id.org/digitalconstruction/Entities#Agent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The actors and stakeholders of construction projects."
+    "@value" : "Agents are actors or stakeholders associated with construction lifecycles"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Agent"
@@ -1520,6 +1520,21 @@
     "@id" : "https://w3id.org/digitalconstruction/Entities#labels"
   } ]
 }, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#includesRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000001"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "includesRole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#isIncludedRoleIn"
+  } ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#isAbout",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1605,6 +1620,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#isParticipantIn"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#isIncludedRoleIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isIncludedRoleIn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000001"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#isInformationIn",

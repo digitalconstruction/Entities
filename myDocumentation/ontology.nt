@@ -394,6 +394,13 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#identifies> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000001> .
 <https://w3id.org/digitalconstruction/Entities#identifies> <http://www.w3.org/2000/01/rdf-schema#label> "identifies" .
 # 
+# https://w3id.org/digitalconstruction/Entities#includesRole
+<https://w3id.org/digitalconstruction/Entities#includesRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#includesRole> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isIncludedRoleIn> .
+<https://w3id.org/digitalconstruction/Entities#includesRole> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<https://w3id.org/digitalconstruction/Entities#includesRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000023> .
+<https://w3id.org/digitalconstruction/Entities#includesRole> <http://www.w3.org/2000/01/rdf-schema#label> "includesRole" .
+# 
 # https://w3id.org/digitalconstruction/Entities#isAbout
 <https://w3id.org/digitalconstruction/Entities#isAbout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/digitalconstruction/Entities#isAbout> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
@@ -436,6 +443,12 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#isEquipmentIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Equipment> .
 <https://w3id.org/digitalconstruction/Entities#isEquipmentIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Activity> .
 <https://w3id.org/digitalconstruction/Entities#isEquipmentIn> <http://www.w3.org/2000/01/rdf-schema#label> "isEquipmentIn" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isIncludedRoleIn
+<https://w3id.org/digitalconstruction/Entities#isIncludedRoleIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isIncludedRoleIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000023> .
+<https://w3id.org/digitalconstruction/Entities#isIncludedRoleIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<https://w3id.org/digitalconstruction/Entities#isIncludedRoleIn> <http://www.w3.org/2000/01/rdf-schema#label> "isIncludedRoleIn" .
 # 
 # https://w3id.org/digitalconstruction/Entities#isInformationIn
 <https://w3id.org/digitalconstruction/Entities#isInformationIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -803,7 +816,7 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000040> .
 <https://w3id.org/digitalconstruction/Entities#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
-<https://w3id.org/digitalconstruction/Entities#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "The actors and stakeholders of construction projects." .
+<https://w3id.org/digitalconstruction/Entities#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "Agents are actors or stakeholders associated with construction lifecycles" .
 <https://w3id.org/digitalconstruction/Entities#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent" .
 # 
 # https://w3id.org/digitalconstruction/Entities#AllOver

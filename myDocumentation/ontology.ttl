@@ -438,6 +438,14 @@
             rdfs:label "identifies" .
 
 
+###  https://w3id.org/digitalconstruction/Entities#includesRole
+:includesRole rdf:type owl:ObjectProperty ;
+              owl:inverseOf :isIncludedRoleIn ;
+              rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000001> ;
+              rdfs:range <http://purl.obolibrary.org/obo/BFO_0000023> ;
+              rdfs:label "includesRole" .
+
+
 ###  https://w3id.org/digitalconstruction/Entities#isAbout
 :isAbout rdf:type owl:ObjectProperty ;
          rdfs:domain :InformationContentEntity ;
@@ -486,6 +494,13 @@
                rdfs:domain :Equipment ;
                rdfs:range :Activity ;
                rdfs:label "isEquipmentIn" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isIncludedRoleIn
+:isIncludedRoleIn rdf:type owl:ObjectProperty ;
+                  rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000023> ;
+                  rdfs:range <http://purl.obolibrary.org/obo/BFO_0000001> ;
+                  rdfs:label "isIncludedRoleIn" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#isInformationIn
@@ -918,7 +933,7 @@
 :Agent rdf:type owl:Class ;
        rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ,
                        <http://www.w3.org/ns/prov#Agent> ;
-       rdfs:comment "The actors and stakeholders of construction projects." ;
+       rdfs:comment "Agents are actors or stakeholders associated with construction lifecycles" ;
        rdfs:label "Agent" .
 
 
