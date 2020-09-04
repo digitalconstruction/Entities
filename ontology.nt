@@ -467,10 +467,14 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # https://w3id.org/digitalconstruction/Entities#isLocatedIn
 <https://w3id.org/digitalconstruction/Entities#isLocatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/digitalconstruction/Entities#isLocatedIn> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isLocationOf> .
+<https://w3id.org/digitalconstruction/Entities#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000040> .
+<https://w3id.org/digitalconstruction/Entities#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Location> .
 <https://w3id.org/digitalconstruction/Entities#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#label> "isLocatedIn" .
 # 
 # https://w3id.org/digitalconstruction/Entities#isLocationOf
 <https://w3id.org/digitalconstruction/Entities#isLocationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Location> .
+<https://w3id.org/digitalconstruction/Entities#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000040> .
 <https://w3id.org/digitalconstruction/Entities#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#label> "isLocationOf" .
 # 
 # https://w3id.org/digitalconstruction/Entities#isMaterialIn
@@ -875,6 +879,12 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#Crane> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Equipment> .
 <https://w3id.org/digitalconstruction/Entities#Crane> <http://www.w3.org/2000/01/rdf-schema#comment> "An equipment for moving objects. The crane remains stationary during the movement and usually there is a difference in altitude in the origin and target location of the object movement." .
 <https://w3id.org/digitalconstruction/Entities#Crane> <http://www.w3.org/2000/01/rdf-schema#label> "Crane" .
+# 
+# https://w3id.org/digitalconstruction/Entities#Device
+<https://w3id.org/digitalconstruction/Entities#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000030> .
+<https://w3id.org/digitalconstruction/Entities#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "An object made or adapted for a particular purpose, such as a piece of mechanical or electronic equipment, and used in the operation of a building" .
+<https://w3id.org/digitalconstruction/Entities#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device" .
 # 
 # https://w3id.org/digitalconstruction/Entities#EntityScope
 <https://w3id.org/digitalconstruction/Entities#EntityScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

@@ -61,6 +61,10 @@ This section provides details for each class and property defined by Digital Con
             title="https://w3id.org/digitalconstruction/Entities#Crane">Crane</a>
       </li>
       <li>
+         <a href="#Device"
+            title="https://w3id.org/digitalconstruction/Entities#Device">Device</a>
+      </li>
+      <li>
          <a href="#https://w3id.org/bot#Element" title="https://w3id.org/bot#Element">
             <span>element</span>
          </a>
@@ -631,6 +635,24 @@ This section provides details for each class and property defined by Digital Con
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Device">
+      <h3>Device<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#Device</p>
+      <div class="comment">
+         <span class="markdown">An object made or adapted for a particular purpose, such as a piece of mechanical or electronic equipment, and used in the operation of a building</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000030">b f o 0000030</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="https://w3id.org/bot#Element">
       <h3>element<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1073,6 +1095,8 @@ This section provides details for each class and property defined by Digital Con
          <dd>
             <a href="#hasSubLocation"
                title="https://w3id.org/digitalconstruction/Entities#hasSubLocation">hasSubLocation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isLocationOf"
+               title="https://w3id.org/digitalconstruction/Entities#isLocationOf">isLocationOf</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isSubLocationOf"
                title="https://w3id.org/digitalconstruction/Entities#isSubLocationOf">isSubLocationOf</a>
             <sup class="type-op" title="object property">op</sup>
@@ -1081,6 +1105,8 @@ This section provides details for each class and property defined by Digital Con
          <dd>
             <a href="#hasSubLocation"
                title="https://w3id.org/digitalconstruction/Entities#hasSubLocation">hasSubLocation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isLocatedIn"
+               title="https://w3id.org/digitalconstruction/Entities#isLocatedIn">isLocatedIn</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isSubLocationOf"
                title="https://w3id.org/digitalconstruction/Entities#isSubLocationOf">isSubLocationOf</a>
             <sup class="type-op" title="object property">op</sup>
@@ -3416,6 +3442,17 @@ This section provides details for each class and property defined by Digital Con
          <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#isLocatedIn</p>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000040">b f o 0000040</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Location"
+                  title="https://w3id.org/digitalconstruction/Entities#Location">Location</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#isLocationOf"
@@ -3434,6 +3471,17 @@ This section provides details for each class and property defined by Digital Con
          <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#isLocationOf</p>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Location"
+                  title="https://w3id.org/digitalconstruction/Entities#Location">Location</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000040">b f o 0000040</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#isLocatedIn"

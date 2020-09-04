@@ -819,6 +819,8 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#isLocatedIn">
         <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Entities#isLocationOf"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Location"/>
         <rdfs:label>isLocatedIn</rdfs:label>
     </owl:ObjectProperty>
     
@@ -828,6 +830,8 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#isLocationOf">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Location"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:label>isLocationOf</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1608,6 +1612,17 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#Equipment"/>
         <rdfs:comment>An equipment for moving objects. The crane remains stationary during the movement and usually there is a difference in altitude in the origin and target location of the object movement.</rdfs:comment>
         <rdfs:label>Crane</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Entities#Device -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#Device">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:comment>An object made or adapted for a particular purpose, such as a piece of mechanical or electronic equipment, and used in the operation of a building</rdfs:comment>
+        <rdfs:label>Device</rdfs:label>
     </owl:Class>
     
 

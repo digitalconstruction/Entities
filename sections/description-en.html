@@ -1,5 +1,29 @@
 <h2 id="desc" class="list">DICE: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <p>
-
+To capture the dynamic and interlinked nature of construction
+processes, activity (<tt>dice:Activity</tt>) is the central concept in the Digital
+Construction Entities ontology. Different aspects of construction
+process are associated with activity. Activities themselves can form
+complex hierarchies (work breakdown structures) where they are linked
+to each other through relations
+<tt>dice:hasSubActivity/dice:subActivityOf</tt>. In addition
+to that, activities are connected with different activity
+ingredients and aspects are shown in the figure below.
 </p>
+
+<center>
+<img width="95%" src="sections/dice-ingredients.png">
+</center>
+
+<p>
+The different activity ingredients are connected to Activity through
+the relations shown in the figure below. The relations are
+specializations of the <tt>participant</tt> relation defined in BFO. 
+</p>
+
+<center>
+<img width="70%" src="sections/dice-flow-relations.png">
+</center>
+
+
 

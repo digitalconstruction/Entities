@@ -392,6 +392,18 @@
     "@id" : "https://w3id.org/digitalconstruction/Entities#Equipment"
   } ]
 }, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An object made or adapted for a particular purpose, such as a piece of mechanical or electronic equipment, and used in the operation of a building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000030"
+  } ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#EntityScope",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1666,8 +1678,14 @@
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#isLocatedIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000040"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "isLocatedIn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Location"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#isLocationOf"
@@ -1675,8 +1693,14 @@
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#isLocationOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Location"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "isLocationOf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000040"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#isMaterialIn",
