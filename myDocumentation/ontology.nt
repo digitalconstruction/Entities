@@ -247,11 +247,11 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#hasMaximumCartesianPosition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#CartesianPosition> .
 <https://w3id.org/digitalconstruction/Entities#hasMaximumCartesianPosition> <http://www.w3.org/2000/01/rdf-schema#label> "hasMaximumCartesianPosition" .
 # 
-# https://w3id.org/digitalconstruction/Entities#hasMaximumGeographicalPosition
-<https://w3id.org/digitalconstruction/Entities#hasMaximumGeographicalPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/digitalconstruction/Entities#hasMaximumGeographicalPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#GeographicBoundingBox> .
-<https://w3id.org/digitalconstruction/Entities#hasMaximumGeographicalPosition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#GeographicPosition> .
-<https://w3id.org/digitalconstruction/Entities#hasMaximumGeographicalPosition> <http://www.w3.org/2000/01/rdf-schema#label> "hasMaximumGeographicalPosition" .
+# https://w3id.org/digitalconstruction/Entities#hasMaximumGeodeticPosition
+<https://w3id.org/digitalconstruction/Entities#hasMaximumGeodeticPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasMaximumGeodeticPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#GeodeticBoundingBox> .
+<https://w3id.org/digitalconstruction/Entities#hasMaximumGeodeticPosition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#GeodeticPosition> .
+<https://w3id.org/digitalconstruction/Entities#hasMaximumGeodeticPosition> <http://www.w3.org/2000/01/rdf-schema#label> "hasMaximumGeodeticPosition" .
 # 
 # https://w3id.org/digitalconstruction/Entities#hasMember
 <https://w3id.org/digitalconstruction/Entities#hasMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -272,11 +272,11 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#hasMinimumCartesianPosition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#CartesianPosition> .
 <https://w3id.org/digitalconstruction/Entities#hasMinimumCartesianPosition> <http://www.w3.org/2000/01/rdf-schema#label> "hasMinumumCartesianPosition" .
 # 
-# https://w3id.org/digitalconstruction/Entities#hasMinimumGeographicalPosition
-<https://w3id.org/digitalconstruction/Entities#hasMinimumGeographicalPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/digitalconstruction/Entities#hasMinimumGeographicalPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#GeographicBoundingBox> .
-<https://w3id.org/digitalconstruction/Entities#hasMinimumGeographicalPosition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#GeographicPosition> .
-<https://w3id.org/digitalconstruction/Entities#hasMinimumGeographicalPosition> <http://www.w3.org/2000/01/rdf-schema#label> "hasMinimumGeographicalPosition" .
+# https://w3id.org/digitalconstruction/Entities#hasMinimumGeodeticPosition
+<https://w3id.org/digitalconstruction/Entities#hasMinimumGeodeticPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasMinimumGeodeticPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#GeodeticBoundingBox> .
+<https://w3id.org/digitalconstruction/Entities#hasMinimumGeodeticPosition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#GeodeticPosition> .
+<https://w3id.org/digitalconstruction/Entities#hasMinimumGeodeticPosition> <http://www.w3.org/2000/01/rdf-schema#label> "hasMinimumGeodeticPosition" .
 # 
 # https://w3id.org/digitalconstruction/Entities#hasOwner
 <https://w3id.org/digitalconstruction/Entities#hasOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -595,7 +595,7 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # https://w3id.org/digitalconstruction/Entities#hasAltitude
 <https://w3id.org/digitalconstruction/Entities#hasAltitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/digitalconstruction/Entities#hasAltitude> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#GeographicPosition> .
+<https://w3id.org/digitalconstruction/Entities#hasAltitude> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#GeodeticPosition> .
 <https://w3id.org/digitalconstruction/Entities#hasAltitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/digitalconstruction/Entities#hasAltitude> <http://www.w3.org/2000/01/rdf-schema#label> "hasAltitude" .
 # 
@@ -611,11 +611,11 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#hasDipAngle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <https://w3id.org/digitalconstruction/Entities#hasDipAngle> <http://www.w3.org/2000/01/rdf-schema#label> "hasDipAngle" .
 # 
-# https://w3id.org/digitalconstruction/Entities#hasGeographicCoordinateSystem
-<https://w3id.org/digitalconstruction/Entities#hasGeographicCoordinateSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/digitalconstruction/Entities#hasGeographicCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#GeographicPosition> .
-<https://w3id.org/digitalconstruction/Entities#hasGeographicCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/digitalconstruction/Entities#hasGeographicCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#label> "hasGeographicCoordinateSystem" .
+# https://w3id.org/digitalconstruction/Entities#hasGeodeticCoordinateSystem
+<https://w3id.org/digitalconstruction/Entities#hasGeodeticCoordinateSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasGeodeticCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#GeodeticPosition> .
+<https://w3id.org/digitalconstruction/Entities#hasGeodeticCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/digitalconstruction/Entities#hasGeodeticCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#label> "hasGeodeticCoordinateSystem" .
 # 
 # https://w3id.org/digitalconstruction/Entities#hasLabel
 <https://w3id.org/digitalconstruction/Entities#hasLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -625,13 +625,13 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # https://w3id.org/digitalconstruction/Entities#hasLatitude
 <https://w3id.org/digitalconstruction/Entities#hasLatitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/digitalconstruction/Entities#hasLatitude> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#GeographicPosition> .
+<https://w3id.org/digitalconstruction/Entities#hasLatitude> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#GeodeticPosition> .
 <https://w3id.org/digitalconstruction/Entities#hasLatitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/digitalconstruction/Entities#hasLatitude> <http://www.w3.org/2000/01/rdf-schema#label> "hasLatitude" .
 # 
 # https://w3id.org/digitalconstruction/Entities#hasLongitude
 <https://w3id.org/digitalconstruction/Entities#hasLongitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/digitalconstruction/Entities#hasLongitude> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#GeographicPosition> .
+<https://w3id.org/digitalconstruction/Entities#hasLongitude> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#GeodeticPosition> .
 <https://w3id.org/digitalconstruction/Entities#hasLongitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/digitalconstruction/Entities#hasLongitude> <http://www.w3.org/2000/01/rdf-schema#label> "hasLongitude" .
 # 
@@ -898,17 +898,17 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#Equipment> <http://www.w3.org/2000/01/rdf-schema#comment> "Machinery and tools used in construction activities. Equipment do not have a capability to operate activities by itself automatically." .
 <https://w3id.org/digitalconstruction/Entities#Equipment> <http://www.w3.org/2000/01/rdf-schema#label> "Equipment" .
 # 
-# https://w3id.org/digitalconstruction/Entities#GeographicBoundingBox
-<https://w3id.org/digitalconstruction/Entities#GeographicBoundingBox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Entities#GeographicBoundingBox> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#SpatialExtent> .
-<https://w3id.org/digitalconstruction/Entities#GeographicBoundingBox> <http://www.w3.org/2000/01/rdf-schema#comment> "Minimum bounding box of a geographical area determined by its minimum geographical position and maximum geographical position" .
-<https://w3id.org/digitalconstruction/Entities#GeographicBoundingBox> <http://www.w3.org/2000/01/rdf-schema#label> "GeographicBoundingBox" .
+# https://w3id.org/digitalconstruction/Entities#GeodeticBoundingBox
+<https://w3id.org/digitalconstruction/Entities#GeodeticBoundingBox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#GeodeticBoundingBox> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#SpatialExtent> .
+<https://w3id.org/digitalconstruction/Entities#GeodeticBoundingBox> <http://www.w3.org/2000/01/rdf-schema#comment> "Minimum bounding box of a geodetic area determined by its minimum geodetic position and maximum geodetic position" .
+<https://w3id.org/digitalconstruction/Entities#GeodeticBoundingBox> <http://www.w3.org/2000/01/rdf-schema#label> "GeodeticBoundingBox" .
 # 
-# https://w3id.org/digitalconstruction/Entities#GeographicPosition
-<https://w3id.org/digitalconstruction/Entities#GeographicPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Entities#GeographicPosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#SpatialPosition> .
-<https://w3id.org/digitalconstruction/Entities#GeographicPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "Geographic position expressed in longitude, latitude and altitude with respect to a geographic coordinate system." .
-<https://w3id.org/digitalconstruction/Entities#GeographicPosition> <http://www.w3.org/2000/01/rdf-schema#label> "GeographicPosition" .
+# https://w3id.org/digitalconstruction/Entities#GeodeticPosition
+<https://w3id.org/digitalconstruction/Entities#GeodeticPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#GeodeticPosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#SpatialPosition> .
+<https://w3id.org/digitalconstruction/Entities#GeodeticPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "Geodetic position expressed in longitude, latitude and altitude with respect to a geodetic coordinate system." .
+<https://w3id.org/digitalconstruction/Entities#GeodeticPosition> <http://www.w3.org/2000/01/rdf-schema#label> "GeodeticPosition" .
 # 
 # https://w3id.org/digitalconstruction/Entities#Goal
 <https://w3id.org/digitalconstruction/Entities#Goal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1098,4 +1098,4 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/digitalconstruction/Entities#MaterialBatch> .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
-# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

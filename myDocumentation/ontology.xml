@@ -448,13 +448,13 @@
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Entities#hasMaximumGeographicalPosition -->
+    <!-- https://w3id.org/digitalconstruction/Entities#hasMaximumGeodeticPosition -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasMaximumGeographicalPosition">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#GeographicBoundingBox"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#GeographicPosition"/>
-        <rdfs:label>hasMaximumGeographicalPosition</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasMaximumGeodeticPosition">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#GeodeticBoundingBox"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#GeodeticPosition"/>
+        <rdfs:label>hasMaximumGeodeticPosition</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -493,13 +493,13 @@
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Entities#hasMinimumGeographicalPosition -->
+    <!-- https://w3id.org/digitalconstruction/Entities#hasMinimumGeodeticPosition -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasMinimumGeographicalPosition">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#GeographicBoundingBox"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#GeographicPosition"/>
-        <rdfs:label>hasMinimumGeographicalPosition</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasMinimumGeodeticPosition">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#GeodeticBoundingBox"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#GeodeticPosition"/>
+        <rdfs:label>hasMinimumGeodeticPosition</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1051,7 +1051,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasAltitude">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#GeographicPosition"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#GeodeticPosition"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <rdfs:label>hasAltitude</rdfs:label>
     </owl:DatatypeProperty>
@@ -1080,13 +1080,13 @@
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Entities#hasGeographicCoordinateSystem -->
+    <!-- https://w3id.org/digitalconstruction/Entities#hasGeodeticCoordinateSystem -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasGeographicCoordinateSystem">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#GeographicPosition"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasGeodeticCoordinateSystem">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#GeodeticPosition"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>hasGeographicCoordinateSystem</rdfs:label>
+        <rdfs:label>hasGeodeticCoordinateSystem</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1106,7 +1106,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasLatitude">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#GeographicPosition"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#GeodeticPosition"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <rdfs:label>hasLatitude</rdfs:label>
     </owl:DatatypeProperty>
@@ -1117,7 +1117,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasLongitude">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#GeographicPosition"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#GeodeticPosition"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <rdfs:label>hasLongitude</rdfs:label>
     </owl:DatatypeProperty>
@@ -1649,24 +1649,24 @@
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Entities#GeographicBoundingBox -->
+    <!-- https://w3id.org/digitalconstruction/Entities#GeodeticBoundingBox -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#GeographicBoundingBox">
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#GeodeticBoundingBox">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#SpatialExtent"/>
-        <rdfs:comment>Minimum bounding box of a geographical area determined by its minimum geographical position and maximum geographical position</rdfs:comment>
-        <rdfs:label>GeographicBoundingBox</rdfs:label>
+        <rdfs:comment>Minimum bounding box of a geodetic area determined by its minimum geodetic position and maximum geodetic position</rdfs:comment>
+        <rdfs:label>GeodeticBoundingBox</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Entities#GeographicPosition -->
+    <!-- https://w3id.org/digitalconstruction/Entities#GeodeticPosition -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#GeographicPosition">
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#GeodeticPosition">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#SpatialPosition"/>
-        <rdfs:comment>Geographic position expressed in longitude, latitude and altitude with respect to a geographic coordinate system.</rdfs:comment>
-        <rdfs:label>GeographicPosition</rdfs:label>
+        <rdfs:comment>Geodetic position expressed in longitude, latitude and altitude with respect to a geodetic coordinate system.</rdfs:comment>
+        <rdfs:label>GeodeticPosition</rdfs:label>
     </owl:Class>
     
 
@@ -2019,6 +2019,6 @@
 
 
 
-<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
 
 

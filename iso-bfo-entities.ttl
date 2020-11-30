@@ -286,11 +286,11 @@
                              rdfs:label "hasMaximumCartesianPosition" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#hasMaximumGeographicalPosition
-:hasMaximumGeographicalPosition rdf:type owl:ObjectProperty ;
-                                rdfs:domain :GeographicBoundingBox ;
-                                rdfs:range :GeographicPosition ;
-                                rdfs:label "hasMaximumGeographicalPosition" .
+###  https://w3id.org/digitalconstruction/Entities#hasMaximumGeodeticalPosition
+:hasMaximumGeodeticPosition rdf:type owl:ObjectProperty ;
+                                rdfs:domain :GeodeticBoundingBox ;
+                                rdfs:range :GeodeticPosition ;
+                                rdfs:label "hasMaximumGeodeticPosition" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#hasMember
@@ -315,11 +315,11 @@
                              rdfs:label "hasMinumumCartesianPosition" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#hasMinimumGeographicalPosition
-:hasMinimumGeographicalPosition rdf:type owl:ObjectProperty ;
-                                rdfs:domain :GeographicBoundingBox ;
-                                rdfs:range :GeographicPosition ;
-                                rdfs:label "hasMinimumGeographicalPosition" .
+###  https://w3id.org/digitalconstruction/Entities#hasMinimumGeodeticPosition
+:hasMinimumGeodeticPosition rdf:type owl:ObjectProperty ;
+                                rdfs:domain :GeodeticBoundingBox ;
+                                rdfs:range :GeodeticPosition ;
+                                rdfs:label "hasMinimumGeodeticPosition" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#hasOwner
@@ -671,7 +671,7 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#hasAltitude
 :hasAltitude rdf:type owl:DatatypeProperty ;
-             rdfs:domain :GeographicPosition ;
+             rdfs:domain :GeodeticPosition ;
              rdfs:range xsd:decimal ;
              rdfs:label "hasAltitude" .
 
@@ -690,11 +690,11 @@
              rdfs:label "hasDipAngle" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#hasGeographicCoordinateSystem
-:hasGeographicCoordinateSystem rdf:type owl:DatatypeProperty ;
-                               rdfs:domain :GeographicPosition ;
+###  https://w3id.org/digitalconstruction/Entities#hasGeodeticCoordinateSystem
+:hasGeodeticCoordinateSystem rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :GeodeticPosition ;
                                rdfs:range xsd:string ;
-                               rdfs:label "hasGeographicCoordinateSystem" .
+                               rdfs:label "hasGeodeticCoordinateSystem" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#hasLabel
@@ -706,14 +706,14 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#hasLatitude
 :hasLatitude rdf:type owl:DatatypeProperty ;
-             rdfs:domain :GeographicPosition ;
+             rdfs:domain :GeodeticPosition ;
              rdfs:range xsd:decimal ;
              rdfs:label "hasLatitude" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#hasLongitude
 :hasLongitude rdf:type owl:DatatypeProperty ;
-              rdfs:domain :GeographicPosition ;
+              rdfs:domain :GeodeticPosition ;
               rdfs:range xsd:decimal ;
               rdfs:label "hasLongitude" .
 
@@ -1003,18 +1003,18 @@
            rdfs:label "Equipment" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#GeographicBoundingBox
-:GeographicBoundingBox rdf:type owl:Class ;
+###  https://w3id.org/digitalconstruction/Entities#GeodeticBoundingBox
+:GeodeticBoundingBox rdf:type owl:Class ;
                        rdfs:subClassOf :SpatialExtent ;
-                       rdfs:comment "Minimum bounding box of a geographical area determined by its minimum geographical position and maximum geographical position" ;
-                       rdfs:label "GeographicBoundingBox" .
+                       rdfs:comment "Minimum bounding box of a geodetic area determined by its minimum geodetic position and maximum geodetic position" ;
+                       rdfs:label "GeodeticBoundingBox" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#GeographicPosition
-:GeographicPosition rdf:type owl:Class ;
+###  https://w3id.org/digitalconstruction/Entities#GeodeticPosition
+:GeodeticPosition rdf:type owl:Class ;
                     rdfs:subClassOf :SpatialPosition ;
-                    rdfs:comment "Geographic position expressed in longitude, latitude and altitude with respect to a geographic coordinate system." ;
-                    rdfs:label "GeographicPosition" .
+                    rdfs:comment "Geodetic position expressed in longitude, latitude and altitude with respect to a geodetic coordinate system." ;
+                    rdfs:label "GeodeticPosition" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#Goal

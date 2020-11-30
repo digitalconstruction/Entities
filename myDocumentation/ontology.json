@@ -428,25 +428,25 @@
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000030"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Entities#GeographicBoundingBox",
+  "@id" : "https://w3id.org/digitalconstruction/Entities#GeodeticBoundingBox",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Minimum bounding box of a geographical area determined by its minimum geographical position and maximum geographical position"
+    "@value" : "Minimum bounding box of a geodetic area determined by its minimum geodetic position and maximum geodetic position"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "GeographicBoundingBox"
+    "@value" : "GeodeticBoundingBox"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#SpatialExtent"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Entities#GeographicPosition",
+  "@id" : "https://w3id.org/digitalconstruction/Entities#GeodeticPosition",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Geographic position expressed in longitude, latitude and altitude with respect to a geographic coordinate system."
+    "@value" : "Geodetic position expressed in longitude, latitude and altitude with respect to a geodetic coordinate system."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "GeographicPosition"
+    "@value" : "GeodeticPosition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#SpatialPosition"
@@ -860,7 +860,7 @@
   "@id" : "https://w3id.org/digitalconstruction/Entities#hasAltitude",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#GeographicPosition"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#GeodeticPosition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasAltitude"
@@ -995,13 +995,13 @@
     "@id" : "https://w3id.org/digitalconstruction/Entities#isEquipmentIn"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Entities#hasGeographicCoordinateSystem",
+  "@id" : "https://w3id.org/digitalconstruction/Entities#hasGeodeticCoordinateSystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#GeographicPosition"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#GeodeticPosition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasGeographicCoordinateSystem"
+    "@value" : "hasGeodeticCoordinateSystem"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -1058,7 +1058,7 @@
   "@id" : "https://w3id.org/digitalconstruction/Entities#hasLatitude",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#GeographicPosition"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#GeodeticPosition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasLatitude"
@@ -1070,7 +1070,7 @@
   "@id" : "https://w3id.org/digitalconstruction/Entities#hasLongitude",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#GeographicPosition"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#GeodeticPosition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasLongitude"
@@ -1121,16 +1121,16 @@
     "@id" : "https://w3id.org/digitalconstruction/Entities#CartesianPosition"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Entities#hasMaximumGeographicalPosition",
+  "@id" : "https://w3id.org/digitalconstruction/Entities#hasMaximumGeodeticPosition",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#GeographicBoundingBox"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#GeodeticBoundingBox"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasMaximumGeographicalPosition"
+    "@value" : "hasMaximumGeodeticPosition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#GeographicPosition"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#GeodeticPosition"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#hasMember",
@@ -1172,16 +1172,16 @@
     "@id" : "https://w3id.org/digitalconstruction/Entities#CartesianPosition"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Entities#hasMinimumGeographicalPosition",
+  "@id" : "https://w3id.org/digitalconstruction/Entities#hasMinimumGeodeticPosition",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#GeographicBoundingBox"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#GeodeticBoundingBox"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasMinimumGeographicalPosition"
+    "@value" : "hasMinimumGeodeticPosition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#GeographicPosition"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#GeodeticPosition"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#hasNorthAngle",
