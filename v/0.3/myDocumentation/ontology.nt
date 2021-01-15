@@ -1,0 +1,1101 @@
+<https://w3id.org/digitalconstruction/Entities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/digitalconstruction/Entities> <http://www.w3.org/2002/07/owl#imports> <http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl> .
+<https://w3id.org/digitalconstruction/Entities> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/digitalconstruction/Contexts> .
+<https://w3id.org/digitalconstruction/Entities> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/digitalconstruction/Variables> .
+<https://w3id.org/digitalconstruction/Entities> <http://purl.org/dc/elements/1.1/date> "2020-03-20" .
+<https://w3id.org/digitalconstruction/Entities> <http://purl.org/dc/elements/1.1/title> "Digital Construction Entities" .
+<https://w3id.org/digitalconstruction/Entities> <http://purl.org/dc/terms/created> "2020-01-12" .
+<https://w3id.org/digitalconstruction/Entities> <http://purl.org/dc/terms/creator> "Seppo Törmä" .
+<https://w3id.org/digitalconstruction/Entities> <http://purl.org/dc/terms/creator> "Yuan Zheng" .
+<https://w3id.org/digitalconstruction/Entities> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/digitalconstruction/Entities> <http://purl.org/vocab/vann/preferredNamespacePrefix> "dice" .
+<https://w3id.org/digitalconstruction/Entities> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/Entities" .
+<https://w3id.org/digitalconstruction/Entities> <http://www.w3.org/2000/01/rdf-schema#comment> "Digital Construction Entities Ontology defines the essential entities that can be referred to in construction and renovation projects by people or systems." .
+<https://w3id.org/digitalconstruction/Entities> <http://www.w3.org/2000/01/rdf-schema#label> "Digital Construction Entities" .
+<https://w3id.org/digitalconstruction/Entities> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/digitalconstruction> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.obolibrary.org/obo/BFO_0000082
+<http://purl.obolibrary.org/obo/BFO_0000082> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000118
+<http://purl.obolibrary.org/obo/BFO_0000118> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000138
+<http://purl.obolibrary.org/obo/BFO_0000138> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000170
+<http://purl.obolibrary.org/obo/BFO_0000170> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000196
+<http://purl.obolibrary.org/obo/BFO_0000196> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000197
+<http://purl.obolibrary.org/obo/BFO_0000197> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000199
+<http://purl.obolibrary.org/obo/BFO_0000199> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000221
+<http://purl.obolibrary.org/obo/BFO_0000221> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000222
+<http://purl.obolibrary.org/obo/BFO_0000222> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000223
+<http://purl.obolibrary.org/obo/BFO_0000223> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000224
+<http://purl.obolibrary.org/obo/BFO_0000224> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/digitalconstruction/Entities#after
+<https://w3id.org/digitalconstruction/Entities#after> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#after> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#before> .
+<https://w3id.org/digitalconstruction/Entities#after> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000003> .
+<http://purl.obolibrary.org/obo/BFO_0000003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#after> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000003> .
+<https://w3id.org/digitalconstruction/Entities#after> <http://www.w3.org/2000/01/rdf-schema#label> "after" .
+# 
+# https://w3id.org/digitalconstruction/Entities#before
+<https://w3id.org/digitalconstruction/Entities#before> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#before> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000003> .
+<https://w3id.org/digitalconstruction/Entities#before> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000003> .
+<https://w3id.org/digitalconstruction/Entities#before> <http://www.w3.org/2000/01/rdf-schema#label> "before" .
+# 
+# https://w3id.org/digitalconstruction/Entities#belongsTo
+<https://w3id.org/digitalconstruction/Entities#belongsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#belongsTo> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/digitalconstruction/Entities#classifiedBy> .
+<https://w3id.org/digitalconstruction/Entities#belongsTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/Entities#labeledBy> .
+<https://w3id.org/digitalconstruction/Entities#belongsTo> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#categorises> .
+<https://w3id.org/digitalconstruction/Entities#belongsTo> <http://www.w3.org/2000/01/rdf-schema#label> "belongsTo" .
+# 
+# https://w3id.org/digitalconstruction/Entities#categorises
+<https://w3id.org/digitalconstruction/Entities#categorises> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#categorises> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/digitalconstruction/Entities#classifies> .
+<https://w3id.org/digitalconstruction/Entities#categorises> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/Entities#labels> .
+# 
+# https://w3id.org/digitalconstruction/Entities#classifiedBy
+<https://w3id.org/digitalconstruction/Entities#classifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#classifiedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/Entities#labeledBy> .
+<https://w3id.org/digitalconstruction/Entities#classifiedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#classifies> .
+<https://w3id.org/digitalconstruction/Entities#classifiedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<https://w3id.org/digitalconstruction/Entities#classifiedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Category> .
+<https://w3id.org/digitalconstruction/Entities#classifiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "classifiedBy" .
+# 
+# https://w3id.org/digitalconstruction/Entities#classifies
+<https://w3id.org/digitalconstruction/Entities#classifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#classifies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/Entities#labels> .
+<https://w3id.org/digitalconstruction/Entities#classifies> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Category> .
+<https://w3id.org/digitalconstruction/Entities#classifies> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<https://w3id.org/digitalconstruction/Entities#classifies> <http://www.w3.org/2000/01/rdf-schema#label> "classifies" .
+# 
+# https://w3id.org/digitalconstruction/Entities#contentRepresentedIn
+<https://w3id.org/digitalconstruction/Entities#contentRepresentedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#contentRepresentedIn> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#representsContentOf> .
+<https://w3id.org/digitalconstruction/Entities#contentRepresentedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+<https://w3id.org/digitalconstruction/Entities#contentRepresentedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Contexts#Context> .
+<https://w3id.org/digitalconstruction/Entities#contentRepresentedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The context in which the content of the information content entity is represented" .
+<https://w3id.org/digitalconstruction/Entities#contentRepresentedIn> <http://www.w3.org/2000/01/rdf-schema#label> "contentRepresentedIn" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasActivity
+<https://w3id.org/digitalconstruction/Entities#hasActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasActivity> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#hasState> .
+<https://w3id.org/digitalconstruction/Entities#hasActivity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#ActivityContext> .
+<https://w3id.org/digitalconstruction/Entities#hasActivity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/Entities#hasActivity> <http://www.w3.org/2000/01/rdf-schema#label> "hasActivity" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasAgent
+<https://w3id.org/digitalconstruction/Entities#hasAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasAgent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/Entities#hasParticipant> .
+<https://w3id.org/digitalconstruction/Entities#hasAgent> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isAgentIn> .
+<https://w3id.org/digitalconstruction/Entities#hasAgent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/Entities#hasAgent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Agent> .
+<https://w3id.org/digitalconstruction/Entities#hasAgent> <http://www.w3.org/2000/01/rdf-schema#label> "hasAgent" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasAsset
+<https://w3id.org/digitalconstruction/Entities#hasAsset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasAsset> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#hasOwner> .
+<https://w3id.org/digitalconstruction/Entities#hasAsset> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Agent> .
+<https://w3id.org/digitalconstruction/Entities#hasAsset> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/BFO_0000029> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/BFO_0000040> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/digitalconstruction/Entities#hasAsset> <http://www.w3.org/2000/01/rdf-schema#label> "hasAsset" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasCapability
+<https://w3id.org/digitalconstruction/Entities#hasCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasCapability> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000196> .
+<https://w3id.org/digitalconstruction/Entities#hasCapability> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isCapabilityOf> .
+<https://w3id.org/digitalconstruction/Entities#hasCapability> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Agent> .
+<https://w3id.org/digitalconstruction/Entities#hasCapability> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Capability> .
+<https://w3id.org/digitalconstruction/Entities#hasCapability> <http://www.w3.org/2000/01/rdf-schema#label> "hasCapability" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasContinuantPart
+<https://w3id.org/digitalconstruction/Entities#hasContinuantPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasContinuantPart> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isContinuantPartOf> .
+<https://w3id.org/digitalconstruction/Entities#hasContinuantPart> <http://www.w3.org/2000/01/rdf-schema#label> "hasContinuantPart" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasDuration
+<https://w3id.org/digitalconstruction/Entities#hasDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasDuration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#TimeInterval> .
+<https://w3id.org/digitalconstruction/Entities#hasDuration> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#TimeDuration> .
+<https://w3id.org/digitalconstruction/Entities#hasDuration> <http://www.w3.org/2000/01/rdf-schema#label> "hasDuration" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasEnd
+<https://w3id.org/digitalconstruction/Entities#hasEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasEnd> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000224> .
+<https://w3id.org/digitalconstruction/Entities#hasEnd> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isEndOf> .
+<https://w3id.org/digitalconstruction/Entities#hasEnd> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#TimeInterval> .
+<https://w3id.org/digitalconstruction/Entities#hasEnd> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#TimeInstant> .
+<https://w3id.org/digitalconstruction/Entities#hasEnd> <http://www.w3.org/2000/01/rdf-schema#label> "hasEnd" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasEntitiesFrom
+<https://w3id.org/digitalconstruction/Entities#hasEntitiesFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasEntitiesFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#EntityScope> .
+<https://w3id.org/digitalconstruction/Entities#hasEntitiesFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<https://w3id.org/digitalconstruction/Entities#hasEntitiesFrom> <http://www.w3.org/2000/01/rdf-schema#label> "hasEntitiesFrom" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasEquipment
+<https://w3id.org/digitalconstruction/Entities#hasEquipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasEquipment> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/Entities#hasParticipant> .
+<https://w3id.org/digitalconstruction/Entities#hasEquipment> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isEquipmentIn> .
+<https://w3id.org/digitalconstruction/Entities#hasEquipment> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/Entities#hasEquipment> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Equipment> .
+<https://w3id.org/digitalconstruction/Entities#hasEquipment> <http://www.w3.org/2000/01/rdf-schema#label> "hasEquipment" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasInformation
+<https://w3id.org/digitalconstruction/Entities#hasInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasInformation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/Entities#hasParticipant> .
+<https://w3id.org/digitalconstruction/Entities#hasInformation> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isInformationIn> .
+<https://w3id.org/digitalconstruction/Entities#hasInformation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/Entities#hasInformation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+<https://w3id.org/digitalconstruction/Entities#hasInformation> <http://www.w3.org/2000/01/rdf-schema#label> "hasInformation" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasIntention
+<https://w3id.org/digitalconstruction/Entities#hasIntention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasIntention> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000196> .
+<https://w3id.org/digitalconstruction/Entities#hasIntention> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isIntentionOf> .
+<https://w3id.org/digitalconstruction/Entities#hasIntention> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Agent> .
+<https://w3id.org/digitalconstruction/Entities#hasIntention> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Intention> .
+<https://w3id.org/digitalconstruction/Entities#hasIntention> <http://www.w3.org/2000/01/rdf-schema#label> "hasIntention" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasMaterial
+<https://w3id.org/digitalconstruction/Entities#hasMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/Entities#hasParticipant> .
+<https://w3id.org/digitalconstruction/Entities#hasMaterial> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isMaterialIn> .
+<https://w3id.org/digitalconstruction/Entities#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/Entities#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#MaterialBatch> .
+<https://w3id.org/digitalconstruction/Entities#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "hasMaterial" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasMaximumCartesianPosition
+<https://w3id.org/digitalconstruction/Entities#hasMaximumCartesianPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasMaximumCartesianPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#CartesianBoundingBox> .
+<https://w3id.org/digitalconstruction/Entities#hasMaximumCartesianPosition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#CartesianPosition> .
+<https://w3id.org/digitalconstruction/Entities#hasMaximumCartesianPosition> <http://www.w3.org/2000/01/rdf-schema#label> "hasMaximumCartesianPosition" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasMaximumGeodeticPosition
+<https://w3id.org/digitalconstruction/Entities#hasMaximumGeodeticPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasMaximumGeodeticPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#GeodeticBoundingBox> .
+<https://w3id.org/digitalconstruction/Entities#hasMaximumGeodeticPosition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#GeodeticPosition> .
+<https://w3id.org/digitalconstruction/Entities#hasMaximumGeodeticPosition> <http://www.w3.org/2000/01/rdf-schema#label> "hasMaximumGeodeticPosition" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasMember
+<https://w3id.org/digitalconstruction/Entities#hasMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasMember> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasMember> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#memberOf> .
+<https://w3id.org/digitalconstruction/Entities#hasMember> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Group> .
+<https://w3id.org/digitalconstruction/Entities#hasMember> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<https://w3id.org/digitalconstruction/Entities#hasMember> <http://www.w3.org/2000/01/rdf-schema#label> "hasMember" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasMemberPart
+<https://w3id.org/digitalconstruction/Entities#hasMemberPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasMemberPart> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isMemberPartOf> .
+<https://w3id.org/digitalconstruction/Entities#hasMemberPart> <http://www.w3.org/2000/01/rdf-schema#label> "hasMemberPart" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasMinimumCartesianPosition
+<https://w3id.org/digitalconstruction/Entities#hasMinimumCartesianPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasMinimumCartesianPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#CartesianBoundingBox> .
+<https://w3id.org/digitalconstruction/Entities#hasMinimumCartesianPosition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#CartesianPosition> .
+<https://w3id.org/digitalconstruction/Entities#hasMinimumCartesianPosition> <http://www.w3.org/2000/01/rdf-schema#label> "hasMinumumCartesianPosition" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasMinimumGeodeticPosition
+<https://w3id.org/digitalconstruction/Entities#hasMinimumGeodeticPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasMinimumGeodeticPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#GeodeticBoundingBox> .
+<https://w3id.org/digitalconstruction/Entities#hasMinimumGeodeticPosition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#GeodeticPosition> .
+<https://w3id.org/digitalconstruction/Entities#hasMinimumGeodeticPosition> <http://www.w3.org/2000/01/rdf-schema#label> "hasMinimumGeodeticPosition" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasOwner
+<https://w3id.org/digitalconstruction/Entities#hasOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasOwner> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid5 <http://www.w3.org/2002/07/owl#unionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/BFO_0000029> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/BFO_0000040> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/digitalconstruction/Entities#hasOwner> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Agent> .
+<https://w3id.org/digitalconstruction/Entities#hasOwner> <http://www.w3.org/2000/01/rdf-schema#label> "hasOwner" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasParticipant
+<https://w3id.org/digitalconstruction/Entities#hasParticipant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasParticipant> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isParticipantIn> .
+<https://w3id.org/digitalconstruction/Entities#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#label> "hasParticipant" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasQuality
+<https://w3id.org/digitalconstruction/Entities#hasQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasQuality> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000196> .
+<https://w3id.org/digitalconstruction/Entities#hasQuality> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isQualityOf> .
+<https://w3id.org/digitalconstruction/Entities#hasQuality> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<http://purl.obolibrary.org/obo/BFO_0000019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#hasQuality> <http://www.w3.org/2000/01/rdf-schema#label> "hasQuality" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasRole
+<https://w3id.org/digitalconstruction/Entities#hasRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasRole> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000196> .
+<https://w3id.org/digitalconstruction/Entities#hasRole> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isRoleOf> .
+<https://w3id.org/digitalconstruction/Entities#hasRole> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Agent> .
+<https://w3id.org/digitalconstruction/Entities#hasRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000023> .
+<http://purl.obolibrary.org/obo/BFO_0000023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#hasRole> <http://www.w3.org/2000/01/rdf-schema#label> "hasRole" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasScope
+<https://w3id.org/digitalconstruction/Entities#hasScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasScope> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Labeling> .
+<https://w3id.org/digitalconstruction/Entities#hasScope> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Category> .
+<https://w3id.org/digitalconstruction/Entities#hasScope> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the broader category that is the scope of the label" .
+<https://w3id.org/digitalconstruction/Entities#hasScope> <http://www.w3.org/2000/01/rdf-schema#label> "hasScope" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasSpatialExtent
+<https://w3id.org/digitalconstruction/Entities#hasSpatialExtent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasSpatialExtent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000006> .
+<http://purl.obolibrary.org/obo/BFO_0000006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#hasSpatialExtent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#SpatialExtent> .
+<https://w3id.org/digitalconstruction/Entities#hasSpatialExtent> <http://www.w3.org/2000/01/rdf-schema#label> "hasSpatialExtent" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasSpatialOrientation
+<https://w3id.org/digitalconstruction/Entities#hasSpatialOrientation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasSpatialOrientation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#CartesianPosition> .
+<https://w3id.org/digitalconstruction/Entities#hasSpatialOrientation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#SpatialOrientation> .
+<https://w3id.org/digitalconstruction/Entities#hasSpatialOrientation> <http://www.w3.org/2000/01/rdf-schema#label> "hasSpatialOrientation" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasSpatialOrigin
+<https://w3id.org/digitalconstruction/Entities#hasSpatialOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasSpatialOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#CartesianPosition> .
+<https://w3id.org/digitalconstruction/Entities#hasSpatialOrigin> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#SpatialPosition> .
+<https://w3id.org/digitalconstruction/Entities#hasSpatialOrigin> <http://www.w3.org/2000/01/rdf-schema#label> "hasSpatialOrigin" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasSpatialPosition
+<https://w3id.org/digitalconstruction/Entities#hasSpatialPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasSpatialPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000006> .
+<https://w3id.org/digitalconstruction/Entities#hasSpatialPosition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#SpatialPosition> .
+<https://w3id.org/digitalconstruction/Entities#hasSpatialPosition> <http://www.w3.org/2000/01/rdf-schema#label> "hasSpatialPosition" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasStart
+<https://w3id.org/digitalconstruction/Entities#hasStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasStart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000222> .
+<https://w3id.org/digitalconstruction/Entities#hasStart> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isStartOf> .
+<https://w3id.org/digitalconstruction/Entities#hasStart> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#TimeInterval> .
+<https://w3id.org/digitalconstruction/Entities#hasStart> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#TimeInstant> .
+<https://w3id.org/digitalconstruction/Entities#hasStart> <http://www.w3.org/2000/01/rdf-schema#label> "hasStart" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasState
+<https://w3id.org/digitalconstruction/Entities#hasState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasState> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/Entities#hasState> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#ActivityContext> .
+<https://w3id.org/digitalconstruction/Entities#hasState> <http://www.w3.org/2000/01/rdf-schema#label> "hasState" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasSubActivity
+<https://w3id.org/digitalconstruction/Entities#hasSubActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasSubActivity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000118> .
+<https://w3id.org/digitalconstruction/Entities#hasSubActivity> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isSubActivityOf> .
+<https://w3id.org/digitalconstruction/Entities#hasSubActivity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/Entities#hasSubActivity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/Entities#hasSubActivity> <http://www.w3.org/2000/01/rdf-schema#label> "hasSubActivity" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasSubLocation
+<https://w3id.org/digitalconstruction/Entities#hasSubLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasSubLocation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000170> .
+<https://w3id.org/digitalconstruction/Entities#hasSubLocation> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isSubLocationOf> .
+<https://w3id.org/digitalconstruction/Entities#hasSubLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Location> .
+<https://w3id.org/digitalconstruction/Entities#hasSubLocation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Location> .
+<https://w3id.org/digitalconstruction/Entities#hasSubLocation> <http://www.w3.org/2000/01/rdf-schema#label> "hasSubLocation" .
+# 
+# https://w3id.org/digitalconstruction/Entities#identifiedBy
+<https://w3id.org/digitalconstruction/Entities#identifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#identifiedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/Entities#labeledBy> .
+<https://w3id.org/digitalconstruction/Entities#identifiedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#identifies> .
+<https://w3id.org/digitalconstruction/Entities#identifiedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<https://w3id.org/digitalconstruction/Entities#identifiedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Identifier> .
+<https://w3id.org/digitalconstruction/Entities#identifiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "identifiedBy" .
+# 
+# https://w3id.org/digitalconstruction/Entities#identifies
+<https://w3id.org/digitalconstruction/Entities#identifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#identifies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/Entities#labels> .
+<https://w3id.org/digitalconstruction/Entities#identifies> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Identifier> .
+<https://w3id.org/digitalconstruction/Entities#identifies> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<https://w3id.org/digitalconstruction/Entities#identifies> <http://www.w3.org/2000/01/rdf-schema#label> "identifies" .
+# 
+# https://w3id.org/digitalconstruction/Entities#includesRole
+<https://w3id.org/digitalconstruction/Entities#includesRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#includesRole> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isIncludedRoleIn> .
+<https://w3id.org/digitalconstruction/Entities#includesRole> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<https://w3id.org/digitalconstruction/Entities#includesRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000023> .
+<https://w3id.org/digitalconstruction/Entities#includesRole> <http://www.w3.org/2000/01/rdf-schema#label> "includesRole" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isAbout
+<https://w3id.org/digitalconstruction/Entities#isAbout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isAbout> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+<https://w3id.org/digitalconstruction/Entities#isAbout> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<https://w3id.org/digitalconstruction/Entities#isAbout> <http://www.w3.org/2000/01/rdf-schema#label> "isAbout" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isAgentIn
+<https://w3id.org/digitalconstruction/Entities#isAgentIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isAgentIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/Entities#isParticipantIn> .
+<https://w3id.org/digitalconstruction/Entities#isAgentIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Agent> .
+<https://w3id.org/digitalconstruction/Entities#isAgentIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/Entities#isAgentIn> <http://www.w3.org/2000/01/rdf-schema#label> "isAgentIn" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isCapabilityOf
+<https://w3id.org/digitalconstruction/Entities#isCapabilityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isCapabilityOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000197> .
+<https://w3id.org/digitalconstruction/Entities#isCapabilityOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Capability> .
+<https://w3id.org/digitalconstruction/Entities#isCapabilityOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Agent> .
+<https://w3id.org/digitalconstruction/Entities#isCapabilityOf> <http://www.w3.org/2000/01/rdf-schema#label> "isCapabilityOf" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isContinuantPartOf
+<https://w3id.org/digitalconstruction/Entities#isContinuantPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isContinuantPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "isContinuantPartOf" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isEndOf
+<https://w3id.org/digitalconstruction/Entities#isEndOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isEndOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000223> .
+<https://w3id.org/digitalconstruction/Entities#isEndOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#TimeInstant> .
+<https://w3id.org/digitalconstruction/Entities#isEndOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#TimeInterval> .
+<https://w3id.org/digitalconstruction/Entities#isEndOf> <http://www.w3.org/2000/01/rdf-schema#label> "isEndOf" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isEnvironmentOf
+<https://w3id.org/digitalconstruction/Entities#isEnvironmentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isEnvironmentOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#occursIn> .
+<https://w3id.org/digitalconstruction/Entities#isEnvironmentOf> <http://www.w3.org/2000/01/rdf-schema#label> "isEnvironmentOf" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isEquipmentIn
+<https://w3id.org/digitalconstruction/Entities#isEquipmentIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isEquipmentIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/Entities#isParticipantIn> .
+<https://w3id.org/digitalconstruction/Entities#isEquipmentIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Equipment> .
+<https://w3id.org/digitalconstruction/Entities#isEquipmentIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/Entities#isEquipmentIn> <http://www.w3.org/2000/01/rdf-schema#label> "isEquipmentIn" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isIncludedRoleIn
+<https://w3id.org/digitalconstruction/Entities#isIncludedRoleIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isIncludedRoleIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000023> .
+<https://w3id.org/digitalconstruction/Entities#isIncludedRoleIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<https://w3id.org/digitalconstruction/Entities#isIncludedRoleIn> <http://www.w3.org/2000/01/rdf-schema#label> "isIncludedRoleIn" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isInformationIn
+<https://w3id.org/digitalconstruction/Entities#isInformationIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isInformationIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/Entities#isParticipantIn> .
+<https://w3id.org/digitalconstruction/Entities#isInformationIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+<https://w3id.org/digitalconstruction/Entities#isInformationIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/Entities#isInformationIn> <http://www.w3.org/2000/01/rdf-schema#label> "isInformationIn" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isIntentionOf
+<https://w3id.org/digitalconstruction/Entities#isIntentionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isIntentionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000197> .
+<https://w3id.org/digitalconstruction/Entities#isIntentionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Intention> .
+<https://w3id.org/digitalconstruction/Entities#isIntentionOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Agent> .
+<https://w3id.org/digitalconstruction/Entities#isIntentionOf> <http://www.w3.org/2000/01/rdf-schema#label> "isIntentionOf" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isLocatedIn
+<https://w3id.org/digitalconstruction/Entities#isLocatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isLocatedIn> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isLocationOf> .
+<https://w3id.org/digitalconstruction/Entities#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000040> .
+<https://w3id.org/digitalconstruction/Entities#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Location> .
+<https://w3id.org/digitalconstruction/Entities#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#label> "isLocatedIn" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isLocationOf
+<https://w3id.org/digitalconstruction/Entities#isLocationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Location> .
+<https://w3id.org/digitalconstruction/Entities#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000040> .
+<https://w3id.org/digitalconstruction/Entities#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#label> "isLocationOf" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isMaterialIn
+<https://w3id.org/digitalconstruction/Entities#isMaterialIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isMaterialIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/Entities#isParticipantIn> .
+<https://w3id.org/digitalconstruction/Entities#isMaterialIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#MaterialBatch> .
+<https://w3id.org/digitalconstruction/Entities#isMaterialIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/Entities#isMaterialIn> <http://www.w3.org/2000/01/rdf-schema#label> "isMaterialIn" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isMemberPartOf
+<https://w3id.org/digitalconstruction/Entities#isMemberPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isMemberPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "isMemberPartOf" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isOccupiedByActivity
+<https://w3id.org/digitalconstruction/Entities#isOccupiedByActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isOccupiedByActivity> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#occupiesTimeInterval> .
+<https://w3id.org/digitalconstruction/Entities#isOccupiedByActivity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#TimeInterval> .
+<https://w3id.org/digitalconstruction/Entities#isOccupiedByActivity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/Entities#isOccupiedByActivity> <http://www.w3.org/2000/01/rdf-schema#label> "isOccupiedByActivity" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isParticipantIn
+<https://w3id.org/digitalconstruction/Entities#isParticipantIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#label> "isParticipantIn" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isQualityOf
+<https://w3id.org/digitalconstruction/Entities#isQualityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isQualityOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000197> .
+<https://w3id.org/digitalconstruction/Entities#isQualityOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<https://w3id.org/digitalconstruction/Entities#isQualityOf> <http://www.w3.org/2000/01/rdf-schema#label> "isQualityOf" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isRoleOf
+<https://w3id.org/digitalconstruction/Entities#isRoleOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000197> .
+<https://w3id.org/digitalconstruction/Entities#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000023> .
+<https://w3id.org/digitalconstruction/Entities#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Agent> .
+<https://w3id.org/digitalconstruction/Entities#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#label> "isRoleOf" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isStartOf
+<https://w3id.org/digitalconstruction/Entities#isStartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isStartOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000221> .
+<https://w3id.org/digitalconstruction/Entities#isStartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#TimeInstant> .
+<https://w3id.org/digitalconstruction/Entities#isStartOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#TimeInterval> .
+<https://w3id.org/digitalconstruction/Entities#isStartOf> <http://www.w3.org/2000/01/rdf-schema#label> "isStartOf" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isSubActivityOf
+<https://w3id.org/digitalconstruction/Entities#isSubActivityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isSubActivityOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000138> .
+<https://w3id.org/digitalconstruction/Entities#isSubActivityOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/Entities#isSubActivityOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/Entities#isSubActivityOf> <http://www.w3.org/2000/01/rdf-schema#label> "isSubActivityOf" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isSubLocationOf
+<https://w3id.org/digitalconstruction/Entities#isSubLocationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isSubLocationOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000082> .
+<https://w3id.org/digitalconstruction/Entities#isSubLocationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Location> .
+<https://w3id.org/digitalconstruction/Entities#isSubLocationOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Location> .
+<https://w3id.org/digitalconstruction/Entities#isSubLocationOf> <http://www.w3.org/2000/01/rdf-schema#label> "isSubLocationOf" .
+# 
+# https://w3id.org/digitalconstruction/Entities#labeledBy
+<https://w3id.org/digitalconstruction/Entities#labeledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#labeledBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#labels> .
+<https://w3id.org/digitalconstruction/Entities#labeledBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<https://w3id.org/digitalconstruction/Entities#labeledBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Labeling> .
+<https://w3id.org/digitalconstruction/Entities#labeledBy> <http://www.w3.org/2000/01/rdf-schema#label> "labeledBy" .
+# 
+# https://w3id.org/digitalconstruction/Entities#labels
+<https://w3id.org/digitalconstruction/Entities#labels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#labels> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Labeling> .
+<https://w3id.org/digitalconstruction/Entities#labels> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000001> .
+# 
+# https://w3id.org/digitalconstruction/Entities#memberOf
+<https://w3id.org/digitalconstruction/Entities#memberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#memberOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<https://w3id.org/digitalconstruction/Entities#memberOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Group> .
+<https://w3id.org/digitalconstruction/Entities#memberOf> <http://www.w3.org/2000/01/rdf-schema#label> "memberOf" .
+# 
+# https://w3id.org/digitalconstruction/Entities#occupiesTimeInterval
+<https://w3id.org/digitalconstruction/Entities#occupiesTimeInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#occupiesTimeInterval> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000199> .
+<https://w3id.org/digitalconstruction/Entities#occupiesTimeInterval> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/Entities#occupiesTimeInterval> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#TimeInterval> .
+<https://w3id.org/digitalconstruction/Entities#occupiesTimeInterval> <http://www.w3.org/2000/01/rdf-schema#label> "occupiesTimeInterval" .
+# 
+# https://w3id.org/digitalconstruction/Entities#occursIn
+<https://w3id.org/digitalconstruction/Entities#occursIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#occursIn> <http://www.w3.org/2000/01/rdf-schema#label> "occursIn" .
+# 
+# https://w3id.org/digitalconstruction/Entities#qualityQuantityKind
+<https://w3id.org/digitalconstruction/Entities#qualityQuantityKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#qualityQuantityKind> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<https://w3id.org/digitalconstruction/Entities#qualityQuantityKind> <http://www.w3.org/2000/01/rdf-schema#range> <http://qudt.org/schema/qudt/QuantityKind> .
+<https://w3id.org/digitalconstruction/Entities#qualityQuantityKind> <http://www.w3.org/2000/01/rdf-schema#label> "qualityQuantityKind" .
+# 
+# https://w3id.org/digitalconstruction/Entities#qualityUnit
+<https://w3id.org/digitalconstruction/Entities#qualityUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#qualityUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<https://w3id.org/digitalconstruction/Entities#qualityUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://qudt.org/schema/qudt/Unit> .
+<https://w3id.org/digitalconstruction/Entities#qualityUnit> <http://www.w3.org/2000/01/rdf-schema#label> "qualityUnit" .
+# 
+# https://w3id.org/digitalconstruction/Entities#representsContentOf
+<https://w3id.org/digitalconstruction/Entities#representsContentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#representsContentOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Contexts#Context> .
+<https://w3id.org/digitalconstruction/Entities#representsContentOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+<https://w3id.org/digitalconstruction/Entities#representsContentOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The information content entity that is the source of the data represented in this context" .
+<https://w3id.org/digitalconstruction/Entities#representsContentOf> <http://www.w3.org/2000/01/rdf-schema#label> "representsContentOf" .
+# 
+# https://w3id.org/digitalconstruction/Variables#isVariableOf
+<https://w3id.org/digitalconstruction/Variables#isVariableOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/Entities#isAbout> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/digitalconstruction/Entities#hasAltitude
+<https://w3id.org/digitalconstruction/Entities#hasAltitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasAltitude> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#GeodeticPosition> .
+<https://w3id.org/digitalconstruction/Entities#hasAltitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/digitalconstruction/Entities#hasAltitude> <http://www.w3.org/2000/01/rdf-schema#label> "hasAltitude" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasAmount
+<https://w3id.org/digitalconstruction/Entities#hasAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasAmount> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#MaterialBatch> .
+<https://w3id.org/digitalconstruction/Entities#hasAmount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#real> .
+<https://w3id.org/digitalconstruction/Entities#hasAmount> <http://www.w3.org/2000/01/rdf-schema#label> "hasAmount" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasDipAngle
+<https://w3id.org/digitalconstruction/Entities#hasDipAngle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasDipAngle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#TwoAngleOrientation> .
+<https://w3id.org/digitalconstruction/Entities#hasDipAngle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/digitalconstruction/Entities#hasDipAngle> <http://www.w3.org/2000/01/rdf-schema#label> "hasDipAngle" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasGeodeticCoordinateSystem
+<https://w3id.org/digitalconstruction/Entities#hasGeodeticCoordinateSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasGeodeticCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#GeodeticPosition> .
+<https://w3id.org/digitalconstruction/Entities#hasGeodeticCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/digitalconstruction/Entities#hasGeodeticCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#label> "hasGeodeticCoordinateSystem" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasLabel
+<https://w3id.org/digitalconstruction/Entities#hasLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasLabel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Labeling> .
+<https://w3id.org/digitalconstruction/Entities#hasLabel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/digitalconstruction/Entities#hasLabel> <http://www.w3.org/2000/01/rdf-schema#label> "hasLabel" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasLatitude
+<https://w3id.org/digitalconstruction/Entities#hasLatitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasLatitude> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#GeodeticPosition> .
+<https://w3id.org/digitalconstruction/Entities#hasLatitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/digitalconstruction/Entities#hasLatitude> <http://www.w3.org/2000/01/rdf-schema#label> "hasLatitude" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasLongitude
+<https://w3id.org/digitalconstruction/Entities#hasLongitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasLongitude> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#GeodeticPosition> .
+<https://w3id.org/digitalconstruction/Entities#hasLongitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/digitalconstruction/Entities#hasLongitude> <http://www.w3.org/2000/01/rdf-schema#label> "hasLongitude" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasMaxLoad
+<https://w3id.org/digitalconstruction/Entities#hasMaxLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasMaxLoad> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Vehicle> .
+<https://w3id.org/digitalconstruction/Entities#hasMaxLoad> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#real> .
+<https://w3id.org/digitalconstruction/Entities#hasMaxLoad> <http://www.w3.org/2000/01/rdf-schema#label> "hasMaxLoad" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasNorthAngle
+<https://w3id.org/digitalconstruction/Entities#hasNorthAngle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasNorthAngle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#OneAngleOrientation> .
+<https://w3id.org/digitalconstruction/Entities#hasNorthAngle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/digitalconstruction/Entities#hasNorthAngle> <http://www.w3.org/2000/01/rdf-schema#label> "hasNorthAngle" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasStrikeAngle
+<https://w3id.org/digitalconstruction/Entities#hasStrikeAngle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasStrikeAngle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#TwoAngleOrientation> .
+<https://w3id.org/digitalconstruction/Entities#hasStrikeAngle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/digitalconstruction/Entities#hasStrikeAngle> <http://www.w3.org/2000/01/rdf-schema#label> "hasStrikeAngle" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasX
+<https://w3id.org/digitalconstruction/Entities#hasX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasX> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#CartesianPosition> .
+<https://w3id.org/digitalconstruction/Entities#hasX> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/digitalconstruction/Entities#hasX> <http://www.w3.org/2000/01/rdf-schema#label> "hasX" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasXAngle
+<https://w3id.org/digitalconstruction/Entities#hasXAngle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasXAngle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#ThreeAngleOrientation> .
+<https://w3id.org/digitalconstruction/Entities#hasXAngle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/digitalconstruction/Entities#hasXAngle> <http://www.w3.org/2000/01/rdf-schema#label> "hasXAngle" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasXLength
+<https://w3id.org/digitalconstruction/Entities#hasXLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasXLength> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#CartesianVolume> .
+<https://w3id.org/digitalconstruction/Entities#hasXLength> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/digitalconstruction/Entities#hasXLength> <http://www.w3.org/2000/01/rdf-schema#label> "hasXLength" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasY
+<https://w3id.org/digitalconstruction/Entities#hasY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasY> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#CartesianPosition> .
+<https://w3id.org/digitalconstruction/Entities#hasY> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/digitalconstruction/Entities#hasY> <http://www.w3.org/2000/01/rdf-schema#label> "hasY" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasYAngle
+<https://w3id.org/digitalconstruction/Entities#hasYAngle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasYAngle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#ThreeAngleOrientation> .
+<https://w3id.org/digitalconstruction/Entities#hasYAngle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/digitalconstruction/Entities#hasYAngle> <http://www.w3.org/2000/01/rdf-schema#label> "hasYAngle" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasYLength
+<https://w3id.org/digitalconstruction/Entities#hasYLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasYLength> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#CartesianVolume> .
+<https://w3id.org/digitalconstruction/Entities#hasYLength> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/digitalconstruction/Entities#hasYLength> <http://www.w3.org/2000/01/rdf-schema#label> "hasYLength" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasZ
+<https://w3id.org/digitalconstruction/Entities#hasZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasZ> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#CartesianPosition> .
+<https://w3id.org/digitalconstruction/Entities#hasZ> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/digitalconstruction/Entities#hasZ> <http://www.w3.org/2000/01/rdf-schema#label> "hasZ" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasZAngle
+<https://w3id.org/digitalconstruction/Entities#hasZAngle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasZAngle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#ThreeAngleOrientation> .
+<https://w3id.org/digitalconstruction/Entities#hasZAngle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/digitalconstruction/Entities#hasZAngle> <http://www.w3.org/2000/01/rdf-schema#label> "hasZAngle" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasZLength
+<https://w3id.org/digitalconstruction/Entities#hasZLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasZLength> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#CartesianVolume> .
+<https://w3id.org/digitalconstruction/Entities#hasZLength> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/digitalconstruction/Entities#hasZLength> <http://www.w3.org/2000/01/rdf-schema#label> "hasZLength" .
+# 
+# https://w3id.org/digitalconstruction/Entities#qualityValue
+<https://w3id.org/digitalconstruction/Entities#qualityValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/Entities#qualityValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<https://w3id.org/digitalconstruction/Entities#qualityValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/digitalconstruction/Entities#qualityValue> <http://www.w3.org/2000/01/rdf-schema#label> "qualityValue" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.obolibrary.org/obo/BFO_0000001
+<http://purl.obolibrary.org/obo/BFO_0000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000003
+# 
+# http://purl.obolibrary.org/obo/BFO_0000004
+<http://purl.obolibrary.org/obo/BFO_0000004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000006
+# 
+# http://purl.obolibrary.org/obo/BFO_0000015
+<http://purl.obolibrary.org/obo/BFO_0000015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000016
+<http://purl.obolibrary.org/obo/BFO_0000016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000019
+# 
+# http://purl.obolibrary.org/obo/BFO_0000023
+# 
+# http://purl.obolibrary.org/obo/BFO_0000027
+<http://purl.obolibrary.org/obo/BFO_0000027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000029
+<http://purl.obolibrary.org/obo/BFO_0000029> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000030
+<http://purl.obolibrary.org/obo/BFO_0000030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000031
+<http://purl.obolibrary.org/obo/BFO_0000031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000040
+<http://purl.obolibrary.org/obo/BFO_0000040> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000202
+<http://purl.obolibrary.org/obo/BFO_0000202> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000203
+<http://purl.obolibrary.org/obo/BFO_0000203> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000030
+<http://purl.obolibrary.org/obo/IAO_0000030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/IAO_0000030> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+<http://purl.obolibrary.org/obo/IAO_0000030> <http://www.w3.org/2000/01/rdf-schema#label> "iao:InformationContentEntity" .
+# 
+# http://qudt.org/schema/qudt/QuantityKind
+<http://qudt.org/schema/qudt/QuantityKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://qudt.org/schema/qudt/Unit
+<http://qudt.org/schema/qudt/Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/digitalconstruction/Entities#Agent> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#BuildingObject> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpatialElement
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpatialElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpatialElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Location> .
+# 
+# https://w3id.org/bot#Element
+<https://w3id.org/bot#Element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bot#Element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#BuildingObject> .
+# 
+# https://w3id.org/bot#Zone
+<https://w3id.org/bot#Zone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bot#Zone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Location> .
+# 
+# https://w3id.org/digitalconstruction/Entities#Activity
+<https://w3id.org/digitalconstruction/Entities#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000015> .
+<https://w3id.org/digitalconstruction/Entities#Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<https://w3id.org/digitalconstruction/Entities#Activity> <http://www.w3.org/2000/01/rdf-schema#comment> "Def: A process that is intentionally performed by an agent." .
+<https://w3id.org/digitalconstruction/Entities#Activity> <http://www.w3.org/2000/01/rdf-schema#label> "Activity" .
+# 
+# https://w3id.org/digitalconstruction/Entities#ActivityContext
+<https://w3id.org/digitalconstruction/Entities#ActivityContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#ActivityContext> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Contexts#Context> .
+<https://w3id.org/digitalconstruction/Entities#ActivityContext> <http://www.w3.org/2000/01/rdf-schema#comment> "A Context relative to an Activity, representing the situation, for example, at the start, at execution time, or at the end of an activity" .
+<https://w3id.org/digitalconstruction/Entities#ActivityContext> <http://www.w3.org/2000/01/rdf-schema#label> "ActivityContext" .
+# 
+# https://w3id.org/digitalconstruction/Entities#Agent
+<https://w3id.org/digitalconstruction/Entities#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000040> .
+<https://w3id.org/digitalconstruction/Entities#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<https://w3id.org/digitalconstruction/Entities#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "Agents are actors or stakeholders associated with construction lifecycles" .
+<https://w3id.org/digitalconstruction/Entities#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent" .
+# 
+# https://w3id.org/digitalconstruction/Entities#AllOver
+<https://w3id.org/digitalconstruction/Entities#AllOver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#AllOver> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#ActivityContext> .
+<https://w3id.org/digitalconstruction/Entities#AllOver> <http://www.w3.org/2000/01/rdf-schema#label> "AllOver" .
+# 
+# https://w3id.org/digitalconstruction/Entities#AtEnd
+<https://w3id.org/digitalconstruction/Entities#AtEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#AtEnd> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#ActivityContext> .
+<https://w3id.org/digitalconstruction/Entities#AtEnd> <http://www.w3.org/2000/01/rdf-schema#label> "AtEnd" .
+# 
+# https://w3id.org/digitalconstruction/Entities#AtStart
+<https://w3id.org/digitalconstruction/Entities#AtStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#AtStart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#ActivityContext> .
+<https://w3id.org/digitalconstruction/Entities#AtStart> <http://www.w3.org/2000/01/rdf-schema#label> "AtStart" .
+# 
+# https://w3id.org/digitalconstruction/Entities#BuildingObject
+<https://w3id.org/digitalconstruction/Entities#BuildingObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#BuildingObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000030> .
+<https://w3id.org/digitalconstruction/Entities#BuildingObject> <http://www.w3.org/2000/01/rdf-schema#comment> "Constituent of a construction entity with a characteristic technical function, form or position." .
+<https://w3id.org/digitalconstruction/Entities#BuildingObject> <http://www.w3.org/2000/01/rdf-schema#label> "BuildingObject" .
+# 
+# https://w3id.org/digitalconstruction/Entities#Capability
+<https://w3id.org/digitalconstruction/Entities#Capability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Capability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000016> .
+<https://w3id.org/digitalconstruction/Entities#Capability> <http://www.w3.org/2000/01/rdf-schema#label> "Capability" .
+# 
+# https://w3id.org/digitalconstruction/Entities#CartesianBoundingBox
+<https://w3id.org/digitalconstruction/Entities#CartesianBoundingBox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#CartesianBoundingBox> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#SpatialExtent> .
+<https://w3id.org/digitalconstruction/Entities#CartesianBoundingBox> <http://www.w3.org/2000/01/rdf-schema#comment> "Minimum bounding box of an entity given by a minimum cartesian position and maximum cartesian position" .
+<https://w3id.org/digitalconstruction/Entities#CartesianBoundingBox> <http://www.w3.org/2000/01/rdf-schema#label> "CartesianBoundingBox" .
+# 
+# https://w3id.org/digitalconstruction/Entities#CartesianPosition
+<https://w3id.org/digitalconstruction/Entities#CartesianPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#CartesianPosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#SpatialPosition> .
+<https://w3id.org/digitalconstruction/Entities#CartesianPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "Cartesian position expressed as x, y, and z coordinates with respect to a spatial origin and spatial orientation" .
+<https://w3id.org/digitalconstruction/Entities#CartesianPosition> <http://www.w3.org/2000/01/rdf-schema#label> "CartesianPosition" .
+# 
+# https://w3id.org/digitalconstruction/Entities#CartesianVolume
+<https://w3id.org/digitalconstruction/Entities#CartesianVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#CartesianVolume> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#SpatialExtent> .
+<https://w3id.org/digitalconstruction/Entities#CartesianVolume> <http://www.w3.org/2000/01/rdf-schema#comment> "Cartesian volume given by the lengths to x, y, and z directions" .
+<https://w3id.org/digitalconstruction/Entities#CartesianVolume> <http://www.w3.org/2000/01/rdf-schema#label> "CartesianVolume" .
+# 
+# https://w3id.org/digitalconstruction/Entities#Category
+<https://w3id.org/digitalconstruction/Entities#Category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Category> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Labeling> .
+<https://w3id.org/digitalconstruction/Entities#Category> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/digitalconstruction/Entities#Identifier> .
+<https://w3id.org/digitalconstruction/Entities#Category> <http://www.w3.org/2000/01/rdf-schema#comment> "Category is a labeling of an entity the associates it with some defined class of things. For example, an object can be associated with a particular class in a classification system such as OmniClass, UniFormat, CoClass, or Talo2000. Category allows also to associate an entity with a category of entities represented in an external system or belonging to a particular project." .
+<https://w3id.org/digitalconstruction/Entities#Category> <http://www.w3.org/2000/01/rdf-schema#label> "Category" .
+# 
+# https://w3id.org/digitalconstruction/Entities#Crane
+<https://w3id.org/digitalconstruction/Entities#Crane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Crane> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Equipment> .
+<https://w3id.org/digitalconstruction/Entities#Crane> <http://www.w3.org/2000/01/rdf-schema#comment> "An equipment for moving objects. The crane remains stationary during the movement and usually there is a difference in altitude in the origin and target location of the object movement." .
+<https://w3id.org/digitalconstruction/Entities#Crane> <http://www.w3.org/2000/01/rdf-schema#label> "Crane" .
+# 
+# https://w3id.org/digitalconstruction/Entities#Device
+<https://w3id.org/digitalconstruction/Entities#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000030> .
+<https://w3id.org/digitalconstruction/Entities#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "An object made or adapted for a particular purpose, such as a piece of mechanical or electronic equipment, and used in the operation of a building" .
+<https://w3id.org/digitalconstruction/Entities#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device" .
+# 
+# https://w3id.org/digitalconstruction/Entities#EntityScope
+<https://w3id.org/digitalconstruction/Entities#EntityScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#EntityScope> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Category> .
+<https://w3id.org/digitalconstruction/Entities#EntityScope> <http://www.w3.org/2000/01/rdf-schema#comment> "Category that contains all entities in a scope of a given entity. For example, all entities in a system, or within a scope of a plan." .
+<https://w3id.org/digitalconstruction/Entities#EntityScope> <http://www.w3.org/2000/01/rdf-schema#label> "EntityScope" .
+# 
+# https://w3id.org/digitalconstruction/Entities#Equipment
+<https://w3id.org/digitalconstruction/Entities#Equipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Equipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000030> .
+<https://w3id.org/digitalconstruction/Entities#Equipment> <http://www.w3.org/2000/01/rdf-schema#comment> "Machinery and tools used in construction activities. Equipment do not have a capability to operate activities by itself automatically." .
+<https://w3id.org/digitalconstruction/Entities#Equipment> <http://www.w3.org/2000/01/rdf-schema#label> "Equipment" .
+# 
+# https://w3id.org/digitalconstruction/Entities#GeodeticBoundingBox
+<https://w3id.org/digitalconstruction/Entities#GeodeticBoundingBox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#GeodeticBoundingBox> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#SpatialExtent> .
+<https://w3id.org/digitalconstruction/Entities#GeodeticBoundingBox> <http://www.w3.org/2000/01/rdf-schema#comment> "Minimum bounding box of a geodetic area determined by its minimum geodetic position and maximum geodetic position" .
+<https://w3id.org/digitalconstruction/Entities#GeodeticBoundingBox> <http://www.w3.org/2000/01/rdf-schema#label> "GeodeticBoundingBox" .
+# 
+# https://w3id.org/digitalconstruction/Entities#GeodeticPosition
+<https://w3id.org/digitalconstruction/Entities#GeodeticPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#GeodeticPosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#SpatialPosition> .
+<https://w3id.org/digitalconstruction/Entities#GeodeticPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "Geodetic position expressed in longitude, latitude and altitude with respect to a geodetic coordinate system." .
+<https://w3id.org/digitalconstruction/Entities#GeodeticPosition> <http://www.w3.org/2000/01/rdf-schema#label> "GeodeticPosition" .
+# 
+# https://w3id.org/digitalconstruction/Entities#Goal
+<https://w3id.org/digitalconstruction/Entities#Goal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Goal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Intention> .
+<https://w3id.org/digitalconstruction/Entities#Goal> <http://www.w3.org/2000/01/rdf-schema#label> "Goal" .
+# 
+# https://w3id.org/digitalconstruction/Entities#Group
+<https://w3id.org/digitalconstruction/Entities#Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<https://w3id.org/digitalconstruction/Entities#Group> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of entities. Examples are a procurement package, a shipment, a workgroup, or the walls of a space." .
+<https://w3id.org/digitalconstruction/Entities#Group> <http://www.w3.org/2000/01/rdf-schema#label> "Group" .
+# 
+# https://w3id.org/digitalconstruction/Entities#Identifier
+<https://w3id.org/digitalconstruction/Entities#Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Identifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Labeling> .
+<https://w3id.org/digitalconstruction/Entities#Identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier allows the specification of a (global or local) identifier, based on the given identification system (GUID, URI, room number in a building, etc.)" .
+<https://w3id.org/digitalconstruction/Entities#Identifier> <http://www.w3.org/2000/01/rdf-schema#label> "Identifier" .
+# 
+# https://w3id.org/digitalconstruction/Entities#InformationContentEntity
+<https://w3id.org/digitalconstruction/Entities#InformationContentEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#InformationContentEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000031> .
+<https://w3id.org/digitalconstruction/Entities#InformationContentEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://w3id.org/digitalconstruction/Entities#InformationContentEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifiable information content. Examples are a BIM model, a drawing, a specification, an image, a message, and an issue. Separate from physical information carriers." .
+<https://w3id.org/digitalconstruction/Entities#InformationContentEntity> <http://www.w3.org/2000/01/rdf-schema#label> "InformationContentEntity" .
+# 
+# https://w3id.org/digitalconstruction/Entities#Intention
+<https://w3id.org/digitalconstruction/Entities#Intention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Intention> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000016> .
+<https://w3id.org/digitalconstruction/Entities#Intention> <http://www.w3.org/2000/01/rdf-schema#label> "Intention" .
+# 
+# https://w3id.org/digitalconstruction/Entities#Labeling
+<https://w3id.org/digitalconstruction/Entities#Labeling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Labeling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+<https://w3id.org/digitalconstruction/Entities#Labeling> <http://www.w3.org/2000/01/rdf-schema#comment> "Labeling is a generic mechanism to associate entities with any number of labels that are unique within a given category. The purpose is to enable the representation of connections to existing systems, databases or classification schemes." .
+<https://w3id.org/digitalconstruction/Entities#Labeling> <http://www.w3.org/2000/01/rdf-schema#label> "Labeling" .
+# 
+# https://w3id.org/digitalconstruction/Entities#Location
+<https://w3id.org/digitalconstruction/Entities#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000029> .
+<https://w3id.org/digitalconstruction/Entities#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "A (logical) place where material entities can be located or activities can occur. Locations can form a hierarchy, for example, in a location breakdown structure consisting of a site, buildings, floors, zones, spaces, and workspaces" .
+<https://w3id.org/digitalconstruction/Entities#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location" .
+# 
+# https://w3id.org/digitalconstruction/Entities#MaterialBatch
+<https://w3id.org/digitalconstruction/Entities#MaterialBatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#MaterialBatch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000040> .
+<https://w3id.org/digitalconstruction/Entities#MaterialBatch> <http://www.w3.org/2000/01/rdf-schema#comment> "Material batch refers to the collection of homogeneous physical substance that participates in the construction project as the input of a process." .
+<https://w3id.org/digitalconstruction/Entities#MaterialBatch> <http://www.w3.org/2000/01/rdf-schema#label> "MaterialBatch" .
+# 
+# https://w3id.org/digitalconstruction/Entities#OneAngleOrientation
+<https://w3id.org/digitalconstruction/Entities#OneAngleOrientation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#OneAngleOrientation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#SpatialOrientation> .
+<https://w3id.org/digitalconstruction/Entities#OneAngleOrientation> <http://www.w3.org/2000/01/rdf-schema#comment> "Orientation in two dimensions given by the orientation angle from true north" .
+<https://w3id.org/digitalconstruction/Entities#OneAngleOrientation> <http://www.w3.org/2000/01/rdf-schema#label> "OneAngleOrientation" .
+# 
+# https://w3id.org/digitalconstruction/Entities#ProcurementPackage
+<https://w3id.org/digitalconstruction/Entities#ProcurementPackage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#ProcurementPackage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000027> .
+<https://w3id.org/digitalconstruction/Entities#ProcurementPackage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Group> .
+<https://w3id.org/digitalconstruction/Entities#ProcurementPackage> <http://www.w3.org/2000/01/rdf-schema#label> "ProcurementPackage" .
+# 
+# https://w3id.org/digitalconstruction/Entities#Shipment
+<https://w3id.org/digitalconstruction/Entities#Shipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Shipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000027> .
+<https://w3id.org/digitalconstruction/Entities#Shipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Group> .
+<https://w3id.org/digitalconstruction/Entities#Shipment> <http://www.w3.org/2000/01/rdf-schema#label> "Shipment" .
+# 
+# https://w3id.org/digitalconstruction/Entities#SpatialExtent
+<https://w3id.org/digitalconstruction/Entities#SpatialExtent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#SpatialExtent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#SpatialQuality> .
+<https://w3id.org/digitalconstruction/Entities#SpatialExtent> <http://www.w3.org/2000/01/rdf-schema#comment> "The dimensions of a spatial region" .
+<https://w3id.org/digitalconstruction/Entities#SpatialExtent> <http://www.w3.org/2000/01/rdf-schema#label> "SpatialExtent" .
+# 
+# https://w3id.org/digitalconstruction/Entities#SpatialOrientation
+<https://w3id.org/digitalconstruction/Entities#SpatialOrientation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#SpatialOrientation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#SpatialQuality> .
+<https://w3id.org/digitalconstruction/Entities#SpatialOrientation> <http://www.w3.org/2000/01/rdf-schema#label> "SpatialOrientation" .
+# 
+# https://w3id.org/digitalconstruction/Entities#SpatialPosition
+<https://w3id.org/digitalconstruction/Entities#SpatialPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#SpatialPosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#SpatialQuality> .
+<https://w3id.org/digitalconstruction/Entities#SpatialPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "A position in a space" .
+<https://w3id.org/digitalconstruction/Entities#SpatialPosition> <http://www.w3.org/2000/01/rdf-schema#label> "SpatialPosition" .
+# 
+# https://w3id.org/digitalconstruction/Entities#SpatialQuality
+<https://w3id.org/digitalconstruction/Entities#SpatialQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#SpatialQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<https://w3id.org/digitalconstruction/Entities#SpatialQuality> <http://www.w3.org/2000/01/rdf-schema#comment> "A quality that concerns the spatial aspects of an entity" .
+<https://w3id.org/digitalconstruction/Entities#SpatialQuality> <http://www.w3.org/2000/01/rdf-schema#label> "SpatialQuality" .
+# 
+# https://w3id.org/digitalconstruction/Entities#TemporalExtent
+<https://w3id.org/digitalconstruction/Entities#TemporalExtent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#TemporalExtent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#TemporalQuality> .
+<https://w3id.org/digitalconstruction/Entities#TemporalExtent> <http://www.w3.org/2000/01/rdf-schema#label> "TemporalExtent" .
+# 
+# https://w3id.org/digitalconstruction/Entities#TemporalQuality
+<https://w3id.org/digitalconstruction/Entities#TemporalQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#TemporalQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<https://w3id.org/digitalconstruction/Entities#TemporalQuality> <http://www.w3.org/2000/01/rdf-schema#label> "TemporalQuality" .
+# 
+# https://w3id.org/digitalconstruction/Entities#ThreeAngleOrientation
+<https://w3id.org/digitalconstruction/Entities#ThreeAngleOrientation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#ThreeAngleOrientation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#SpatialOrientation> .
+<https://w3id.org/digitalconstruction/Entities#ThreeAngleOrientation> <http://www.w3.org/2000/01/rdf-schema#comment> "Orientation given by three angles: angle about x-axis (alpha), angle about y-axis(beta) and angle about z-axis (gamma)" .
+<https://w3id.org/digitalconstruction/Entities#ThreeAngleOrientation> <http://www.w3.org/2000/01/rdf-schema#label> "ThreeAngleOrientation" .
+# 
+# https://w3id.org/digitalconstruction/Entities#TimeDuration
+<https://w3id.org/digitalconstruction/Entities#TimeDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#TimeDuration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#TemporalExtent> .
+<https://w3id.org/digitalconstruction/Entities#TimeDuration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3.org/2006/time#Duration> .
+<https://w3id.org/digitalconstruction/Entities#TimeDuration> <http://www.w3.org/2000/01/rdf-schema#label> "TimeDuration" .
+# 
+# https://w3id.org/digitalconstruction/Entities#TimeInstant
+<https://w3id.org/digitalconstruction/Entities#TimeInstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#TimeInstant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000203> .
+<https://w3id.org/digitalconstruction/Entities#TimeInstant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3.org/2006/time#Instant> .
+<https://w3id.org/digitalconstruction/Entities#TimeInstant> <http://www.w3.org/2000/01/rdf-schema#label> "TimeInstant" .
+# 
+# https://w3id.org/digitalconstruction/Entities#TimeInterval
+<https://w3id.org/digitalconstruction/Entities#TimeInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000202> .
+<https://w3id.org/digitalconstruction/Entities#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3.org/2006/time#Interval> .
+<https://w3id.org/digitalconstruction/Entities#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#label> "TimeInterval" .
+# 
+# https://w3id.org/digitalconstruction/Entities#TwoAngleOrientation
+<https://w3id.org/digitalconstruction/Entities#TwoAngleOrientation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#TwoAngleOrientation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#SpatialOrientation> .
+<https://w3id.org/digitalconstruction/Entities#TwoAngleOrientation> <http://www.w3.org/2000/01/rdf-schema#comment> "Orientation of a plane in two dimensions given by its angle about true north (the strike) and the angle of its slope (the dip)" .
+<https://w3id.org/digitalconstruction/Entities#TwoAngleOrientation> <http://www.w3.org/2000/01/rdf-schema#label> "TwoAngleOrientation" .
+# 
+# https://w3id.org/digitalconstruction/Entities#Vehicle
+<https://w3id.org/digitalconstruction/Entities#Vehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Vehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Equipment> .
+<https://w3id.org/digitalconstruction/Entities#Vehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "An equipment for transporting shipments. The vehice also moves from origin to the target of the transportation activity. Examples are trucks or forklifts." .
+<https://w3id.org/digitalconstruction/Entities#Vehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Vehicle" .
+# 
+# https://w3id.org/digitalconstruction/Entities#Workspace
+<https://w3id.org/digitalconstruction/Entities#Workspace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Workspace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Location> .
+<https://w3id.org/digitalconstruction/Entities#Workspace> <http://www.w3.org/2000/01/rdf-schema#comment> "A site of work. There can be multiple different kinds of workspaces needed by an activity: labor crew space, equipment space, hazard space, and so on." .
+<https://w3id.org/digitalconstruction/Entities#Workspace> <http://www.w3.org/2000/01/rdf-schema#label> "Workspace" .
+# 
+# https://w3id.org/digitalconstruction/Variables#Comparison
+<https://w3id.org/digitalconstruction/Variables#Comparison> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+# 
+# https://w3id.org/digitalconstruction/Variables#Constraint
+<https://w3id.org/digitalconstruction/Variables#Constraint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+# 
+# https://w3id.org/digitalconstruction/Variables#Operator
+<https://w3id.org/digitalconstruction/Variables#Operator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+# 
+# https://w3id.org/digitalconstruction/Variables#Variable
+<https://w3id.org/digitalconstruction/Variables#Variable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+# 
+# https://w3id.org/digitalconstruction/Variables#VariableDomain
+<https://w3id.org/digitalconstruction/Variables#VariableDomain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+# 
+# https://www.w3.org/2006/time#Duration
+<https://www.w3.org/2006/time#Duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://www.w3.org/2006/time#Instant
+<https://www.w3.org/2006/time#Instant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://www.w3.org/2006/time#Interval
+<https://www.w3.org/2006/time#Interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid9 <http://www.w3.org/2002/07/owl#members> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/digitalconstruction/Entities#BuildingObject> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/digitalconstruction/Entities#Equipment> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/digitalconstruction/Entities#Location> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/digitalconstruction/Entities#MaterialBatch> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
