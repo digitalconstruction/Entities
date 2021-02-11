@@ -169,6 +169,12 @@
                       rdfs:label "contentRepresentedIn" .
 
 
+###  https://w3id.org/digitalconstruction/Entities#encodesComputationalFunction
+:encodesComputationalFunction rdf:type owl:ObjectProperty ;
+                              rdfs:domain :SoftwareApplication ;
+                              rdfs:range :ComputationalFunction .
+
+
 ###  https://w3id.org/digitalconstruction/Entities#hasActivity
 :hasActivity rdf:type owl:ObjectProperty ;
              owl:inverseOf :hasState ;
@@ -197,6 +203,20 @@
                                    )
                      ] ;
           rdfs:label "hasAsset" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasBuilding
+:hasBuilding rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isBuildingOf ;
+             rdfs:domain :RealEstate ;
+             rdfs:range :Building .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasBuildingUnit
+:hasBuildingUnit rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :isBuildingUnitOf ;
+                 rdfs:domain :Building ;
+                 rdfs:range :BuildingUnit .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#hasCapability
@@ -448,6 +468,7 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#isAbout
 :isAbout rdf:type owl:ObjectProperty ;
+         owl:inverseOf :isTopicOf ;
          rdfs:domain :InformationContentEntity ;
          rdfs:range <http://purl.obolibrary.org/obo/BFO_0000001> ;
          rdfs:label "isAbout" .
@@ -459,6 +480,18 @@
            rdfs:domain :Agent ;
            rdfs:range :Activity ;
            rdfs:label "isAgentIn" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isBuildingOf
+:isBuildingOf rdf:type owl:ObjectProperty ;
+              rdfs:domain :Building ;
+              rdfs:range :RealEstate .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isBuildingUnitOf
+:isBuildingUnitOf rdf:type owl:ObjectProperty ;
+                  rdfs:domain :BuildingUnit ;
+                  rdfs:range :Building .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#isCapabilityOf
@@ -597,6 +630,12 @@
                  rdfs:domain :Location ;
                  rdfs:range :Location ;
                  rdfs:label "isSubLocationOf" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isTopicOf
+:isTopicOf rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000001> ;
+           rdfs:range :InformationContentEntity .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#labeledBy
@@ -808,15 +847,24 @@
 #################################################################
 
 ###  http://purl.obolibrary.org/obo/BFO_0000001
-<http://purl.obolibrary.org/obo/BFO_0000001> rdf:type owl:Class .
+<http://purl.obolibrary.org/obo/BFO_0000001> rdf:type owl:Class ;
+                                             rdfs:label "entity (BFO_0000001)" .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000002
+<http://purl.obolibrary.org/obo/BFO_0000002> rdf:type owl:Class ;
+                                             rdfs:label "continuant (BFO_0000002)" .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000003
-<http://purl.obolibrary.org/obo/BFO_0000003> rdf:type owl:Class .
+<http://purl.obolibrary.org/obo/BFO_0000003> rdf:type owl:Class ;
+                                             rdfs:label "occurrent (BFO_0000003)" .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000004
-<http://purl.obolibrary.org/obo/BFO_0000004> rdf:type owl:Class .
+<http://purl.obolibrary.org/obo/BFO_0000004> rdf:type owl:Class ;
+                                             owl:equivalentClass :IndependentContinuant ;
+                                             rdfs:label "independent continuant (BFO_0000004)" .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000006
@@ -855,6 +903,10 @@
 <http://purl.obolibrary.org/obo/BFO_0000031> rdf:type owl:Class .
 
 
+###  http://purl.obolibrary.org/obo/BFO_0000034
+<http://purl.obolibrary.org/obo/BFO_0000034> rdf:type owl:Class .
+
+
 ###  http://purl.obolibrary.org/obo/BFO_0000040
 <http://purl.obolibrary.org/obo/BFO_0000040> rdf:type owl:Class .
 
@@ -874,28 +926,44 @@
 
 
 ###  http://qudt.org/schema/qudt/QuantityKind
-<http://qudt.org/schema/qudt/QuantityKind> rdf:type owl:Class .
+<http://qudt.org/schema/qudt/QuantityKind> rdf:type owl:Class ;
+                                           rdfs:label "qudt:QuantityKind" .
 
 
 ###  http://qudt.org/schema/qudt/Unit
-<http://qudt.org/schema/qudt/Unit> rdf:type owl:Class .
+<http://qudt.org/schema/qudt/Unit> rdf:type owl:Class ;
+                                   rdfs:label "qudt:Unit" .
 
 
 ###  http://www.w3.org/ns/prov#Activity
-<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class .
+<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class ;
+                                     rdfs:label "prov:Activity" .
 
 
 ###  http://www.w3.org/ns/prov#Agent
-<http://www.w3.org/ns/prov#Agent> rdf:type owl:Class .
+<http://www.w3.org/ns/prov#Agent> rdf:type owl:Class ;
+                                  rdfs:label "prov:Agent" .
 
 
 ###  http://www.w3.org/ns/prov#Entity
-<http://www.w3.org/ns/prov#Entity> rdf:type owl:Class .
+<http://www.w3.org/ns/prov#Entity> rdf:type owl:Class ;
+                                   rdfs:label "prov:Entity" .
+
+
+###  http://www.w3.org/ns/sosa/FeatureOfInterest
+<http://www.w3.org/ns/sosa/FeatureOfInterest> rdf:type owl:Class ;
+                                              rdfs:label "sosa:FeatureOfInterest" .
 
 
 ###  http://xmlns.com/foaf/0.1/Agent
 <http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class ;
-                                  owl:equivalentClass :Agent .
+                                  owl:equivalentClass :Agent ;
+                                  rdfs:label "foaf:Agent" .
+
+
+###  https://saref.etsi.org/core/FeatureOfInterest
+<https://saref.etsi.org/core/FeatureOfInterest> rdf:type owl:Class ;
+                                                rdfs:label "saref:FeatureOfInterest" .
 
 
 ###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement
@@ -959,11 +1027,31 @@
          rdfs:label "AtStart" .
 
 
+###  https://w3id.org/digitalconstruction/Entities#Building
+:Building rdf:type owl:Class ;
+          rdfs:subClassOf :BuiltProperty ;
+          rdfs:label "Building" .
+
+
 ###  https://w3id.org/digitalconstruction/Entities#BuildingObject
 :BuildingObject rdf:type owl:Class ;
                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
-                rdfs:comment "Constituent of a construction entity with a characteristic technical function, form or position." ;
+                rdfs:comment """An object that is needed to perform an activity, and when used is in continuous control of the agent involved in the activity.
+
+Examples: Vehices, cranes, and tools such as hammers and drills""" ;
                 rdfs:label "BuildingObject" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#BuildingUnit
+:BuildingUnit rdf:type owl:Class ;
+              rdfs:subClassOf :BuiltProperty ;
+              rdfs:comment "A separately used part of a building" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#BuiltProperty
+:BuiltProperty rdf:type owl:Class ;
+               rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000027> ;
+               rdfs:label "BuiltProperty" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#Capability
@@ -1001,6 +1089,13 @@
           rdfs:label "Category" .
 
 
+###  https://w3id.org/digitalconstruction/Entities#ComputationalFunction
+:ComputationalFunction rdf:type owl:Class ;
+                       rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000034> ;
+                       rdfs:comment "A function that inheres in one or more pieces of computing hardware. The actualization or manifestation of a computational function is an essentially end-directed activity in virtue kind or kinds of contexts the computing hardware is made for." ;
+                       rdfs:label "ComputationalFunction" .
+
+
 ###  https://w3id.org/digitalconstruction/Entities#Crane
 :Crane rdf:type owl:Class ;
        rdfs:subClassOf :Equipment ;
@@ -1011,7 +1106,9 @@
 ###  https://w3id.org/digitalconstruction/Entities#Device
 :Device rdf:type owl:Class ;
         rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
-        rdfs:comment "An object made or adapted for a particular purpose, such as a piece of mechanical or electronic equipment, and used in the operation of a building" ;
+        rdfs:comment """An object that performs a function, requiring at most only intermittent control by a user (an agent).
+
+Examples: Sensor, actuator, dishwasher, heater.""" ;
         rdfs:label "Device" .
 
 
@@ -1063,6 +1160,13 @@
             rdfs:label "Identifier" .
 
 
+###  https://w3id.org/digitalconstruction/Entities#IndependentContinuant
+:IndependentContinuant rdf:type owl:Class ;
+                       rdfs:subClassOf <http://www.w3.org/ns/sosa/FeatureOfInterest> ,
+                                       <https://saref.etsi.org/core/FeatureOfInterest> ;
+                       rdfs:label "IndependentContinuant" .
+
+
 ###  https://w3id.org/digitalconstruction/Entities#InformationContentEntity
 :InformationContentEntity rdf:type owl:Class ;
                           rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000031> ,
@@ -1098,6 +1202,13 @@
                rdfs:label "MaterialBatch" .
 
 
+###  https://w3id.org/digitalconstruction/Entities#NonResidentialUnit
+:NonResidentialUnit rdf:type owl:Class ;
+                    rdfs:subClassOf :BuildingUnit ;
+                    rdfs:comment "A building unit used for purposes other than living, such as commercial,  service or storage functions." ;
+                    rdfs:label "NonResidentialUnit" .
+
+
 ###  https://w3id.org/digitalconstruction/Entities#OneAngleOrientation
 :OneAngleOrientation rdf:type owl:Class ;
                      rdfs:subClassOf :SpatialOrientation ;
@@ -1107,16 +1218,44 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#ProcurementPackage
 :ProcurementPackage rdf:type owl:Class ;
-                    rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000027> ,
-                                    :Group ;
+                    rdfs:subClassOf :Group ;
                     rdfs:label "ProcurementPackage" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#RealEstate
+:RealEstate rdf:type owl:Class ;
+            rdfs:subClassOf :BuiltProperty ;
+            rdfs:comment "A property consisting of land or buildings." ;
+            rdfs:label "RealEstate" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#ResidentialUnit
+:ResidentialUnit rdf:type owl:Class ;
+                 rdfs:subClassOf :BuildingUnit ;
+                 rdfs:comment """A building unit that is used as a residence.
+
+Examples: apartment, condomium, studio.""" ;
+                 rdfs:label "ResidentialUnit" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#Sensor
+:Sensor rdf:type owl:Class ;
+        rdfs:subClassOf :Device ;
+        rdfs:label "Sensor" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#Shipment
 :Shipment rdf:type owl:Class ;
-          rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000027> ,
-                          :Group ;
+          rdfs:subClassOf :Group ;
           rdfs:label "Shipment" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#SoftwareApplication
+:SoftwareApplication rdf:type owl:Class ;
+                     rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000031> ;
+                     rdfs:comment """A generically dependent continuant that encodes a representation of one or more computational functions (realizable functions)
+(Duncan, William. \"Making Ontological Sense of Hardware and Software.\" https://cse.buffalo.edu/~rapaport/584/S10/duncan09-HWSWOnt.pdf (2009))""" ;
+                     rdfs:label "SoftwareApplication" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#SpatialExtent
@@ -1232,11 +1371,13 @@
 
 
 ###  https://www.w3.org/2006/time#Instant
-<https://www.w3.org/2006/time#Instant> rdf:type owl:Class .
+<https://www.w3.org/2006/time#Instant> rdf:type owl:Class ;
+                                       rdfs:label "time:Instant" .
 
 
 ###  https://www.w3.org/2006/time#Interval
-<https://www.w3.org/2006/time#Interval> rdf:type owl:Class .
+<https://www.w3.org/2006/time#Interval> rdf:type owl:Class ;
+                                        rdfs:label "time:Interval" .
 
 
 #################################################################

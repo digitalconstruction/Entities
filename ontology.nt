@@ -98,7 +98,6 @@
 <https://w3id.org/digitalconstruction/Entities#after> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/digitalconstruction/Entities#after> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#before> .
 <https://w3id.org/digitalconstruction/Entities#after> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000003> .
-<http://purl.obolibrary.org/obo/BFO_0000003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#after> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000003> .
 <https://w3id.org/digitalconstruction/Entities#after> <http://www.w3.org/2000/01/rdf-schema#label> "after" .
 # 
@@ -143,6 +142,11 @@
 <https://w3id.org/digitalconstruction/Entities#contentRepresentedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The context in which the content of the information content entity is represented" .
 <https://w3id.org/digitalconstruction/Entities#contentRepresentedIn> <http://www.w3.org/2000/01/rdf-schema#label> "contentRepresentedIn" .
 # 
+# https://w3id.org/digitalconstruction/Entities#encodesComputationalFunction
+<https://w3id.org/digitalconstruction/Entities#encodesComputationalFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#encodesComputationalFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#SoftwareApplication> .
+<https://w3id.org/digitalconstruction/Entities#encodesComputationalFunction> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#ComputationalFunction> .
+# 
 # https://w3id.org/digitalconstruction/Entities#hasActivity
 <https://w3id.org/digitalconstruction/Entities#hasActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/digitalconstruction/Entities#hasActivity> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#hasState> .
@@ -175,6 +179,18 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/digitalconstruction/Entities#hasAsset> <http://www.w3.org/2000/01/rdf-schema#label> "hasAsset" .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasBuilding
+<https://w3id.org/digitalconstruction/Entities#hasBuilding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasBuilding> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isBuildingOf> .
+<https://w3id.org/digitalconstruction/Entities#hasBuilding> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#RealEstate> .
+<https://w3id.org/digitalconstruction/Entities#hasBuilding> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Building> .
+# 
+# https://w3id.org/digitalconstruction/Entities#hasBuildingUnit
+<https://w3id.org/digitalconstruction/Entities#hasBuildingUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#hasBuildingUnit> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isBuildingUnitOf> .
+<https://w3id.org/digitalconstruction/Entities#hasBuildingUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Building> .
+<https://w3id.org/digitalconstruction/Entities#hasBuildingUnit> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#BuildingUnit> .
 # 
 # https://w3id.org/digitalconstruction/Entities#hasCapability
 <https://w3id.org/digitalconstruction/Entities#hasCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -403,6 +419,7 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # https://w3id.org/digitalconstruction/Entities#isAbout
 <https://w3id.org/digitalconstruction/Entities#isAbout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isAbout> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Entities#isTopicOf> .
 <https://w3id.org/digitalconstruction/Entities#isAbout> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
 <https://w3id.org/digitalconstruction/Entities#isAbout> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000001> .
 <https://w3id.org/digitalconstruction/Entities#isAbout> <http://www.w3.org/2000/01/rdf-schema#label> "isAbout" .
@@ -413,6 +430,16 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#isAgentIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Agent> .
 <https://w3id.org/digitalconstruction/Entities#isAgentIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Activity> .
 <https://w3id.org/digitalconstruction/Entities#isAgentIn> <http://www.w3.org/2000/01/rdf-schema#label> "isAgentIn" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isBuildingOf
+<https://w3id.org/digitalconstruction/Entities#isBuildingOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isBuildingOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Building> .
+<https://w3id.org/digitalconstruction/Entities#isBuildingOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#RealEstate> .
+# 
+# https://w3id.org/digitalconstruction/Entities#isBuildingUnitOf
+<https://w3id.org/digitalconstruction/Entities#isBuildingUnitOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isBuildingUnitOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#BuildingUnit> .
+<https://w3id.org/digitalconstruction/Entities#isBuildingUnitOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Building> .
 # 
 # https://w3id.org/digitalconstruction/Entities#isCapabilityOf
 <https://w3id.org/digitalconstruction/Entities#isCapabilityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -532,6 +559,11 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#isSubLocationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Location> .
 <https://w3id.org/digitalconstruction/Entities#isSubLocationOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Location> .
 <https://w3id.org/digitalconstruction/Entities#isSubLocationOf> <http://www.w3.org/2000/01/rdf-schema#label> "isSubLocationOf" .
+# 
+# https://w3id.org/digitalconstruction/Entities#isTopicOf
+<https://w3id.org/digitalconstruction/Entities#isTopicOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Entities#isTopicOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<https://w3id.org/digitalconstruction/Entities#isTopicOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
 # 
 # https://w3id.org/digitalconstruction/Entities#labeledBy
 <https://w3id.org/digitalconstruction/Entities#labeledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -724,11 +756,20 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # http://purl.obolibrary.org/obo/BFO_0000001
 <http://purl.obolibrary.org/obo/BFO_0000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000001> <http://www.w3.org/2000/01/rdf-schema#label> "entity (BFO_0000001)" .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000002
+<http://purl.obolibrary.org/obo/BFO_0000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000002> <http://www.w3.org/2000/01/rdf-schema#label> "continuant (BFO_0000002)" .
 # 
 # http://purl.obolibrary.org/obo/BFO_0000003
+<http://purl.obolibrary.org/obo/BFO_0000003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000003> <http://www.w3.org/2000/01/rdf-schema#label> "occurrent (BFO_0000003)" .
 # 
 # http://purl.obolibrary.org/obo/BFO_0000004
 <http://purl.obolibrary.org/obo/BFO_0000004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000004> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/digitalconstruction/Entities#IndependentContinuant> .
+<http://purl.obolibrary.org/obo/BFO_0000004> <http://www.w3.org/2000/01/rdf-schema#label> "independent continuant (BFO_0000004)" .
 # 
 # http://purl.obolibrary.org/obo/BFO_0000006
 # 
@@ -754,6 +795,9 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # http://purl.obolibrary.org/obo/BFO_0000031
 <http://purl.obolibrary.org/obo/BFO_0000031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# http://purl.obolibrary.org/obo/BFO_0000034
+<http://purl.obolibrary.org/obo/BFO_0000034> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://purl.obolibrary.org/obo/BFO_0000040
 <http://purl.obolibrary.org/obo/BFO_0000040> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
@@ -770,22 +814,36 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # http://qudt.org/schema/qudt/QuantityKind
 <http://qudt.org/schema/qudt/QuantityKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qudt.org/schema/qudt/QuantityKind> <http://www.w3.org/2000/01/rdf-schema#label> "qudt:QuantityKind" .
 # 
 # http://qudt.org/schema/qudt/Unit
 <http://qudt.org/schema/qudt/Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qudt.org/schema/qudt/Unit> <http://www.w3.org/2000/01/rdf-schema#label> "qudt:Unit" .
 # 
 # http://www.w3.org/ns/prov#Activity
 <http://www.w3.org/ns/prov#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/2000/01/rdf-schema#label> "prov:Activity" .
 # 
 # http://www.w3.org/ns/prov#Agent
 <http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "prov:Agent" .
 # 
 # http://www.w3.org/ns/prov#Entity
 <http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/2000/01/rdf-schema#label> "prov:Entity" .
+# 
+# http://www.w3.org/ns/sosa/FeatureOfInterest
+<http://www.w3.org/ns/sosa/FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/sosa/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "sosa:FeatureOfInterest" .
 # 
 # http://xmlns.com/foaf/0.1/Agent
 <http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/digitalconstruction/Entities#Agent> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#label> "foaf:Agent" .
+# 
+# https://saref.etsi.org/core/FeatureOfInterest
+<https://saref.etsi.org/core/FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "saref:FeatureOfInterest" .
 # 
 # https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement
 <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -838,11 +896,26 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#AtStart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#ActivityContext> .
 <https://w3id.org/digitalconstruction/Entities#AtStart> <http://www.w3.org/2000/01/rdf-schema#label> "AtStart" .
 # 
+# https://w3id.org/digitalconstruction/Entities#Building
+<https://w3id.org/digitalconstruction/Entities#Building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#BuiltProperty> .
+<https://w3id.org/digitalconstruction/Entities#Building> <http://www.w3.org/2000/01/rdf-schema#label> "Building" .
+# 
 # https://w3id.org/digitalconstruction/Entities#BuildingObject
 <https://w3id.org/digitalconstruction/Entities#BuildingObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#BuildingObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000030> .
-<https://w3id.org/digitalconstruction/Entities#BuildingObject> <http://www.w3.org/2000/01/rdf-schema#comment> "Constituent of a construction entity with a characteristic technical function, form or position." .
+<https://w3id.org/digitalconstruction/Entities#BuildingObject> <http://www.w3.org/2000/01/rdf-schema#comment> "An object that is needed to perform an activity, and when used is in continuous control of the agent involved in the activity.\n\nExamples: Vehices, cranes, and tools such as hammers and drills" .
 <https://w3id.org/digitalconstruction/Entities#BuildingObject> <http://www.w3.org/2000/01/rdf-schema#label> "BuildingObject" .
+# 
+# https://w3id.org/digitalconstruction/Entities#BuildingUnit
+<https://w3id.org/digitalconstruction/Entities#BuildingUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#BuildingUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#BuiltProperty> .
+<https://w3id.org/digitalconstruction/Entities#BuildingUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "A separately used part of a building" .
+# 
+# https://w3id.org/digitalconstruction/Entities#BuiltProperty
+<https://w3id.org/digitalconstruction/Entities#BuiltProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#BuiltProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000027> .
+<https://w3id.org/digitalconstruction/Entities#BuiltProperty> <http://www.w3.org/2000/01/rdf-schema#label> "BuiltProperty" .
 # 
 # https://w3id.org/digitalconstruction/Entities#Capability
 <https://w3id.org/digitalconstruction/Entities#Capability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -874,6 +947,12 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#Category> <http://www.w3.org/2000/01/rdf-schema#comment> "Category is a labeling of an entity the associates it with some defined class of things. For example, an object can be associated with a particular class in a classification system such as OmniClass, UniFormat, CoClass, or Talo2000. Category allows also to associate an entity with a category of entities represented in an external system or belonging to a particular project." .
 <https://w3id.org/digitalconstruction/Entities#Category> <http://www.w3.org/2000/01/rdf-schema#label> "Category" .
 # 
+# https://w3id.org/digitalconstruction/Entities#ComputationalFunction
+<https://w3id.org/digitalconstruction/Entities#ComputationalFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#ComputationalFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000034> .
+<https://w3id.org/digitalconstruction/Entities#ComputationalFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "A function that inheres in one or more pieces of computing hardware. The actualization or manifestation of a computational function is an essentially end-directed activity in virtue kind or kinds of contexts the computing hardware is made for." .
+<https://w3id.org/digitalconstruction/Entities#ComputationalFunction> <http://www.w3.org/2000/01/rdf-schema#label> "ComputationalFunction" .
+# 
 # https://w3id.org/digitalconstruction/Entities#Crane
 <https://w3id.org/digitalconstruction/Entities#Crane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#Crane> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Equipment> .
@@ -883,7 +962,7 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # https://w3id.org/digitalconstruction/Entities#Device
 <https://w3id.org/digitalconstruction/Entities#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000030> .
-<https://w3id.org/digitalconstruction/Entities#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "An object made or adapted for a particular purpose, such as a piece of mechanical or electronic equipment, and used in the operation of a building" .
+<https://w3id.org/digitalconstruction/Entities#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "An object that performs a function, requiring at most only intermittent control by a user (an agent).\n\nExamples: Sensor, actuator, dishwasher, heater." .
 <https://w3id.org/digitalconstruction/Entities#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device" .
 # 
 # https://w3id.org/digitalconstruction/Entities#EntityScope
@@ -927,6 +1006,12 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#Identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier allows the specification of a (global or local) identifier, based on the given identification system (GUID, URI, room number in a building, etc.)" .
 <https://w3id.org/digitalconstruction/Entities#Identifier> <http://www.w3.org/2000/01/rdf-schema#label> "Identifier" .
 # 
+# https://w3id.org/digitalconstruction/Entities#IndependentContinuant
+<https://w3id.org/digitalconstruction/Entities#IndependentContinuant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#IndependentContinuant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/FeatureOfInterest> .
+<https://w3id.org/digitalconstruction/Entities#IndependentContinuant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/FeatureOfInterest> .
+<https://w3id.org/digitalconstruction/Entities#IndependentContinuant> <http://www.w3.org/2000/01/rdf-schema#label> "IndependentContinuant" .
+# 
 # https://w3id.org/digitalconstruction/Entities#InformationContentEntity
 <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000031> .
@@ -957,6 +1042,12 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Entities#MaterialBatch> <http://www.w3.org/2000/01/rdf-schema#comment> "Material batch refers to the collection of homogeneous physical substance that participates in the construction project as the input of a process." .
 <https://w3id.org/digitalconstruction/Entities#MaterialBatch> <http://www.w3.org/2000/01/rdf-schema#label> "MaterialBatch" .
 # 
+# https://w3id.org/digitalconstruction/Entities#NonResidentialUnit
+<https://w3id.org/digitalconstruction/Entities#NonResidentialUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#NonResidentialUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#BuildingUnit> .
+<https://w3id.org/digitalconstruction/Entities#NonResidentialUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "A building unit used for purposes other than living, such as commercial,  service or storage functions." .
+<https://w3id.org/digitalconstruction/Entities#NonResidentialUnit> <http://www.w3.org/2000/01/rdf-schema#label> "NonResidentialUnit" .
+# 
 # https://w3id.org/digitalconstruction/Entities#OneAngleOrientation
 <https://w3id.org/digitalconstruction/Entities#OneAngleOrientation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Entities#OneAngleOrientation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#SpatialOrientation> .
@@ -965,15 +1056,36 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # https://w3id.org/digitalconstruction/Entities#ProcurementPackage
 <https://w3id.org/digitalconstruction/Entities#ProcurementPackage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Entities#ProcurementPackage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000027> .
 <https://w3id.org/digitalconstruction/Entities#ProcurementPackage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Group> .
 <https://w3id.org/digitalconstruction/Entities#ProcurementPackage> <http://www.w3.org/2000/01/rdf-schema#label> "ProcurementPackage" .
 # 
+# https://w3id.org/digitalconstruction/Entities#RealEstate
+<https://w3id.org/digitalconstruction/Entities#RealEstate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#BuiltProperty> .
+<https://w3id.org/digitalconstruction/Entities#RealEstate> <http://www.w3.org/2000/01/rdf-schema#comment> "A property consisting of land or buildings." .
+<https://w3id.org/digitalconstruction/Entities#RealEstate> <http://www.w3.org/2000/01/rdf-schema#label> "RealEstate" .
+# 
+# https://w3id.org/digitalconstruction/Entities#ResidentialUnit
+<https://w3id.org/digitalconstruction/Entities#ResidentialUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#ResidentialUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#BuildingUnit> .
+<https://w3id.org/digitalconstruction/Entities#ResidentialUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "A building unit that is used as a residence.\n\nExamples: apartment, condomium, studio." .
+<https://w3id.org/digitalconstruction/Entities#ResidentialUnit> <http://www.w3.org/2000/01/rdf-schema#label> "ResidentialUnit" .
+# 
+# https://w3id.org/digitalconstruction/Entities#Sensor
+<https://w3id.org/digitalconstruction/Entities#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Device> .
+<https://w3id.org/digitalconstruction/Entities#Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor" .
+# 
 # https://w3id.org/digitalconstruction/Entities#Shipment
 <https://w3id.org/digitalconstruction/Entities#Shipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Entities#Shipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000027> .
 <https://w3id.org/digitalconstruction/Entities#Shipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Group> .
 <https://w3id.org/digitalconstruction/Entities#Shipment> <http://www.w3.org/2000/01/rdf-schema#label> "Shipment" .
+# 
+# https://w3id.org/digitalconstruction/Entities#SoftwareApplication
+<https://w3id.org/digitalconstruction/Entities#SoftwareApplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Entities#SoftwareApplication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000031> .
+<https://w3id.org/digitalconstruction/Entities#SoftwareApplication> <http://www.w3.org/2000/01/rdf-schema#comment> "A generically dependent continuant that encodes a representation of one or more computational functions (realizable functions)\n(Duncan, William. \"Making Ontological Sense of Hardware and Software.\" https://cse.buffalo.edu/~rapaport/584/S10/duncan09-HWSWOnt.pdf (2009))" .
+<https://w3id.org/digitalconstruction/Entities#SoftwareApplication> <http://www.w3.org/2000/01/rdf-schema#label> "SoftwareApplication" .
 # 
 # https://w3id.org/digitalconstruction/Entities#SpatialExtent
 <https://w3id.org/digitalconstruction/Entities#SpatialExtent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1070,9 +1182,11 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # https://www.w3.org/2006/time#Instant
 <https://www.w3.org/2006/time#Instant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3.org/2006/time#Instant> <http://www.w3.org/2000/01/rdf-schema#label> "time:Instant" .
 # 
 # https://www.w3.org/2006/time#Interval
 <https://www.w3.org/2006/time#Interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3.org/2006/time#Interval> <http://www.w3.org/2000/01/rdf-schema#label> "time:Interval" .
 # 
 # 
 # 

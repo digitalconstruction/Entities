@@ -38,13 +38,31 @@
   } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/BFO_0000001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "entity (BFO_0000001)"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/BFO_0000002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "continuant (BFO_0000002)"
+  } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/BFO_0000003",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "occurrent (BFO_0000003)"
+  } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/BFO_0000004",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "independent continuant (BFO_0000004)"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#IndependentContinuant"
+  } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/BFO_0000006",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
@@ -71,6 +89,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/BFO_0000031",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/BFO_0000034",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/BFO_0000040",
@@ -155,24 +176,54 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://qudt.org/schema/qudt/QuantityKind",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "qudt:QuantityKind"
+  } ]
 }, {
   "@id" : "http://qudt.org/schema/qudt/Unit",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "qudt:Unit"
+  } ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#Activity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "prov:Activity"
+  } ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#Agent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "prov:Agent"
+  } ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#Entity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "prov:Entity"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "sosa:FeatureOfInterest"
+  } ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/Agent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "foaf:Agent"
+  } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#Agent"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/FeatureOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "saref:FeatureOfInterest"
   } ]
 }, {
   "@id" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement",
@@ -308,16 +359,43 @@
     "@id" : "https://w3id.org/digitalconstruction/Entities#ActivityContext"
   } ]
 }, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#Building",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#BuiltProperty"
+  } ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#BuildingObject",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Constituent of a construction entity with a characteristic technical function, form or position."
+    "@value" : "An object that is needed to perform an activity, and when used is in continuous control of the agent involved in the activity.\n\nExamples: Vehices, cranes, and tools such as hammers and drills"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "BuildingObject"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000030"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#BuildingUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A separately used part of a building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#BuiltProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#BuiltProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BuiltProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000027"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#Capability",
@@ -380,6 +458,18 @@
     "@id" : "https://w3id.org/digitalconstruction/Entities#Identifier"
   } ]
 }, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#ComputationalFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A function that inheres in one or more pieces of computing hardware. The actualization or manifestation of a computational function is an essentially end-directed activity in virtue kind or kinds of contexts the computing hardware is made for."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ComputationalFunction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000034"
+  } ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#Crane",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -395,7 +485,7 @@
   "@id" : "https://w3id.org/digitalconstruction/Entities#Device",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "An object made or adapted for a particular purpose, such as a piece of mechanical or electronic equipment, and used in the operation of a building"
+    "@value" : "An object that performs a function, requiring at most only intermittent control by a user (an agent).\n\nExamples: Sensor, actuator, dishwasher, heater."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Device"
@@ -485,6 +575,17 @@
     "@id" : "https://w3id.org/digitalconstruction/Entities#Labeling"
   } ]
 }, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#IndependentContinuant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "IndependentContinuant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest"
+  }, {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  } ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -544,6 +645,18 @@
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000040"
   } ]
 }, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#NonResidentialUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A building unit used for purposes other than living, such as commercial,  service or storage functions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NonResidentialUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#BuildingUnit"
+  } ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#OneAngleOrientation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -562,9 +675,40 @@
     "@value" : "ProcurementPackage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/BFO_0000027"
-  }, {
     "@id" : "https://w3id.org/digitalconstruction/Entities#Group"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#RealEstate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A property consisting of land or buildings."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RealEstate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#BuiltProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#ResidentialUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A building unit that is used as a residence.\n\nExamples: apartment, condomium, studio."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ResidentialUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#BuildingUnit"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Device"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#Shipment",
@@ -573,9 +717,19 @@
     "@value" : "Shipment"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/BFO_0000027"
-  }, {
     "@id" : "https://w3id.org/digitalconstruction/Entities#Group"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#SoftwareApplication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A generically dependent continuant that encodes a representation of one or more computational functions (realizable functions)\n(Duncan, William. \"Making Ontological Sense of Hardware and Software.\" https://cse.buffalo.edu/~rapaport/584/S10/duncan09-HWSWOnt.pdf (2009))"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SoftwareApplication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000031"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#SpatialExtent",
@@ -824,6 +978,15 @@
     "@id" : "https://w3id.org/digitalconstruction/Entities#representsContentOf"
   } ]
 }, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#encodesComputationalFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#SoftwareApplication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#ComputationalFunction"
+  } ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#hasActivity",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -894,6 +1057,30 @@
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#hasOwner"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#hasBuilding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#RealEstate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Building"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#isBuildingOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#hasBuildingUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#BuildingUnit"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#isBuildingUnitOf"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#hasCapability",
@@ -1557,6 +1744,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000001"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#isTopicOf"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#isAgentIn",
@@ -1572,6 +1762,24 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#isParticipantIn"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#isBuildingOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#RealEstate"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#isBuildingUnitOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#BuildingUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Building"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#isCapabilityOf",
@@ -1817,6 +2025,15 @@
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000082"
   } ]
 }, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#isTopicOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000001"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+  } ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#labeledBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1959,8 +2176,14 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://www.w3.org/2006/time#Instant",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "time:Instant"
+  } ]
 }, {
   "@id" : "https://www.w3.org/2006/time#Interval",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "time:Interval"
+  } ]
 } ]

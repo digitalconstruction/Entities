@@ -2,7 +2,7 @@
 <span class="markdown">
 This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
-<ul class="hlist">
+<ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
       <a href="#Activity"
          title="https://w3id.org/digitalconstruction/Entities#Activity">Activity</a>
@@ -10,11 +10,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#ActivityContext"
          title="https://w3id.org/digitalconstruction/Entities#ActivityContext">ActivityContext</a>
-   </li>
-   <li>
-      <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">
-         <span>agent</span>
-      </a>
    </li>
    <li>
       <a href="#Agent"
@@ -33,8 +28,22 @@ This ontology has the following classes and properties.</span>
          title="https://w3id.org/digitalconstruction/Entities#AtStart">AtStart</a>
    </li>
    <li>
+      <a href="#Building"
+         title="https://w3id.org/digitalconstruction/Entities#Building">Building</a>
+   </li>
+   <li>
+      <a href="#BuildingUnit"
+         title="https://w3id.org/digitalconstruction/Entities#BuildingUnit">
+         <span>building unit</span>
+      </a>
+   </li>
+   <li>
       <a href="#BuildingObject"
          title="https://w3id.org/digitalconstruction/Entities#BuildingObject">BuildingObject</a>
+   </li>
+   <li>
+      <a href="#BuiltProperty"
+         title="https://w3id.org/digitalconstruction/Entities#BuiltProperty">BuiltProperty</a>
    </li>
    <li>
       <a href="#Capability"
@@ -57,6 +66,13 @@ This ontology has the following classes and properties.</span>
          title="https://w3id.org/digitalconstruction/Entities#Category">Category</a>
    </li>
    <li>
+      <a href="#ComputationalFunction"
+         title="https://w3id.org/digitalconstruction/Entities#ComputationalFunction">ComputationalFunction</a>
+   </li>
+   <li>
+      <a href="#http://purl.obolibrary.org/obo/BFO_0000002" title="http://purl.obolibrary.org/obo/BFO_0000002">continuant (BFO_0000002)</a>
+   </li>
+   <li>
       <a href="#Crane"
          title="https://w3id.org/digitalconstruction/Entities#Crane">Crane</a>
    </li>
@@ -70,12 +86,18 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#http://purl.obolibrary.org/obo/BFO_0000001" title="http://purl.obolibrary.org/obo/BFO_0000001">entity (BFO_0000001)</a>
+   </li>
+   <li>
       <a href="#EntityScope"
          title="https://w3id.org/digitalconstruction/Entities#EntityScope">EntityScope</a>
    </li>
    <li>
       <a href="#Equipment"
          title="https://w3id.org/digitalconstruction/Entities#Equipment">Equipment</a>
+   </li>
+   <li>
+      <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">foaf:Agent</a>
    </li>
    <li>
       <a href="#GeodeticBoundingBox"
@@ -113,6 +135,13 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#http://purl.obolibrary.org/obo/BFO_0000004" title="http://purl.obolibrary.org/obo/BFO_0000004">independent continuant (BFO_0000004)</a>
+   </li>
+   <li>
+      <a href="#IndependentContinuant"
+         title="https://w3id.org/digitalconstruction/Entities#IndependentContinuant">IndependentContinuant</a>
+   </li>
+   <li>
       <a href="#InformationContentEntity"
          title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">InformationContentEntity</a>
    </li>
@@ -133,6 +162,13 @@ This ontology has the following classes and properties.</span>
          title="https://w3id.org/digitalconstruction/Entities#MaterialBatch">MaterialBatch</a>
    </li>
    <li>
+      <a href="#NonResidentialUnit"
+         title="https://w3id.org/digitalconstruction/Entities#NonResidentialUnit">NonResidentialUnit</a>
+   </li>
+   <li>
+      <a href="#http://purl.obolibrary.org/obo/BFO_0000003" title="http://purl.obolibrary.org/obo/BFO_0000003">occurrent (BFO_0000003)</a>
+   </li>
+   <li>
       <a href="#OneAngleOrientation"
          title="https://w3id.org/digitalconstruction/Entities#OneAngleOrientation">OneAngleOrientation</a>
    </li>
@@ -141,8 +177,45 @@ This ontology has the following classes and properties.</span>
          title="https://w3id.org/digitalconstruction/Entities#ProcurementPackage">ProcurementPackage</a>
    </li>
    <li>
+      <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">prov:Activity</a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">prov:Agent</a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/ns/prov#Entity" title="http://www.w3.org/ns/prov#Entity">prov:Entity</a>
+   </li>
+   <li>
+      <a href="#http://qudt.org/schema/qudt/QuantityKind" title="http://qudt.org/schema/qudt/QuantityKind">qudt:QuantityKind</a>
+   </li>
+   <li>
+      <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">qudt:Unit</a>
+   </li>
+   <li>
+      <a href="#RealEstate"
+         title="https://w3id.org/digitalconstruction/Entities#RealEstate">RealEstate</a>
+   </li>
+   <li>
+      <a href="#ResidentialUnit"
+         title="https://w3id.org/digitalconstruction/Entities#ResidentialUnit">ResidentialUnit</a>
+   </li>
+   <li>
+      <a href="#https://saref.etsi.org/core/FeatureOfInterest" title="https://saref.etsi.org/core/FeatureOfInterest">saref:FeatureOfInterest</a>
+   </li>
+   <li>
+      <a href="#Sensor"
+         title="https://w3id.org/digitalconstruction/Entities#Sensor">Sensor</a>
+   </li>
+   <li>
       <a href="#Shipment"
          title="https://w3id.org/digitalconstruction/Entities#Shipment">Shipment</a>
+   </li>
+   <li>
+      <a href="#SoftwareApplication"
+         title="https://w3id.org/digitalconstruction/Entities#SoftwareApplication">SoftwareApplication</a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/ns/sosa/FeatureOfInterest" title="http://www.w3.org/ns/sosa/FeatureOfInterest">sosa:FeatureOfInterest</a>
    </li>
    <li>
       <a href="#SpatialExtent"
@@ -173,6 +246,12 @@ This ontology has the following classes and properties.</span>
          title="https://w3id.org/digitalconstruction/Entities#ThreeAngleOrientation">ThreeAngleOrientation</a>
    </li>
    <li>
+      <a href="#https://www.w3.org/2006/time#Instant" title="https://www.w3.org/2006/time#Instant">time:Instant</a>
+   </li>
+   <li>
+      <a href="#https://www.w3.org/2006/time#Interval" title="https://www.w3.org/2006/time#Interval">time:Interval</a>
+   </li>
+   <li>
       <a href="#TimeDuration"
          title="https://w3id.org/digitalconstruction/Entities#TimeDuration">TimeDuration</a>
    </li>
@@ -201,7 +280,7 @@ This ontology has the following classes and properties.</span>
          <span>zone</span>
       </a>
    </li>
-</ul><h4>Object Properties</h4><ul class="hlist">
+</ul><h4>Object Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
       <a href="#after"
          title="https://w3id.org/digitalconstruction/Entities#after">after</a>
@@ -231,6 +310,24 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#contentRepresentedIn"
          title="https://w3id.org/digitalconstruction/Entities#contentRepresentedIn">contentRepresentedIn</a>
+   </li>
+   <li>
+      <a href="#encodesComputationalFunction"
+         title="https://w3id.org/digitalconstruction/Entities#encodesComputationalFunction">
+         <span>encodes computational function</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasBuilding"
+         title="https://w3id.org/digitalconstruction/Entities#hasBuilding">
+         <span>has building</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasBuildingUnit"
+         title="https://w3id.org/digitalconstruction/Entities#hasBuildingUnit">
+         <span>has building unit</span>
+      </a>
    </li>
    <li>
       <a href="#hasActivity"
@@ -369,6 +466,24 @@ This ontology has the following classes and properties.</span>
          title="https://w3id.org/digitalconstruction/Entities#includesRole">includesRole</a>
    </li>
    <li>
+      <a href="#isBuildingOf"
+         title="https://w3id.org/digitalconstruction/Entities#isBuildingOf">
+         <span>is building of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isBuildingUnitOf"
+         title="https://w3id.org/digitalconstruction/Entities#isBuildingUnitOf">
+         <span>is building unit of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isTopicOf"
+         title="https://w3id.org/digitalconstruction/Entities#isTopicOf">
+         <span>is topic of</span>
+      </a>
+   </li>
+   <li>
       <a href="#isAbout"
          title="https://w3id.org/digitalconstruction/Entities#isAbout">isAbout</a>
    </li>
@@ -486,7 +601,7 @@ This ontology has the following classes and properties.</span>
       <a href="#representsContentOf"
          title="https://w3id.org/digitalconstruction/Entities#representsContentOf">representsContentOf</a>
    </li>
-</ul><h4>Data Properties</h4><ul class="hlist">
+</ul><h4>Data Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
       <a href="#hasAltitude"
          title="https://w3id.org/digitalconstruction/Entities#hasAltitude">hasAltitude</a>
