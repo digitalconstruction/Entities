@@ -89,7 +89,8 @@
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000066
-<http://purl.obolibrary.org/obo/BFO_0000066> owl:equivalentProperty :occursIn .
+<http://purl.obolibrary.org/obo/BFO_0000066> owl:equivalentProperty :occursIn ;
+					     rdfs:label "occurs in (BFO_0000066)" .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000115

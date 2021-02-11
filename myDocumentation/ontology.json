@@ -97,6 +97,11 @@
   "@id" : "http://purl.obolibrary.org/obo/BFO_0000040",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
+  "@id" : "http://purl.obolibrary.org/obo/BFO_0000066",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "occurs in (BFO_0000066)"
+  } ]
+}, {
   "@id" : "http://purl.obolibrary.org/obo/BFO_0000082",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
