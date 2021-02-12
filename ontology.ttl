@@ -10,7 +10,7 @@
                                                  owl:imports <http://purl.obolibrary.org/obo/bfo/2018-7-25/bfo-iso.owl> ,
                                                              <https://w3id.org/digitalconstruction/Contexts> ,
                                                              <https://w3id.org/digitalconstruction/Variables> ;
-                                                 <http://purl.org/dc/elements/1.1/date> "2020-03-20" ;
+                                                 <http://purl.org/dc/elements/1.1/date> "2021-02-12" ;
                                                  <http://purl.org/dc/elements/1.1/title> "Digital Construction Entities" ;
                                                  <http://purl.org/dc/terms/created> "2020-01-12" ;
                                                  <http://purl.org/dc/terms/creator> "Seppo Törmä" ,
@@ -18,7 +18,7 @@
                                                  <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
                                                  <http://purl.org/vocab/vann/preferredNamespacePrefix> "dice" ;
                                                  <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/Entities" ;
-                                                 rdfs:comment "Digital Construction Entities Ontology defines the essential entities that can be referred to in construction and renovation projects by people or systems." ;
+                                                 rdfs:comment "Digital Construction Entities Ontology defines the basic classes and properties needed for the representation of construction and renovation projects. Examples are building object, location, material batch, equipment, agent, information content entity, activity and related time concepts. The ontology is based on BFO and uses concepts from a number of other ontologies, such as ifcOWL, OWL-Time, FOAF, PROV-O, SSN/SOSA, Saref Core, and IAO." ;
                                                  rdfs:label "Digital Construction Entities" ;
                                                  rdfs:seeAlso <https://w3id.org/digitalconstruction> .
 

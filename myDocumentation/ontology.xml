@@ -13,7 +13,7 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2018-7-25/bfo-iso.owl"/>
         <owl:imports rdf:resource="https://w3id.org/digitalconstruction/Contexts"/>
         <owl:imports rdf:resource="https://w3id.org/digitalconstruction/Variables"/>
-        <dc:date>2020-03-20</dc:date>
+        <dc:date>2021-02-12</dc:date>
         <dc:title>Digital Construction Entities</dc:title>
         <terms:created>2020-01-12</terms:created>
         <terms:creator>Seppo Törmä</terms:creator>
@@ -21,7 +21,7 @@
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <vann:preferredNamespacePrefix>dice</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/digitalconstruction/Entities</vann:preferredNamespaceUri>
-        <rdfs:comment>Digital Construction Entities Ontology defines the essential entities that can be referred to in construction and renovation projects by people or systems.</rdfs:comment>
+        <rdfs:comment>Digital Construction Entities Ontology defines the basic classes and properties needed for the representation of construction and renovation projects. Examples are building object, location, material batch, equipment, agent, information content entity, activity and related time concepts. The ontology is based on BFO and uses concepts from a number of other ontologies, such as ifcOWL, OWL-Time, FOAF, PROV-O, SSN/SOSA, Saref Core, and IAO.</rdfs:comment>
         <rdfs:label>Digital Construction Entities</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/digitalconstruction"/>
     </owl:Ontology>

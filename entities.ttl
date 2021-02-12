@@ -15,7 +15,7 @@
                                                  owl:imports <http://purl.obolibrary.org/obo/bfo/2018-7-25/bfo-iso.owl> ,
                                                              dic:Contexts ,
                                                              dic:Variables ;
-                                                 <http://purl.org/dc/elements/1.1/date> "2020-03-20" ;
+                                                 <http://purl.org/dc/elements/1.1/date> "2021-02-12" ;
                                                  <http://purl.org/dc/elements/1.1/title> "Digital Construction Entities" ;
                                                  <http://purl.org/dc/terms/created> "2020-01-12" ;
                                                  <http://purl.org/dc/terms/creator> "Seppo Törmä" ,
@@ -23,7 +23,7 @@
                                                  <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
                                                  <http://purl.org/vocab/vann/preferredNamespacePrefix> "dice" ;
                                                  <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/Entities" ;
-                                                 rdfs:comment "Digital Construction Entities Ontology defines the essential entities that can be referred to in construction and renovation projects by people or systems." ;
+                                                 rdfs:comment "Digital Construction Entities Ontology defines the basic classes and properties needed for the representation of construction and renovation projects. Examples are building object, location, material batch, equipment, agent, information content entity, activity and related time concepts. The ontology is based on BFO and uses concepts from a number of other ontologies, such as ifcOWL, OWL-Time, FOAF, PROV-O, SSN/SOSA, Saref Core, and IAO." ;
                                                  rdfs:label "Digital Construction Entities" ;
                                                  rdfs:seeAlso <https://w3id.org/digitalconstruction> .
 
@@ -76,52 +76,54 @@
 #################################################################
 
 ###  http://purl.obolibrary.org/obo/BFO_0000056
-obo:BFO_0000056 owl:equivalentProperty :isParticipantIn .
+:isParticipantIn owl:equivalentProperty obo:BFO_0000056 .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000057
-obo:BFO_0000057 owl:equivalentProperty :hasParticipant .
+:hasParticipant owl:equivalentProperty obo:BFO_0000057 .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000062
-obo:BFO_0000062 owl:equivalentProperty :after .
+:after owl:equivalentProperty obo:BFO_0000062 .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000063
-obo:BFO_0000063 owl:equivalentProperty :before .
+:before owl:equivalentProperty obo:BFO_0000063 .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000066
 obo:BFO_0000066 owl:equivalentProperty :occursIn ;
                 rdfs:label "occurs in (BFO_0000066)" .
 
+:occursIn owl:equivalentProperty obo:BFO_0000066 .
+
 
 ###  http://purl.obolibrary.org/obo/BFO_0000115
-obo:BFO_0000115 owl:equivalentProperty :hasMemberPart .
+:hasMemberPart owl:equivalentProperty obo:BFO_0000115 .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000124
-obo:BFO_0000124 owl:equivalentProperty :isLocationOf .
+:isLocationOf owl:equivalentProperty obo:BFO_0000124 .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000129
-obo:BFO_0000129 owl:equivalentProperty :isMemberPartOf .
+:isMemberPartOf owl:equivalentProperty obo:BFO_0000129 .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000171
-obo:BFO_0000171 owl:equivalentProperty :isLocatedIn .
+:isLocatedIn owl:equivalentProperty obo:BFO_0000171 .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000176
-obo:BFO_0000176 owl:equivalentProperty :isContinuantPartOf .
+:isContinuantPartOf owl:equivalentProperty obo:BFO_0000176 .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000178
-obo:BFO_0000178 owl:equivalentProperty :hasContinuantPart .
+:hasContinuantPart owl:equivalentProperty obo:BFO_0000178 .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000183
-obo:BFO_0000183 owl:equivalentProperty :isEnvironmentOf .
+:isEnvironmentOf owl:equivalentProperty obo:BFO_0000183 .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#after
