@@ -597,7 +597,8 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#isParticipantIn
 :isParticipantIn rdf:type owl:ObjectProperty ;
-                 rdfs:label "isParticipantIn" .
+                 rdfs:label "isParticipantIn" ;
+		 owl:equivalentProperty <http://purl.obolibrary.org/obo/BFO_0000056> .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#isQualityOf
@@ -676,7 +677,8 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#occursIn
 :occursIn rdf:type owl:ObjectProperty ;
-          rdfs:label "occursIn" .
+          rdfs:label "occursIn" ;
+	  owl:equivalentProperty <http://purl.obolibrary.org/obo/BFO_0000066> .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#qualityQuantityKind
