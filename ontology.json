@@ -629,7 +629,7 @@
     "@id" : "https://w3id.org/digitalconstruction"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl"
+    "@id" : "http://purl.obolibrary.org/obo/bfo/2018-7-25/bfo-iso.owl"
   }, {
     "@id" : "https://w3id.org/digitalconstruction/Contexts"
   }, {

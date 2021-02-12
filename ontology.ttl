@@ -7,7 +7,7 @@
 @base <https://w3id.org/digitalconstruction/Entities> .
 
 <https://w3id.org/digitalconstruction/Entities> rdf:type owl:Ontology ;
-                                                 owl:imports <http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl> ,
+                                                 owl:imports <http://purl.obolibrary.org/obo/bfo/2018-7-25/bfo-iso.owl> ,
                                                              <https://w3id.org/digitalconstruction/Contexts> ,
                                                              <https://w3id.org/digitalconstruction/Variables> ;
                                                  <http://purl.org/dc/elements/1.1/date> "2020-03-20" ;
