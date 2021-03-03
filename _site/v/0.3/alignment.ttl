@@ -1,0 +1,13 @@
+###  https://w3id.org/digitalconstruction/Entities#BuildingObject
+:BuildingObject rdf:type owl:Class ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
+    rdfs:hasSubClass <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement>, <https://w3id.org/bot#Element>;
+    rdfs:comment "Constituent of a construction entity with a characteristic technical function, form or position." ;
+    rdfs:label "BuildingObject" .
+
+###  https://w3id.org/digitalconstruction/Entities#Location
+:Location rdf:type owl:Class ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000029> ;
+    rdfs:hasSubClass <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpatialElement>, <https://w3id.org/bot#Zone>;
+    rdfs:comment "A (logical) place where material entities can be located or activities can occur. Locations can form a hierarchy, for example, in a location breakdown structure consisting of a site, buildings, floors, zones, spaces, and workspaces" ;
+    rdfs:label "Location" .
