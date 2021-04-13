@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/digitalconstruction/Entities#> .
+@prefix : <https://w3id.org/digitalconstruction/0.5/Entities#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -7,7 +7,7 @@
 @prefix dicv: <https://w3id.org/digitalconstruction/Variables#> .
 @prefix obda: <https://w3id.org/obda/vocabulary#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/digitalconstruction/Entities> .
+@base <https://w3id.org/digitalconstruction/0.5/Entities> .
 
 <https://w3id.org/digitalconstruction/Entities> rdf:type owl:Ontology ;
                                                  owl:imports <https://w3id.org/digitalconstruction/0.5/Variables/variables.ttl> ;
@@ -17,10 +17,10 @@
                                                  <http://purl.org/dc/terms/creator> "Seppo Törmä" , "Yuan Zheng" ;
                                                  <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
                                                  <http://purl.org/vocab/vann/preferredNamespacePrefix> "dice" ;
-                                                 <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/Entities" ;
+                                                 <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/0.5/Entities" ;
                                                  rdfs:comment "Digital Construction Entities Ontology defines the basic classes and properties needed for the representation of construction and renovation projects. Examples are building object, location, material batch, equipment, agent, information content entity, activity and related time concepts. The ontology is based on BFO. " ;
                                                  rdfs:label "Digital Construction Entities" ;
-                                                 rdfs:seeAlso <https://w3id.org/digitalconstruction> .
+                                                 rdfs:seeAlso <https://w3id.org/digitalconstruction/0.5/> .
 
 #################################################################
 #    Annotation properties
@@ -1444,8 +1444,7 @@ dicv:isVariableOf rdfs:subPropertyOf :isAbout .
 
 ###  https://w3id.org/digitalconstruction/Entities#Activity
 :Activity rdf:type owl:Class ;
-          rdfs:subClassOf :Process ,
-                          <http://www.w3.org/ns/prov#Activity> ;
+          rdfs:subClassOf :Process  ;
           rdfs:comment "Def: A process that is intentionally performed by an agent." ;
           rdfs:label "Activity" .
 
