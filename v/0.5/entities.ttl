@@ -9,8 +9,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <https://w3id.org/digitalconstruction/0.5/Entities> .
 
-<https://w3id.org/digitalconstruction/Entities> rdf:type owl:Ontology ;
-                                                 owl:imports <https://w3id.org/digitalconstruction/0.5/Variables/variables.ttl> ;
+<https://w3id.org/digitalconstruction/0.5/Entities> rdf:type owl:Ontology ;
+                                                 owl:imports <https://w3id.org/digitalconstruction/0.5/Variables/variables.ttl> ,
+						 <https://w3id.org/digitalconstruction/0.5/Contexts/contexts.ttl> ;		
                                                  <http://purl.org/dc/elements/1.1/date> "2021-03-31" ;
                                                  <http://purl.org/dc/elements/1.1/title> "Digital Construction Entities" ;
                                                  <http://purl.org/dc/terms/created> "2020-01-12" ;
@@ -694,13 +695,13 @@
             rdfs:label "classifies" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#contentRepresentedIn
-:contentRepresentedIn rdf:type owl:ObjectProperty ;
-                      owl:inverseOf :representsContentOf ;
-                      rdfs:domain :InformationContentEntity ;
-                      rdfs:range dicc:Context ;
-                      rdfs:comment "The context in which the content of the information content entity is represented" ;
-                      rdfs:label "contentRepresentedIn" .
+# ###  https://w3id.org/digitalconstruction/Entities#contentRepresentedIn
+# :contentRepresentedIn rdf:type owl:ObjectProperty ;
+#                       owl:inverseOf :representsContentOf ;
+#                       rdfs:domain :InformationContentEntity ;
+#                       rdfs:range dicc:Context ;
+#                       rdfs:comment "The context in which the content of the information content entity is represented" ;
+#                       rdfs:label "contentRepresentedIn" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#encodesComputationalFunction
@@ -717,13 +718,13 @@
              rdfs:label "hasActivity" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#hasAgent
-:hasAgent rdf:type owl:ObjectProperty ;
-          rdfs:subPropertyOf :hasParticipant ;
-          owl:inverseOf :isAgentIn ;
-          rdfs:domain :Activity ;
-          rdfs:range :Agent ;
-          rdfs:label "hasAgent" .
+# ###  https://w3id.org/digitalconstruction/Entities#hasAgent
+# :hasAgent rdf:type owl:ObjectProperty ;
+#           rdfs:subPropertyOf :hasParticipant ;
+#           owl:inverseOf :isAgentIn ;
+#           rdfs:domain :Activity ;
+#           rdfs:range :Agent ;
+#           rdfs:label "hasAgent" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#hasAsset
@@ -757,7 +758,7 @@
 :hasCapability rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :bearerOf ;
                owl:inverseOf :isCapabilityOf ;
-               rdfs:domain :Agent ;
+               rdfs:domain :MaterialEntity ;
                rdfs:range :Capability ;
                rdfs:label "hasCapability" .
 
@@ -800,22 +801,22 @@
               rdfs:label "hasEquipment" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#hasInformation
-:hasInformation rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf :hasParticipant ;
-                owl:inverseOf :isInformationIn ;
-                rdfs:domain :Activity ;
-                rdfs:range :InformationContentEntity ;
-                rdfs:label "hasInformation" .
+# ###  https://w3id.org/digitalconstruction/Entities#hasInformation
+# :hasInformation rdf:type owl:ObjectProperty ;
+#                 rdfs:subPropertyOf :hasParticipant ;
+#                 owl:inverseOf :isInformationIn ;
+#                 rdfs:domain :Activity ;
+#                 rdfs:range :InformationContentEntity ;
+#                 rdfs:label "hasInformation" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#hasIntention
-:hasIntention rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf :bearerOf ;
-              owl:inverseOf :isIntentionOf ;
-              rdfs:domain :Agent ;
-              rdfs:range :Intention ;
-              rdfs:label "hasIntention" .
+# ###  https://w3id.org/digitalconstruction/Entities#hasIntention
+# :hasIntention rdf:type owl:ObjectProperty ;
+#               rdfs:subPropertyOf :bearerOf ;
+#               owl:inverseOf :isIntentionOf ;
+#               rdfs:domain :Agent ;
+#               rdfs:range :Intention ;
+#               rdfs:label "hasIntention" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#hasMaterial
@@ -900,7 +901,7 @@
 :hasRole rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :bearerOf ;
          owl:inverseOf :isRoleOf ;
-         rdfs:domain :Agent ;
+	 #  rdfs:domain :Agent ;
          rdfs:range :Role ;
          rdfs:label "hasRole" .
 
@@ -1000,20 +1001,20 @@
               rdfs:label "includesRole" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#isAbout
-:isAbout rdf:type owl:ObjectProperty ;
-         owl:inverseOf :isTopicOf ;
-         rdfs:domain :InformationContentEntity ;
-         rdfs:range :Entity ;
-         rdfs:label "isAbout" .
+# ###  https://w3id.org/digitalconstruction/Entities#isAbout
+# :isAbout rdf:type owl:ObjectProperty ;
+#          owl:inverseOf :isTopicOf ;
+#          rdfs:domain :InformationContentEntity ;
+#          rdfs:range :Entity ;
+#          rdfs:label "isAbout" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#isAgentIn
-:isAgentIn rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf :isParticipantIn ;
-           rdfs:domain :Agent ;
-           rdfs:range :Activity ;
-           rdfs:label "isAgentIn" .
+# ###  https://w3id.org/digitalconstruction/Entities#isAgentIn
+# :isAgentIn rdf:type owl:ObjectProperty ;
+#            rdfs:subPropertyOf :isParticipantIn ;
+#            rdfs:domain :Agent ;
+#            rdfs:range :Activity ;
+#            rdfs:label "isAgentIn" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#isBuildingOf
@@ -1032,7 +1033,7 @@
 :isCapabilityOf rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :inheresIn ;
                 rdfs:domain :Capability ;
-                rdfs:range :Agent ;
+                rdfs:range :MaterialEntity ;
                 rdfs:label "isCapabilityOf" .
 
 
@@ -1078,12 +1079,12 @@
                  rdfs:label "isInformationIn" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#isIntentionOf
-:isIntentionOf rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf :inheresIn ;
-               rdfs:domain :Intention ;
-               rdfs:range :Agent ;
-               rdfs:label "isIntentionOf" .
+# ###  https://w3id.org/digitalconstruction/Entities#isIntentionOf
+# :isIntentionOf rdf:type owl:ObjectProperty ;
+#                rdfs:subPropertyOf :inheresIn ;
+#                rdfs:domain :Intention ;
+#                rdfs:range :Agent ;
+#                rdfs:label "isIntentionOf" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#isLocatedIn
@@ -1138,7 +1139,7 @@
 :isRoleOf rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :inheresIn ;
           rdfs:domain :Role ;
-          rdfs:range :Agent ;
+	  # rdfs:range :Agent ;
           rdfs:label "isRoleOf" .
 
 
@@ -1166,10 +1167,10 @@
                  rdfs:label "isSubLocationOf" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#isTopicOf
-:isTopicOf rdf:type owl:ObjectProperty ;
-           rdfs:domain :Entity ;
-           rdfs:range :InformationContentEntity .
+# ###  https://w3id.org/digitalconstruction/Entities#isTopicOf
+# :isTopicOf rdf:type owl:ObjectProperty ;
+#            rdfs:domain :Entity ;
+#            rdfs:range :InformationContentEntity .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#labeledBy
@@ -1448,6 +1449,11 @@ dicv:isVariableOf rdfs:subPropertyOf :isAbout .
           rdfs:comment "Def: A process that is intentionally performed by an agent." ;
           rdfs:label "Activity" .
 
+:Service rdf:type owl:Class ;
+          rdfs:subClassOf :Process  ;
+          rdfs:comment "Def: A process in which service providers perform functions in response to requests of service requestors." ;
+          rdfs:label "Service" .
+
 
 ###  https://w3id.org/digitalconstruction/Entities#ActivityContext
 # :ActivityContext rdf:type owl:Class ;
@@ -1456,11 +1462,11 @@ dicv:isVariableOf rdfs:subPropertyOf :isAbout .
 #                  rdfs:label "ActivityContext" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#Agent
-:Agent rdf:type owl:Class ;
-       rdfs:subClassOf :MaterialEntity  ;
-       rdfs:comment "Agents are actors or stakeholders associated with construction lifecycles" ;
-       rdfs:label "Agent" .
+# ###  https://w3id.org/digitalconstruction/Entities#Agent
+# :Agent rdf:type owl:Class ;
+#        rdfs:subClassOf :MaterialEntity  ;
+#        rdfs:comment "Agents are actors or stakeholders associated with construction lifecycles" ;
+#        rdfs:label "Agent" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#AllOver
@@ -1490,9 +1496,7 @@ dicv:isVariableOf rdfs:subPropertyOf :isAbout .
 ###  https://w3id.org/digitalconstruction/Entities#BuildingObject
 :BuildingObject rdf:type owl:Class ;
                 rdfs:subClassOf :Object ;
-                rdfs:comment """An object that is needed to perform an activity, and when used is in continuous control of the agent involved in the activity.
-
-Examples: Vehices, cranes, and tools such as hammers and drills""" ;
+                rdfs:comment """An entity that forms a part of an existing or designed building""" ;
                 rdfs:label "BuildingObject" .
 
 
@@ -1503,10 +1507,10 @@ Examples: Vehices, cranes, and tools such as hammers and drills""" ;
 
 
 ###  https://w3id.org/digitalconstruction/Entities#BuiltAsset
-:BuiltAsset rdf:type owl:Class ;
-               rdfs:subClassOf :ObjectAggregate ;
-               rdfs:label "BuiltAsset" ;
-	       rdfs:comment "An asset that is part of the built environment (as the term is used in ISO 19650)".
+# :BuiltAsset rdf:type owl:Class ;
+#                rdfs:subClassOf :ObjectAggregate ;
+#                rdfs:label "BuiltAsset" ;
+# 	       rdfs:comment "An asset that is part of the built environment (as the term is used in ISO 19650)".
 
 
 ###  https://w3id.org/digitalconstruction/Entities#Capability
@@ -1583,7 +1587,9 @@ Examples: Sensor, actuator, dishwasher, heater.""" ;
 ###  https://w3id.org/digitalconstruction/Entities#Equipment
 :Equipment rdf:type owl:Class ;
            rdfs:subClassOf :Object ;
-           rdfs:comment "An object that an agent needs to use to perform an activity. Equipment can not execute activities by themselves." ;
+           rdfs:comment """An object needed to perform an activity, and when used is in continuous control of the agent involved in the activity. Equipment cannot execute activities by themselves.
+
+Examples: Vehices, cranes, and tools such as hammers and drills.""" ;
            rdfs:label "Equipment" .
 
 
@@ -1601,10 +1607,10 @@ Examples: Sensor, actuator, dishwasher, heater.""" ;
                   rdfs:label "GeodeticPosition" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#Goal
-:Goal rdf:type owl:Class ;
-      rdfs:subClassOf :Intention ;
-      rdfs:label "Goal" .
+# ###  https://w3id.org/digitalconstruction/Entities#Goal
+# :Goal rdf:type owl:Class ;
+#       rdfs:subClassOf :Intention ;
+#       rdfs:label "Goal" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#Group
@@ -1628,22 +1634,22 @@ Examples: Sensor, actuator, dishwasher, heater.""" ;
 #                        rdfs:label "IndependentContinuant" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#InformationContentEntity
-:InformationContentEntity rdf:type owl:Class ;
-                          rdfs:subClassOf :GenericallyDependentContinuant  ;
-                          rdfs:comment "Identifiable information content. Examples are a BIM model, a drawing, a specification, an image, a message, and an issue. Separate from physical information carriers. Note that the instances of this concept represent particular identifiable contents (such as a version of a architectural model or a master plan), not the physical carrier of that content (such as a database, a file in a cloud storage, or a bunch of paper). There can be several different carriers for the same information content entity" ;
-                          rdfs:label "InformationContentEntity" .
+# ###  https://w3id.org/digitalconstruction/Entities#InformationContentEntity
+# :InformationContentEntity rdf:type owl:Class ;
+#                           rdfs:subClassOf :GenericallyDependentContinuant  ;
+#                           rdfs:comment "Identifiable information content. Examples are a BIM model, a drawing, a specification, an image, a message, and an issue. Separate from physical information carriers. Note that the instances of this concept represent particular identifiable contents (such as a version of a architectural model or a master plan), not the physical carrier of that content (such as a database, a file in a cloud storage, or a bunch of paper). There can be several different carriers for the same information content entity" ;
+#                           rdfs:label "InformationContentEntity" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#Intention
-:Intention rdf:type owl:Class ;
-           rdfs:subClassOf :Disposition ;
-           rdfs:label "Intention" .
+# ###  https://w3id.org/digitalconstruction/Entities#Intention
+# :Intention rdf:type owl:Class ;
+#            rdfs:subClassOf :Disposition ;
+#            rdfs:label "Intention" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#Labeling
 :Labeling rdf:type owl:Class ;
-          rdfs:subClassOf :InformationContentEntity ;
+          # rdfs:subClassOf :InformationContentEntity ;
           rdfs:comment "Labeling is a generic mechanism to associate entities with any number of labels that are unique within a given category. The purpose is to enable the representation of connections to existing systems, databases or classification schemes." ;
           rdfs:label "Labeling" .
 
@@ -1804,6 +1810,29 @@ Examples: apartment, condomium, studio.""" ;
            rdfs:subClassOf :Location ;
            rdfs:comment "A site of work. There can be multiple different kinds of workspaces needed by an activity: labor crew space, equipment space, hazard space, and so on." ;
            rdfs:label "Workspace" .
+
+###
+
+:ResourceRole rdf:type owl:Class ;
+           rdfs:subClassOf :Role ;
+           rdfs:comment "A role in which an entity acts as a resource in an activity" ;
+           rdfs:label "ResourceRole" .
+
+:AssetRole rdf:type owl:Class ;
+           rdfs:subClassOf :Role ;
+           rdfs:comment "A role in which an entity acts as an asset" ;
+           rdfs:label "AssetRole" .
+
+:Asset rdf:type owl:Class ;
+       rdfs:subClassOf [ a owl:Class ; owl:unionOf  (:MaterialEntity :Site :GenericallyDependentContinuant) ],
+                       [ a owl:Restriction ; owl:onProperty :hasRole ;  owl:someValuesFrom :AssetRole ] ;
+       rdfs:comment "Something that acts in the asset role" ;
+       rdfs:label "Asset" .
+
+:BuiltAsset rdf:type owl:Class ;
+	   rdfs:subClassOf :Location , :Asset ;
+	   rdfs:comment "A location that is in a role of an asset. An asset that is part of the built environment (ISO 19650-1)" ;
+           rdfs:label "BuiltAsset" .
 
 
 ###  https://w3id.org/digitalconstruction/Variables#Comparison
