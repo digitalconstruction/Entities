@@ -704,18 +704,18 @@
 #                       rdfs:label "contentRepresentedIn" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#encodesComputationalFunction
-:encodesComputationalFunction rdf:type owl:ObjectProperty ;
-                              rdfs:domain :SoftwareApplication ;
-                              rdfs:range :ComputationalFunction .
+# ###  https://w3id.org/digitalconstruction/Entities#encodesComputationalFunction
+# :encodesComputationalFunction rdf:type owl:ObjectProperty ;
+#                               rdfs:domain :SoftwareApplication ;
+#                               rdfs:range :ComputationalFunction .
 
 
-###  https://w3id.org/digitalconstruction/Entities#hasActivity
-:hasActivity rdf:type owl:ObjectProperty ;
-             owl:inverseOf :hasState ;
-             rdfs:domain :ActivityContext ;
-             rdfs:range :Activity ;
-             rdfs:label "hasActivity" .
+# ###  https://w3id.org/digitalconstruction/Entities#hasActivity
+# :hasActivity rdf:type owl:ObjectProperty ;
+#              owl:inverseOf :hasState ;
+#              rdfs:domain :ActivityContext ;
+#              rdfs:range :Activity ;
+#              rdfs:label "hasActivity" .
 
 
 # ###  https://w3id.org/digitalconstruction/Entities#hasAgent
@@ -1411,13 +1411,6 @@ dicv:isVariableOf rdfs:subPropertyOf :isAbout .
 # <http://www.w3.org/ns/sosa/FeatureOfInterest> rdf:type owl:Class ;
 #                                               rdfs:label "sosa:FeatureOfInterest" .
 
-
-# ###  http://xmlns.com/foaf/0.1/Agent
-# <http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class ;
-#                                   owl:equivalentClass :Agent ;
-#                                   rdfs:label "foaf:Agent" .
-
-
 # ###  https://saref.etsi.org/core/FeatureOfInterest
 # <https://saref.etsi.org/core/FeatureOfInterest> rdf:type owl:Class ;
 #                                                 rdfs:label "saref:FeatureOfInterest" .
@@ -1551,10 +1544,10 @@ dicv:isVariableOf rdfs:subPropertyOf :isAbout .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#ComputationalFunction
-:ComputationalFunction rdf:type owl:Class ;
-                       rdfs:subClassOf :Function ;
-                       rdfs:comment "A function that inheres in one or more pieces of computing hardware. The actualization or manifestation of a computational function is an essentially end-directed activity in virtue kind or kinds of contexts the computing hardware is made for." ;
-                       rdfs:label "ComputationalFunction" .
+# :ComputationalFunction rdf:type owl:Class ;
+#                        rdfs:subClassOf :Function ;
+#                        rdfs:comment "A function that inheres in one or more pieces of computing hardware. The actualization or manifestation of a computational function is an essentially end-directed activity in virtue kind or kinds of contexts the computing hardware is made for." ;
+#                        rdfs:label "ComputationalFunction" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#Crane
@@ -1718,12 +1711,12 @@ Examples: apartment, condomium, studio.""" ;
           rdfs:label "Shipment" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#SoftwareApplication
-:SoftwareApplication rdf:type owl:Class ;
-                     rdfs:subClassOf :GenericallyDependentContinuant ;
-                     rdfs:comment """A generically dependent continuant that encodes a representation of one or more computational functions (realizable functions)
-(Duncan, William. \"Making Ontological Sense of Hardware and Software.\" https://cse.buffalo.edu/~rapaport/584/S10/duncan09-HWSWOnt.pdf (2009))""" ;
-                     rdfs:label "SoftwareApplication" .
+# ###  https://w3id.org/digitalconstruction/Entities#SoftwareApplication
+# :SoftwareApplication rdf:type owl:Class ;
+#                      rdfs:subClassOf :GenericallyDependentContinuant ;
+#                      rdfs:comment """A generically dependent continuant that encodes a representation of one or more computational functions (realizable functions)
+# (Duncan, William. \"Making Ontological Sense of Hardware and Software.\" https://cse.buffalo.edu/~rapaport/584/S10/duncan09-HWSWOnt.pdf (2009))""" ;
+#                      rdfs:label "SoftwareApplication" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#SpatialExtent
