@@ -3,8 +3,8 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dicc: <https://w3id.org/digitalconstruction/Contexts#> .
-@prefix dicv: <https://w3id.org/digitalconstruction/Variables#> .
+@prefix dicc: <https://w3id.org/digitalconstruction/0.5/Contexts#> .
+@prefix dicv: <https://w3id.org/digitalconstruction/0.5/Variables#> .
 @prefix obda: <https://w3id.org/obda/vocabulary#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <https://w3id.org/digitalconstruction/0.5/Entities> .
@@ -1221,12 +1221,12 @@
              rdfs:label "qualityUnit" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#representsContentOf
-:representsContentOf rdf:type owl:ObjectProperty ;
-                     rdfs:domain dicc:Context ;
-                     rdfs:range :InformationContentEntity ;
-                     rdfs:comment "The information content entity that is the source of the data represented in this context" ;
-                     rdfs:label "representsContentOf" .
+# ###  https://w3id.org/digitalconstruction/Entities#representsContentOf
+# :representsContentOf rdf:type owl:ObjectProperty ;
+#                      rdfs:domain dicc:Context ;
+#                      rdfs:range :InformationContentEntity ;
+#                      rdfs:comment "The information content entity that is the source of the data represented in this context" ;
+#                      rdfs:label "representsContentOf" .
 
 
 ###  https://w3id.org/digitalconstruction/Variables#isVariableOf
@@ -1441,6 +1441,8 @@ dicv:isVariableOf rdfs:subPropertyOf :isAbout .
 # ###  https://w3id.org/bot#Zone
 # <https://w3id.org/bot#Zone> rdf:type owl:Class ;
 #                             rdfs:subClassOf :Location .
+
+:Entity owl:equivalentClass dicv:Subject .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#Activity
