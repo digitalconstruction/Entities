@@ -796,7 +796,7 @@
 :hasEquipment rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :hasParticipant ;
               owl:inverseOf :isEquipmentIn ;
-              rdfs:domain :Activity ;
+              rdfs:domain :Process ;
               rdfs:range :Equipment ;
               rdfs:label "hasEquipment" .
 
@@ -823,7 +823,7 @@
 :hasMaterial rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :hasParticipant ;
              owl:inverseOf :isMaterialIn ;
-             rdfs:domain :Activity ;
+             rdfs:domain :Process ;
              rdfs:range :MaterialBatch ;
              rdfs:label "hasMaterial" .
 
@@ -958,13 +958,13 @@
 #           rdfs:label "hasState" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#hasSubActivity
-:hasSubActivity rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf :hasProperOccurrentPart ;
-                owl:inverseOf :isSubActivityOf ;
-                rdfs:domain :Activity ;
-                rdfs:range :Activity ;
-                rdfs:label "hasSubActivity" .
+# ###  https://w3id.org/digitalconstruction/Entities#hasSubActivity
+# :hasSubActivity rdf:type owl:ObjectProperty ;
+#                 rdfs:subPropertyOf :hasProperOccurrentPart ;
+#                 owl:inverseOf :isSubActivityOf ;
+#                 rdfs:domain :Activity ;
+#                 rdfs:range :Activity ;
+#                 rdfs:label "hasSubActivity" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#hasSubLocation
@@ -1060,7 +1060,7 @@
 :isEquipmentIn rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :isParticipantIn ;
                rdfs:domain :Equipment ;
-               rdfs:range :Activity ;
+               rdfs:range :Process ;
                rdfs:label "isEquipmentIn" .
 
 
@@ -1071,12 +1071,12 @@
                   rdfs:label "isIncludedRoleIn" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#isInformationIn
-:isInformationIn rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf :isParticipantIn ;
-                 rdfs:domain :InformationContentEntity ;
-                 rdfs:range :Activity ;
-                 rdfs:label "isInformationIn" .
+# ###  https://w3id.org/digitalconstruction/Entities#isInformationIn
+# :isInformationIn rdf:type owl:ObjectProperty ;
+#                  rdfs:subPropertyOf :isParticipantIn ;
+#                  rdfs:domain :InformationContentEntity ;
+#                  rdfs:range :Activity ;
+#                  rdfs:label "isInformationIn" .
 
 
 # ###  https://w3id.org/digitalconstruction/Entities#isIntentionOf
@@ -1106,7 +1106,7 @@
 :isMaterialIn rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :isParticipantIn ;
               rdfs:domain :MaterialBatch ;
-              rdfs:range :Activity ;
+              rdfs:range :Process ;
               rdfs:label "isMaterialIn" .
 
 
@@ -1115,12 +1115,12 @@
                 rdfs:label "isMemberPartOf" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#isOccupiedByActivity
-:isOccupiedByActivity rdf:type owl:ObjectProperty ;
-                      owl:inverseOf :occupiesTimeInterval ;
-                      rdfs:domain :TimeInterval ;
-                      rdfs:range :Activity ;
-                      rdfs:label "isOccupiedByActivity" .
+# ###  https://w3id.org/digitalconstruction/Entities#isOccupiedByActivity
+# :isOccupiedByActivity rdf:type owl:ObjectProperty ;
+#                       owl:inverseOf :occupiesTimeInterval ;
+#                       rdfs:domain :TimeInterval ;
+#                       rdfs:range :Activity ;
+#                       rdfs:label "isOccupiedByActivity" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#isParticipantIn
@@ -1151,12 +1151,12 @@
            rdfs:label "isStartOf" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#isSubActivityOf
-:isSubActivityOf rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf :properOccurrentPartOf ;
-                 rdfs:domain :Activity ;
-                 rdfs:range :Activity ;
-                 rdfs:label "isSubActivityOf" .
+# ###  https://w3id.org/digitalconstruction/Entities#isSubActivityOf
+# :isSubActivityOf rdf:type owl:ObjectProperty ;
+#                  rdfs:subPropertyOf :properOccurrentPartOf ;
+#                  rdfs:domain :Activity ;
+#                  rdfs:range :Activity ;
+#                  rdfs:label "isSubActivityOf" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#isSubLocationOf
@@ -1194,12 +1194,12 @@
           rdfs:label "memberOf" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#occupiesTimeInterval
-:occupiesTimeInterval rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf :occupiesTemporalRegion ;
-                      rdfs:domain :Activity ;
-                      rdfs:range :TimeInterval ;
-                      rdfs:label "occupiesTimeInterval" .
+# ###  https://w3id.org/digitalconstruction/Entities#occupiesTimeInterval
+# :occupiesTimeInterval rdf:type owl:ObjectProperty ;
+#                       rdfs:subPropertyOf :occupiesTemporalRegion ;
+#                       rdfs:domain :Activity ;
+#                       rdfs:range :TimeInterval ;
+#                       rdfs:label "occupiesTimeInterval" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#occursIn
@@ -1438,16 +1438,16 @@ dicv:isVariableOf rdfs:subPropertyOf :isAbout .
 :Entity owl:equivalentClass dicv:Subject .
 
 
-###  https://w3id.org/digitalconstruction/Entities#Activity
-:Activity rdf:type owl:Class ;
-          rdfs:subClassOf :Process  ;
-          rdfs:comment "Def: A process that is intentionally performed by an agent." ;
-          rdfs:label "Activity" .
+# ###  https://w3id.org/digitalconstruction/Entities#Activity
+# :Activity rdf:type owl:Class ;
+#           rdfs:subClassOf :Process  ;
+#           rdfs:comment "Def: A process that is intentionally performed by an agent." ;
+#           rdfs:label "Activity" .
 
-:Service rdf:type owl:Class ;
-          rdfs:subClassOf :Process  ;
-          rdfs:comment "Def: A process in which service providers perform functions in response to requests of service requestors." ;
-          rdfs:label "Service" .
+# :Service rdf:type owl:Class ;
+#           rdfs:subClassOf :Process  ;
+#           rdfs:comment "Def: A process in which service providers perform functions in response to requests of service requestors." ;
+#           rdfs:label "Service" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#ActivityContext
