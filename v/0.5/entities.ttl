@@ -1208,17 +1208,17 @@
 
 
 ###  https://w3id.org/digitalconstruction/Entities#qualityQuantityKind
-:qualityQuantityKind rdf:type owl:ObjectProperty ;
-                     rdfs:domain :Quality ;
-                     rdfs:range <http://qudt.org/schema/qudt/QuantityKind> ;
-                     rdfs:label "qualityQuantityKind" .
+# :qualityQuantityKind rdf:type owl:ObjectProperty ;
+#                      rdfs:domain :Quality ;
+#                      rdfs:range <http://qudt.org/schema/qudt/QuantityKind> ;
+#                      rdfs:label "qualityQuantityKind" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#qualityUnit
-:qualityUnit rdf:type owl:ObjectProperty ;
-             rdfs:domain :Quality ;
-             rdfs:range <http://qudt.org/schema/qudt/Unit> ;
-             rdfs:label "qualityUnit" .
+# ###  https://w3id.org/digitalconstruction/Entities#qualityUnit
+# :qualityUnit rdf:type owl:ObjectProperty ;
+#              rdfs:domain :Quality ;
+#              rdfs:range <http://qudt.org/schema/qudt/Unit> ;
+#              rdfs:label "qualityUnit" .
 
 
 # ###  https://w3id.org/digitalconstruction/Entities#representsContentOf
@@ -1371,10 +1371,10 @@ dicv:isVariableOf rdfs:subPropertyOf :isAbout .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#qualityValue
-:qualityValue rdf:type owl:DatatypeProperty ;
-              rdfs:domain :Quality ;
-              rdfs:range rdfs:Literal ;
-              rdfs:label "qualityValue" .
+# :qualityValue rdf:type owl:DatatypeProperty ;
+#               rdfs:domain :Quality ;
+#               rdfs:range rdfs:Literal ;
+#               rdfs:label "qualityValue" .
 
 
 #################################################################
@@ -1437,6 +1437,9 @@ dicv:isVariableOf rdfs:subPropertyOf :isAbout .
 
 :Entity owl:equivalentClass dicv:Subject .
 
+:Quality rdfs:subClassOf dicv:Property .
+
+dicv:QuantitativeProperty rdfs:subClassOf :Quality . 
 
 # ###  https://w3id.org/digitalconstruction/Entities#Activity
 # :Activity rdf:type owl:Class ;
@@ -1807,11 +1810,6 @@ Examples: apartment, condomium, studio.""" ;
            rdfs:label "Workspace" .
 
 ###
-
-:ResourceRole rdf:type owl:Class ;
-           rdfs:subClassOf :Role ;
-           rdfs:comment "A role in which an entity acts as a resource in an activity" ;
-           rdfs:label "ResourceRole" .
 
 :AssetRole rdf:type owl:Class ;
            rdfs:subClassOf :Role ;
