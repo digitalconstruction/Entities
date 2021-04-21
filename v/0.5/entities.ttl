@@ -72,7 +72,7 @@
      rdfs:comment ":Entity is equivalent to the BFO class 'entity' (http://purl.obolibrary.org/obo/BFO_0000001)" .
 
   :Continuant a owl:Class ;
-     rdfs:subClassOf :Entity,  [ a owl:Restriction ; owl:onProperty :continuantPartOfAtAllTimes ;  owl:allValuesFrom :Continuant ] ;
+     rdfs:subClassOf :Entity ;
      rdfs:label "Continuant" ;
      rdfs:comment ":Continuant is equivalent to the BFO class 'continuant' (http://purl.obolibrary.org/obo/BFO_0000002)" .
 
@@ -83,27 +83,27 @@
      owl:disjointWith :Continuant .
 
   :IndependentContinuant a owl:Class ;
-     rdfs:subClassOf :Continuant,  [ a owl:Restriction ; owl:onProperty :continuantPartOfAtAllTimes ;  owl:allValuesFrom :IndependentContinuant ] ;
+     rdfs:subClassOf :Continuant ;
      rdfs:label "IndependentContinuant" ;
      rdfs:comment ":IndependentContinuant is equivalent to the BFO class 'independent continuant' (http://purl.obolibrary.org/obo/BFO_0000004)" .
 
   :SpatialRegion a owl:Class ;
-     rdfs:subClassOf  [ a owl:Restriction ; owl:onProperty :continuantPartOfAtAllTimes ;  owl:allValuesFrom :SpatialRegion ], :ImmaterialEntity ;
+     rdfs:subClassOf :ImmaterialEntity ;
      rdfs:label "SpatialRegion" ;
      rdfs:comment ":SpatialRegion is equivalent to the BFO class 'spatial region' (http://purl.obolibrary.org/obo/BFO_0000006)" .
 
   :TemporalRegion a owl:Class ;
-     rdfs:subClassOf  [ a owl:Restriction ; owl:onProperty :temporalPartOf ;  owl:allValuesFrom :TemporalRegion ],  [ a owl:Restriction ; owl:onProperty :occurrentPartOf ;  owl:allValuesFrom :TemporalRegion ], :Occurrent ;
+     rdfs:subClassOf  [ a owl:Restriction ; owl:onProperty :occurrentPartOf ;  owl:allValuesFrom :TemporalRegion ],  [ a owl:Restriction ; owl:onProperty :temporalPartOf ;  owl:allValuesFrom :TemporalRegion ], :Occurrent ;
      rdfs:label "TemporalRegion" ;
      rdfs:comment ":TemporalRegion is equivalent to the BFO class 'temporal region' (http://purl.obolibrary.org/obo/BFO_0000008)" .
 
   :TwoDimensionalSpatialRegion a owl:Class ;
-     rdfs:subClassOf  [ a owl:Restriction ; owl:onProperty :hasContinuantPartAtAllTimes ;  owl:allValuesFrom  [ a owl:Class ; owl:unionOf  (:TwoDimensionalSpatialRegion :OneDimensionalSpatialRegion :ZeroDimensionalSpatialRegion) ] ], :SpatialRegion ;
+     rdfs:subClassOf :SpatialRegion ;
      rdfs:label "TwoDimensionalSpatialRegion" ;
      rdfs:comment ":TwoDimensionalSpatialRegion is equivalent to the BFO class 'two-dimensional spatial region' (http://purl.obolibrary.org/obo/BFO_0000009)" .
 
   :SpatiotemporalRegion a owl:Class ;
-     rdfs:subClassOf :Occurrent,  [ a owl:Restriction ; owl:onProperty :occurrentPartOf ;  owl:allValuesFrom :SpatiotemporalRegion ],  [ a owl:Restriction ; owl:onProperty :temporalPartOf ;  owl:allValuesFrom :SpatiotemporalRegion ] ;
+     rdfs:subClassOf :Occurrent,  [ a owl:Restriction ; owl:onProperty :temporalPartOf ;  owl:allValuesFrom :SpatiotemporalRegion ],  [ a owl:Restriction ; owl:onProperty :occurrentPartOf ;  owl:allValuesFrom :SpatiotemporalRegion ] ;
      rdfs:label "SpatiotemporalRegion" ;
      rdfs:comment ":SpatiotemporalRegion is equivalent to the BFO class 'spatiotemporal region' (http://purl.obolibrary.org/obo/BFO_0000011)" .
 
@@ -124,7 +124,7 @@
      owl:disjointWith :Quality .
 
   :ZeroDimensionalSpatialRegion a owl:Class ;
-     rdfs:subClassOf  [ a owl:Restriction ; owl:onProperty :hasContinuantPartAtAllTimes ;  owl:allValuesFrom :ZeroDimensionalSpatialRegion ], :SpatialRegion ;
+     rdfs:subClassOf :SpatialRegion ;
      rdfs:label "ZeroDimensionalSpatialRegion" ;
      rdfs:comment ":ZeroDimensionalSpatialRegion is equivalent to the BFO class 'zero-dimensional spatial region' (http://purl.obolibrary.org/obo/BFO_0000018)" .
 
@@ -150,7 +150,7 @@
      rdfs:comment ":FiatObjectPart is equivalent to the BFO class 'fiat object part' (http://purl.obolibrary.org/obo/BFO_0000024)" .
 
   :OneDimensionalSpatialRegion a owl:Class ;
-     rdfs:subClassOf  [ a owl:Restriction ; owl:onProperty :hasContinuantPartAtAllTimes ;  owl:allValuesFrom  [ a owl:Class ; owl:unionOf  (:OneDimensionalSpatialRegion :ZeroDimensionalSpatialRegion) ] ], :SpatialRegion ;
+     rdfs:subClassOf :SpatialRegion ;
      rdfs:label "OneDimensionalSpatialRegion" ;
      rdfs:comment ":OneDimensionalSpatialRegion is equivalent to the BFO class 'one-dimensional spatial region' (http://purl.obolibrary.org/obo/BFO_0000026)" .
 
@@ -160,12 +160,12 @@
      rdfs:comment ":ObjectAggregate is equivalent to the BFO class 'object aggregate' (http://purl.obolibrary.org/obo/BFO_0000027)" .
 
   :ThreeDimensionalSpatialRegion a owl:Class ;
-     rdfs:subClassOf :SpatialRegion,  [ a owl:Restriction ; owl:onProperty :hasContinuantPartAtAllTimes ;  owl:allValuesFrom :SpatialRegion ] ;
+     rdfs:subClassOf :SpatialRegion ;
      rdfs:label "ThreeDimensionalSpatialRegion" ;
      rdfs:comment ":ThreeDimensionalSpatialRegion is equivalent to the BFO class 'three-dimensional spatial region' (http://purl.obolibrary.org/obo/BFO_0000028)" .
 
   :Site a owl:Class ;
-     rdfs:subClassOf  [ a owl:Restriction ; owl:onProperty :continuantPartOfAtAllTimes ;  owl:allValuesFrom  [ a owl:Class ; owl:unionOf  (:Site :MaterialEntity) ] ],  [ a owl:Restriction ; owl:onProperty :hasContinuantPartAtAllTimes ;  owl:allValuesFrom  [ a owl:Class ; owl:unionOf  (:Site :ContinuantFiatBoundary) ] ],  [ a owl:Restriction ; owl:onProperty :occupiesSpatialRegionAtAllTimes ;  owl:allValuesFrom :ThreeDimensionalSpatialRegion ], :ImmaterialEntity ;
+     rdfs:subClassOf :ImmaterialEntity ;
      rdfs:label "Site" ;
      rdfs:comment ":Site is equivalent to the BFO class 'site' (http://purl.obolibrary.org/obo/BFO_0000029)" .
 
@@ -185,22 +185,22 @@
      rdfs:comment ":Function is equivalent to the BFO class 'function' (http://purl.obolibrary.org/obo/BFO_0000034)" .
 
   :ProcessBoundary a owl:Class ;
-     rdfs:subClassOf  [ a owl:Restriction ; owl:onProperty :hasTemporalPart ;  owl:allValuesFrom :ProcessBoundary ],  [ a owl:Restriction ; owl:onProperty :hasOccurrentPart ;  owl:allValuesFrom :ProcessBoundary ], :Occurrent,  [ a owl:Restriction ; owl:onProperty :occurrentPartOf ;  owl:allValuesFrom  [ a owl:Class ; owl:unionOf  (:Process :ProcessBoundary) ] ] ;
+     rdfs:subClassOf  [ a owl:Restriction ; owl:onProperty :occurrentPartOf ;  owl:allValuesFrom  [ a owl:Class ; owl:unionOf  (:Process :ProcessBoundary) ] ], :Occurrent,  [ a owl:Restriction ; owl:onProperty :hasTemporalPart ;  owl:allValuesFrom :ProcessBoundary ],  [ a owl:Restriction ; owl:onProperty :hasOccurrentPart ;  owl:allValuesFrom :ProcessBoundary ] ;
      rdfs:label "ProcessBoundary" ;
      rdfs:comment ":ProcessBoundary is equivalent to the BFO class 'process boundary' (http://purl.obolibrary.org/obo/BFO_0000035)" .
 
   :OneDimensionalTemporalRegion a owl:Class ;
-     rdfs:subClassOf  [ a owl:Restriction ; owl:onProperty :temporalPartOf ;  owl:allValuesFrom :OneDimensionalTemporalRegion ],  [ a owl:Restriction ; owl:onProperty :hasTemporalPart ;  owl:allValuesFrom  [ a owl:Class ; owl:unionOf  (:OneDimensionalTemporalRegion :ZeroDimensionalTemporalRegion) ] ], :TemporalRegion ;
+     rdfs:subClassOf :TemporalRegion,  [ a owl:Restriction ; owl:onProperty :hasTemporalPart ;  owl:allValuesFrom  [ a owl:Class ; owl:unionOf  (:OneDimensionalTemporalRegion :ZeroDimensionalTemporalRegion) ] ],  [ a owl:Restriction ; owl:onProperty :temporalPartOf ;  owl:allValuesFrom :OneDimensionalTemporalRegion ] ;
      rdfs:label "OneDimensionalTemporalRegion" ;
      rdfs:comment ":OneDimensionalTemporalRegion is equivalent to the BFO class 'one-dimensional temporal region' (http://purl.obolibrary.org/obo/BFO_0000038)" .
 
   :MaterialEntity a owl:Class ;
-     rdfs:subClassOf :IndependentContinuant,  [ a owl:Restriction ; owl:onProperty :hasContinuantPartAtAllTimes ;  owl:allValuesFrom  [ a owl:Class ; owl:unionOf  (:Site :ContinuantFiatBoundary :MaterialEntity) ] ],  [ a owl:Restriction ; owl:onProperty :continuantPartOfAtAllTimes ;  owl:allValuesFrom :MaterialEntity ] ;
+     rdfs:subClassOf :IndependentContinuant ;
      rdfs:label "MaterialEntity" ;
      rdfs:comment ":MaterialEntity is equivalent to the BFO class 'material entity' (http://purl.obolibrary.org/obo/BFO_0000040)" .
 
   :ContinuantFiatBoundary a owl:Class ;
-     rdfs:subClassOf  [ a owl:Restriction ; owl:onProperty :hasLocationAtAllTimes ;  owl:allValuesFrom :ContinuantFiatBoundary ], :ImmaterialEntity,  [ a owl:Restriction ; owl:onProperty :hasContinuantPartAtAllTimes ;  owl:allValuesFrom :ContinuantFiatBoundary ] ;
+     rdfs:subClassOf :ImmaterialEntity ;
      rdfs:label "ContinuantFiatBoundary" ;
      rdfs:comment ":ContinuantFiatBoundary is equivalent to the BFO class 'continuant fiat boundary' (http://purl.obolibrary.org/obo/BFO_0000140)" .
 
@@ -211,7 +211,7 @@
      owl:disjointWith :MaterialEntity .
 
   :FiatLine a owl:Class ;
-     rdfs:subClassOf  [ a owl:Restriction ; owl:onProperty :hasContinuantPartAtAllTimes ;  owl:allValuesFrom  [ a owl:Class ; owl:unionOf  (:FiatLine :FiatPoint) ] ], :ContinuantFiatBoundary ;
+     rdfs:subClassOf :ContinuantFiatBoundary ;
      rdfs:label "FiatLine" ;
      rdfs:comment ":FiatLine is equivalent to the BFO class 'fiat line' (http://purl.obolibrary.org/obo/BFO_0000142)" .
 
@@ -221,12 +221,12 @@
      rdfs:comment ":RelationalQuality is equivalent to the BFO class 'relational quality' (http://purl.obolibrary.org/obo/BFO_0000145)" .
 
   :FiatSurface a owl:Class ;
-     rdfs:subClassOf  [ a owl:Restriction ; owl:onProperty :hasContinuantPartAtAllTimes ;  owl:allValuesFrom :ContinuantFiatBoundary ], :ContinuantFiatBoundary ;
+     rdfs:subClassOf :ContinuantFiatBoundary ;
      rdfs:label "FiatSurface" ;
      rdfs:comment ":FiatSurface is equivalent to the BFO class 'fiat surface' (http://purl.obolibrary.org/obo/BFO_0000146)" .
 
   :FiatPoint a owl:Class ;
-     rdfs:subClassOf  [ a owl:Restriction ; owl:onProperty :hasContinuantPartAtAllTimes ;  owl:allValuesFrom :FiatPoint ], :ContinuantFiatBoundary ;
+     rdfs:subClassOf :ContinuantFiatBoundary ;
      rdfs:label "FiatPoint" ;
      rdfs:comment ":FiatPoint is equivalent to the BFO class 'fiat point' (http://purl.obolibrary.org/obo/BFO_0000147)" .
 
@@ -253,415 +253,175 @@
  
   :hasRealization a owl:ObjectProperty ;
      rdfs:label "hasRealization" ;
-     rdfs:comment ":hasRealization is equivalent to the BFO property 'has realization' (http://purl.obolibrary.org/obo/BFO_0000054)" ;
+     rdfs:comment "hasRealization is equivalent to the BFO property 'has realization' (http://purl.obolibrary.org/obo/BFO_0000054)" ;
      rdfs:domain :RealizableEntity ;
      rdfs:range :Process .
  
   :realizes a owl:ObjectProperty ;
      rdfs:label "realizes" ;
-     rdfs:comment ":realizes is equivalent to the BFO property 'realizes' (http://purl.obolibrary.org/obo/BFO_0000055)" ;
+     rdfs:comment "realizes is equivalent to the BFO property 'realizes' (http://purl.obolibrary.org/obo/BFO_0000055)" ;
      rdfs:domain :Process ;
      rdfs:range :RealizableEntity .
  
-  :participatesInAtSomeTime a owl:ObjectProperty ;
-     rdfs:label "participatesInAtSomeTime" ;
-     rdfs:comment ":participatesInAtSomeTime is equivalent to the BFO property 'participates in at some time' (http://purl.obolibrary.org/obo/BFO_0000056)" ;
-     rdfs:domain  [ a owl:Class ; owl:unionOf  ( [ a owl:Class ; owl:intersectionOf  (:IndependentContinuant  [ a owl:Class ; owl:complementOf :SpatialRegion ]) ] :SpecificallyDependentContinuant :GenericallyDependentContinuant) ] ;
-     rdfs:range :Process .
- 
-  :hasParticipantAtSomeTime a owl:ObjectProperty ;
-     rdfs:label "hasParticipantAtSomeTime" ;
-     rdfs:comment ":hasParticipantAtSomeTime is equivalent to the BFO property 'has participant at some time' (http://purl.obolibrary.org/obo/BFO_0000057)" ;
-     rdfs:domain :Process ;
-     rdfs:range  [ a owl:Class ; owl:unionOf  ( [ a owl:Class ; owl:intersectionOf  (:IndependentContinuant  [ a owl:Class ; owl:complementOf :SpatialRegion ]) ] :SpecificallyDependentContinuant :GenericallyDependentContinuant) ] .
- 
-  :isConcretizedByAtSomeTime a owl:ObjectProperty ;
-     rdfs:label "isConcretizedByAtSomeTime" ;
-     rdfs:comment ":isConcretizedByAtSomeTime is equivalent to the BFO property 'is concretized by at some time' (http://purl.obolibrary.org/obo/BFO_0000058)" ;
-     rdfs:domain :GenericallyDependentContinuant ;
-     rdfs:range  [ a owl:Class ; owl:unionOf  (:SpecificallyDependentContinuant :Process) ] .
- 
-  :concretizesAtSomeTime a owl:ObjectProperty ;
-     rdfs:label "concretizesAtSomeTime" ;
-     rdfs:comment ":concretizesAtSomeTime is equivalent to the BFO property 'concretizes at some time' (http://purl.obolibrary.org/obo/BFO_0000059)" ;
-     rdfs:domain  [ a owl:Class ; owl:unionOf  (:SpecificallyDependentContinuant :Process) ] ;
-     rdfs:range :GenericallyDependentContinuant .
- 
-  :precededBy a owl:ObjectProperty, owl:TransitiveProperty ;
+  :precededBy a owl:TransitiveProperty, owl:ObjectProperty ;
      rdfs:label "precededBy" ;
-     rdfs:comment ":precededBy is equivalent to the BFO property 'preceded by' (http://purl.obolibrary.org/obo/BFO_0000062)" ;
+     rdfs:comment "precededBy is equivalent to the BFO property 'preceded by' (http://purl.obolibrary.org/obo/BFO_0000062)" ;
      rdfs:domain :Occurrent ;
      rdfs:range :Occurrent .
  
   :precedes a owl:ObjectProperty, owl:TransitiveProperty ;
      rdfs:label "precedes" ;
-     rdfs:comment ":precedes is equivalent to the BFO property 'precedes' (http://purl.obolibrary.org/obo/BFO_0000063)" ;
+     rdfs:comment "precedes is equivalent to the BFO property 'precedes' (http://purl.obolibrary.org/obo/BFO_0000063)" ;
      rdfs:domain :Occurrent ;
      rdfs:range :Occurrent .
  
   :occursIn a owl:ObjectProperty ;
      rdfs:label "occursIn" ;
-     rdfs:comment ":occursIn is equivalent to the BFO property 'occurs in' (http://purl.obolibrary.org/obo/BFO_0000066)" ;
+     rdfs:comment "occursIn is equivalent to the BFO property 'occurs in' (http://purl.obolibrary.org/obo/BFO_0000066)" ;
      rdfs:domain  [ a owl:Class ; owl:unionOf  (:Process :ProcessBoundary) ] ;
      rdfs:range  [ a owl:Class ; owl:unionOf  (:MaterialEntity :Site) ] .
  
-  :locatedInAtAllTimes a owl:ObjectProperty, owl:TransitiveProperty ;
-     rdfs:subPropertyOf :locatedInAtSomeTime ;
-     rdfs:label "locatedInAtAllTimes" ;
-     rdfs:comment ":locatedInAtAllTimes is equivalent to the BFO property 'located in at all times' (http://purl.obolibrary.org/obo/BFO_0000082)" ;
-     rdfs:domain  [ a owl:Class ; owl:intersectionOf  (:IndependentContinuant  [ a owl:Class ; owl:complementOf :SpatialRegion ]) ] ;
-     rdfs:range  [ a owl:Class ; owl:intersectionOf  (:IndependentContinuant  [ a owl:Class ; owl:complementOf :SpatialRegion ]) ] .
- 
-  :genericallyDependsOnAtSomeTime a owl:ObjectProperty ;
-     rdfs:label "genericallyDependsOnAtSomeTime" ;
-     rdfs:comment ":genericallyDependsOnAtSomeTime is equivalent to the BFO property 'generically depends on at some time' (http://purl.obolibrary.org/obo/BFO_0000084)" ;
-     rdfs:domain :GenericallyDependentContinuant ;
-     rdfs:range  [ a owl:Class ; owl:intersectionOf  (:IndependentContinuant  [ a owl:Class ; owl:complementOf :SpatialRegion ]) ] .
- 
-  :isCarrierOfAtSomeTime a owl:ObjectProperty ;
-     rdfs:label "isCarrierOfAtSomeTime" ;
-     rdfs:comment ":isCarrierOfAtSomeTime is equivalent to the BFO property 'is carrier of at some time' (http://purl.obolibrary.org/obo/BFO_0000101)" ;
-     rdfs:domain  [ a owl:Class ; owl:intersectionOf  (:IndependentContinuant  [ a owl:Class ; owl:complementOf :SpatialRegion ]) ] ;
-     rdfs:range :GenericallyDependentContinuant .
- 
   :existsAt a owl:ObjectProperty ;
      rdfs:label "existsAt" ;
-     rdfs:comment ":existsAt is equivalent to the BFO property 'exists at' (http://purl.obolibrary.org/obo/BFO_0000108)" ;
-     rdfs:domain :Entity ;
-     rdfs:range :TemporalRegion .
- 
-  :hasContinuantPartAtAllTimes a owl:ObjectProperty, owl:TransitiveProperty ;
-     rdfs:subPropertyOf :hasContinuantPartAtSomeTime ;
-     rdfs:label "hasContinuantPartAtAllTimes" ;
-     rdfs:comment ":hasContinuantPartAtAllTimes is equivalent to the BFO property 'has continuant part at all times' (http://purl.obolibrary.org/obo/BFO_0000110)" ;
-     rdfs:domain :Continuant ;
-     rdfs:range :Continuant .
- 
-  :hasProperContinuantPartAtAllTimes a owl:ObjectProperty, owl:TransitiveProperty ;
-     rdfs:subPropertyOf :hasProperContinuantPartAtSomeTime, :hasContinuantPartAtAllTimes ;
-     rdfs:label "hasProperContinuantPartAtAllTimes" ;
-     rdfs:comment ":hasProperContinuantPartAtAllTimes is equivalent to the BFO property 'has proper continuant part at all times' (http://purl.obolibrary.org/obo/BFO_0000111)" ;
-     rdfs:domain :Continuant ;
-     rdfs:range :Continuant .
- 
-  :hasMaterialBasisAtAllTimes a owl:ObjectProperty ;
-     rdfs:subPropertyOf :hasMaterialBasisAtSomeTime ;
-     rdfs:label "hasMaterialBasisAtAllTimes" ;
-     rdfs:comment ":hasMaterialBasisAtAllTimes is equivalent to the BFO property 'has material basis at all times' (http://purl.obolibrary.org/obo/BFO_0000113)" ;
-     rdfs:domain :Disposition ;
-     rdfs:range :MaterialEntity .
- 
-  :hasMemberPartAtSomeTime a owl:ObjectProperty ;
-     rdfs:subPropertyOf :hasProperContinuantPartAtSomeTime ;
-     rdfs:label "hasMemberPartAtSomeTime" ;
-     rdfs:comment ":hasMemberPartAtSomeTime is equivalent to the BFO property 'has member part at some time' (http://purl.obolibrary.org/obo/BFO_0000115)" ;
-     rdfs:domain :MaterialEntity ;
-     rdfs:range :MaterialEntity .
+     rdfs:comment "existsAt is equivalent to the BFO property 'exists at' (http://purl.obolibrary.org/obo/BFO_0000108)" .
  
   :hasOccurrentPart a owl:ObjectProperty, owl:TransitiveProperty ;
      rdfs:label "hasOccurrentPart" ;
-     rdfs:comment ":hasOccurrentPart is equivalent to the BFO property 'has occurrent part' (http://purl.obolibrary.org/obo/BFO_0000117)" ;
+     rdfs:comment "hasOccurrentPart is equivalent to the BFO property 'has occurrent part' (http://purl.obolibrary.org/obo/BFO_0000117)" ;
      rdfs:domain :Occurrent ;
      rdfs:range :Occurrent .
  
   :hasProperOccurrentPart a owl:ObjectProperty ;
      rdfs:subPropertyOf :hasOccurrentPart ;
      rdfs:label "hasProperOccurrentPart" ;
-     rdfs:comment ":hasProperOccurrentPart is equivalent to the BFO property 'has proper occurrent part' (http://purl.obolibrary.org/obo/BFO_0000118)" ;
+     rdfs:comment "hasProperOccurrentPart is equivalent to the BFO property 'has proper occurrent part' (http://purl.obolibrary.org/obo/BFO_0000118)" ;
      rdfs:domain :Occurrent ;
      rdfs:range :Occurrent .
  
-  :hasTemporalPart a owl:ObjectProperty, owl:TransitiveProperty ;
+  :hasTemporalPart a owl:TransitiveProperty, owl:ObjectProperty ;
      rdfs:subPropertyOf :hasOccurrentPart ;
      rdfs:label "hasTemporalPart" ;
-     rdfs:comment ":hasTemporalPart is equivalent to the BFO property 'has temporal part' (http://purl.obolibrary.org/obo/BFO_0000121)" ;
+     rdfs:comment "hasTemporalPart is equivalent to the BFO property 'has temporal part' (http://purl.obolibrary.org/obo/BFO_0000121)" ;
      rdfs:domain :Occurrent ;
      rdfs:range :Occurrent .
- 
-  :hasLocationAtSomeTime a owl:ObjectProperty ;
-     rdfs:label "hasLocationAtSomeTime" ;
-     rdfs:comment ":hasLocationAtSomeTime is equivalent to the BFO property 'has location at some time' (http://purl.obolibrary.org/obo/BFO_0000124)" ;
-     rdfs:domain  [ a owl:Class ; owl:intersectionOf  (:IndependentContinuant  [ a owl:Class ; owl:complementOf :SpatialRegion ]) ] ;
-     rdfs:range  [ a owl:Class ; owl:intersectionOf  (:IndependentContinuant  [ a owl:Class ; owl:complementOf :SpatialRegion ]) ] .
- 
-  :materialBasisOfAtSomeTime a owl:ObjectProperty ;
-     rdfs:label "materialBasisOfAtSomeTime" ;
-     rdfs:comment ":materialBasisOfAtSomeTime is equivalent to the BFO property 'material basis of at some time' (http://purl.obolibrary.org/obo/BFO_0000127)" ;
-     rdfs:domain :MaterialEntity ;
-     rdfs:range :Disposition .
- 
-  :memberPartOfAtSomeTime a owl:ObjectProperty ;
-     rdfs:subPropertyOf :properContinuantPartOfAtSomeTime ;
-     rdfs:label "memberPartOfAtSomeTime" ;
-     rdfs:comment ":memberPartOfAtSomeTime is equivalent to the BFO property 'member part of at some time' (http://purl.obolibrary.org/obo/BFO_0000129)" ;
-     rdfs:domain :MaterialEntity ;
-     rdfs:range :MaterialEntity .
  
   :occurrentPartOf a owl:ObjectProperty, owl:TransitiveProperty ;
      rdfs:label "occurrentPartOf" ;
-     rdfs:comment ":occurrentPartOf is equivalent to the BFO property 'occurrent part of' (http://purl.obolibrary.org/obo/BFO_0000132)" ;
+     rdfs:comment "occurrentPartOf is equivalent to the BFO property 'occurrent part of' (http://purl.obolibrary.org/obo/BFO_0000132)" ;
      rdfs:domain :Occurrent ;
      rdfs:range :Occurrent .
  
   :properTemporalPartOf a owl:ObjectProperty ;
      rdfs:subPropertyOf :temporalPartOf ;
      rdfs:label "properTemporalPartOf" ;
-     rdfs:comment ":properTemporalPartOf is equivalent to the BFO property 'proper temporal part of' (http://purl.obolibrary.org/obo/BFO_0000136)" ;
+     rdfs:comment "properTemporalPartOf is equivalent to the BFO property 'proper temporal part of' (http://purl.obolibrary.org/obo/BFO_0000136)" ;
      rdfs:domain :Occurrent ;
      rdfs:range :Occurrent .
- 
-  :properContinuantPartOfAtAllTimes a owl:ObjectProperty, owl:TransitiveProperty ;
-     rdfs:subPropertyOf :continuantPartOfAtAllTimes, :properContinuantPartOfAtSomeTime ;
-     rdfs:label "properContinuantPartOfAtAllTimes" ;
-     rdfs:comment ":properContinuantPartOfAtAllTimes is equivalent to the BFO property 'proper continuant part of at all times' (http://purl.obolibrary.org/obo/BFO_0000137)" ;
-     rdfs:domain :Continuant ;
-     rdfs:range :Continuant .
  
   :properOccurrentPartOf a owl:ObjectProperty ;
      rdfs:subPropertyOf :occurrentPartOf ;
      rdfs:label "properOccurrentPartOf" ;
-     rdfs:comment ":properOccurrentPartOf is equivalent to the BFO property 'proper occurrent part of' (http://purl.obolibrary.org/obo/BFO_0000138)" ;
+     rdfs:comment "properOccurrentPartOf is equivalent to the BFO property 'proper occurrent part of' (http://purl.obolibrary.org/obo/BFO_0000138)" ;
      rdfs:domain :Occurrent ;
      rdfs:range :Occurrent .
  
   :temporalPartOf a owl:ObjectProperty, owl:TransitiveProperty ;
      rdfs:subPropertyOf :occurrentPartOf ;
      rdfs:label "temporalPartOf" ;
-     rdfs:comment ":temporalPartOf is equivalent to the BFO property 'temporal part of' (http://purl.obolibrary.org/obo/BFO_0000139)" ;
+     rdfs:comment "temporalPartOf is equivalent to the BFO property 'temporal part of' (http://purl.obolibrary.org/obo/BFO_0000139)" ;
      rdfs:domain :Occurrent ;
      rdfs:range :Occurrent .
  
   :temporallyProjectsOnto a owl:FunctionalProperty, owl:ObjectProperty ;
      rdfs:label "temporallyProjectsOnto" ;
-     rdfs:comment ":temporallyProjectsOnto is equivalent to the BFO property 'temporally projects onto' (http://purl.obolibrary.org/obo/BFO_0000153)" ;
+     rdfs:comment "temporallyProjectsOnto is equivalent to the BFO property 'temporally projects onto' (http://purl.obolibrary.org/obo/BFO_0000153)" ;
      rdfs:domain :SpatiotemporalRegion ;
      rdfs:range :TemporalRegion .
- 
-  :materialBasisOfAtAllTimes a owl:ObjectProperty ;
-     rdfs:subPropertyOf :materialBasisOfAtSomeTime ;
-     rdfs:label "materialBasisOfAtAllTimes" ;
-     rdfs:comment ":materialBasisOfAtAllTimes is equivalent to the BFO property 'material basis of at all times' (http://purl.obolibrary.org/obo/BFO_0000163)" ;
-     rdfs:domain :MaterialEntity ;
-     rdfs:range :Disposition .
- 
-  :concretizesAtAllTimes a owl:ObjectProperty ;
-     rdfs:subPropertyOf :concretizesAtSomeTime ;
-     rdfs:label "concretizesAtAllTimes" ;
-     rdfs:comment ":concretizesAtAllTimes is equivalent to the BFO property 'concretizes at all times' (http://purl.obolibrary.org/obo/BFO_0000164)" ;
-     rdfs:domain  [ a owl:Class ; owl:unionOf  (:SpecificallyDependentContinuant :Process) ] ;
-     rdfs:range :GenericallyDependentContinuant .
- 
-  :isConcretizedByAtAllTimes a owl:ObjectProperty ;
-     rdfs:subPropertyOf :isConcretizedByAtSomeTime ;
-     rdfs:label "isConcretizedByAtAllTimes" ;
-     rdfs:comment ":isConcretizedByAtAllTimes is equivalent to the BFO property 'is concretized by at all times' (http://purl.obolibrary.org/obo/BFO_0000165)" ;
-     rdfs:domain :GenericallyDependentContinuant ;
-     rdfs:range  [ a owl:Class ; owl:unionOf  (:SpecificallyDependentContinuant :Process) ] .
- 
-  :participatesInAtAllTimes a owl:ObjectProperty ;
-     rdfs:subPropertyOf :participatesInAtSomeTime ;
-     rdfs:label "participatesInAtAllTimes" ;
-     rdfs:comment ":participatesInAtAllTimes is equivalent to the BFO property 'participates in at all times' (http://purl.obolibrary.org/obo/BFO_0000166)" ;
-     rdfs:domain  [ a owl:Class ; owl:unionOf  ( [ a owl:Class ; owl:intersectionOf  (:IndependentContinuant  [ a owl:Class ; owl:complementOf :SpatialRegion ]) ] :SpecificallyDependentContinuant :GenericallyDependentContinuant) ] ;
-     rdfs:range :Process .
- 
-  :hasParticipantAtAllTimes a owl:ObjectProperty ;
-     rdfs:subPropertyOf :hasParticipantAtSomeTime ;
-     rdfs:label "hasParticipantAtAllTimes" ;
-     rdfs:comment ":hasParticipantAtAllTimes is equivalent to the BFO property 'has participant at all times' (http://purl.obolibrary.org/obo/BFO_0000167)" ;
-     rdfs:domain :Process ;
-     rdfs:range  [ a owl:Class ; owl:unionOf  ( [ a owl:Class ; owl:intersectionOf  (:IndependentContinuant  [ a owl:Class ; owl:complementOf :SpatialRegion ]) ] :SpecificallyDependentContinuant :GenericallyDependentContinuant) ] .
- 
-  :hasLocationAtAllTimes a owl:ObjectProperty, owl:TransitiveProperty ;
-     rdfs:subPropertyOf :hasLocationAtSomeTime ;
-     rdfs:label "hasLocationAtAllTimes" ;
-     rdfs:comment ":hasLocationAtAllTimes is equivalent to the BFO property 'has location at all times' (http://purl.obolibrary.org/obo/BFO_0000170)" ;
-     rdfs:domain  [ a owl:Class ; owl:intersectionOf  (:IndependentContinuant  [ a owl:Class ; owl:complementOf :SpatialRegion ]) ] ;
-     rdfs:range  [ a owl:Class ; owl:intersectionOf  (:IndependentContinuant  [ a owl:Class ; owl:complementOf :SpatialRegion ]) ] .
- 
-  :locatedInAtSomeTime a owl:ObjectProperty ;
-     rdfs:label "locatedInAtSomeTime" ;
-     rdfs:comment ":locatedInAtSomeTime is equivalent to the BFO property 'located in at some time' (http://purl.obolibrary.org/obo/BFO_0000171)" ;
-     rdfs:domain  [ a owl:Class ; owl:intersectionOf  (:IndependentContinuant  [ a owl:Class ; owl:complementOf :SpatialRegion ]) ] ;
-     rdfs:range  [ a owl:Class ; owl:intersectionOf  (:IndependentContinuant  [ a owl:Class ; owl:complementOf :SpatialRegion ]) ] .
- 
-  :hasMemberPartAtAllTimes a owl:ObjectProperty ;
-     rdfs:subPropertyOf :hasProperContinuantPartAtAllTimes, :hasMemberPartAtSomeTime ;
-     rdfs:label "hasMemberPartAtAllTimes" ;
-     rdfs:comment ":hasMemberPartAtAllTimes is equivalent to the BFO property 'has member part at all times' (http://purl.obolibrary.org/obo/BFO_0000172)" ;
-     rdfs:domain :MaterialEntity ;
-     rdfs:range :MaterialEntity .
- 
-  :memberPartOfAtAllTimes a owl:ObjectProperty ;
-     rdfs:subPropertyOf :memberPartOfAtSomeTime, :properContinuantPartOfAtAllTimes ;
-     rdfs:label "memberPartOfAtAllTimes" ;
-     rdfs:comment ":memberPartOfAtAllTimes is equivalent to the BFO property 'member part of at all times' (http://purl.obolibrary.org/obo/BFO_0000173)" ;
-     rdfs:domain :MaterialEntity ;
-     rdfs:range :MaterialEntity .
- 
-  :hasProperContinuantPartAtSomeTime a owl:ObjectProperty ;
-     rdfs:subPropertyOf :hasContinuantPartAtSomeTime ;
-     rdfs:label "hasProperContinuantPartAtSomeTime" ;
-     rdfs:comment ":hasProperContinuantPartAtSomeTime is equivalent to the BFO property 'has proper continuant part at some time' (http://purl.obolibrary.org/obo/BFO_0000174)" ;
-     rdfs:domain :Continuant ;
-     rdfs:range :Continuant .
- 
-  :properContinuantPartOfAtSomeTime a owl:ObjectProperty ;
-     rdfs:subPropertyOf :continuantPartOfAtSomeTime ;
-     rdfs:label "properContinuantPartOfAtSomeTime" ;
-     rdfs:comment ":properContinuantPartOfAtSomeTime is equivalent to the BFO property 'proper continuant part of at some time' (http://purl.obolibrary.org/obo/BFO_0000175)" ;
-     rdfs:domain :Continuant ;
-     rdfs:range :Continuant .
- 
-  :continuantPartOfAtSomeTime a owl:ObjectProperty ;
-     rdfs:label "continuantPartOfAtSomeTime" ;
-     rdfs:comment ":continuantPartOfAtSomeTime is equivalent to the BFO property 'continuant part of at some time' (http://purl.obolibrary.org/obo/BFO_0000176)" ;
-     rdfs:domain :Continuant ;
-     rdfs:range :Continuant .
- 
-  :continuantPartOfAtAllTimes a owl:ObjectProperty, owl:TransitiveProperty ;
-     rdfs:subPropertyOf :continuantPartOfAtSomeTime ;
-     rdfs:label "continuantPartOfAtAllTimes" ;
-     rdfs:comment ":continuantPartOfAtAllTimes is equivalent to the BFO property 'continuant part of at all times' (http://purl.obolibrary.org/obo/BFO_0000177)" ;
-     rdfs:domain :Continuant ;
-     rdfs:range :Continuant .
- 
-  :hasContinuantPartAtSomeTime a owl:ObjectProperty ;
-     rdfs:label "hasContinuantPartAtSomeTime" ;
-     rdfs:comment ":hasContinuantPartAtSomeTime is equivalent to the BFO property 'has continuant part at some time' (http://purl.obolibrary.org/obo/BFO_0000178)" ;
-     rdfs:domain :Continuant ;
-     rdfs:range :Continuant .
  
   :hasProperTemporalPart a owl:ObjectProperty ;
      rdfs:subPropertyOf :hasTemporalPart ;
      rdfs:label "hasProperTemporalPart" ;
-     rdfs:comment ":hasProperTemporalPart is equivalent to the BFO property 'has proper temporal part' (http://purl.obolibrary.org/obo/BFO_0000181)" ;
+     rdfs:comment "hasProperTemporalPart is equivalent to the BFO property 'has proper temporal part' (http://purl.obolibrary.org/obo/BFO_0000181)" ;
      rdfs:domain :Occurrent ;
      rdfs:range :Occurrent .
  
   :environs a owl:ObjectProperty ;
      rdfs:label "environs" ;
-     rdfs:comment ":environs is equivalent to the BFO property 'environs' (http://purl.obolibrary.org/obo/BFO_0000183)" ;
+     rdfs:comment "environs is equivalent to the BFO property 'environs' (http://purl.obolibrary.org/obo/BFO_0000183)" ;
      rdfs:domain  [ a owl:Class ; owl:unionOf  (:MaterialEntity :Site) ] ;
      rdfs:range  [ a owl:Class ; owl:unionOf  (:Process :ProcessBoundary) ] .
  
-  :historyOf a owl:ObjectProperty, owl:InverseFunctionalProperty, owl:FunctionalProperty ;
+  :historyOf a owl:ObjectProperty, owl:FunctionalProperty, owl:InverseFunctionalProperty ;
      rdfs:label "historyOf" ;
-     rdfs:comment ":historyOf is equivalent to the BFO property 'history of' (http://purl.obolibrary.org/obo/BFO_0000184)" ;
+     rdfs:comment "historyOf is equivalent to the BFO property 'history of' (http://purl.obolibrary.org/obo/BFO_0000184)" ;
      rdfs:domain :History ;
      rdfs:range :MaterialEntity .
  
   :hasHistory a owl:ObjectProperty ;
      rdfs:label "hasHistory" ;
-     rdfs:comment ":hasHistory is equivalent to the BFO property 'has history' (http://purl.obolibrary.org/obo/BFO_0000185)" ;
+     rdfs:comment "hasHistory is equivalent to the BFO property 'has history' (http://purl.obolibrary.org/obo/BFO_0000185)" ;
      rdfs:domain :MaterialEntity ;
      rdfs:range :History .
  
   :specificallyDependedOnBy a owl:ObjectProperty ;
      rdfs:label "specificallyDependedOnBy" ;
-     rdfs:comment ":specificallyDependedOnBy is equivalent to the BFO property 'specifically depended on by' (http://purl.obolibrary.org/obo/BFO_0000194)" ;
+     rdfs:comment "specificallyDependedOnBy is equivalent to the BFO property 'specifically depended on by' (http://purl.obolibrary.org/obo/BFO_0000194)" ;
      rdfs:domain  [ a owl:Class ; owl:unionOf  (:SpecificallyDependentContinuant  [ a owl:Class ; owl:intersectionOf  (:IndependentContinuant  [ a owl:Class ; owl:complementOf :SpatialRegion ]) ]) ] ;
      rdfs:range :SpecificallyDependentContinuant .
  
   :specificallyDependsOn a owl:ObjectProperty ;
      rdfs:label "specificallyDependsOn" ;
-     rdfs:comment ":specificallyDependsOn is equivalent to the BFO property 'specifically depends on' (http://purl.obolibrary.org/obo/BFO_0000195)" ;
+     rdfs:comment "specificallyDependsOn is equivalent to the BFO property 'specifically depends on' (http://purl.obolibrary.org/obo/BFO_0000195)" ;
      rdfs:domain :SpecificallyDependentContinuant ;
      rdfs:range  [ a owl:Class ; owl:unionOf  (:SpecificallyDependentContinuant  [ a owl:Class ; owl:intersectionOf  (:IndependentContinuant  [ a owl:Class ; owl:complementOf :SpatialRegion ]) ]) ] .
  
   :bearerOf a owl:ObjectProperty ;
      rdfs:subPropertyOf :specificallyDependedOnBy ;
      rdfs:label "bearerOf" ;
-     rdfs:comment ":bearerOf is equivalent to the BFO property 'bearer of' (http://purl.obolibrary.org/obo/BFO_0000196)" ;
+     rdfs:comment "bearerOf is equivalent to the BFO property 'bearer of' (http://purl.obolibrary.org/obo/BFO_0000196)" ;
      rdfs:domain  [ a owl:Class ; owl:intersectionOf  (:IndependentContinuant  [ a owl:Class ; owl:complementOf :SpatialRegion ]) ] ;
      rdfs:range :SpecificallyDependentContinuant .
  
   :inheresIn a owl:ObjectProperty ;
      rdfs:subPropertyOf :specificallyDependsOn ;
      rdfs:label "inheresIn" ;
-     rdfs:comment ":inheresIn is equivalent to the BFO property 'inheres in' (http://purl.obolibrary.org/obo/BFO_0000197)" ;
+     rdfs:comment "inheresIn is equivalent to the BFO property 'inheres in' (http://purl.obolibrary.org/obo/BFO_0000197)" ;
      rdfs:domain :SpecificallyDependentContinuant ;
      rdfs:range  [ a owl:Class ; owl:intersectionOf  (:IndependentContinuant  [ a owl:Class ; owl:complementOf :SpatialRegion ]) ] .
  
-  :occupiesTemporalRegion a owl:FunctionalProperty, owl:ObjectProperty ;
+  :occupiesTemporalRegion a owl:ObjectProperty, owl:FunctionalProperty ;
      rdfs:label "occupiesTemporalRegion" ;
-     rdfs:comment ":occupiesTemporalRegion is equivalent to the BFO property 'occupies temporal region' (http://purl.obolibrary.org/obo/BFO_0000199)" ;
+     rdfs:comment "occupiesTemporalRegion is equivalent to the BFO property 'occupies temporal region' (http://purl.obolibrary.org/obo/BFO_0000199)" ;
      rdfs:domain  [ a owl:Class ; owl:unionOf  (:Process :ProcessBoundary) ] ;
      rdfs:range :TemporalRegion .
  
-  :occupiesSpatiotemporalRegion a owl:FunctionalProperty, owl:ObjectProperty ;
+  :occupiesSpatiotemporalRegion a owl:ObjectProperty, owl:FunctionalProperty ;
      rdfs:label "occupiesSpatiotemporalRegion" ;
-     rdfs:comment ":occupiesSpatiotemporalRegion is equivalent to the BFO property 'occupies spatiotemporal region' (http://purl.obolibrary.org/obo/BFO_0000200)" ;
+     rdfs:comment "occupiesSpatiotemporalRegion is equivalent to the BFO property 'occupies spatiotemporal region' (http://purl.obolibrary.org/obo/BFO_0000200)" ;
      rdfs:domain  [ a owl:Class ; owl:unionOf  (:Process :ProcessBoundary) ] ;
      rdfs:range :SpatiotemporalRegion .
  
-  :occupiesSpatialRegionAtSomeTime a owl:ObjectProperty ;
-     rdfs:label "occupiesSpatialRegionAtSomeTime" ;
-     rdfs:comment ":occupiesSpatialRegionAtSomeTime is equivalent to the BFO property 'occupies spatial region at some time' (http://purl.obolibrary.org/obo/BFO_0000210)" ;
-     rdfs:domain  [ a owl:Class ; owl:intersectionOf  (:IndependentContinuant  [ a owl:Class ; owl:complementOf :SpatialRegion ]) ] ;
-     rdfs:range :SpatialRegion .
- 
-  :occupiesSpatialRegionAtAllTimes a owl:FunctionalProperty, owl:ObjectProperty ;
-     rdfs:subPropertyOf :occupiesSpatialRegionAtSomeTime ;
-     rdfs:label "occupiesSpatialRegionAtAllTimes" ;
-     rdfs:comment ":occupiesSpatialRegionAtAllTimes is equivalent to the BFO property 'occupies spatial region at all times' (http://purl.obolibrary.org/obo/BFO_0000211)" ;
-     rdfs:domain  [ a owl:Class ; owl:intersectionOf  (:IndependentContinuant  [ a owl:Class ; owl:complementOf :SpatialRegion ]) ] ;
-     rdfs:range :SpatialRegion .
- 
-  :spatiallyProjectsOntoAtSomeTime a owl:ObjectProperty ;
-     rdfs:label "spatiallyProjectsOntoAtSomeTime" ;
-     rdfs:comment ":spatiallyProjectsOntoAtSomeTime is equivalent to the BFO property 'spatially projects onto at some time' (http://purl.obolibrary.org/obo/BFO_0000216)" ;
-     rdfs:domain :SpatiotemporalRegion ;
-     rdfs:range :SpatialRegion .
- 
-  :spatiallyProjectsOntoAtAllTimes a owl:ObjectProperty, owl:FunctionalProperty ;
-     rdfs:subPropertyOf :spatiallyProjectsOntoAtSomeTime ;
-     rdfs:label "spatiallyProjectsOntoAtAllTimes" ;
-     rdfs:comment ":spatiallyProjectsOntoAtAllTimes is equivalent to the BFO property 'spatially projects onto at all times' (http://purl.obolibrary.org/obo/BFO_0000217)" ;
-     rdfs:domain :SpatiotemporalRegion ;
-     rdfs:range :SpatialRegion .
- 
-  :hasMaterialBasisAtSomeTime a owl:ObjectProperty ;
-     rdfs:label "hasMaterialBasisAtSomeTime" ;
-     rdfs:comment ":hasMaterialBasisAtSomeTime is equivalent to the BFO property 'has material basis at some time' (http://purl.obolibrary.org/obo/BFO_0000218)" ;
-     rdfs:domain :Disposition ;
-     rdfs:range :MaterialEntity .
- 
-  :genericallyDependsOnAtAllTimes a owl:ObjectProperty ;
-     rdfs:subPropertyOf :genericallyDependsOnAtSomeTime ;
-     rdfs:label "genericallyDependsOnAtAllTimes" ;
-     rdfs:comment ":genericallyDependsOnAtAllTimes is equivalent to the BFO property 'generically depends on at all times' (http://purl.obolibrary.org/obo/BFO_0000219)" ;
-     rdfs:domain :GenericallyDependentContinuant ;
-     rdfs:range  [ a owl:Class ; owl:intersectionOf  (:IndependentContinuant  [ a owl:Class ; owl:complementOf :SpatialRegion ]) ] .
- 
-  :isCarrierOfAtAllTimes a owl:ObjectProperty ;
-     rdfs:subPropertyOf :isCarrierOfAtSomeTime ;
-     rdfs:label "isCarrierOfAtAllTimes" ;
-     rdfs:comment ":isCarrierOfAtAllTimes is equivalent to the BFO property 'is carrier of at all times' (http://purl.obolibrary.org/obo/BFO_0000220)" ;
-     rdfs:domain  [ a owl:Class ; owl:intersectionOf  (:IndependentContinuant  [ a owl:Class ; owl:complementOf :SpatialRegion ]) ] ;
-     rdfs:range :GenericallyDependentContinuant .
- 
   :firstInstantOf a owl:ObjectProperty ;
      rdfs:label "firstInstantOf" ;
-     rdfs:comment ":firstInstantOf is equivalent to the BFO property 'first instant of' (http://purl.obolibrary.org/obo/BFO_0000221)" ;
+     rdfs:comment "firstInstantOf is equivalent to the BFO property 'first instant of' (http://purl.obolibrary.org/obo/BFO_0000221)" ;
      rdfs:domain :TemporalInstant ;
      rdfs:range :TemporalRegion .
  
   :hasFirstInstant a owl:ObjectProperty, owl:FunctionalProperty ;
      rdfs:label "hasFirstInstant" ;
-     rdfs:comment ":hasFirstInstant is equivalent to the BFO property 'has first instant' (http://purl.obolibrary.org/obo/BFO_0000222)" ;
+     rdfs:comment "hasFirstInstant is equivalent to the BFO property 'has first instant' (http://purl.obolibrary.org/obo/BFO_0000222)" ;
      rdfs:domain :TemporalRegion ;
      rdfs:range :TemporalInstant .
  
   :lastInstantOf a owl:ObjectProperty ;
      rdfs:label "lastInstantOf" ;
-     rdfs:comment ":lastInstantOf is equivalent to the BFO property 'last instant of' (http://purl.obolibrary.org/obo/BFO_0000223)" ;
+     rdfs:comment "lastInstantOf is equivalent to the BFO property 'last instant of' (http://purl.obolibrary.org/obo/BFO_0000223)" ;
      rdfs:domain :TemporalInstant ;
      rdfs:range :TemporalRegion .
  
-  :hasLastInstant a owl:FunctionalProperty, owl:ObjectProperty ;
+  :hasLastInstant a owl:ObjectProperty, owl:FunctionalProperty ;
      rdfs:label "hasLastInstant" ;
-     rdfs:comment ":hasLastInstant is equivalent to the BFO property 'has last instant' (http://purl.obolibrary.org/obo/BFO_0000224)" ;
+     rdfs:comment "hasLastInstant is equivalent to the BFO property 'has last instant' (http://purl.obolibrary.org/obo/BFO_0000224)" ;
      rdfs:domain :TemporalRegion ;
      rdfs:range :TemporalInstant .
 ###  https://w3id.org/digitalconstruction/Entities#belongsTo
