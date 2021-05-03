@@ -696,6 +696,14 @@ dicv:Comparison rdfs:subClassOf :RelationalQuality .
               rdfs:range :Category ;
               rdfs:label "isClassifiedBy" .
 
+:isAssignedToType rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :isClassifiedBy ;
+              owl:inverseOf :assignsTypeTo ;
+              rdfs:domain :MaterialEntity;
+              rdfs:range :Category ;
+	      rdfs:comment "Assigns a selected type to an entity. The classification is not descriptive but rather a restriction to some subtype of the original type. An example is product assignment." ;
+              rdfs:label "isAssignedToType" .
+
 
 ###  https://w3id.org/digitalconstruction/Entities#classifies
 :classifies rdf:type owl:ObjectProperty ;
@@ -703,6 +711,14 @@ dicv:Comparison rdfs:subClassOf :RelationalQuality .
             rdfs:domain :Category ;
             rdfs:range :Entity ;
             rdfs:label "classifies" .
+
+:assignsTypeTo rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :classifies ;
+              owl:inverseOf :isAssignedToType ;
+              rdfs:domain :Category ;
+              rdfs:range :MaterialEntity;
+	      rdfs:comment "Assignment of a selected type to an entity. An example is product assignment." ;
+              rdfs:label "assignsTypeTo" .
 
 :hasAdjacentElement rdf:type owl:ObjectProperty , owl:SymmetricProperty ;
              rdfs:domain :IndependentContinuant ;
@@ -894,6 +910,14 @@ dicv:Comparison rdfs:subClassOf :RelationalQuality .
               rdfs:range :Identifier ;
               rdfs:label "isIdentifiedBy" .
 
+:isAssignedToInstance rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :isIdentifiedBy ;
+              owl:inverseOf :assignsInstanceTo ;
+              rdfs:domain :MaterialEntity ;
+              rdfs:range :Identifier ;
+              rdfs:label "isAssignedToInstance" .
+
+
 
 ###  https://w3id.org/digitalconstruction/Entities#identifies
 :identifies rdf:type owl:ObjectProperty ;
@@ -901,6 +925,13 @@ dicv:Comparison rdfs:subClassOf :RelationalQuality .
             rdfs:domain :Identifier ;
             rdfs:range :Entity ;
             rdfs:label "identifies" .
+
+:assignsInstanceTo rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :identifies ;
+              owl:inverseOf :isAssignedToInstance ;
+              rdfs:domain :Identifier ;
+              rdfs:range :MaterialEntity ;
+              rdfs:label "assignsInstanceTo" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#includesRole
