@@ -1388,6 +1388,10 @@ Examples: apartment, condomium, studio.""" ;
         rdfs:subClassOf :Device ;
         rdfs:label "Sensor" .
 
+:Actuator rdf:type owl:Class ;
+        rdfs:subClassOf :Device ;
+        rdfs:label "Actuator" .
+
 
 ###  https://w3id.org/digitalconstruction/Entities#SpatialExtent
 :SpatialExtent rdf:type owl:Class ;
