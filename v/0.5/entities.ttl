@@ -804,6 +804,18 @@ dicv:Comparison rdfs:subClassOf :RelationalQuality .
            rdfs:range :Entity ;
            rdfs:label "hasMember" .
 
+:hasSubGroup rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isSubGroupOf ;
+           rdfs:domain :Group ;
+           rdfs:range :Group ;
+           rdfs:label "hasSubGroup" .
+
+:isSubGroupOf rdf:type owl:ObjectProperty ;
+           owl:inverseOf :hasSubGroup ;
+           rdfs:domain :Group ;
+           rdfs:range :Group ;
+           rdfs:label "isSubGroupOf" .
+
 
 ###  https://w3id.org/digitalconstruction/Entities#hasMemberPart
 :hasMemberPart rdf:type owl:ObjectProperty ;
@@ -1353,10 +1365,6 @@ Examples: Vehices, cranes, and tools such as hammers and drills.""" ;
                      rdfs:label "OneAngleOrientation" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#ProcurementPackage
-:ProcurementPackage rdf:type owl:Class ;
-                    rdfs:subClassOf :Group ;
-                    rdfs:label "ProcurementPackage" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#RealEstate
@@ -1379,12 +1387,6 @@ Examples: apartment, condomium, studio.""" ;
 :Sensor rdf:type owl:Class ;
         rdfs:subClassOf :Device ;
         rdfs:label "Sensor" .
-
-
-###  https://w3id.org/digitalconstruction/Entities#Shipment
-:Shipment rdf:type owl:Class ;
-          rdfs:subClassOf :Group ;
-          rdfs:label "Shipment" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#SpatialExtent
