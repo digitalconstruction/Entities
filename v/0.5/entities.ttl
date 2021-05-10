@@ -672,6 +672,7 @@ dicv:QuantityKind rdfs:subClassOf :GenericallyDependentContinuant .
 
 dicv:Constraint rdfs:subClassOf :RelationalQuality .
 dicv:Comparison rdfs:subClassOf :RelationalQuality .
+dicv:Operator rdfs:subClassOf :RelationalQuality .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#belongsTo
@@ -1372,7 +1373,6 @@ Examples: Vehices, cranes, and tools such as hammers and drills.""" ;
             rdfs:subClassOf :BuiltAsset ;
             rdfs:comment "A property consisting of land or buildings." ;
             rdfs:label "RealEstate" .
-
 
 ###  https://w3id.org/digitalconstruction/Entities#ResidentialUnit
 :ResidentialUnit rdf:type owl:Class ;
