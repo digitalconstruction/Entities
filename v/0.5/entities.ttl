@@ -838,10 +838,8 @@ dicv:Operator rdfs:subClassOf :RelationalQuality .
                             rdfs:label "hasMinimumGeodeticPosition" .
 
 
-###  https://w3id.org/digitalconstruction/Entities#hasParticipant
-:hasParticipant rdf:type owl:ObjectProperty ;
-                owl:inverseOf :isParticipantIn ;
-                rdfs:label "hasParticipant" .
+# ###  https://w3id.org/digitalconstruction/Entities#hasParticipant
+:hasParticipant owl:inverseOf :participatesIn  .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#hasQuality
@@ -991,7 +989,7 @@ dicv:Operator rdfs:subClassOf :RelationalQuality .
 
 ###  https://w3id.org/digitalconstruction/Entities#isEquipmentIn
 :isEquipmentIn rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf :isParticipantIn ;
+               rdfs:subPropertyOf :participatesIn ;
                rdfs:domain :Equipment ;
                rdfs:range :Process ;
                rdfs:label "isEquipmentIn" .
@@ -1024,8 +1022,8 @@ dicv:Operator rdfs:subClassOf :RelationalQuality .
 		
 
 ###  https://w3id.org/digitalconstruction/Entities#isParticipantIn
-:isParticipantIn rdf:type owl:ObjectProperty ;
-                 rdfs:label "isParticipantIn" .
+# :isParticipantIn rdf:type owl:ObjectProperty ;
+#                  rdfs:label "isParticipantIn" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#isQualityOf
