@@ -667,7 +667,7 @@
 :Quality rdfs:subClassOf dicv:Property .
 dicv:PropertyState rdfs:subClassOf :SpecificallyDependentContinuant .
 
-dicv:Operator rdfs:subClassOf :GenericallyDependentContinuant .
+# dicv:Operator rdfs:subClassOf :GenericallyDependentContinuant .
 dicv:QuantityKind rdfs:subClassOf :GenericallyDependentContinuant .
 
 dicv:Constraint rdfs:subClassOf :RelationalQuality .
