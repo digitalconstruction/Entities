@@ -1305,6 +1305,20 @@ Examples: Sensor, actuator, dishwasher, heater.""" ;
         rdfs:comment """A device that is capable of producing information about its environment.""" ;
         rdfs:label "Sensor" .
 
+:isDeterminedBy rdf:type owl:ObjectProperty ;
+           owl:inverseOf :hasDetermined ;
+           rdfs:domain dicv:PropertyState ;
+           rdfs:range :MaterialEntity ;
+	   rdfs:comment "The material entity that has determined the value of the property state. For example, an agent or a sensor" ;
+           rdfs:label "isDeterminedBy" .
+
+:hasDetermined rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isDeterminedBy ;
+           rdfs:domain :MaterialEntity ;
+           rdfs:range dicv:PropertyState ;
+	   rdfs:comment "The property state(s) that have been determined by a material entity (an agent or a sensor)." ;
+           rdfs:label "hasDetermined" .
+
 
 ###  https://w3id.org/digitalconstruction/Entities#EntityScope
 :EntityScope rdf:type owl:Class ;
