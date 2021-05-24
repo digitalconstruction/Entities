@@ -721,16 +721,22 @@ dicv:Operator rdfs:subClassOf :RelationalQuality .
 	      rdfs:comment "Assignment of a selected type to an entity. An example is product assignment." ;
               rdfs:label "assignsTypeTo" .
 
+:EntityState rdf:type owl:Class ;
+          rdfs:subClassOf :Disposition ;
+	  rdfs:comment "Inherent state of an entity. For instance, possible states for a device are: initial, manufactured, installed, approved, and for a wall: initial, frame constructed, plated, plastered, painted, approved. The move from state to another requires the execution of appropriate activities." ;
+          rdfs:label "EntityState" .
+
+
 :hasEntityState rdf:type owl:ObjectProperty ;
               owl:inverseOf :isEntityStateOf ;
               rdfs:domain :Entity ;
-              rdfs:range :Disposition;
+              rdfs:range :EntityState;
 	      rdfs:comment "State of an entity" ;
               rdfs:label "hasEntityState" .
 
 :isEntityStateOf rdf:type owl:ObjectProperty ;
               owl:inverseOf :hasEntityState ;
-              rdfs:domain :Disposition ;
+              rdfs:domain :EntityState ;
               rdfs:range :Entity ;
 	      rdfs:comment "Entity that the state applies to" ;
               rdfs:label "isEntityStateOf" .
