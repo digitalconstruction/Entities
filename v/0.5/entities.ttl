@@ -790,9 +790,16 @@ dicv:Operator rdfs:subClassOf :RelationalQuality .
 
 ###  https://w3id.org/digitalconstruction/Entities#hasEntitiesFrom
 :hasEntitiesFrom rdf:type owl:ObjectProperty ;
+		 owl:inverseOf :containsIdentifiedEntities ;
                  rdfs:domain :EntityScope ;
                  rdfs:range :Entity ;
                  rdfs:label "hasEntitiesFrom" .
+
+:containsIdentifiedEntities rdf:type owl:ObjectProperty ;
+			    owl:inverseOf :hasEntitiesFrom ;
+                 	    rdfs:domain :Entity ;
+                 	    rdfs:range :EntityScope ;
+                 	    rdfs:label "containsIdentifiedEntities" .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#hasEquipment
