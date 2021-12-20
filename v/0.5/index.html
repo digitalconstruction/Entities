@@ -344,6 +344,12 @@
    <h2>
     Overview
    </h2>
+   <p>
+    Digital Construction Entities module defines the central upper-level structure of
+the Digital Construction Ontologies. Other ontology modules add
+definitions about specific areas, such as variable properties, agents, materials, and
+information.
+   </p>
    <center>
     <p>
      <img src="entities-Page-4.drawio.svg" width="80%"/>
@@ -964,15 +970,15 @@
        In range of
       </th>
       <td>
-       <a href="#isBuildingUnitOf">
-        isBuildingUnitOf
+       <a href="#hasBuilding">
+        hasBuilding
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasBuilding">
-        hasBuilding
+       <a href="#isBuildingUnitOf">
+        isBuildingUnitOf
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -1117,15 +1123,15 @@
        Sub-classes
       </th>
       <td>
-       <a href="#ResidentialUnit">
-        ResidentialUnit
+       <a href="#NonResidentialUnit">
+        NonResidentialUnit
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#NonResidentialUnit">
-        NonResidentialUnit
+       <a href="#ResidentialUnit">
+        ResidentialUnit
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1196,15 +1202,15 @@
        Super-classes
       </th>
       <td>
-       <a href="#Location">
-        Location
+       <a href="#Asset">
+        Asset
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Asset">
-        Asset
+       <a href="#Location">
+        Location
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1224,15 +1230,15 @@
         c
        </sup>
        <br/>
-       <a href="#Building">
-        Building
+       <a href="#RealEstate">
+        RealEstate
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#RealEstate">
-        RealEstate
+       <a href="#Building">
+        Building
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1351,15 +1357,15 @@
        In domain of
       </th>
       <td>
-       <a href="#hasMinumumCartesianPosition">
-        hasMinimumCartesianPosition
+       <a href="#hasMaximumCartesianPosition">
+        hasMaximumCartesianPosition
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasMaximumCartesianPosition">
-        hasMaximumCartesianPosition
+       <a href="#hasMinumumCartesianPosition">
+        hasMinimumCartesianPosition
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -1416,15 +1422,8 @@
        In domain of
       </th>
       <td>
-       <a href="#hasSpatialOrigin">
-        hasSpatialOrigin
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasY">
-        hasY
+       <a href="#hasZ">
+        hasZ
        </a>
        <sup class="sup-dp" title="datatype property">
         dp
@@ -1437,15 +1436,22 @@
         op
        </sup>
        <br/>
-       <a href="#hasZ">
-        hasZ
+       <a href="#hasSpatialOrigin">
+        hasSpatialOrigin
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasX">
+        hasX
        </a>
        <sup class="sup-dp" title="datatype property">
         dp
        </sup>
        <br/>
-       <a href="#hasX">
-        hasX
+       <a href="#hasY">
+        hasY
        </a>
        <sup class="sup-dp" title="datatype property">
         dp
@@ -1458,15 +1464,15 @@
        In range of
       </th>
       <td>
-       <a href="#hasMaximumCartesianPosition">
-        hasMaximumCartesianPosition
+       <a href="#hasMinumumCartesianPosition">
+        hasMinimumCartesianPosition
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasMinumumCartesianPosition">
-        hasMinimumCartesianPosition
+       <a href="#hasMaximumCartesianPosition">
+        hasMaximumCartesianPosition
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -1523,15 +1529,15 @@
        In domain of
       </th>
       <td>
-       <a href="#hasXLength">
-        hasXLength
+       <a href="#hasYLength">
+        hasYLength
        </a>
        <sup class="sup-dp" title="datatype property">
         dp
        </sup>
        <br/>
-       <a href="#hasYLength">
-        hasYLength
+       <a href="#hasXLength">
+        hasXLength
        </a>
        <sup class="sup-dp" title="datatype property">
         dp
@@ -1609,15 +1615,15 @@
        In domain of
       </th>
       <td>
-       <a href="#classifies">
-        classifies
+       <a href="#assignsTypeTo">
+        assignsTypeTo
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#assignsTypeTo">
-        assignsTypeTo
+       <a href="#classifies">
+        classifies
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -1637,15 +1643,15 @@
         op
        </sup>
        <br/>
-       <a href="#isAssignedToType">
-        isAssignedToType
+       <a href="#hasScope">
+        hasScope
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasScope">
-        hasScope
+       <a href="#isAssignedToType">
+        isAssignedToType
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -1725,8 +1731,8 @@
        Sub-classes
       </th>
       <td>
-       <a href="#SpecificallyDependentContinuant">
-        SpecificallyDependentContinuant
+       <a href="#GenericallyDependentContinuant">
+        GenericallyDependentContinuant
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1739,8 +1745,8 @@
         c
        </sup>
        <br/>
-       <a href="#GenericallyDependentContinuant">
-        GenericallyDependentContinuant
+       <a href="#SpecificallyDependentContinuant">
+        SpecificallyDependentContinuant
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1753,6 +1759,41 @@
        In domain of
       </th>
       <td>
+       <a href="#hasProperContinuantPartAtAllTimes">
+        hasProperContinuantPartAtAllTimes
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasProperContinuantPart">
+        hasProperContinuantPart
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#properContinuantPartOfAtAllTimes">
+        properContinuantPartOfAtAllTimes
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#continuantPartOfAtAllTimes">
+        continuantPartOfAtAllTimes
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasContinuantPartAtAllTimes">
+        hasContinuantPartAtAllTimes
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
        <a href="#properContinuantPartOf">
         properContinuantPartOf
        </a>
@@ -1767,43 +1808,8 @@
         op
        </sup>
        <br/>
-       <a href="#hasProperContinuantPartAtAllTimes">
-        hasProperContinuantPartAtAllTimes
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#properContinuantPartOfAtAllTimes">
-        properContinuantPartOfAtAllTimes
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
        <a href="#hasContinuantPart">
         hasContinuantPart
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasProperContinuantPart">
-        hasProperContinuantPart
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasContinuantPartAtAllTimes">
-        hasContinuantPartAtAllTimes
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#continuantPartOfAtAllTimes">
-        continuantPartOfAtAllTimes
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -1823,6 +1829,34 @@
         op
        </sup>
        <br/>
+       <a href="#hasProperContinuantPart">
+        hasProperContinuantPart
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#continuantPartOf">
+        continuantPartOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasContinuantPartAtAllTimes">
+        hasContinuantPartAtAllTimes
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#continuantPartOfAtAllTimes">
+        continuantPartOfAtAllTimes
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
        <a href="#hasProperContinuantPartAtAllTimes">
         hasProperContinuantPartAtAllTimes
        </a>
@@ -1839,34 +1873,6 @@
        <br/>
        <a href="#properContinuantPartOf">
         properContinuantPartOf
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasContinuantPartAtAllTimes">
-        hasContinuantPartAtAllTimes
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasProperContinuantPart">
-        hasProperContinuantPart
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#continuantPartOfAtAllTimes">
-        continuantPartOfAtAllTimes
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#continuantPartOf">
-        continuantPartOf
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -1962,8 +1968,8 @@
        Sub-classes
       </th>
       <td>
-       <a href="#FiatLine">
-        FiatLine
+       <a href="#FiatPoint">
+        FiatPoint
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1976,8 +1982,8 @@
         c
        </sup>
        <br/>
-       <a href="#FiatPoint">
-        FiatPoint
+       <a href="#FiatLine">
+        FiatLine
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2102,8 +2108,8 @@
        Sub-classes
       </th>
       <td>
-       <a href="#EntityState">
-        EntityState
+       <a href="#Capability">
+        Capability
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2116,8 +2122,8 @@
         c
        </sup>
        <br/>
-       <a href="#Capability">
-        Capability
+       <a href="#EntityState">
+        EntityState
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2202,8 +2208,8 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Occurrent">
-        Occurrent
+       <a href="#Group">
+        Group
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2216,8 +2222,8 @@
         c
        </sup>
        <br/>
-       <a href="#Group">
-        Group
+       <a href="#Occurrent">
+        Occurrent
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2237,29 +2243,15 @@
         op
        </sup>
        <br/>
-       <a href="#includesRole">
-        includesRole
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#isLabeledBy">
-        isLabeledBy
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#isClassifiedBy">
-        isClassifiedBy
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
        <a href="#memberOf">
         memberOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#includesRole">
+        includesRole
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2279,6 +2271,20 @@
         op
        </sup>
        <br/>
+       <a href="#isLabeledBy">
+        isLabeledBy
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isClassifiedBy">
+        isClassifiedBy
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
       </td>
      </tr>
      <tr>
@@ -2286,22 +2292,8 @@
        In range of
       </th>
       <td>
-       <a href="#identifies">
-        identifies
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasEntitiesFrom">
-        hasEntitiesFrom
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#isEntityStateOf">
-        isEntityStateOf
+       <a href="#labels">
+        labels
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2314,15 +2306,8 @@
         op
        </sup>
        <br/>
-       <a href="#classifies">
-        classifies
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#labels">
-        labels
+       <a href="#identifies">
+        identifies
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2330,6 +2315,27 @@
        <br/>
        <a href="#isIncludedRoleIn">
         isIncludedRoleIn
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#classifies">
+        classifies
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isEntityStateOf">
+        isEntityStateOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasEntitiesFrom">
+        hasEntitiesFrom
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2931,6 +2937,13 @@
        In domain of
       </th>
       <td>
+       <a href="#genericallyDependsOn">
+        genericallyDependsOn
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
        <a href="#isConcretizedByAtAllTimes">
         isConcretizedByAtAllTimes
        </a>
@@ -2952,13 +2965,6 @@
         op
        </sup>
        <br/>
-       <a href="#genericallyDependsOn">
-        genericallyDependsOn
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
       </td>
      </tr>
      <tr>
@@ -2966,15 +2972,15 @@
        In range of
       </th>
       <td>
-       <a href="#concretizes">
-        concretizes
+       <a href="#concretizesAtAllTimes">
+        concretizesAtAllTimes
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#isCarrierOf">
-        isCarrierOf
+       <a href="#concretizes">
+        concretizes
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2987,8 +2993,8 @@
         op
        </sup>
        <br/>
-       <a href="#concretizesAtAllTimes">
-        concretizesAtAllTimes
+       <a href="#isCarrierOf">
+        isCarrierOf
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -3045,15 +3051,15 @@
        In domain of
       </th>
       <td>
-       <a href="#hasMaximumGeodeticPosition">
-        hasMaximumGeodeticPosition
+       <a href="#hasMinimumGeodeticPosition">
+        hasMinimumGeodeticPosition
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasMinimumGeodeticPosition">
-        hasMinimumGeodeticPosition
+       <a href="#hasMaximumGeodeticPosition">
+        hasMaximumGeodeticPosition
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -3124,15 +3130,15 @@
        In range of
       </th>
       <td>
-       <a href="#hasMaximumGeodeticPosition">
-        hasMaximumGeodeticPosition
+       <a href="#hasMinimumGeodeticPosition">
+        hasMinimumGeodeticPosition
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasMinimumGeodeticPosition">
-        hasMinimumGeodeticPosition
+       <a href="#hasMaximumGeodeticPosition">
+        hasMaximumGeodeticPosition
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -3189,6 +3195,13 @@
        In domain of
       </th>
       <td>
+       <a href="#isSubGroupOf">
+        isSubGroupOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
        <a href="#hasSubGroup">
         hasSubGroup
        </a>
@@ -3203,13 +3216,6 @@
         op
        </sup>
        <br/>
-       <a href="#isSubGroupOf">
-        isSubGroupOf
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
       </td>
      </tr>
      <tr>
@@ -3217,8 +3223,8 @@
        In range of
       </th>
       <td>
-       <a href="#isSubGroupOf">
-        isSubGroupOf
+       <a href="#memberOf">
+        memberOf
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -3231,8 +3237,8 @@
         op
        </sup>
        <br/>
-       <a href="#memberOf">
-        memberOf
+       <a href="#isSubGroupOf">
+        isSubGroupOf
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -3447,13 +3453,6 @@
        Sub-classes
       </th>
       <td>
-       <a href="#SpatialRegion">
-        SpatialRegion
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="#Site">
         Site
        </a>
@@ -3463,6 +3462,13 @@
        <br/>
        <a href="#ContinuantFiatBoundary">
         ContinuantFiatBoundary
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#SpatialRegion">
+        SpatialRegion
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3542,15 +3548,15 @@
        Sub-classes
       </th>
       <td>
-       <a href="#ImmaterialEntity">
-        ImmaterialEntity
+       <a href="#MaterialEntity">
+        MaterialEntity
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#MaterialEntity">
-        MaterialEntity
+       <a href="#ImmaterialEntity">
+        ImmaterialEntity
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3635,15 +3641,15 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Category">
-        Category
+       <a href="#Identifier">
+        Identifier
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Identifier">
-        Identifier
+       <a href="#Category">
+        Category
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3656,18 +3662,18 @@
        In domain of
       </th>
       <td>
-       <a href="#hasLabel">
-        hasLabel
-       </a>
-       <sup class="sup-dp" title="datatype property">
-        dp
-       </sup>
-       <br/>
        <a href="#labels">
         labels
        </a>
        <sup class="sup-op" title="object property">
         op
+       </sup>
+       <br/>
+       <a href="#hasLabel">
+        hasLabel
+       </a>
+       <sup class="sup-dp" title="datatype property">
+        dp
        </sup>
        <br/>
        <a href="#hasScope">
@@ -3763,15 +3769,15 @@
        In domain of
       </th>
       <td>
-       <a href="#isSubLocationOf">
-        isSubLocationOf
+       <a href="#hasSubLocation">
+        hasSubLocation
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasSubLocation">
-        hasSubLocation
+       <a href="#isSubLocationOf">
+        isSubLocationOf
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -3918,8 +3924,8 @@
        Sub-classes
       </th>
       <td>
-       <a href="#ObjectAggregate">
-        ObjectAggregate
+       <a href="#Object">
+        Object
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3932,8 +3938,8 @@
         c
        </sup>
        <br/>
-       <a href="#Object">
-        Object
+       <a href="#ObjectAggregate">
+        ObjectAggregate
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3946,50 +3952,15 @@
        In domain of
       </th>
       <td>
-       <a href="#hasCapability">
-        hasCapability
+       <a href="#memberPartOfAtAllTimes">
+        memberPartOfAtAllTimes
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#materialBasisOf">
-        materialBasisOf
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasMemberPart">
-        hasMemberPart
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#isLocatedIn">
-        isLocatedIn
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#isAssignedToInstance">
-        isAssignedToInstance
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasDetermined">
-        hasDetermined
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#isAssignedToType">
-        isAssignedToType
+       <a href="#memberPartOf">
+        memberPartOf
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -4002,8 +3973,15 @@
         op
        </sup>
        <br/>
-       <a href="#memberPartOfAtAllTimes">
-        memberPartOfAtAllTimes
+       <a href="#hasDetermined">
+        hasDetermined
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isLocatedIn">
+        isLocatedIn
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -4016,8 +3994,29 @@
         op
        </sup>
        <br/>
-       <a href="#memberPartOf">
-        memberPartOf
+       <a href="#isAssignedToType">
+        isAssignedToType
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isAssignedToInstance">
+        isAssignedToInstance
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#materialBasisOf">
+        materialBasisOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasCapability">
+        hasCapability
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -4030,6 +4029,13 @@
         op
        </sup>
        <br/>
+       <a href="#hasMemberPart">
+        hasMemberPart
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
       </td>
      </tr>
      <tr>
@@ -4037,36 +4043,8 @@
        In range of
       </th>
       <td>
-       <a href="#isLocationOf">
-        isLocationOf
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#assignsInstanceTo">
-        assignsInstanceTo
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasMaterialBasis">
-        hasMaterialBasis
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#historyOf">
-        historyOf
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#memberPartOf">
-        memberPartOf
+       <a href="#memberPartOfAtAllTimes">
+        memberPartOfAtAllTimes
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -4086,15 +4064,15 @@
         op
        </sup>
        <br/>
-       <a href="#memberPartOfAtAllTimes">
-        memberPartOfAtAllTimes
+       <a href="#isCapabilityOf">
+        isCapabilityOf
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasMemberPartAtAllTimes">
-        hasMemberPartAtAllTimes
+       <a href="#memberPartOf">
+        memberPartOf
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -4107,15 +4085,43 @@
         op
        </sup>
        <br/>
-       <a href="#isCapabilityOf">
-        isCapabilityOf
+       <a href="#hasMemberPart">
+        hasMemberPart
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasMemberPart">
-        hasMemberPart
+       <a href="#isLocationOf">
+        isLocationOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasMemberPartAtAllTimes">
+        hasMemberPartAtAllTimes
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasMaterialBasis">
+        hasMaterialBasis
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#historyOf">
+        historyOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#assignsInstanceTo">
+        assignsInstanceTo
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -4216,13 +4222,6 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Equipment">
-        Equipment
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="#BuildingObject">
         BuildingObject
        </a>
@@ -4232,6 +4231,13 @@
        <br/>
        <a href="#Device">
         Device
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Equipment">
+        Equipment
        </a>
        <sup class="sup-c" title="class">
         c
@@ -4346,8 +4352,8 @@
        Sub-classes
       </th>
       <td>
-       <a href="#TemporalRegion">
-        TemporalRegion
+       <a href="#Process">
+        Process
        </a>
        <sup class="sup-c" title="class">
         c
@@ -4360,15 +4366,15 @@
         c
        </sup>
        <br/>
-       <a href="#SpatiotemporalRegion">
-        SpatiotemporalRegion
+       <a href="#TemporalRegion">
+        TemporalRegion
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Process">
-        Process
+       <a href="#SpatiotemporalRegion">
+        SpatiotemporalRegion
        </a>
        <sup class="sup-c" title="class">
         c
@@ -4381,15 +4387,8 @@
        In domain of
       </th>
       <td>
-       <a href="#hasTemporalPart">
-        hasTemporalPart
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasProperTemporalPart">
-        hasProperTemporalPart
+       <a href="#properOccurrentPartOf">
+        properOccurrentPartOf
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -4402,8 +4401,29 @@
         op
        </sup>
        <br/>
+       <a href="#properTemporalPartOf">
+        properTemporalPartOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
        <a href="#temporalPartOf">
         temporalPartOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasProperOccurrentPart">
+        hasProperOccurrentPart
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasTemporalPart">
+        hasTemporalPart
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -4416,8 +4436,8 @@
         op
        </sup>
        <br/>
-       <a href="#hasOccurrentPart">
-        hasOccurrentPart
+       <a href="#hasProperTemporalPart">
+        hasProperTemporalPart
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -4430,22 +4450,8 @@
         op
        </sup>
        <br/>
-       <a href="#properOccurrentPartOf">
-        properOccurrentPartOf
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#properTemporalPartOf">
-        properTemporalPartOf
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasProperOccurrentPart">
-        hasProperOccurrentPart
+       <a href="#hasOccurrentPart">
+        hasOccurrentPart
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -4458,15 +4464,15 @@
        In range of
       </th>
       <td>
-       <a href="#temporalPartOf">
-        temporalPartOf
+       <a href="#precedes">
+        precedes
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#precededBy">
-        precededBy
+       <a href="#hasProperOccurrentPart">
+        hasProperOccurrentPart
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -4479,22 +4485,8 @@
         op
        </sup>
        <br/>
-       <a href="#precedes">
-        precedes
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasTemporalPart">
-        hasTemporalPart
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#properOccurrentPartOf">
-        properOccurrentPartOf
+       <a href="#precededBy">
+        precededBy
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -4514,8 +4506,8 @@
         op
        </sup>
        <br/>
-       <a href="#hasProperOccurrentPart">
-        hasProperOccurrentPart
+       <a href="#temporalPartOf">
+        temporalPartOf
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -4523,6 +4515,20 @@
        <br/>
        <a href="#hasProperTemporalPart">
         hasProperTemporalPart
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#properOccurrentPartOf">
+        properOccurrentPartOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasTemporalPart">
+        hasTemporalPart
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -4713,22 +4719,6 @@
        Restrictions
       </th>
       <td>
-       <a href="#temporalPartOf">
-        temporalPartOf
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="#OneDimensionalTemporalRegion">
-        OneDimensionalTemporalRegion
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="#hasTemporalPart">
         hasTemporalPart
        </a>
@@ -4753,6 +4743,22 @@
         c
        </sup>
        )
+       <br/>
+       <a href="#temporalPartOf">
+        temporalPartOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="#OneDimensionalTemporalRegion">
+        OneDimensionalTemporalRegion
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
        <br/>
       </td>
      </tr>
@@ -4819,22 +4825,6 @@
        Restrictions
       </th>
       <td>
-       <a href="#occurrentPartOf">
-        occurrentPartOf
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="#Process">
-        Process
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="#hasOccurrentPart">
         hasOccurrentPart
        </a>
@@ -4860,6 +4850,22 @@
        </sup>
        )
        <br/>
+       <a href="#occurrentPartOf">
+        occurrentPartOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="#Process">
+        Process
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
       </td>
      </tr>
      <tr>
@@ -4881,8 +4887,15 @@
        In domain of
       </th>
       <td>
-       <a href="#hasParticipantAtAllTimes">
-        hasParticipantAtAllTimes
+       <a href="#realizes">
+        realizes
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasParticipant">
+        hasParticipant
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -4895,15 +4908,8 @@
         op
        </sup>
        <br/>
-       <a href="#realizes">
-        realizes
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasParticipant">
-        hasParticipant
+       <a href="#hasParticipantAtAllTimes">
+        hasParticipantAtAllTimes
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -4995,22 +5001,6 @@
        Restrictions
       </th>
       <td>
-       <a href="#hasOccurrentPart">
-        hasOccurrentPart
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="#ProcessBoundary">
-        ProcessBoundary
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="#occurrentPartOf">
         occurrentPartOf
        </a>
@@ -5035,6 +5025,22 @@
         c
        </sup>
        )
+       <br/>
+       <a href="#hasOccurrentPart">
+        hasOccurrentPart
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="#ProcessBoundary">
+        ProcessBoundary
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
        <br/>
        <a href="#hasTemporalPart">
         hasTemporalPart
@@ -5110,6 +5116,13 @@
        Sub-classes
       </th>
       <td>
+       <a href="#TemporalQuality">
+        TemporalQuality
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
        <a href="#Labeling">
         Labeling
        </a>
@@ -5126,13 +5139,6 @@
        <br/>
        <a href="#RelationalQuality">
         RelationalQuality
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#TemporalQuality">
-        TemporalQuality
        </a>
        <sup class="sup-c" title="class">
         c
@@ -5289,15 +5295,15 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Role">
-        Role
+       <a href="#Disposition">
+        Disposition
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Disposition">
-        Disposition
+       <a href="#Role">
+        Role
        </a>
        <sup class="sup-c" title="class">
         c
@@ -5382,6 +5388,13 @@
        Sub-classes
       </th>
       <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Variables#Comparison">
+        dicv:Comparison
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
        <a href="https://w3id.org/digitalconstruction/0.5/Variables#Constraint">
         dicv:Constraint
        </a>
@@ -5391,13 +5404,6 @@
        <br/>
        <a href="https://w3id.org/digitalconstruction/0.5/Variables#Operator">
         dicv:Operator
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="https://w3id.org/digitalconstruction/0.5/Variables#Comparison">
-        dicv:Comparison
        </a>
        <sup class="sup-c" title="class">
         c
@@ -5536,15 +5542,15 @@
        In range of
       </th>
       <td>
-       <a href="#hasRole">
-        hasRole
+       <a href="#includesRole">
+        includesRole
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#includesRole">
-        includesRole
+       <a href="#hasRole">
+        hasRole
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -5662,8 +5668,8 @@
         c
        </sup>
        or
-       <a href="#ContinuantFiatBoundary">
-        ContinuantFiatBoundary
+       <a href="#MaterialEntity">
+        MaterialEntity
        </a>
        <sup class="sup-c" title="class">
         c
@@ -5676,8 +5682,8 @@
         c
        </sup>
        or
-       <a href="#MaterialEntity">
-        MaterialEntity
+       <a href="#ContinuantFiatBoundary">
+        ContinuantFiatBoundary
        </a>
        <sup class="sup-c" title="class">
         c
@@ -5701,8 +5707,8 @@
         c
        </sup>
        or
-       <a href="#ContinuantFiatBoundary">
-        ContinuantFiatBoundary
+       <a href="#MaterialEntity">
+        MaterialEntity
        </a>
        <sup class="sup-c" title="class">
         c
@@ -5715,8 +5721,8 @@
         c
        </sup>
        or
-       <a href="#MaterialEntity">
-        MaterialEntity
+       <a href="#ContinuantFiatBoundary">
+        ContinuantFiatBoundary
        </a>
        <sup class="sup-c" title="class">
         c
@@ -5887,15 +5893,15 @@
         c
        </sup>
        <br/>
-       <a href="#ThreeAngleOrientation">
-        ThreeAngleOrientation
+       <a href="#TwoAngleOrientation">
+        TwoAngleOrientation
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#TwoAngleOrientation">
-        TwoAngleOrientation
+       <a href="#ThreeAngleOrientation">
+        ThreeAngleOrientation
        </a>
        <sup class="sup-c" title="class">
         c
@@ -6052,6 +6058,13 @@
        Sub-classes
       </th>
       <td>
+       <a href="#SpatialPosition">
+        SpatialPosition
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
        <a href="#SpatialExtent">
         SpatialExtent
        </a>
@@ -6061,13 +6074,6 @@
        <br/>
        <a href="#SpatialOrientation">
         SpatialOrientation
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#SpatialPosition">
-        SpatialPosition
        </a>
        <sup class="sup-c" title="class">
         c
@@ -6147,22 +6153,15 @@
        Sub-classes
       </th>
       <td>
-       <a href="#OneDimensionalSpatialRegion">
-        OneDimensionalSpatialRegion
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#ThreeDimensionalSpatialRegion">
-        ThreeDimensionalSpatialRegion
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="#TwoDimensionalSpatialRegion">
         TwoDimensionalSpatialRegion
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#OneDimensionalSpatialRegion">
+        OneDimensionalSpatialRegion
        </a>
        <sup class="sup-c" title="class">
         c
@@ -6175,6 +6174,13 @@
         c
        </sup>
        <br/>
+       <a href="#ThreeDimensionalSpatialRegion">
+        ThreeDimensionalSpatialRegion
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
       </td>
      </tr>
      <tr>
@@ -6182,15 +6188,15 @@
        In domain of
       </th>
       <td>
-       <a href="#hasSpatialPosition">
-        hasSpatialPosition
+       <a href="#hasSpatialExtent">
+        hasSpatialExtent
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasSpatialExtent">
-        hasSpatialExtent
+       <a href="#hasSpatialPosition">
+        hasSpatialPosition
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -6203,15 +6209,15 @@
        In range of
       </th>
       <td>
-       <a href="#spatiallyProjectsOnto">
-        spatiallyProjectsOnto
+       <a href="#spatiallyProjectsOntoAtAllTimes">
+        spatiallyProjectsOntoAtAllTimes
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#spatiallyProjectsOntoAtAllTimes">
-        spatiallyProjectsOntoAtAllTimes
+       <a href="#spatiallyProjectsOnto">
+        spatiallyProjectsOnto
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -6321,6 +6327,13 @@
        In domain of
       </th>
       <td>
+       <a href="#temporallyProjectsOnto">
+        temporallyProjectsOnto
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
        <a href="#spatiallyProjectsOntoAtAllTimes">
         spatiallyProjectsOntoAtAllTimes
        </a>
@@ -6330,13 +6343,6 @@
        <br/>
        <a href="#spatiallyProjectsOnto">
         spatiallyProjectsOnto
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#temporallyProjectsOnto">
-        temporallyProjectsOnto
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -6407,15 +6413,15 @@
        Sub-classes
       </th>
       <td>
-       <a href="#RealizableEntity">
-        RealizableEntity
+       <a href="#Quality">
+        Quality
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Quality">
-        Quality
+       <a href="#RealizableEntity">
+        RealizableEntity
        </a>
        <sup class="sup-c" title="class">
         c
@@ -6435,15 +6441,15 @@
        In domain of
       </th>
       <td>
-       <a href="#specificallyDependsOn">
-        specificallyDependsOn
+       <a href="#inheresIn">
+        inheresIn
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#inheresIn">
-        inheresIn
+       <a href="#specificallyDependsOn">
+        specificallyDependsOn
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -6456,15 +6462,15 @@
        In range of
       </th>
       <td>
-       <a href="#specificallyDependedOnBy">
-        specificallyDependedOnBy
+       <a href="#bearerOf">
+        bearerOf
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#bearerOf">
-        bearerOf
+       <a href="#specificallyDependedOnBy">
+        specificallyDependedOnBy
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -6629,15 +6635,15 @@
        In domain of
       </th>
       <td>
-       <a href="#hasLastInstant">
-        hasLastInstant
+       <a href="#hasFirstInstant">
+        hasFirstInstant
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasFirstInstant">
-        hasFirstInstant
+       <a href="#hasLastInstant">
+        hasLastInstant
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -6664,15 +6670,15 @@
         op
        </sup>
        <br/>
-       <a href="#firstInstantOf">
-        firstInstantOf
+       <a href="#temporallyProjectsOnto">
+        temporallyProjectsOnto
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#temporallyProjectsOnto">
-        temporallyProjectsOnto
+       <a href="#firstInstantOf">
+        firstInstantOf
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -6736,15 +6742,15 @@
         dp
        </sup>
        <br/>
-       <a href="#hasXAngle">
-        hasXAngle
+       <a href="#hasYAngle">
+        hasYAngle
        </a>
        <sup class="sup-dp" title="datatype property">
         dp
        </sup>
        <br/>
-       <a href="#hasYAngle">
-        hasYAngle
+       <a href="#hasXAngle">
+        hasXAngle
        </a>
        <sup class="sup-dp" title="datatype property">
         dp
@@ -6916,13 +6922,6 @@
        In domain of
       </th>
       <td>
-       <a href="#lastInstantOf">
-        lastInstantOf
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
        <a href="#firstInstantOf">
         firstInstantOf
        </a>
@@ -6944,6 +6943,13 @@
         op
        </sup>
        <br/>
+       <a href="#lastInstantOf">
+        lastInstantOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
       </td>
      </tr>
      <tr>
@@ -6958,6 +6964,13 @@
         op
        </sup>
        <br/>
+       <a href="#hasLastInstant">
+        hasLastInstant
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
        <a href="#hasStart">
         hasStart
        </a>
@@ -6967,13 +6980,6 @@
        <br/>
        <a href="#hasEnd">
         hasEnd
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasLastInstant">
-        hasLastInstant
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -7030,15 +7036,15 @@
        In domain of
       </th>
       <td>
-       <a href="#hasEnd">
-        hasEnd
+       <a href="#hasDuration">
+        hasDuration
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasDuration">
-        hasDuration
+       <a href="#hasEnd">
+        hasEnd
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -7058,15 +7064,15 @@
        In range of
       </th>
       <td>
-       <a href="#isStartOf">
-        isStartOf
+       <a href="#isEndOf">
+        isEndOf
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#isEndOf">
-        isEndOf
+       <a href="#isStartOf">
+        isStartOf
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -7123,15 +7129,15 @@
        In domain of
       </th>
       <td>
-       <a href="#hasStrikeAngle">
-        hasStrikeAngle
+       <a href="#hasDipAngle">
+        hasDipAngle
        </a>
        <sup class="sup-dp" title="datatype property">
         dp
        </sup>
        <br/>
-       <a href="#hasDipAngle">
-        hasDipAngle
+       <a href="#hasStrikeAngle">
+        hasStrikeAngle
        </a>
        <sup class="sup-dp" title="datatype property">
         dp
@@ -14101,14 +14107,14 @@
        Super-properties
       </th>
       <td>
-       <a href="#continuantPartOfAtAllTimes">
-        continuantPartOfAtAllTimes
+       <a href="#memberPartOf">
+        memberPartOf
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
-       <a href="#memberPartOf">
-        memberPartOf
+       <a href="#continuantPartOfAtAllTimes">
+        continuantPartOfAtAllTimes
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -14890,14 +14896,14 @@
        Super-properties
       </th>
       <td>
-       <a href="#continuantPartOfAtAllTimes">
-        continuantPartOfAtAllTimes
+       <a href="#properContinuantPartOf">
+        properContinuantPartOf
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
-       <a href="#properContinuantPartOf">
-        properContinuantPartOf
+       <a href="#continuantPartOfAtAllTimes">
+        continuantPartOfAtAllTimes
        </a>
        <sup class="sup-op" title="object property">
         op
