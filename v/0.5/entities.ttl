@@ -357,6 +357,7 @@
      rdfs:range :MaterialEntity .
  
 :hasOccurrentPart a owl:TransitiveProperty, owl:ObjectProperty ;
+     rdfs:subPropertyOf :hasPart ;
      rdfs:label "hasOccurrentPart" ;
      rdfs:comment "hasOccurrentPart is equivalent to the BFO property 'has occurrent part' (http://purl.obolibrary.org/obo/BFO_0000117)" ;
      rdfs:domain :Occurrent ;
@@ -396,6 +397,7 @@
      rdfs:range :MaterialEntity .
  
 :occurrentPartOf a owl:ObjectProperty, owl:TransitiveProperty ;
+     rdfs:subPropertyOf :isPartOf ;
      rdfs:label "occurrentPartOf" ;
      rdfs:comment "occurrentPartOf is equivalent to the BFO property 'occurrent part of' (http://purl.obolibrary.org/obo/BFO_0000132)" ;
      rdfs:domain :Occurrent ;
@@ -512,6 +514,7 @@
      rdfs:range :Continuant .
  
 :continuantPartOf a owl:ObjectProperty ;
+     rdfs:subPropertyOf :isPartOf ;
      rdfs:label "continuantPartOf" ;
      rdfs:comment "continuantPartOf is equivalent to the BFO property 'continuant part of at some time' (http://purl.obolibrary.org/obo/BFO_0000176)" ;
      rdfs:domain :Continuant ;
@@ -525,6 +528,7 @@
      rdfs:range :Continuant .
  
 :hasContinuantPart a owl:ObjectProperty ;
+     rdfs:subPropertyOf :hasPart ;
      rdfs:label "hasContinuantPart" ;
      rdfs:comment "hasContinuantPart is equivalent to the BFO property 'has continuant part at some time' (http://purl.obolibrary.org/obo/BFO_0000178)" ;
      rdfs:domain :Continuant ;
@@ -823,6 +827,21 @@ dicv:Operator rdfs:subClassOf :RelationalQuality .
                             rdfs:range :GeodeticPosition ;
                             rdfs:label "hasMaximumGeodeticPosition" .
 
+###  https://w3id.org/digitalconstruction/Entities#hasPart
+:hasPart rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           owl:inverseOf :isPartOf ;
+           rdfs:domain :Entity ;
+           rdfs:range :Entity ;
+           rdfs:label "hasPart" .
+
+###  https://w3id.org/digitalconstruction/Entities#isPartOf
+:isPartOf rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           owl:inverseOf :hasPart ;
+           rdfs:domain :Entity ;
+           rdfs:range :Entity ;
+           rdfs:label "isPartOf" .
 
 ###  https://w3id.org/digitalconstruction/Entities#hasMember
 :hasMember rdf:type owl:ObjectProperty ;
